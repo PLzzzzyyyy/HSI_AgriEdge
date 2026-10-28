@@ -1,0 +1,295 @@
+{
+  "schema": 1,
+  "class_base": 0,
+  "scope": "Display translations only; original dataset IDs, order and colors retained",
+  "scenes": {
+    "longkou": [
+      {
+        "id": 0,
+        "name_en": "Corn",
+        "name_zh": "玉米",
+        "color": "#ff0000"
+      },
+      {
+        "id": 1,
+        "name_en": "Cotton",
+        "name_zh": "棉花",
+        "color": "#ee9a00"
+      },
+      {
+        "id": 2,
+        "name_en": "Sesame",
+        "name_zh": "芝麻",
+        "color": "#ffff00"
+      },
+      {
+        "id": 3,
+        "name_en": "Broad-leaf soybean",
+        "name_zh": "阔叶大豆",
+        "color": "#00ff00"
+      },
+      {
+        "id": 4,
+        "name_en": "Narrow-leaf soybean",
+        "name_zh": "窄叶大豆",
+        "color": "#00ffcf"
+      },
+      {
+        "id": 5,
+        "name_en": "Rice",
+        "name_zh": "水稻",
+        "color": "#00a0ff"
+      },
+      {
+        "id": 6,
+        "name_en": "Water",
+        "name_zh": "水体",
+        "color": "#0000ff"
+      },
+      {
+        "id": 7,
+        "name_en": "Roads and houses",
+        "name_zh": "道路与房屋",
+        "color": "#b000ff"
+      },
+      {
+        "id": 8,
+        "name_en": "Mixed weed",
+        "name_zh": "混合杂草",
+        "color": "#ffb6c1"
+      }
+    ],
+    "honghu": [
+      {
+        "id": 0,
+        "name_en": "Red roof",
+        "name_zh": "红色屋顶",
+        "color": "#ff0000"
+      },
+      {
+        "id": 1,
+        "name_en": "Road",
+        "name_zh": "道路",
+        "color": "#ee9a00"
+      },
+      {
+        "id": 2,
+        "name_en": "Bare soil",
+        "name_zh": "裸土",
+        "color": "#ffff00"
+      },
+      {
+        "id": 3,
+        "name_en": "Cotton",
+        "name_zh": "棉花",
+        "color": "#00ff00"
+      },
+      {
+        "id": 4,
+        "name_en": "Cotton firewood",
+        "name_zh": "棉秆",
+        "color": "#00ffcf"
+      },
+      {
+        "id": 5,
+        "name_en": "Rape",
+        "name_zh": "油菜",
+        "color": "#00a0ff"
+      },
+      {
+        "id": 6,
+        "name_en": "Chinese cabbage",
+        "name_zh": "大白菜",
+        "color": "#0000ff"
+      },
+      {
+        "id": 7,
+        "name_en": "Pakchoi",
+        "name_zh": "小白菜",
+        "color": "#b000ff"
+      },
+      {
+        "id": 8,
+        "name_en": "Cabbage",
+        "name_zh": "甘蓝",
+        "color": "#ffb6c1"
+      },
+      {
+        "id": 9,
+        "name_en": "Tuber mustard",
+        "name_zh": "榨菜",
+        "color": "#8b4513"
+      },
+      {
+        "id": 10,
+        "name_en": "Brassica parachinensis",
+        "name_zh": "菜心",
+        "color": "#7fff00"
+      },
+      {
+        "id": 11,
+        "name_en": "Brassica chinensis",
+        "name_zh": "青菜",
+        "color": "#ff1493"
+      },
+      {
+        "id": 12,
+        "name_en": "Small Brassica chinensis",
+        "name_zh": "小青菜",
+        "color": "#40e0d0"
+      },
+      {
+        "id": 13,
+        "name_en": "Lactuca sativa",
+        "name_zh": "生菜",
+        "color": "#ffd700"
+      },
+      {
+        "id": 14,
+        "name_en": "Celtuce",
+        "name_zh": "莴笋",
+        "color": "#adff2f"
+      },
+      {
+        "id": 15,
+        "name_en": "Film covered lettuce",
+        "name_zh": "覆膜生菜",
+        "color": "#dc143c"
+      },
+      {
+        "id": 16,
+        "name_en": "Romaine lettuce",
+        "name_zh": "罗马生菜",
+        "color": "#00ced1"
+      },
+      {
+        "id": 17,
+        "name_en": "Carrot",
+        "name_zh": "胡萝卜",
+        "color": "#9370db"
+      },
+      {
+        "id": 18,
+        "name_en": "White radish",
+        "name_zh": "白萝卜",
+        "color": "#f0e68c"
+      },
+      {
+        "id": 19,
+        "name_en": "Garlic sprout",
+        "name_zh": "蒜苗",
+        "color": "#ff7f50"
+      },
+      {
+        "id": 20,
+        "name_en": "Broad bean",
+        "name_zh": "蚕豆",
+        "color": "#2e8b57"
+      },
+      {
+        "id": 21,
+        "name_en": "Tree",
+        "name_zh": "树木",
+        "color": "#c0c0c0"
+      }
+    ],
+    "hanchuan": [
+      {
+        "id": 0,
+        "name_en": "Strawberry",
+        "name_zh": "草莓",
+        "color": "#ff0000"
+      },
+      {
+        "id": 1,
+        "name_en": "Cowpea",
+        "name_zh": "豇豆",
+        "color": "#ee9a00"
+      },
+      {
+        "id": 2,
+        "name_en": "Soybean",
+        "name_zh": "大豆",
+        "color": "#ffff00"
+      },
+      {
+        "id": 3,
+        "name_en": "Sorghum",
+        "name_zh": "高粱",
+        "color": "#00ff00"
+      },
+      {
+        "id": 4,
+        "name_en": "Water spinach",
+        "name_zh": "空心菜",
+        "color": "#00ffcf"
+      },
+      {
+        "id": 5,
+        "name_en": "Watermelon",
+        "name_zh": "西瓜",
+        "color": "#00a0ff"
+      },
+      {
+        "id": 6,
+        "name_en": "Greens",
+        "name_zh": "青菜",
+        "color": "#0000ff"
+      },
+      {
+        "id": 7,
+        "name_en": "Trees",
+        "name_zh": "树木",
+        "color": "#b000ff"
+      },
+      {
+        "id": 8,
+        "name_en": "Grass",
+        "name_zh": "草地",
+        "color": "#ffb6c1"
+      },
+      {
+        "id": 9,
+        "name_en": "Red roof",
+        "name_zh": "红色屋顶",
+        "color": "#8b4513"
+      },
+      {
+        "id": 10,
+        "name_en": "Gray roof",
+        "name_zh": "灰色屋顶",
+        "color": "#7fff00"
+      },
+      {
+        "id": 11,
+        "name_en": "Plastic",
+        "name_zh": "塑料",
+        "color": "#ff1493"
+      },
+      {
+        "id": 12,
+        "name_en": "Bare soil",
+        "name_zh": "裸土",
+        "color": "#40e0d0"
+      },
+      {
+        "id": 13,
+        "name_en": "Road",
+        "name_zh": "道路",
+        "color": "#ffd700"
+      },
+      {
+        "id": 14,
+        "name_en": "Bright object",
+        "name_zh": "高亮物体",
+        "color": "#adff2f"
+      },
+      {
+        "id": 15,
+        "name_en": "Water",
+        "name_zh": "水体",
+        "color": "#dc143c"
+      }
+    ]
+  }
+}

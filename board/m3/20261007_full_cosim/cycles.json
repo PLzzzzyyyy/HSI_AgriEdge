@@ -1,0 +1,13 @@
+{
+  "scope": "RTL cosim at 5ns target, NOT board performance",
+  "load_w_cycles": 149178,
+  "dump_12layers_cycles": 898847,
+  "logits_3patch_cycles": 1989538,
+  "class_3patch_cycles": 1989478,
+  "feat_layer5_11_cycles": 408338,
+  "class_layer5_11_cycles": 391198,
+  "proj_qkv_cycles": 62498,
+  "proj_mlp_cycles": 27998,
+  "logits_ms_per_patch_at_200MHz": 3.3158966666666667,
+  "transaction_map_source": "sim/hls_tb/tb_tt_engine_full.cpp call order; errors 0..11, LOAD_W12, DUMP13, LOGITS14, CLASS15, FEATlo5 16, CLASSlo5 17, PROJ18/19"
+}

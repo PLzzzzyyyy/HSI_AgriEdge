@@ -1,0 +1,26 @@
+{
+  "vivado/tt_soc_v1_wns-0.019.xsa": {
+    "xsa_sha256": "810d95a8201ab60a76aebcced03d0e9559598d2a190a1b5b303fdf7e85de14e0",
+    "embedded_bitstreams": {
+      "tt_soc.bit": "d0665f66d420b6a8139d62d91242c9d0af68350160fc36ffed11da1efb03e5dc"
+    }
+  },
+  "vivado/tt_soc.xsa": {
+    "xsa_sha256": "19285d5888b8ca585ebb16189a103e6e55dbdb1a83e746877e1f22857376ded9",
+    "embedded_bitstreams": {
+      "tt_soc.bit": "bc3512a5b40cdbc721886e8864b6d8f294ee0cfc332872845f7041fcf7a87641"
+    }
+  },
+  "vitis/tsam/export/tsam/hw/tt_soc_v1_wns-0.019.xsa": {
+    "xsa_sha256": "810d95a8201ab60a76aebcced03d0e9559598d2a190a1b5b303fdf7e85de14e0",
+    "embedded_bitstreams": {
+      "tt_soc.bit": "d0665f66d420b6a8139d62d91242c9d0af68350160fc36ffed11da1efb03e5dc"
+    }
+  },
+  "vitis/tsamapp/_ide/bitstream/tt_soc.bit": {
+    "bit_sha256": "d0665f66d420b6a8139d62d91242c9d0af68350160fc36ffed11da1efb03e5dc"
+  },
+  "vitis/tsam/export/tsam/hw/tt_soc.bit": {
+    "bit_sha256": "d0665f66d420b6a8139d62d91242c9d0af68350160fc36ffed11da1efb03e5dc"
+  }
+}

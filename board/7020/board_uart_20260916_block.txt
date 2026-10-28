@@ -1,0 +1,20 @@
+2026-09-16 用户提供的完整 64x64 板上推理结果
+记录来源：用户真实串口日志的已转交统计字段；此文件暂为摘录，不是完整逐行 UART 原文。
+模型：unoverlapping / N=6；块原点：(112,196)，零起始坐标。
+
+Network only: 37.307 ms/pixel, 152.810 s total
+Patch extraction + normalization: 0.389 ms/pixel
+Compute incl. extraction: 37.696 ms/pixel
+Loop wall incl. progress UART: 154.406 s
+Board vs PC fixed labels: 4096/4096 (100%)
+Ground-truth OA (nonzero labels only): 3411/3452 (98.8123%)
+Rendering + flush + export instructions: 25.433 ms
+BMP DDR address: 0x0070b860
+BMP length: 786486 bytes
+
+对应本次地址的导出命令：
+mrd -bin -file D:/TT_HSI_FPGA/board_results/board_prediction.bmp -size b 0x0070b860 786486
+
+状态：完整板上推理已通过；PS已报告BMP地址及长度。
+用户执行XSCT读取后称未找到文件，本地尚未确认BMP落盘或打开。
+上述板上计时不包含电脑执行JTAG读取；不能据此认定文件导出成功。

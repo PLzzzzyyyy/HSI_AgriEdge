@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "offline_protocol": "all 3 scenes, KEY5/KEY6 single/double, real paired package registry; no peer",
+  "geometry": "<=4096 pixels and <=6000 square metres; simple 3-5 vertex polygon, pixel-centre membership",
+  "stop": "committed-row boundary only, no DMA cancellation",
+  "reconnect": "late PC packets rejected; explicit idle-terminal handshake; original claim retained",
+  "default": "LongKou v2, CRC 27231983; cross-scene models remain scene-specific",
+  "tests": [
+    "test_offline_keys.cpp",
+    "test_key_protocol.cpp",
+    "test_key_dispatch.py: 6 passed",
+    "test_board_keys.py: 2 passed",
+    "test_terminal_handoff.py: 4 passed",
+    "test_dp_dashboard.cpp: 3 scenes passed",
+    "test_dp_parcel.cpp: passed",
+    "test_key_scene_ui.js: passed"
+  ],
+  "build": "Vitis 2026.1 PASS, zero application warnings",
+  "continuous_offline_probe": "two repeated probes on active scan, same task and unchanged committed pixel count; PASS",
+  "final_candidate": "gcs_offline_keys_20261026_v2"
+}

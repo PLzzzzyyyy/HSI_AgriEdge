@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "tasks": [
+    {
+      "path": "build\\host\\gcs_roi\\task_20261021_184556_549955",
+      "state": "done",
+      "integrity_error": false,
+      "energy_est_j": 148.6015040590606
+    },
+    {
+      "path": "build\\host\\gcs_roi\\task_20261021_184625_821076",
+      "state": "done",
+      "integrity_error": false,
+      "energy_est_j": 0.4506228841738701
+    }
+  ],
+  "frozen_assets_match": true
+}

@@ -1,0 +1,21 @@
+农情分析系统 — 一键启动
+[1/4] Python：D:\FPGA.GAME\HSI_AgriEdge_team_20261017\.venv\Scripts\python.exe
+[2/4] 正在下载板卡固件，约需 30～60 秒。
+下载日志：D:\FPGA.GAME\HSI_AgriEdge_team_20261017\.runtime-tmp\download_20261026_200354_17412.log
+  下载进行中……已等待 10 秒
+  下载进行中……已等待 20 秒
+  下载进行中……已等待 30 秒
+ROOT   : D:/FPGA.GAME/HSI_AgriEdge_team_20261017
+APP    : gcs_keys.elf
+== [1/4] System reset ==
+== [2/4] Program PL ==
+== [3/4] Run FSBL / initialize PS and DDR ==
+== [4/4] Download application ==
+== Firmware download complete; monitor output still requires verification ==
+板卡固件下载完成。
+[3/4] 已有控制台服务，复用现有服务。
+正在核对板卡启动状态……
+  板卡仍在初始化，稍后重读启动记录……
+板卡已连接；DP 初始化返回码：0
+[4/4] 控制台地址：http://127.0.0.1:8765/
+网页服务已就绪。可以关闭本启动窗口。

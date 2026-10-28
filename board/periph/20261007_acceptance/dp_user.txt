@@ -1,0 +1,9 @@
+--- C3c DP: PS DisplayPort 1920x1080@60 RGBA8888 test pattern, polled (no HPD/VSync interrupts) ---
+  frame drawn + flushed in 24.8 ms (8294400 B at 0x00201F00)
+  waiting for HPD (monitor on DP connector, powered on), up to 30 s...
+  HPD high after 0.0 s
+  attempt 1: link training OK, lanes 2, link rate code 0x14 (0x06 1.62 / 0x0A 2.7 / 0x14 5.4 Gbps)
+  video stream on, pixel clock 148500000 Hz, link status OK
+C3c DP STREAMING: check the monitor: 1920x1080, orange 4 px border on all four edges,
+  bars left->right white yellow cyan green magenta red blue black (red/blue swapped = wrong byte order),
+  bottom-left gray ramp, bottom-right 32 px checkerboard. PASS = picture exactly like this (record by eye/photo)

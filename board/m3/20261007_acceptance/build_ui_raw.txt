@@ -1,0 +1,55 @@
+2026-10-07T17:33:55.468211200255-17:33:55 **** Build of configuration Debug for project test_m3a ****
+000-make all 
+000-'Building file: ../src/m3a_bench.cpp'
+000-'Invoking: ARM v8 g++ compiler'
+000-aarch64-none-elf-g++ -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/m3a_bench.o" -mcpu=cortex-a53 -ffp-contract=off -ffunction-sections -fdata-sections -Wall -Wextra -Werror -ID:/HSI_AgriEdge/vitis/m3a_plat/export/m3a_plat/sw/m3a_plat/standalone_domain/bspinclude/include -MMD -MP -MF"src/m3a_bench.d" -MT"src/m3a_bench.o" -o "src/m3a_bench.o" "../src/m3a_bench.cpp"
+000-In file included from ../src/m3a_bench.cpp:8:
+000/m3a_plat/export/m3a_plat/sw/m3a_plat/standalone_domain/bspinclude/include/xtime_l.h65-1-1#pragma message: For the sleep routines, Global timer is being used0-D:/HSI_AgriEdge/vitis/m3a_plat/export/m3a_plat/sw/m3a_plat/standalone_domain/bspinclude/include/xtime_l.h:65:70: note: #pragma message: For the sleep routines, Global timer is being used
+000-   65 | #pragma message ("For the sleep routines, Global timer is being used")
+000-      |                                                                      ^
+000-'Finished building: ../src/m3a_bench.cpp'
+000-' '
+000-'Building file: ../src/m3a_vectors.c'
+000-'Invoking: ARM v8 g++ compiler'
+000-aarch64-none-elf-g++ -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/m3a_vectors.o" -mcpu=cortex-a53 -ffp-contract=off -ffunction-sections -fdata-sections -Wall -Wextra -Werror -ID:/HSI_AgriEdge/vitis/m3a_plat/export/m3a_plat/sw/m3a_plat/standalone_domain/bspinclude/include -MMD -MP -MF"src/m3a_vectors.d" -MT"src/m3a_vectors.o" -o "src/m3a_vectors.o" "../src/m3a_vectors.c"
+000-'Finished building: ../src/m3a_vectors.c'
+000-' '
+000-'Building file: ../src/main.cpp'
+000-'Invoking: ARM v8 g++ compiler'
+000-aarch64-none-elf-g++ -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a53 -ffp-contract=off -ffunction-sections -fdata-sections -Wall -Wextra -Werror -ID:/HSI_AgriEdge/vitis/m3a_plat/export/m3a_plat/sw/m3a_plat/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+000-'Finished building: ../src/main.cpp'
+000-' '
+000-'Building file: ../src/tt_data.c'
+000-'Invoking: ARM v8 g++ compiler'
+000-aarch64-none-elf-g++ -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/tt_data.o" -mcpu=cortex-a53 -ffp-contract=off -ffunction-sections -fdata-sections -Wall -Wextra -Werror -ID:/HSI_AgriEdge/vitis/m3a_plat/export/m3a_plat/sw/m3a_plat/standalone_domain/bspinclude/include -MMD -MP -MF"src/tt_data.d" -MT"src/tt_data.o" -o "src/tt_data.o" "../src/tt_data.c"
+000-'Finished building: ../src/tt_data.c'
+000-' '
+000-'Building file: ../src/tt_hw_sim.cpp'
+000-'Invoking: ARM v8 g++ compiler'
+000-aarch64-none-elf-g++ -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/tt_hw_sim.o" -mcpu=cortex-a53 -ffp-contract=off -ffunction-sections -fdata-sections -Wall -Wextra -Werror -ID:/HSI_AgriEdge/vitis/m3a_plat/export/m3a_plat/sw/m3a_plat/standalone_domain/bspinclude/include -MMD -MP -MF"src/tt_hw_sim.d" -MT"src/tt_hw_sim.o" -o "src/tt_hw_sim.o" "../src/tt_hw_sim.cpp"
+000-'Finished building: ../src/tt_hw_sim.cpp'
+000-' '
+000-'Building file: ../src/tt_m3a.cpp'
+000-'Invoking: ARM v8 g++ compiler'
+000-aarch64-none-elf-g++ -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/tt_m3a.o" -mcpu=cortex-a53 -ffp-contract=off -ffunction-sections -fdata-sections -Wall -Wextra -Werror -ID:/HSI_AgriEdge/vitis/m3a_plat/export/m3a_plat/sw/m3a_plat/standalone_domain/bspinclude/include -MMD -MP -MF"src/tt_m3a.d" -MT"src/tt_m3a.o" -o "src/tt_m3a.o" "../src/tt_m3a.cpp"
+000-'Finished building: ../src/tt_m3a.cpp'
+000-' '
+000-'Building file: ../src/tt_net.cpp'
+000-'Invoking: ARM v8 g++ compiler'
+000-aarch64-none-elf-g++ -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/tt_net.o" -mcpu=cortex-a53 -ffp-contract=off -ffunction-sections -fdata-sections -Wall -Wextra -Werror -ID:/HSI_AgriEdge/vitis/m3a_plat/export/m3a_plat/sw/m3a_plat/standalone_domain/bspinclude/include -MMD -MP -MF"src/tt_net.d" -MT"src/tt_net.o" -o "src/tt_net.o" "../src/tt_net.cpp"
+000-'Finished building: ../src/tt_net.cpp'
+000-' '
+000-'Building target: test_m3a.elf'
+000-'Invoking: ARM v8 g++ linker'
+000-aarch64-none-elf-g++ -Wl,--gc-sections -Wl,-T -Wl,../src/lscript.ld -LD:/HSI_AgriEdge/vitis/m3a_plat/export/m3a_plat/sw/m3a_plat/standalone_domain/bsplib/lib -o "test_m3a.elf"  ./src/m3a_bench.o ./src/m3a_vectors.o ./src/main.o ./src/tt_data.o ./src/tt_hw_sim.o ./src/tt_m3a.o ./src/tt_net.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: test_m3a.elf'
+000-' '
+000-'Invoking: ARM v8 Print Size'
+000-aarch64-none-elf-size test_m3a.elf  |tee "test_m3a.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-1939340	   4560	1292628	3236528	 3162b0	test_m3a.elf
+000-'Finished building: test_m3a.elf.size'
+000-' '
+00255-
+17:34:01 Build Finished (took 6s.326ms)
+

@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "base_commit": "01462f4a9d17b69206708568ac24dcb990a14cae",
+  "stage": "closed-gate",
+  "sources": [
+    {
+      "path": "src/ps/s2b_idle_app/main.cpp",
+      "destination": "src/main.cpp",
+      "sha256": "4b7d53309f9cbd82c8e4979afd8018e3b123370c52abbfd6626f93e5d03bb82a",
+      "includes": [
+        "boot_id.h",
+        "cstdint",
+        "idle_lwip.h",
+        "lwip/etharp.h",
+        "lwip/init.h",
+        "lwip/ip4_frag.h",
+        "lwip/priv/tcp_priv.h",
+        "netif/xadapter.h",
+        "xil_cache.h",
+        "xil_exception.h",
+        "xparameters.h",
+        "xscugic.h",
+        "xtime_l.h",
+        "xuartps_hw.h"
+      ]
+    },
+    {
+      "path": "src/ps/s2b_idle_app/boot_id.cpp",
+      "destination": "src/boot_id.cpp",
+      "sha256": "ddaecf8f21e473698a25a10cb71a848fc75fc594c6d19728ee18b6e2b0a61660",
+      "includes": [
+        "boot_id.h",
+        "xparameters.h",
+        "xtime_l.h",
+        "xuartps_hw.h"
+      ]
+    },
+    {
+      "path": "src/ps/s2b_idle_app/boot_id.h",
+      "destination": "src/boot_id.h",
+      "sha256": "4a97b316569629db6de3edee962558d1862bf9c7489b6a041ba4670c6d6e5dec",
+      "includes": [
+        "stdint.h"
+      ]
+    },
+    {
+      "path": "src/ps/net/idle_lwip.cpp",
+      "destination": "src/idle_lwip.cpp",
+      "sha256": "793f7d8477ce60adeffcdab478582dcc47d87a99891e5e618bfa7f1927ed0aaa",
+      "includes": [
+        "idle_lwip.h",
+        "xtime_l.h"
+      ]
+    },
+    {
+      "path": "src/ps/net/idle_lwip.h",
+      "destination": "src/idle_lwip.h",
+      "sha256": "61193a80c4ba4de0ba19ea000d6e5cda48772a74b43be3331257cc1849f49f12",
+      "includes": [
+        "idle_protocol.h",
+        "lwip/udp.h"
+      ]
+    },
+    {
+      "path": "src/ps/net/idle_protocol.cpp",
+      "destination": "src/idle_protocol.cpp",
+      "sha256": "14049767d860dcd7025f9429e5213f612794c800ad6458ec57c197c8d70426e6",
+      "includes": [
+        "idle_protocol.h",
+        "string.h"
+      ]
+    },
+    {
+      "path": "src/ps/net/idle_protocol.h",
+      "destination": "src/idle_protocol.h",
+      "sha256": "5093cc50e6a62fc4835a82bb34cf7ed96a8a0ab39e8f25c61f4eb3209c48afc5",
+      "includes": [
+        "stddef.h",
+        "stdint.h"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "report/system_s2b/20261010_log_host/manifest.json",
+      "sha256": "32ba646e72e4f5841d595a86d8a6c675b315df58c832449e570948c7e32eb8b0"
+    },
+    {
+      "path": "report/system_s2b/20261010_boot_id_host_r1/manifest.json",
+      "sha256": "b6176118782c4aa58fcfabe66f9ab13b1d2528554400c6288b06df0e0402bc85"
+    },
+    {
+      "path": "report/system_s2b/20261009_prepare_r1/manifest.json",
+      "sha256": "b8e264747eecd1b232a4b0d456a64a6a6d2b0366de45b7576b57b3e49b353ce6"
+    },
+    {
+      "path": "report/system_s2b/20261010_log_host/review.md",
+      "sha256": "1a65b10e3f51115143e5a26e7ad370a6d3992bc684c5f36a7e4d422218986af9"
+    },
+    {
+      "path": "report/system_s2b/20261010_boot_id_host_r1/review.md",
+      "sha256": "8015c74e88c11ba7ff8b88feb6be87224e58d3254aad57cddb126243fbf7157d"
+    }
+  ]
+}

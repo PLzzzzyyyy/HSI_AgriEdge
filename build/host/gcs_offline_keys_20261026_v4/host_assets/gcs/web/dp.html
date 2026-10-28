@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DP 实际画面镜像</title>
+<style>html,body{margin:0;background:#0b1016;color:#d6e2ee;font:15px system-ui}header{display:flex;gap:14px;align-items:center;padding:12px 20px;flex-wrap:wrap}a,button{color:#2dd4bf;background:#111923;border:1px solid #284153;border-radius:5px;padding:8px;text-decoration:none;cursor:pointer}#screen{display:block;width:100%;height:auto;max-height:calc(100vh - 85px);object-fit:contain}small{color:#94a3b8}body:fullscreen header{display:none}body:fullscreen #screen{height:100vh;max-height:100vh}#state{flex:1}</style>
+<header><strong>DP 实际画面镜像</strong><button id="toggle">开始镜像</button><button id="full">全屏</button><a href="/">返回控制台</a><span id="state">板端实际帧缓冲 · 1920×1080 · RGB565 传输；可用 OBS 或系统录屏录制</span><small>镜像占用板卡和网口资源；性能测试时请暂停。</small></header>
+<img id="screen" alt="点击开始镜像，读取当前 DP 实际显示画面">
+<script>
+'use strict';let active=false,busy=false,url=null,frames=0;
+const state=document.querySelector('#state'),toggle=document.querySelector('#toggle'),screen=document.querySelector('#screen');
+toggle.onclick=()=>{active=!active;toggle.textContent=active?'暂停镜像':'开始镜像';if(active)update();else state.textContent='镜像已暂停，保留最后一帧';};
+document.querySelector('#full').onclick=()=>document.body.requestFullscreen();
+async function update(){if(!active||busy)return;busy=true;const start=performance.now();try{const response=await fetch('/api/dp/frame.png',{cache:'no-store'});if(!response.ok){const value=await response.json();throw Error(value.detail||response.statusText);}const next=URL.createObjectURL(await response.blob());screen.src=next;if(url)URL.revokeObjectURL(url);url=next;frames++;state.textContent=`实时镜像 · 1920×1080 · 第 ${frames} 帧 · ${new Date().toLocaleTimeString()} · 读取 ${(performance.now()-start).toFixed(0)} ms`;}catch(e){state.textContent=`镜像未更新：${e.message}`;}finally{busy=false;if(active)setTimeout(update,Math.max(100,1000-(performance.now()-start)));}}
+</script></html>

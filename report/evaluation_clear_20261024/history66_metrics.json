@@ -1,0 +1,244 @@
+{
+  "n": 388,
+  "test_total": 203642,
+  "received_pixels": 800,
+  "coverage": 0.0019053044067530273,
+  "complete_test_coverage": false,
+  "OA": 0.8685567010309279,
+  "AA": 0.8982422511925618,
+  "Kappa": 0.8227469387389486,
+  "kappa_note": null,
+  "per_class": [
+    1.0,
+    null,
+    null,
+    0.6938775510204082,
+    null,
+    null,
+    0.9658119658119658,
+    0.875,
+    0.9565217391304348
+  ],
+  "precision": [
+    0.8773584905660378,
+    0.0,
+    0.0,
+    1.0,
+    null,
+    0.0,
+    1.0,
+    0.3888888888888889,
+    0.7333333333333333
+  ],
+  "f1": [
+    0.9346733668341709,
+    0.0,
+    0.0,
+    0.8192771084337349,
+    null,
+    0.0,
+    0.9826086956521739,
+    0.5384615384615384,
+    0.8301886792452831
+  ],
+  "macro_F1": 0.8210418777253802,
+  "weighted_F1": 0.8910453798375646,
+  "correct_pixels": 337,
+  "evaluated_classes": 5,
+  "predicted_counts": [
+    106,
+    13,
+    2,
+    102,
+    0,
+    4,
+    113,
+    18,
+    30
+  ],
+  "support": [
+    93,
+    0,
+    0,
+    147,
+    0,
+    0,
+    117,
+    8,
+    23
+  ],
+  "cm": [
+    [
+      93,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      12,
+      13,
+      2,
+      102,
+      0,
+      0,
+      0,
+      11,
+      7
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      113,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      7,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      22
+    ]
+  ],
+  "matrix_axes": "rows=true, columns=predicted",
+  "task_test_total": 203642,
+  "task_test_coverage": 0.0019053044067530273,
+  "complete_task_test_coverage": false,
+  "source": "board",
+  "computation": "CPU statistics of board predictions; no PC model inference",
+  "evaluation": {
+    "schema": 2,
+    "scene": "longkou",
+    "shape": [
+      550,
+      400
+    ],
+    "classes": [
+      "玉米",
+      "棉花",
+      "芝麻",
+      "阔叶大豆",
+      "窄叶大豆",
+      "水稻",
+      "水体",
+      "道路与房屋",
+      "混合杂草"
+    ],
+    "bands": 270,
+    "label_base": 1,
+    "split": "WHU-Hi longkou official Train100/Test100",
+    "scope": "FIXED_LABELS_NOT_MODEL_OR_BOARD_SCORE",
+    "files": {
+      "train": {
+        "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Train100.mat",
+        "bytes": 3549,
+        "sha256": "e4788a2135f38cde294cacdbcf44c97efdb06cc9c3a5d53f5269a563b66cd009",
+        "crc32": "7041dd64"
+      },
+      "test": {
+        "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Test100.mat",
+        "bytes": 7653,
+        "sha256": "a17a82530b869a794950f3169b9aff6c0dc1f77c4a7b3e5f3912227450736c8c",
+        "crc32": "d9628ff7"
+      },
+      "gt": {
+        "path": "data/scenes/longkou/gt_u8.bin",
+        "bytes": 220000,
+        "sha256": "0117166fe39891d09d188dd719c7e393f74bb30d01e23798c0ab69d4ee1a496e",
+        "crc32": "ba32d64d"
+      }
+    },
+    "train_counts": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "test_pixels": 203642,
+    "manifest_sha256": "432ce75c745427f097c5b9ab1c93161990d09eb695e2a3f463031726eaf7c0d7"
+  },
+  "task_status": "stopped",
+  "identity": {
+    "boot_id": "228ce11d",
+    "session": "a40473d9",
+    "task": 4,
+    "wcrc": "27231983",
+    "scene": "longkou",
+    "model": "v2"
+  },
+  "prediction_words_seen_sha256": "fd54c674df66f793ce7a48289df46201d5255c0d1172af765dba1ccb5ab10c27",
+  "scope": "FIXED_TEST100_ON_RECEIVED_BOARD_PREDICTIONS_NOT_NEW_INFERENCE"
+}

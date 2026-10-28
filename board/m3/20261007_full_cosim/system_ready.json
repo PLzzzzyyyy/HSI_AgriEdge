@@ -1,0 +1,450 @@
+{
+  "status": "M3A_READY_FOR_SYSTEM_BUILD",
+  "log": "D:\\HSI_AgriEdge\\build\\host\\m3a_full_20261007\\vitis_hls.log",
+  "log_sha256": "8c8c412ad97d5d29696589196657bb92e119bda911700b4c1317d2e2988f8fdf",
+  "snapshot_files_matched": 313,
+  "export_rtl_files_matched": 88,
+  "note": "Source and synthesis match; IP export simulation-only blocks excluded from textual equivalence. Not a formal equivalence proof or board PASS.",
+  "rtl": [
+    {
+      "name": "tt_engine.v",
+      "syn_sha256": "0d41ab76dcfcc2d3fbd24131a7c67f85d219cfedf58b2ff76d602024e7c4028a",
+      "export_sha256": "7f3cec2ee0597769057386a4c5be3ba03a34624c3d01299dba4ac763de792da1"
+    },
+    {
+      "name": "tt_engine_attn_V_0.v",
+      "syn_sha256": "b2f8bd2f6bf6af708d95c34c8ea3fc3a6c455e5c54a0e0f3060adab56daedbf1",
+      "export_sha256": "b2f8bd2f6bf6af708d95c34c8ea3fc3a6c455e5c54a0e0f3060adab56daedbf1"
+    },
+    {
+      "name": "tt_engine_copy_ob.v",
+      "syn_sha256": "c10cefd126742b2985d61fcd78ca388ddcabd63cbb985af38c6adb59d229e0e1",
+      "export_sha256": "c10cefd126742b2985d61fcd78ca388ddcabd63cbb985af38c6adb59d229e0e1"
+    },
+    {
+      "name": "tt_engine_CTRL_s_axi.v",
+      "syn_sha256": "81845e97cf7dfe36fa38018db2bf6dad260fc7549c7082906b9a2eb52e0593fe",
+      "export_sha256": "81845e97cf7dfe36fa38018db2bf6dad260fc7549c7082906b9a2eb52e0593fe"
+    },
+    {
+      "name": "tt_engine_dataflow_in_loop_VITIS_LOOP_275_1.v",
+      "syn_sha256": "24476be1bbb3fb64d0fb6a6166678ccad1c632a1ac81c3c64b929b2d11945a82",
+      "export_sha256": "24476be1bbb3fb64d0fb6a6166678ccad1c632a1ac81c3c64b929b2d11945a82"
+    },
+    {
+      "name": "tt_engine_dataflow_in_loop_VITIS_LOOP_275_1_t1_V_0_0_0.v",
+      "syn_sha256": "6dddab67f106ac924f69bc59cf8d08a76939e980f98311b68b1787e28434d842",
+      "export_sha256": "6dddab67f106ac924f69bc59cf8d08a76939e980f98311b68b1787e28434d842"
+    },
+    {
+      "name": "tt_engine_dataflow_in_loop_VITIS_LOOP_275_1_t1_V_0_0_0_memcore.v",
+      "syn_sha256": "8104dc0e23b94fa95562a0b8912449703d8ed0061c1c71721afe9c569848e865",
+      "export_sha256": "8104dc0e23b94fa95562a0b8912449703d8ed0061c1c71721afe9c569848e865"
+    },
+    {
+      "name": "tt_engine_dataflow_in_loop_VITIS_LOOP_275_1_t2_V_0_0_0.v",
+      "syn_sha256": "3f7a81b114a408899baaa779303b1f3c3027b59582c48cf55b9c172fd10e416b",
+      "export_sha256": "3f7a81b114a408899baaa779303b1f3c3027b59582c48cf55b9c172fd10e416b"
+    },
+    {
+      "name": "tt_engine_dataflow_in_loop_VITIS_LOOP_275_1_t2_V_0_0_0_memcore.v",
+      "syn_sha256": "e04b2a27b55db83da4612ae3a995c5ae35b0fc63ad3856b92e85ce4211776e04",
+      "export_sha256": "e04b2a27b55db83da4612ae3a995c5ae35b0fc63ad3856b92e85ce4211776e04"
+    },
+    {
+      "name": "tt_engine_dump_x.v",
+      "syn_sha256": "24bfa713dcc3e1e47c6afeb823731493ec92cedaf0ac28f89641284e408667f3",
+      "export_sha256": "24bfa713dcc3e1e47c6afeb823731493ec92cedaf0ac28f89641284e408667f3"
+    },
+    {
+      "name": "tt_engine_fcmp_32ns_32ns_1_2_no_dsp_1.v",
+      "syn_sha256": "6b24e28d5826e993b6f529deb723b682f29a5688014b309df9060ba2a7f56a6b",
+      "export_sha256": "6b24e28d5826e993b6f529deb723b682f29a5688014b309df9060ba2a7f56a6b"
+    },
+    {
+      "name": "tt_engine_fdiv_32ns_32ns_32_26_no_dsp_1.v",
+      "syn_sha256": "794b7cdbaad2be5e77d9a2c8bda2ca7aa51285b1b7b0d4432c48dc6551928691",
+      "export_sha256": "794b7cdbaad2be5e77d9a2c8bda2ca7aa51285b1b7b0d4432c48dc6551928691"
+    },
+    {
+      "name": "tt_engine_fifo_w12_d3_S.v",
+      "syn_sha256": "58646136f67288d594c3b1a76ed374f2a275ee76a5a37dca3a3ace3b42024870",
+      "export_sha256": "58646136f67288d594c3b1a76ed374f2a275ee76a5a37dca3a3ace3b42024870"
+    },
+    {
+      "name": "tt_engine_fifo_w3_d3_S.v",
+      "syn_sha256": "02e6b9920d83f471dbf5c1149b99c68a63676a199b82848829af81fd9d4da6e4",
+      "export_sha256": "02e6b9920d83f471dbf5c1149b99c68a63676a199b82848829af81fd9d4da6e4"
+    },
+    {
+      "name": "tt_engine_fmul_32ns_32ns_32_6_max_dsp_1.v",
+      "syn_sha256": "aca7a70096d561ceb8d9ca4decd1919d4acd5257e1ffddc75d23afb617f3fe21",
+      "export_sha256": "aca7a70096d561ceb8d9ca4decd1919d4acd5257e1ffddc75d23afb617f3fe21"
+    },
+    {
+      "name": "tt_engine_FM_m_axi.v",
+      "syn_sha256": "e8d50cc6c46f9bb90ec8b2eb7eb61b1c58fc404ef4c647567608b5a591ced08c",
+      "export_sha256": "e8d50cc6c46f9bb90ec8b2eb7eb61b1c58fc404ef4c647567608b5a591ced08c"
+    },
+    {
+      "name": "tt_engine_fsqrt_32ns_32ns_32_28_no_dsp_1.v",
+      "syn_sha256": "50b58a183e32dc309bed7a33a4bd282d5a2077687c5f5dfe1e660239d4cecb49",
+      "export_sha256": "50b58a183e32dc309bed7a33a4bd282d5a2077687c5f5dfe1e660239d4cecb49"
+    },
+    {
+      "name": "tt_engine_lg.v",
+      "syn_sha256": "783a07007ea186fe700077592a592bd01efd84f5c684a276acfaf6902f0119dc",
+      "export_sha256": "783a07007ea186fe700077592a592bd01efd84f5c684a276acfaf6902f0119dc"
+    },
+    {
+      "name": "tt_engine_load_head.v",
+      "syn_sha256": "93bc767c7834be2e473520ad15649d4a380cb306e95b29738bfbbb9561128f52",
+      "export_sha256": "93bc767c7834be2e473520ad15649d4a380cb306e95b29738bfbbb9561128f52"
+    },
+    {
+      "name": "tt_engine_load_weights.v",
+      "syn_sha256": "ef35a86cc774d0514ca612d69233731ddf486e6dc5920f2bbf5caae468594d8e",
+      "export_sha256": "ef35a86cc774d0514ca612d69233731ddf486e6dc5920f2bbf5caae468594d8e"
+    },
+    {
+      "name": "tt_engine_load_weights_tmp_V_0.v",
+      "syn_sha256": "044ec26b6b76455d23fbddb8f7a0c41e95489d217d27853f1a3abf19e34cb03e",
+      "export_sha256": "044ec26b6b76455d23fbddb8f7a0c41e95489d217d27853f1a3abf19e34cb03e"
+    },
+    {
+      "name": "tt_engine_load_x.v",
+      "syn_sha256": "ff1c4ac11bf4226d1d5a8483266d36ebf0cd4b89658021b87af8cd7c46a2fc49",
+      "export_sha256": "ff1c4ac11bf4226d1d5a8483266d36ebf0cd4b89658021b87af8cd7c46a2fc49"
+    },
+    {
+      "name": "tt_engine_mac_muladd_18s_16s_39ns_39_4_1.v",
+      "syn_sha256": "6eb903328e49c95ffa8faa997d10524d59f7517178a6dca96565f52dcb3e1441",
+      "export_sha256": "6eb903328e49c95ffa8faa997d10524d59f7517178a6dca96565f52dcb3e1441"
+    },
+    {
+      "name": "tt_engine_mac_muladd_18s_16s_48ns_48_4_1.v",
+      "syn_sha256": "ce12df07c71e6bc2ab07ec0c96995f439154b2a8df5c124a6f5d258c444a271c",
+      "export_sha256": "ce12df07c71e6bc2ab07ec0c96995f439154b2a8df5c124a6f5d258c444a271c"
+    },
+    {
+      "name": "tt_engine_mac_muladd_18s_18s_36s_37_4_1.v",
+      "syn_sha256": "ef06f536268f30118e03fbd03f079a04f746252e54f4fdb09f48e77819134a29",
+      "export_sha256": "ef06f536268f30118e03fbd03f079a04f746252e54f4fdb09f48e77819134a29"
+    },
+    {
+      "name": "tt_engine_mac_muladd_18s_18s_37s_37_4_1.v",
+      "syn_sha256": "3b53532025f4a96f75d6056e3026bb8419c50a673d111d250abbedc219e6b2c0",
+      "export_sha256": "3b53532025f4a96f75d6056e3026bb8419c50a673d111d250abbedc219e6b2c0"
+    },
+    {
+      "name": "tt_engine_mac_muladd_18s_18s_37s_38_4_1.v",
+      "syn_sha256": "9f2701bdb8807d6259bc8f26fa7623e72056eb15396bc626c517f35ef13a9284",
+      "export_sha256": "9f2701bdb8807d6259bc8f26fa7623e72056eb15396bc626c517f35ef13a9284"
+    },
+    {
+      "name": "tt_engine_mac_muladd_25ns_18s_48ns_48_4_1.v",
+      "syn_sha256": "3ef53cfa05a730131a38133cb57ed1bbab273ac91f4e4032eab4cee1894b1a39",
+      "export_sha256": "3ef53cfa05a730131a38133cb57ed1bbab273ac91f4e4032eab4cee1894b1a39"
+    },
+    {
+      "name": "tt_engine_mac_muladd_3ns_7ns_6ns_9_4_1.v",
+      "syn_sha256": "79b4311c989c7fb03c6962a08cf1874bf1ad6e13a0a15d0b124df7707dff7045",
+      "export_sha256": "79b4311c989c7fb03c6962a08cf1874bf1ad6e13a0a15d0b124df7707dff7045"
+    },
+    {
+      "name": "tt_engine_mode18018.v",
+      "syn_sha256": "6b40e298df2ce43aeb08c1817ebda3d54ce65b7609ea9a80862eb4b11d4e8469",
+      "export_sha256": "6b40e298df2ce43aeb08c1817ebda3d54ce65b7609ea9a80862eb4b11d4e8469"
+    },
+    {
+      "name": "tt_engine_mode2.v",
+      "syn_sha256": "614caaac6d333a082f1c80b3a34a46b87818a0dc243354a83ef421a0790d246c",
+      "export_sha256": "614caaac6d333a082f1c80b3a34a46b87818a0dc243354a83ef421a0790d246c"
+    },
+    {
+      "name": "tt_engine_mode36.v",
+      "syn_sha256": "42ed065843d0bcf2179d36bc2b0ef03d946a609530ab86ab67480af7296758a2",
+      "export_sha256": "42ed065843d0bcf2179d36bc2b0ef03d946a609530ab86ab67480af7296758a2"
+    },
+    {
+      "name": "tt_engine_mul_25ns_24ns_48_1_1.v",
+      "syn_sha256": "66b0d508dbc5cb2acfd71db89b0a8d57b715e613aa9c7a0468be067def778133",
+      "export_sha256": "66b0d508dbc5cb2acfd71db89b0a8d57b715e613aa9c7a0468be067def778133"
+    },
+    {
+      "name": "tt_engine_mul_25ns_25ns_49_1_1.v",
+      "syn_sha256": "05f36d6c1c5a06de83022abd358b610fb2ae88b256348022c56a7aa051958be3",
+      "export_sha256": "05f36d6c1c5a06de83022abd358b610fb2ae88b256348022c56a7aa051958be3"
+    },
+    {
+      "name": "tt_engine_mul_29ns_26ns_54_2_1.v",
+      "syn_sha256": "addac1c0a79650795ad993c93f30dcadacf10356979a630c34c54dfff705e73a",
+      "export_sha256": "addac1c0a79650795ad993c93f30dcadacf10356979a630c34c54dfff705e73a"
+    },
+    {
+      "name": "tt_engine_mul_30s_30s_60_2_1.v",
+      "syn_sha256": "a9ec7a09fc017fafe5f3d67253649724bba8051b5811b5d65a5552b26300fe03",
+      "export_sha256": "a9ec7a09fc017fafe5f3d67253649724bba8051b5811b5d65a5552b26300fe03"
+    },
+    {
+      "name": "tt_engine_mul_32s_14ns_32_2_1.v",
+      "syn_sha256": "83a5d41347b464b81a23a359f51261989e791fc235f0c3b87f582c3fb9e0e9c4",
+      "export_sha256": "83a5d41347b464b81a23a359f51261989e791fc235f0c3b87f582c3fb9e0e9c4"
+    },
+    {
+      "name": "tt_engine_mul_32s_31s_63_2_1.v",
+      "syn_sha256": "8aa5e002270106282f6b86e1ff9e349ead0a8d1ed910adf6ee7cfd2c64a68596",
+      "export_sha256": "8aa5e002270106282f6b86e1ff9e349ead0a8d1ed910adf6ee7cfd2c64a68596"
+    },
+    {
+      "name": "tt_engine_mul_42s_44ns_85_2_1.v",
+      "syn_sha256": "d71d53128928e6d91cad8813a06aa92d0df39c020a79c0d2b7197afcdacc58d6",
+      "export_sha256": "d71d53128928e6d91cad8813a06aa92d0df39c020a79c0d2b7197afcdacc58d6"
+    },
+    {
+      "name": "tt_engine_mul_46ns_13ns_58_3_1.v",
+      "syn_sha256": "76b3fa1b5fc8a5df4356a58694eb38c3dc5e71a813c3c18ae01069b86f09240c",
+      "export_sha256": "76b3fa1b5fc8a5df4356a58694eb38c3dc5e71a813c3c18ae01069b86f09240c"
+    },
+    {
+      "name": "tt_engine_mul_mul_12s_7ns_12_4_1.v",
+      "syn_sha256": "eed8a4375f7a8b1603202a14a494011a14973b1ab5dabf76d9f7a808e5fc40b3",
+      "export_sha256": "eed8a4375f7a8b1603202a14a494011a14973b1ab5dabf76d9f7a808e5fc40b3"
+    },
+    {
+      "name": "tt_engine_mul_mul_16s_16s_31_4_1.v",
+      "syn_sha256": "164f7b68457f931271ad2ec1ce1bda1a0a14bbf52f18a38a0a654a203bad5b79",
+      "export_sha256": "164f7b68457f931271ad2ec1ce1bda1a0a14bbf52f18a38a0a654a203bad5b79"
+    },
+    {
+      "name": "tt_engine_mul_mul_18s_16s_34_4_1.v",
+      "syn_sha256": "1860106d8bdb6640c1c34100a75a6a5654fe474b0892605e155e2866e434f575",
+      "export_sha256": "1860106d8bdb6640c1c34100a75a6a5654fe474b0892605e155e2866e434f575"
+    },
+    {
+      "name": "tt_engine_mul_mul_18s_18s_35_4_1.v",
+      "syn_sha256": "11328ca267d3a6019452af49693c93353aee1416ab0fe9b352393e9908de0999",
+      "export_sha256": "11328ca267d3a6019452af49693c93353aee1416ab0fe9b352393e9908de0999"
+    },
+    {
+      "name": "tt_engine_mul_mul_18s_18s_36_4_1.v",
+      "syn_sha256": "517efa27bc292318a8962fdebb1dde8a2852c3cb86edc75ed436eea6c5f78248",
+      "export_sha256": "517efa27bc292318a8962fdebb1dde8a2852c3cb86edc75ed436eea6c5f78248"
+    },
+    {
+      "name": "tt_engine_mux_1287_16_1_1.v",
+      "syn_sha256": "236c58f69900076e22156c23690f38c844c1804f804d6e3d464b488264788137",
+      "export_sha256": "236c58f69900076e22156c23690f38c844c1804f804d6e3d464b488264788137"
+    },
+    {
+      "name": "tt_engine_mux_245_46_1_1.v",
+      "syn_sha256": "c83e0d85401502f9ac5a0bcc4233fbeefd4d448b9bc1003d5190495b7ce84a31",
+      "export_sha256": "c83e0d85401502f9ac5a0bcc4233fbeefd4d448b9bc1003d5190495b7ce84a31"
+    },
+    {
+      "name": "tt_engine_mux_245_48_1_1.v",
+      "syn_sha256": "8c1d9f76f2bd555668767f211a64118784d2101e32cd690f523147340789c43c",
+      "export_sha256": "8c1d9f76f2bd555668767f211a64118784d2101e32cd690f523147340789c43c"
+    },
+    {
+      "name": "tt_engine_mux_325_32_1_1.v",
+      "syn_sha256": "2c8a75fb2ee79366ff5f6424e3f6b1ec82fecc5d328226c18bf1092abc9bea2c",
+      "export_sha256": "2c8a75fb2ee79366ff5f6424e3f6b1ec82fecc5d328226c18bf1092abc9bea2c"
+    },
+    {
+      "name": "tt_engine_mux_42_18_1_1.v",
+      "syn_sha256": "9cffa6de63274a6eb24d68e74bbb8e61f7097c4b7443aabcaecab535bfd76baa",
+      "export_sha256": "9cffa6de63274a6eb24d68e74bbb8e61f7097c4b7443aabcaecab535bfd76baa"
+    },
+    {
+      "name": "tt_engine_mux_42_18_1_1_x.v",
+      "syn_sha256": "ecd3a33492860d181a413fe2bcbb5f1a710a727bee4f746aac0947b2da92ebae",
+      "export_sha256": "ecd3a33492860d181a413fe2bcbb5f1a710a727bee4f746aac0947b2da92ebae"
+    },
+    {
+      "name": "tt_engine_mux_42_1_1_1.v",
+      "syn_sha256": "d60ec966d3c11c7d42afe23910babcc3262cd60e44283e122d00e7456aa473f9",
+      "export_sha256": "d60ec966d3c11c7d42afe23910babcc3262cd60e44283e122d00e7456aa473f9"
+    },
+    {
+      "name": "tt_engine_mux_546_24_1_1.v",
+      "syn_sha256": "9771028c5169e51b023e6a7694b9a1a089b173063d101b3bcbe66cfec713a270",
+      "export_sha256": "9771028c5169e51b023e6a7694b9a1a089b173063d101b3bcbe66cfec713a270"
+    },
+    {
+      "name": "tt_engine_mux_63_18_1_1.v",
+      "syn_sha256": "be9f6c9dae9ec85d300a328cc0642fbc9b476e51d1430a78ad8cd0243bb816fa",
+      "export_sha256": "be9f6c9dae9ec85d300a328cc0642fbc9b476e51d1430a78ad8cd0243bb816fa"
+    },
+    {
+      "name": "tt_engine_mux_63_24_1_1.v",
+      "syn_sha256": "f34e610675ec9f615e3bc70ed3c2262ca22781706cd9ac3992ddfd65fbe54902",
+      "export_sha256": "f34e610675ec9f615e3bc70ed3c2262ca22781706cd9ac3992ddfd65fbe54902"
+    },
+    {
+      "name": "tt_engine_mux_63_25_1_1.v",
+      "syn_sha256": "67ea5ea60dcb609818bc46f0baa3ac96428a1c5730ab98003d7cf2c6d3010516",
+      "export_sha256": "67ea5ea60dcb609818bc46f0baa3ac96428a1c5730ab98003d7cf2c6d3010516"
+    },
+    {
+      "name": "tt_engine_mux_63_30_1_1.v",
+      "syn_sha256": "40df38f76f7a36c71d9b5be6e9024825ba1fcde7f353dfae7f339956205a265e",
+      "export_sha256": "40df38f76f7a36c71d9b5be6e9024825ba1fcde7f353dfae7f339956205a265e"
+    },
+    {
+      "name": "tt_engine_mux_63_46_1_1.v",
+      "syn_sha256": "fe80df41f3b2baadf5b85ac5b21d16d774d9d98b8c69233e3883b265dad7e1db",
+      "export_sha256": "fe80df41f3b2baadf5b85ac5b21d16d774d9d98b8c69233e3883b265dad7e1db"
+    },
+    {
+      "name": "tt_engine_mux_63_48_1_1.v",
+      "syn_sha256": "c86600d7aff88503107a277cc5dc9598b2197458640d3e4d95d21c0b01062960",
+      "export_sha256": "c86600d7aff88503107a277cc5dc9598b2197458640d3e4d95d21c0b01062960"
+    },
+    {
+      "name": "tt_engine_mux_73_18_1_1.v",
+      "syn_sha256": "893a94edee50d25490a628d953944558d1d4b9a98c338979713dfac82d4223f1",
+      "export_sha256": "893a94edee50d25490a628d953944558d1d4b9a98c338979713dfac82d4223f1"
+    },
+    {
+      "name": "tt_engine_mux_83_16_1_1.v",
+      "syn_sha256": "f3a98a92cfa497f231a7b4b543997cecd2fb4db47ed22459f3b68d61b17f7bef",
+      "export_sha256": "f3a98a92cfa497f231a7b4b543997cecd2fb4db47ed22459f3b68d61b17f7bef"
+    },
+    {
+      "name": "tt_engine_mux_83_1_1_1.v",
+      "syn_sha256": "471a2f95f154a35091ef7cd3d9189f4b2abdce0044492dec8ee395a21d85b9d3",
+      "export_sha256": "471a2f95f154a35091ef7cd3d9189f4b2abdce0044492dec8ee395a21d85b9d3"
+    },
+    {
+      "name": "tt_engine_mux_83_46_1_1.v",
+      "syn_sha256": "a745e6758fda304526b37c56ef23c40f2330dff2282dd07c2db3448be8613cc4",
+      "export_sha256": "a745e6758fda304526b37c56ef23c40f2330dff2282dd07c2db3448be8613cc4"
+    },
+    {
+      "name": "tt_engine_norm_full.v",
+      "syn_sha256": "a5c3f1305d82d03d732d42baccd82f7942c737ea6f9d551236d67985c5fb7509",
+      "export_sha256": "a5c3f1305d82d03d732d42baccd82f7942c737ea6f9d551236d67985c5fb7509"
+    },
+    {
+      "name": "tt_engine_ob_V_0_0.v",
+      "syn_sha256": "6bf91ded30af9ffff7b3570f1e12affadbd35c1f23361cbd00e2a2b10eff58e9",
+      "export_sha256": "6bf91ded30af9ffff7b3570f1e12affadbd35c1f23361cbd00e2a2b10eff58e9"
+    },
+    {
+      "name": "tt_engine_res2.v",
+      "syn_sha256": "07d570c86bca1fee47f5705d480d17a31a415a0deda47b1d33a9d4533b68d9a7",
+      "export_sha256": "07d570c86bca1fee47f5705d480d17a31a415a0deda47b1d33a9d4533b68d9a7"
+    },
+    {
+      "name": "tt_engine_sc_0.v",
+      "syn_sha256": "e31e4a99631114375d2645e52522cddbd16d064c6c03f18820cc71bff49b47e6",
+      "export_sha256": "e31e4a99631114375d2645e52522cddbd16d064c6c03f18820cc71bff49b47e6"
+    },
+    {
+      "name": "tt_engine_sitofp_64s_32_6_no_dsp_1.v",
+      "syn_sha256": "2e5352a300381ec20c33992d654cc93b4355c2c597eb1e4676fd0f50b18d377d",
+      "export_sha256": "2e5352a300381ec20c33992d654cc93b4355c2c597eb1e4676fd0f50b18d377d"
+    },
+    {
+      "name": "tt_engine_store_block.v",
+      "syn_sha256": "8e3be325d637c703c71ea98ac0de6504c1c342b55812fabfc8e4e8aa1b72a1f9",
+      "export_sha256": "8e3be325d637c703c71ea98ac0de6504c1c342b55812fabfc8e4e8aa1b72a1f9"
+    },
+    {
+      "name": "tt_engine_ta_ctx.v",
+      "syn_sha256": "2c7fe529a014d76237316cfb54831169ec5f22147ec9ec05905c2e9190ce743d",
+      "export_sha256": "2c7fe529a014d76237316cfb54831169ec5f22147ec9ec05905c2e9190ce743d"
+    },
+    {
+      "name": "tt_engine_ta_head.v",
+      "syn_sha256": "8d33c9d0bee93933a5899323e3cc22635a42cd098febc763223c5818b2d0db55",
+      "export_sha256": "8d33c9d0bee93933a5899323e3cc22635a42cd098febc763223c5818b2d0db55"
+    },
+    {
+      "name": "tt_engine_ta_head_ta_thi_V.v",
+      "syn_sha256": "0298901cde14a4253a7796d8980d4f89dd0a96f22c08815afb4dc9217c7a2320",
+      "export_sha256": "0298901cde14a4253a7796d8980d4f89dd0a96f22c08815afb4dc9217c7a2320"
+    },
+    {
+      "name": "tt_engine_ta_head_ta_thi_V_rom.dat",
+      "syn_sha256": "e2e026f8e0667f78e174b7b790afadb170deefbf5bd3025b83d0fcf9aadc9460",
+      "export_sha256": "e2e026f8e0667f78e174b7b790afadb170deefbf5bd3025b83d0fcf9aadc9460"
+    },
+    {
+      "name": "tt_engine_ta_head_ta_tlo_V.v",
+      "syn_sha256": "5d380e82cc86a4526b65ab53692492f1778e4cc0993e1371a00d3879b1ec8836",
+      "export_sha256": "5d380e82cc86a4526b65ab53692492f1778e4cc0993e1371a00d3879b1ec8836"
+    },
+    {
+      "name": "tt_engine_ta_head_ta_tlo_V_rom.dat",
+      "syn_sha256": "2567f9758f718619377492bfd7054db4621984416d3753df94a4fb4b4e0a42d3",
+      "export_sha256": "2567f9758f718619377492bfd7054db4621984416d3753df94a4fb4b4e0a42d3"
+    },
+    {
+      "name": "tt_engine_ta_scores.v",
+      "syn_sha256": "d0cc7fbe8d13cfd20f85fea83511574c70cbe93f433195bf369c66a21c05c703",
+      "export_sha256": "d0cc7fbe8d13cfd20f85fea83511574c70cbe93f433195bf369c66a21c05c703"
+    },
+    {
+      "name": "tt_engine_token_pipeline.v",
+      "syn_sha256": "4503c12cfc1c0f87ed06d0f05377bba411ee87cb8b4487cef2e0af057a1ef8f3",
+      "export_sha256": "4503c12cfc1c0f87ed06d0f05377bba411ee87cb8b4487cef2e0af057a1ef8f3"
+    },
+    {
+      "name": "tt_engine_wh_V_0.v",
+      "syn_sha256": "0d851092a3747ad600672d2c097a25d8b4d6e95ee97cdcea83425ced126411af",
+      "export_sha256": "0d851092a3747ad600672d2c097a25d8b4d6e95ee97cdcea83425ced126411af"
+    },
+    {
+      "name": "tt_engine_wh_V_0_ram.dat",
+      "syn_sha256": "efeee24b4407ef591668308565cfff13b26a04d1d54f76d124924c1f0567e12b",
+      "export_sha256": "efeee24b4407ef591668308565cfff13b26a04d1d54f76d124924c1f0567e12b"
+    },
+    {
+      "name": "tt_engine_wm12_V_0.v",
+      "syn_sha256": "32724a12d89fb2e457a9b5ab3df766672d37d8d72507a133c94bd42e91e74dce",
+      "export_sha256": "32724a12d89fb2e457a9b5ab3df766672d37d8d72507a133c94bd42e91e74dce"
+    },
+    {
+      "name": "tt_engine_wm12_V_0_ram.dat",
+      "syn_sha256": "33dcf6f28f88ce15967220137a890d34e6200ea21396798956aaf95de6cd137b",
+      "export_sha256": "33dcf6f28f88ce15967220137a890d34e6200ea21396798956aaf95de6cd137b"
+    },
+    {
+      "name": "tt_engine_wm3_V_0.v",
+      "syn_sha256": "c9b9cf78a04742453d8b10cfb60da7504ddc179b01f5d710d9f6bb83c9c1cbf8",
+      "export_sha256": "c9b9cf78a04742453d8b10cfb60da7504ddc179b01f5d710d9f6bb83c9c1cbf8"
+    },
+    {
+      "name": "tt_engine_wm3_V_0_ram.dat",
+      "syn_sha256": "135ac9e59d6f14da19dd64e556d411784dbd2e4b3d82d8295a2c0934cd62971c",
+      "export_sha256": "135ac9e59d6f14da19dd64e556d411784dbd2e4b3d82d8295a2c0934cd62971c"
+    },
+    {
+      "name": "tt_engine_wm3_V_13.v",
+      "syn_sha256": "b8a28222719a301da7dab2bf1a2825e566deda267ce204b898bc3ecef4a2c9c8",
+      "export_sha256": "b8a28222719a301da7dab2bf1a2825e566deda267ce204b898bc3ecef4a2c9c8"
+    },
+    {
+      "name": "tt_engine_wm3_V_13_ram.dat",
+      "syn_sha256": "aac6f90764ef19d730caa3b6f431de9c4a4f64c429de4d3350587d99da91f42b",
+      "export_sha256": "aac6f90764ef19d730caa3b6f431de9c4a4f64c429de4d3350587d99da91f42b"
+    },
+    {
+      "name": "tt_engine_WT_m_axi.v",
+      "syn_sha256": "3aa9aa09b81309ad3a95c9be1202339f1bed1c0d440ae5d3b55c24ac126df890",
+      "export_sha256": "3aa9aa09b81309ad3a95c9be1202339f1bed1c0d440ae5d3b55c24ac126df890"
+    },
+    {
+      "name": "tt_engine_xa_V_0_0.v",
+      "syn_sha256": "47a192eb59014a551454bf201749f0b2849d1f8178fff9e0ded9641cd7d70ac2",
+      "export_sha256": "47a192eb59014a551454bf201749f0b2849d1f8178fff9e0ded9641cd7d70ac2"
+    },
+    {
+      "name": "tt_engine_xb_V_0_0_0.v",
+      "syn_sha256": "aade7bf128b9225e2c9b6f80f884aa03a777a02676fb2b01704a4633100ba662",
+      "export_sha256": "aade7bf128b9225e2c9b6f80f884aa03a777a02676fb2b01704a4633100ba662"
+    }
+  ]
+}

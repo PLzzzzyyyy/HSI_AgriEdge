@@ -1,0 +1,1122 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/HSI_AgriEdge/build/hls/optimization_build/tt_engine_m3_k7/sol/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2020.2/data/ip'.
+Command: link_design -top design_1_wrapper -part xazu5ev-sfvc784-1-i
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xazu5ev-sfvc784-1-i
+INFO: [Project 1-454] Reading design checkpoint 'd:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_199M_0/design_1_rst_ps8_0_199M_0.dcp' for cell 'design_1_i/rst_ps8_0_199M'
+INFO: [Project 1-454] Reading design checkpoint 'd:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.gen/sources_1/bd/design_1/ip/design_1_tt_engine_0_0/design_1_tt_engine_0_0.dcp' for cell 'design_1_i/tt_engine_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.dcp' for cell 'design_1_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1664.004 ; gain = 4.320
+INFO: [Netlist 29-17] Analyzing 10446 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 5 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [d:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [d:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_199M_0/design_1_rst_ps8_0_199M_0_board.xdc] for cell 'design_1_i/rst_ps8_0_199M/U0'
+Finished Parsing XDC File [d:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_199M_0/design_1_rst_ps8_0_199M_0_board.xdc] for cell 'design_1_i/rst_ps8_0_199M/U0'
+Parsing XDC File [d:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_199M_0/design_1_rst_ps8_0_199M_0.xdc] for cell 'design_1_i/rst_ps8_0_199M/U0'
+Finished Parsing XDC File [d:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_199M_0/design_1_rst_ps8_0_199M_0.xdc] for cell 'design_1_i/rst_ps8_0_199M/U0'
+Parsing XDC File [D:/HSI_AgriEdge/build/vivado/zu5ev_pins.xdc]
+Finished Parsing XDC File [D:/HSI_AgriEdge/build/vivado/zu5ev_pins.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 2140.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4520 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 617 instances
+  RAM16X1S => RAM32X1S (RAMS32): 2006 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32X1S => RAM32X1S (RAMS32): 1568 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 294 instances
+
+14 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 2140.445 ; gain = 1025.996
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xazu5ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xazu5ev'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2191.160 ; gain = 50.715
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: f479044f
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 2935.863 ; gain = 744.703
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 6 inverter(s) to 3508 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: b376b304
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 3162.996 ; gain = 0.656
+INFO: [Opt 31-389] Phase Retarget created 9 cells and removed 307 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 7 inverter(s) to 7 load pin(s).
+Phase 2 Constant propagation | Checksum: 742b9bef
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 3162.996 ; gain = 0.656
+INFO: [Opt 31-389] Phase Constant propagation created 21 cells and removed 375 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 60088782
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 3162.996 ; gain = 0.656
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 419 cells
+INFO: [Opt 31-1021] In phase Sweep, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: 60088782
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 3162.996 ; gain = 0.656
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 9ea892ab
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 3162.996 ; gain = 0.656
+INFO: [Opt 31-389] Phase Shift Register Optimization created 1 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 9ea892ab
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 3162.996 ; gain = 0.656
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               9  |             307  |                                              0  |
+|  Constant propagation         |              21  |             375  |                                              0  |
+|  Sweep                        |               0  |             419  |                                              1  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               1  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.186 . Memory (MB): peak = 3162.996 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 105bcbcb3
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 3162.996 ; gain = 0.656
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 221 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 119 newly gated: 6 Total Ports: 442
+Ending PowerOpt Patch Enables Task | Checksum: 118f47db3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.994 . Memory (MB): peak = 4951.723 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 118f47db3
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:43 . Memory (MB): peak = 4951.723 ; gain = 1788.727
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1fffe4c27
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:30 . Memory (MB): peak = 4951.723 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 1fffe4c27
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:33 . Memory (MB): peak = 4951.723 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 4951.723 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1fffe4c27
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 4951.723 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:03:01 ; elapsed = 00:01:59 . Memory (MB): peak = 4951.723 ; gain = 2811.277
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 4951.723 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:33 ; elapsed = 00:00:23 . Memory (MB): peak = 4951.723 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:01:17 ; elapsed = 00:00:53 . Memory (MB): peak = 4951.723 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xazu5ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xazu5ev'
+WARNING: [Vivado_Tcl 4-1400] -ultrathreads option currently only supported on multi-SLR devices. Continuing placement in regular mode.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 4951.723 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 10c985586
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 4951.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 4951.723 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: fb50161c
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4951.723 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 157fa85aa
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:41 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 157fa85aa
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:41 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+Phase 1 Placer Initialization | Checksum: 157fa85aa
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:42 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 197eddc68
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:40 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1ef3a3347
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:01:45 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 2.1.1.3 PBP: Discrete Incremental
+Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: 17aff9de0
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:01:47 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 2.1.1.4 PBP: Compute Congestion
+Phase 2.1.1.4 PBP: Compute Congestion | Checksum: 17aff9de0
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:48 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 2.1.1.5 PBP: Macro Placement
+Phase 2.1.1.5 PBP: Macro Placement | Checksum: 1b727723d
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:50 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 2.1.1.6 PBP: UpdateTiming
+Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 148ee4c55
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:56 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 2.1.1.7 PBP: Add part constraints
+Phase 2.1.1.7 PBP: Add part constraints | Checksum: 148ee4c55
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:56 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+Phase 2.1.1 Partition Driven Placement | Checksum: 148ee4c55
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:56 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+Phase 2.1 Floorplanning | Checksum: 148ee4c55
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:57 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 148ee4c55
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:57 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 2.3 Global Placement Core
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 2 LUTNM shape to break, 1644 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 2, two critical 0, total 2, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 609 nets or cells. Created 2 new cells, deleted 607 existing cells and moved 0 existing cell
+INFO: [Physopt 32-1030] Pass 1. Identified 44 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 26 nets.  Re-placed 260 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 26 nets or cells. Created 0 new cell, deleted 7 existing cells and moved 260 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.500 . Memory (MB): peak = 6012.516 ; gain = 0.000
+INFO: [Physopt 32-76] Pass 1. Identified 3 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/ap_enable_reg_pp0_iter7. Replicated 71 times.
+INFO: [Physopt 32-81] Processed net design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/icmp_ln222_reg_29082_pp0_iter6_reg. Replicated 71 times.
+INFO: [Physopt 32-81] Processed net design_1_i/rst_ps8_0_199M/U0/peripheral_aresetn[0]. Replicated 26 times.
+INFO: [Physopt 32-232] Optimized 3 nets. Created 168 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 3 nets or cells. Created 168 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 6012.516 ; gain = 0.000
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/B[17] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/p_reg_reg_i_3 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/B[15] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/p_reg_reg_i_5 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/B[2] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/p_reg_reg_i_16 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/B[2] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/p_reg_reg_i_18 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/B[17] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/p_reg_reg_i_1 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/B[16] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/p_reg_reg_i_4 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/B[16] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/p_reg_reg_i_2 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/B[15] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/p_reg_reg_i_3 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/B[0] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/p_reg_reg_i_20 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/B[8] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/p_reg_reg_i_10 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/B[10] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/p_reg_reg_i_10 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/B[0] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/p_reg_reg_i_18 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/B[14] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/p_reg_reg_i_6 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/B[14] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/p_reg_reg_i_4 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/B[1] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/p_reg_reg_i_19 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/B[10] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1728/p_reg_reg_i_8 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/B[9] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/p_reg_reg_i_11 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/B[13] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/p_reg_reg_i_7 could not be replicated
+INFO: [Physopt 32-117] Net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/B[4] could not be optimized because driver design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mux_42_18_1_1_U1727/p_reg_reg_i_16 could not be replicated
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-457] Pass 1. Identified 28 candidate cells for DSP register optimization.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1755/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1767/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1758/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1774/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1769/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1770/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1771/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1761/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1763/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1773/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1766/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1759/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1768/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1756/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1757/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1765/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1753/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1760/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1754/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1764/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1762/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1772/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-665] Processed cell design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode2_U0/mul_mul_18s_16s_34_4_1_U623/tt_engine_mul_mul_18s_16s_34_4_1_DSP48_1_U/p_reg_reg. 34 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1751/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1752/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-665] Processed cell design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode2_U0/mul_mul_18s_16s_34_4_1_U626/tt_engine_mul_mul_18s_16s_34_4_1_DSP48_1_U/p_reg_reg. 34 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode2_U0/mul_mul_18s_16s_34_4_1_U625/tt_engine_mul_mul_18s_16s_34_4_1_DSP48_1_U/p_reg_reg. 34 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1768/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-457] Pass 2. Identified 25 candidate cells for DSP register optimization.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1755/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1767/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1758/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1774/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1769/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1770/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1771/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1761/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1763/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1773/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1766/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1759/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1768/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1756/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1757/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1765/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1753/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1760/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1754/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1764/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1762/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1772/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1751/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1752/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-666] Processed cell design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1768/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg. No change.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 3 nets or cells. Created 102 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 6012.516 ; gain = 0.000
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 6012.516 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            2  |            607  |                   609  |           0  |           1  |  00:00:03  |
+|  Equivalent Driver Rewiring                       |            0  |              7  |                    26  |           0  |           1  |  00:00:06  |
+|  Very High Fanout                                 |          168  |              0  |                     3  |           0  |           1  |  00:00:11  |
+|  Critical Cell                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |          102  |              0  |                     3  |           0  |           1  |  00:00:15  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          272  |            614  |                   641  |           0  |          10  |  00:00:36  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 17fe05e56
+
+Time (s): cpu = 00:05:25 ; elapsed = 00:04:06 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+Phase 2.3 Global Placement Core | Checksum: 1b0778768
+
+Time (s): cpu = 00:05:34 ; elapsed = 00:04:14 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+Phase 2 Global Placement | Checksum: 1b0778768
+
+Time (s): cpu = 00:05:34 ; elapsed = 00:04:14 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1a703fa42
+
+Time (s): cpu = 00:05:44 ; elapsed = 00:04:21 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2780fe119
+
+Time (s): cpu = 00:05:57 ; elapsed = 00:04:31 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 2ad8400bd
+
+Time (s): cpu = 00:06:23 ; elapsed = 00:04:52 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 29a84f390
+
+Time (s): cpu = 00:06:25 ; elapsed = 00:04:53 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 3.3.3 Slice Area Swap
+Phase 3.3.3 Slice Area Swap | Checksum: 27bea267c
+
+Time (s): cpu = 00:06:42 ; elapsed = 00:05:16 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+Phase 3.3 Small Shape DP | Checksum: 1fbd0f2c7
+
+Time (s): cpu = 00:07:07 ; elapsed = 00:05:32 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 20c00c2b2
+
+Time (s): cpu = 00:07:13 ; elapsed = 00:05:41 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 2bac8e5a4
+
+Time (s): cpu = 00:07:14 ; elapsed = 00:05:42 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+Phase 3 Detail Placement | Checksum: 2bac8e5a4
+
+Time (s): cpu = 00:07:15 ; elapsed = 00:05:43 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1e2eb37c1
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.299 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1e7a68717
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 6012.516 ; gain = 0.000
+INFO: [Place 46-35] Processed net design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/acc_V_0_3_1_1_fu_910[38]_i_1_n_11, inserted BUFG to drive 12324 loads.
+INFO: [Place 46-35] Processed net design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/pend_V_0_0_0_1_reg_76620, inserted BUFG to drive 9072 loads.
+INFO: [Place 46-35] Processed net design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/pend_V_0_0_0_2_reg_34754, inserted BUFG to drive 9072 loads.
+INFO: [Place 46-34] Processed net design_1_i/tt_engine_0/inst/grp_load_weights_fu_4882/wm12_V_87_ce0, BUFG insertion was skipped due to possible timing degradation.
+INFO: [Place 46-35] Processed net design_1_i/tt_engine_0/inst/ap_CS_fsm_state103, inserted BUFG to drive 1577 loads.
+INFO: [Place 46-45] Replicated bufg driver design_1_i/tt_engine_0/inst/ap_CS_fsm_reg[102]_replica
+INFO: [Place 46-35] Processed net design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/acc_V_0_0_2_load_reg_6894[47]_i_1_n_11, inserted BUFG to drive 1152 loads.
+INFO: [Place 46-35] Processed net design_1_i/tt_engine_0/inst/grp_ta_head_fu_4394/acc_V_0_01_reg_8760, inserted BUFG to drive 1152 loads.
+INFO: [Place 46-56] BUFG insertion identified 7 candidate nets. Inserted BUFG: 6, Replicated BUFG Driver: 1, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 1, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 2b0808cca
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 6012.516 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 2d81959e3
+
+Time (s): cpu = 00:08:29 ; elapsed = 00:06:41 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.510. For the most accurate timing information please run report_timing.
+
+Time (s): cpu = 00:08:42 ; elapsed = 00:06:56 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+Phase 4.1 Post Commit Optimization | Checksum: 1d7b23ffd
+
+Time (s): cpu = 00:08:43 ; elapsed = 00:06:57 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.352 . Memory (MB): peak = 6012.516 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 28665d53f
+
+Time (s): cpu = 00:08:47 ; elapsed = 00:07:01 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                8x8|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                2x2|                8x8|                4x4|
+|___________|___________________|___________________|___________________|
+|       East|                2x2|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+|       West|                4x4|                8x8|                8x8|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 28665d53f
+
+Time (s): cpu = 00:08:48 ; elapsed = 00:07:02 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+Phase 4.3 Placer Reporting | Checksum: 28665d53f
+
+Time (s): cpu = 00:08:49 ; elapsed = 00:07:03 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 6012.516 ; gain = 0.000
+
+Time (s): cpu = 00:08:49 ; elapsed = 00:07:03 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2452f6c4a
+
+Time (s): cpu = 00:08:50 ; elapsed = 00:07:03 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+Ending Placer Task | Checksum: 202876b3c
+
+Time (s): cpu = 00:08:50 ; elapsed = 00:07:03 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+INFO: [Common 17-83] Releasing license: Implementation
+169 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:08:56 ; elapsed = 00:07:08 . Memory (MB): peak = 6012.516 ; gain = 1060.793
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:26 ; elapsed = 00:00:09 . Memory (MB): peak = 6012.516 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:41 ; elapsed = 00:00:24 . Memory (MB): peak = 6012.516 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 6012.516 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.216 . Memory (MB): peak = 6012.516 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xazu5ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xazu5ev'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+178 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:24 . Memory (MB): peak = 6012.516 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 6012.516 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:40 ; elapsed = 00:00:24 . Memory (MB): peak = 6012.516 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xazu5ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xazu5ev'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: a44baec9 ConstDB: 0 ShapeSum: af882731 RouteDB: aeb39542
+
+Phase 1 Build RT Design
+Nodegraph reading from file.  Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.694 . Memory (MB): peak = 6012.516 ; gain = 0.000
+Phase 1 Build RT Design | Checksum: 76024195
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 6012.516 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 944c1e95 NumContArr: 14bdfd24 Constraints: 4e0dc72c Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: f717e2e5
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 6012.516 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: f717e2e5
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 6012.516 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: f717e2e5
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 6012.516 ; gain = 0.000
+
+Phase 2.4 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.4 Global Clock Net Routing | Checksum: bc4b3e80
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 6012.516 ; gain = 0.000
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 1ffa9b4d0
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:49 . Memory (MB): peak = 6012.516 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.534  | TNS=0.000  | WHS=-0.047 | THS=-1.287 |
+
+Phase 2 Router Initialization | Checksum: 19deff8da
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:25 . Memory (MB): peak = 6029.527 ; gain = 17.012
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00134904 %
+  Global Horizontal Routing Utilization  = 0.000613578 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 146765
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 122570
+  Number of Partially Routed Nets     = 24195
+  Number of Node Overlaps             = 1
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 19deff8da
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:27 . Memory (MB): peak = 6029.527 ; gain = 17.012
+Phase 3 Initial Routing | Checksum: 1de17cc05
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:01:55 . Memory (MB): peak = 6029.527 ; gain = 17.012
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 42507
+ Number of Nodes with overlaps = 6998
+ Number of Nodes with overlaps = 1853
+ Number of Nodes with overlaps = 634
+ Number of Nodes with overlaps = 257
+ Number of Nodes with overlaps = 89
+ Number of Nodes with overlaps = 40
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.067  | TNS=0.000  | WHS=-0.035 | THS=-0.152 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2259d4506
+
+Time (s): cpu = 00:13:57 ; elapsed = 00:09:21 . Memory (MB): peak = 6155.461 ; gain = 142.945
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.067  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 20adada9e
+
+Time (s): cpu = 00:14:31 ; elapsed = 00:09:51 . Memory (MB): peak = 6155.461 ; gain = 142.945
+Phase 4 Rip-up And Reroute | Checksum: 20adada9e
+
+Time (s): cpu = 00:14:31 ; elapsed = 00:09:52 . Memory (MB): peak = 6155.461 ; gain = 142.945
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 23ff8459e
+
+Time (s): cpu = 00:15:06 ; elapsed = 00:10:17 . Memory (MB): peak = 6155.461 ; gain = 142.945
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.067  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 23ff8459e
+
+Time (s): cpu = 00:15:07 ; elapsed = 00:10:17 . Memory (MB): peak = 6155.461 ; gain = 142.945
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 23ff8459e
+
+Time (s): cpu = 00:15:07 ; elapsed = 00:10:18 . Memory (MB): peak = 6155.461 ; gain = 142.945
+Phase 5 Delay and Skew Optimization | Checksum: 23ff8459e
+
+Time (s): cpu = 00:15:08 ; elapsed = 00:10:18 . Memory (MB): peak = 6155.461 ; gain = 142.945
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 25c1d08a9
+
+Time (s): cpu = 00:15:28 ; elapsed = 00:10:32 . Memory (MB): peak = 6155.461 ; gain = 142.945
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.067  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 258065557
+
+Time (s): cpu = 00:15:29 ; elapsed = 00:10:32 . Memory (MB): peak = 6155.461 ; gain = 142.945
+Phase 6 Post Hold Fix | Checksum: 258065557
+
+Time (s): cpu = 00:15:29 ; elapsed = 00:10:33 . Memory (MB): peak = 6155.461 ; gain = 142.945
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 22.7585 %
+  Global Horizontal Routing Utilization  = 26.8375 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1dda014ab
+
+Time (s): cpu = 00:15:31 ; elapsed = 00:10:34 . Memory (MB): peak = 6155.461 ; gain = 142.945
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1dda014ab
+
+Time (s): cpu = 00:15:31 ; elapsed = 00:10:35 . Memory (MB): peak = 6155.461 ; gain = 142.945
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1dda014ab
+
+Time (s): cpu = 00:15:40 ; elapsed = 00:10:45 . Memory (MB): peak = 6155.461 ; gain = 142.945
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.067  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1dda014ab
+
+Time (s): cpu = 00:15:42 ; elapsed = 00:10:46 . Memory (MB): peak = 6155.461 ; gain = 142.945
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:15:42 ; elapsed = 00:10:46 . Memory (MB): peak = 6155.461 ; gain = 142.945
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+194 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:16:12 ; elapsed = 00:11:04 . Memory (MB): peak = 6155.461 ; gain = 142.945
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:34 ; elapsed = 00:00:12 . Memory (MB): peak = 6155.461 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:46 ; elapsed = 00:00:26 . Memory (MB): peak = 6155.461 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:01:12 ; elapsed = 00:00:41 . Memory (MB): peak = 6155.461 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/HSI_AgriEdge/build/vivado/tt_m3a_zu5ev/tt_m3a_zu5ev.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:00 ; elapsed = 00:00:36 . Memory (MB): peak = 6155.461 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+206 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:40 ; elapsed = 00:01:07 . Memory (MB): peak = 6155.461 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 6155.461 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 6155.461 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xazu5ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xazu5ev'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/fmul_32ns_32ns_32_6_max_dsp_1_U2225/tt_engine_ap_fmul_4_max_dsp_32_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP input design_1_i/tt_engine_0/inst/fmul_32ns_32ns_32_6_max_dsp_1_U2225/tt_engine_ap_fmul_4_max_dsp_32_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1751/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1751/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1752/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1752/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1753/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1753/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1754/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1754/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1755/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1755/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1756/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1756/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1757/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1757/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1758/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1758/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1759/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1759/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1760/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1760/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1761/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1761/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1762/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1762/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1763/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1763/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1764/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1764/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1765/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1765/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1766/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1766/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1767/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1767/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1768/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1768/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1769/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1769/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1770/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1770/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1771/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1771/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1772/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1772/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1773/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1773/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1774/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4300/mac_muladd_25ns_18s_48ns_48_4_1_U1774/tt_engine_mac_muladd_25ns_18s_48ns_48_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_scores_fu_4773/mac_muladd_18s_18s_37s_38_4_1_U1896/tt_engine_mac_muladd_18s_18s_37s_38_4_1_DSP48_9_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_scores_fu_4773/mac_muladd_18s_18s_37s_38_4_1_U1896/tt_engine_mac_muladd_18s_18s_37s_38_4_1_DSP48_9_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_scores_fu_4773/mac_muladd_18s_18s_37s_38_4_1_U1897/tt_engine_mac_muladd_18s_18s_37s_38_4_1_DSP48_9_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_scores_fu_4773/mac_muladd_18s_18s_37s_38_4_1_U1897/tt_engine_mac_muladd_18s_18s_37s_38_4_1_DSP48_9_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_scores_fu_4773/mac_muladd_18s_18s_37s_38_4_1_U1898/tt_engine_mac_muladd_18s_18s_37s_38_4_1_DSP48_9_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_scores_fu_4773/mac_muladd_18s_18s_37s_38_4_1_U1898/tt_engine_mac_muladd_18s_18s_37s_38_4_1_DSP48_9_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_scores_fu_4773/mac_muladd_18s_18s_37s_38_4_1_U1899/tt_engine_mac_muladd_18s_18s_37s_38_4_1_DSP48_9_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_scores_fu_4773/mac_muladd_18s_18s_37s_38_4_1_U1899/tt_engine_mac_muladd_18s_18s_37s_38_4_1_DSP48_9_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_scores_fu_4773/mac_muladd_18s_18s_37s_38_4_1_U1900/tt_engine_mac_muladd_18s_18s_37s_38_4_1_DSP48_9_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_scores_fu_4773/mac_muladd_18s_18s_37s_38_4_1_U1900/tt_engine_mac_muladd_18s_18s_37s_38_4_1_DSP48_9_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_scores_fu_4773/mac_muladd_18s_18s_37s_38_4_1_U1901/tt_engine_mac_muladd_18s_18s_37s_38_4_1_DSP48_9_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_ta_scores_fu_4773/mac_muladd_18s_18s_37s_38_4_1_U1901/tt_engine_mac_muladd_18s_18s_37s_38_4_1_DSP48_9_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1000/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1000/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1001/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1001/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1002/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1002/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1003/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1003/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1004/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1004/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1005/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1005/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1006/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1006/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1007/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1007/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1008/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1008/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1009/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1009/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1010/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1010/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1011/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1011/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1012/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1012/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1013/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1013/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1014/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1014/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1015/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1015/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1016/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1016/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1017/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1017/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1018/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1018/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1019/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1019/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1020/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1020/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1021/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1021/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1022/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1022/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1023/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1023/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1024/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1024/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1025/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1025/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1026/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1026/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1027/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1027/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1028/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1028/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1029/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1029/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1030/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1030/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1031/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1031/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1032/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1032/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1033/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1033/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1034/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1034/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1035/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1035/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1036/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1036/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1037/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1037/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1038/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1038/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1039/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1039/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1040/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1040/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1041/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1041/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1042/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1042/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1043/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1043/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1044/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1044/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1045/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1045/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1046/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1046/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1047/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1047/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1048/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1048/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1049/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1049/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1050/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1050/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1051/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1051/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1052/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1052/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1053/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1053/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1054/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1054/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1055/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1055/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1056/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1056/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1057/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1057/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1058/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1058/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1059/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1059/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1060/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1060/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1061/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1061/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1062/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1062/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1063/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1063/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1064/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1064/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1065/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1065/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1066/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1066/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1067/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1067/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1068/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg input design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/mac_muladd_18s_16s_39ns_39_4_1_U1068/tt_engine_mac_muladd_18s_16s_39ns_39_4_1_DSP48_3_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+INFO: [Common 17-14] Message 'DRC DPIP-2' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/fmul_32ns_32ns_32_6_max_dsp_1_U2225/tt_engine_ap_fmul_4_max_dsp_32_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output design_1_i/tt_engine_0/inst/fmul_32ns_32ns_32_6_max_dsp_1_U2225/tt_engine_ap_fmul_4_max_dsp_32_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/fmul_32ns_32ns_32_6_max_dsp_1_U2225/tt_engine_ap_fmul_4_max_dsp_32_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP output design_1_i/tt_engine_0/inst/fmul_32ns_32ns_32_6_max_dsp_1_U2225/tt_engine_ap_fmul_4_max_dsp_32_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode2_U0/mul_mul_18s_16s_34_4_1_U623/tt_engine_mul_mul_18s_16s_34_4_1_DSP48_1_U/p_reg_reg output design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode2_U0/mul_mul_18s_16s_34_4_1_U623/tt_engine_mul_mul_18s_16s_34_4_1_DSP48_1_U/p_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode2_U0/mul_mul_18s_16s_34_4_1_U625/tt_engine_mul_mul_18s_16s_34_4_1_DSP48_1_U/p_reg_reg output design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode2_U0/mul_mul_18s_16s_34_4_1_U625/tt_engine_mul_mul_18s_16s_34_4_1_DSP48_1_U/p_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode2_U0/mul_mul_18s_16s_34_4_1_U626/tt_engine_mul_mul_18s_16s_34_4_1_DSP48_1_U/p_reg_reg output design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4085/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode2_U0/mul_mul_18s_16s_34_4_1_U626/tt_engine_mul_mul_18s_16s_34_4_1_DSP48_1_U/p_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_30s_30s_60_2_1_U2234/tt_engine_mul_30s_30s_60_2_1_Multiplier_5_U/tmp_product output design_1_i/tt_engine_0/inst/mul_30s_30s_60_2_1_U2234/tt_engine_mul_30s_30s_60_2_1_Multiplier_5_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_30s_30s_60_2_1_U2234/tt_engine_mul_30s_30s_60_2_1_Multiplier_5_U/tmp_product__0 output design_1_i/tt_engine_0/inst/mul_30s_30s_60_2_1_U2234/tt_engine_mul_30s_30s_60_2_1_Multiplier_5_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2256/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product output design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2256/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2256/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0 output design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2256/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2257/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product output design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2257/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2257/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0 output design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2257/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2258/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product output design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2258/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2258/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0 output design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2258/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2259/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product output design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2259/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2259/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0 output design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2259/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2260/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product output design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2260/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2260/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0 output design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2260/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2261/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product output design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2261/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2261/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0 output design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2261/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/tmp_product output design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/tmp_product__0 output design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-3] PREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_46ns_13ns_58_3_1_U2232/tt_engine_mul_46ns_13ns_58_3_1_Multiplier_4_U/tmp_product output design_1_i/tt_engine_0/inst/mul_46ns_13ns_58_3_1_U2232/tt_engine_mul_46ns_13ns_58_3_1_Multiplier_4_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/grp_ta_head_fu_4394/mul_25ns_25ns_49_1_1_U2132/tt_engine_mul_25ns_25ns_49_1_1_Multiplier_2_U/p__0 multiplier stage design_1_i/tt_engine_0/inst/grp_ta_head_fu_4394/mul_25ns_25ns_49_1_1_U2132/tt_engine_mul_25ns_25ns_49_1_1_Multiplier_2_U/p__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_25ns_24ns_48_1_1_U2254/tt_engine_mul_25ns_24ns_48_1_1_Multiplier_7_U/p__0 multiplier stage design_1_i/tt_engine_0/inst/mul_25ns_24ns_48_1_1_U2254/tt_engine_mul_25ns_24ns_48_1_1_Multiplier_7_U/p__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_25ns_25ns_49_1_1_U2252/tt_engine_mul_25ns_25ns_49_1_1_Multiplier_2_U/p__0 multiplier stage design_1_i/tt_engine_0/inst/mul_25ns_25ns_49_1_1_U2252/tt_engine_mul_25ns_25ns_49_1_1_Multiplier_2_U/p__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_29ns_26ns_54_2_1_U2251/tt_engine_mul_29ns_26ns_54_2_1_Multiplier_1_U/p_reg multiplier stage design_1_i/tt_engine_0/inst/mul_29ns_26ns_54_2_1_U2251/tt_engine_mul_29ns_26ns_54_2_1_Multiplier_1_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_30s_30s_60_2_1_U2234/tt_engine_mul_30s_30s_60_2_1_Multiplier_5_U/p_reg multiplier stage design_1_i/tt_engine_0/inst/mul_30s_30s_60_2_1_U2234/tt_engine_mul_30s_30s_60_2_1_Multiplier_5_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_30s_30s_60_2_1_U2234/tt_engine_mul_30s_30s_60_2_1_Multiplier_5_U/p_reg__0 multiplier stage design_1_i/tt_engine_0/inst/mul_30s_30s_60_2_1_U2234/tt_engine_mul_30s_30s_60_2_1_Multiplier_5_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_30s_30s_60_2_1_U2234/tt_engine_mul_30s_30s_60_2_1_Multiplier_5_U/tmp_product multiplier stage design_1_i/tt_engine_0/inst/mul_30s_30s_60_2_1_U2234/tt_engine_mul_30s_30s_60_2_1_Multiplier_5_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_30s_30s_60_2_1_U2234/tt_engine_mul_30s_30s_60_2_1_Multiplier_5_U/tmp_product__0 multiplier stage design_1_i/tt_engine_0/inst/mul_30s_30s_60_2_1_U2234/tt_engine_mul_30s_30s_60_2_1_Multiplier_5_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2256/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2256/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2256/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg__0 multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2256/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2256/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2256/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2256/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0 multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2256/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2257/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2257/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2257/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg__0 multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2257/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2257/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2257/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2257/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0 multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2257/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2258/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2258/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2258/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg__0 multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2258/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2258/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2258/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2258/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0 multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2258/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2259/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2259/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2259/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg__0 multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2259/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2259/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2259/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2259/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0 multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2259/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2260/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2260/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2260/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg__0 multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2260/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2260/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2260/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2260/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0 multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2260/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2261/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2261/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2261/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg__0 multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2261/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2261/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2261/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2261/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0 multiplier stage design_1_i/tt_engine_0/inst/mul_32s_31s_63_2_1_U2261/tt_engine_mul_32s_31s_63_2_1_Multiplier_0_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/p_reg multiplier stage design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/p_reg__0 multiplier stage design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/p_reg__1 multiplier stage design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/p_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/tmp_product multiplier stage design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/tmp_product__0 multiplier stage design_1_i/tt_engine_0/inst/mul_42s_44ns_85_2_1_U2235/tt_engine_mul_42s_44ns_85_2_1_Multiplier_6_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_46ns_13ns_58_3_1_U2232/tt_engine_mul_46ns_13ns_58_3_1_Multiplier_4_U/buff0_reg multiplier stage design_1_i/tt_engine_0/inst/mul_46ns_13ns_58_3_1_U2232/tt_engine_mul_46ns_13ns_58_3_1_Multiplier_4_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_46ns_13ns_58_3_1_U2232/tt_engine_mul_46ns_13ns_58_3_1_Multiplier_4_U/buff0_reg__0 multiplier stage design_1_i/tt_engine_0/inst/mul_46ns_13ns_58_3_1_U2232/tt_engine_mul_46ns_13ns_58_3_1_Multiplier_4_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/tt_engine_0/inst/mul_46ns_13ns_58_3_1_U2232/tt_engine_mul_46ns_13ns_58_3_1_Multiplier_4_U/tmp_product multiplier stage design_1_i/tt_engine_0/inst/mul_46ns_13ns_58_3_1_U2232/tt_engine_mul_46ns_13ns_58_3_1_Multiplier_4_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_0_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_0_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_0_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_0_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_0_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_0_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_0_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_0_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_0_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_0_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_0_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_0_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_1_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_1_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_1_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_1_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_1_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_1_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_1_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_1_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_1_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_1_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_1_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_1_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_2_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_2_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_2_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_2_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_2_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_2_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_2_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_2_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_2_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_2_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_2_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_2_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_3_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_3_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_3_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_3_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_3_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_3_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_3_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_3_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_3_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_3_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_3_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_3_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_4_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_4_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_4_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_4_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_4_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_4_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_4_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_4_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_4_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_4_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_4_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_4_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_5_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_5_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_5_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_5_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_5_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_5_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_5_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_5_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_5_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_5_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_5_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wh_V_5_U/tt_engine_wh_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_0_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_0_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_0_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_0_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_0_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_0_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_0_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_0_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_0_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_0_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_0_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_0_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_10_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_10_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_10_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_10_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_10_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_10_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_A pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_10_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_ADDR_B[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_10_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_BWE_B[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_10_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DIN_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_10_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_DOUT_B[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_10_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDACCESS_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_10_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_B (NONE) set to FIRST or NONE, the CAS_IN_RDB_WR_B pin should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_11_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_ADDR_A[22:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_11_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_BWE_A[8:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_11_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DIN_A[71:0] bus pins should be tied LOW.
+WARNING: [DRC REQP-1869] URAM288_CASCADE_ORDER_FIRST-NONE_tie_CAS_IN_X_low: URAM288 design_1_i/tt_engine_0/inst/wm3_V_11_U/tt_engine_wm3_V_0_ram_U/ram_reg_uram_0 has CASCADE_ORDER_A (NONE) set to FIRST or NONE, the CAS_IN_DOUT_A[71:0] bus pins should be tied LOW.
+INFO: [Common 17-14] Message 'DRC REQP-1869' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [DRC RTSTAT-10] No routable loads: 1 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/tt_engine_0/inst/p_Result_s_reg_11714[0]_rep_i_1_n_11.
+INFO: [DRC AVAL-155] enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: design_1_i/tt_engine_0/inst/fmul_32ns_32ns_32_6_max_dsp_1_U2225/tt_engine_ap_fmul_4_max_dsp_32_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-155] enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: design_1_i/tt_engine_0/inst/fmul_32ns_32ns_32_6_max_dsp_1_U2225/tt_engine_ap_fmul_4_max_dsp_32_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-155] enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: design_1_i/tt_engine_0/inst/fmul_32ns_32ns_32_6_max_dsp_1_U2225/tt_engine_ap_fmul_4_max_dsp_32_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-156] enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: design_1_i/tt_engine_0/inst/fmul_32ns_32ns_32_6_max_dsp_1_U2225/tt_engine_ap_fmul_4_max_dsp_32_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 714 Warnings, 4 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+18 Infos, 263 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:04 ; elapsed = 00:00:54 . Memory (MB): peak = 6386.992 ; gain = 231.531
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  7 16:08:06 2026...

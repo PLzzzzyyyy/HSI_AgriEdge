@@ -1,0 +1,18 @@
+{
+  "stage": "synth",
+  "candidate": "tt_engine_m3_k7_overlap_v2",
+  "cwd": "D:\\HSI_AgriEdge\\build\\host\\m3a_overlap_synth_v2_20261007",
+  "started": "2026-10-07T17:44:24.968113",
+  "runner_pid": 41136,
+  "status": "STOPPED_BY_USER_EVALUATE_FIRST",
+  "baseline_xsa_sha256": "9813b5632250839274e6e298e5e4df8ea601b6d41016351148f98cf6057d9652",
+  "script_sha256": "39f6d7b74c54915e10772adc2292c205550a0579247374d2baf74d5043fb137d",
+  "command": [
+    "D:/xilinx/Vitis_HLS/2020.2/bin/vitis_hls.bat",
+    "-f",
+    "D:\\HSI_AgriEdge\\build\\hls\\run_m3a_overlap.tcl"
+  ],
+  "tool_launcher_pid": 32520,
+  "stop_receipt": "user_stop.json",
+  "stage_result": "CSim PASS; csynth incomplete, no synthesis/RTL/system pass"
+}

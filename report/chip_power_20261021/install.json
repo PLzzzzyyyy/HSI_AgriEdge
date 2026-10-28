@@ -1,0 +1,45 @@
+{
+  "release_id": "764270ec932f997e3bac04c666f09e2bbaa6eb53282f47d240b8fb667189f1ba",
+  "model_id": "a4363b00",
+  "elf": {
+    "path": "firmware/gcs_chip_power_20261021.elf",
+    "bytes": 3447304,
+    "sha256": "a9f7be0f4d6bc2b7e2f122699453c2700da2a73aa1f04d4255a6c4cdb67a90e9"
+  },
+  "identity": {
+    "symbol": {
+      "name": "gcs_release_identity",
+      "info": 17,
+      "other": 0,
+      "section_index": 4,
+      "address": 485264,
+      "size": 243
+    },
+    "section": ".rodata",
+    "file_offset": 550800,
+    "loaded_identity_count": 1,
+    "nonloaded_copies": 0,
+    "nonloaded_metadata": [],
+    "layout": {
+      "entry": 0,
+      "segments": [
+        {
+          "address": 0,
+          "size": 1155200,
+          "file_offset": 65536,
+          "file_bytes": 1155144,
+          "flags": 7
+        },
+        {
+          "address": 2097152,
+          "size": 563229888,
+          "file_offset": 0,
+          "file_bytes": 0,
+          "flags": 6
+        }
+      ]
+    }
+  },
+  "backup": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\firmware\\keys_20261018_before_chip_power_20261021",
+  "inference_bitstream_unchanged": true
+}

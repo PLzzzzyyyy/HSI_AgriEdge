@@ -1,0 +1,20 @@
+Formal GCS (board locked): http://127.0.0.1:8765
+INFO:     127.0.0.1:55367 - "GET /api/state HTTP/1.1" 200 OK
+!! 本地演示模式：跳过发布审查，release_id=c780b5d3e17a7e5d
+!! 本地演示模式（GCS_LOCAL_DEMO=1）：按 bundle manifest 的 release_id 对齐板端；未做发布审查，产物不得作为验收证据
+INFO:     127.0.0.1:52381 - "POST /api/board/connect HTTP/1.1" 409 Conflict
+!! 本地演示模式：跳过发布审查，release_id=c780b5d3e17a7e5d
+!! 本地演示模式（GCS_LOCAL_DEMO=1）：按 bundle manifest 的 release_id 对齐板端；未做发布审查，产物不得作为验收证据
+INFO:     127.0.0.1:62866 - "POST /api/board/connect HTTP/1.1" 200 OK
+!! 本地演示模式（GCS_LOCAL_DEMO=1）：按 bundle manifest 的 release_id 对齐板端；未做发布审查，产物不得作为验收证据
+INFO:     127.0.0.1:58414 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62240 - "POST /api/board/session/close HTTP/1.1" 200 OK
+!! 本地演示模式：跳过发布审查，release_id=c780b5d3e17a7e5d
+!! 本地演示模式（GCS_LOCAL_DEMO=1）：按 bundle manifest 的 release_id 对齐板端；未做发布审查，产物不得作为验收证据
+INFO:     127.0.0.1:56919 - "POST /api/board/connect HTTP/1.1" 200 OK
+!! 本地演示模式（GCS_LOCAL_DEMO=1）：按 bundle manifest 的 release_id 对齐板端；未做发布审查，产物不得作为验收证据
+INFO:     127.0.0.1:55165 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59569 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59570 - "GET /api/dp/frame.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60571 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57043 - "POST /api/board/session/close HTTP/1.1" 200 OK

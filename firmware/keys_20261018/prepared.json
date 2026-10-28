@@ -1,0 +1,10 @@
+{
+  "release_id": "84284f8dd6346a48dbb5f276b9704933b17d2d3ce2d3121d8cd053769bb125d3",
+  "bundle": "build/host/gcs_click_probe_20261018_v7",
+  "files": {
+    "tt_gcs_keys.bit": "9c0c1732275e941811d110466a16c92d40fe833b1f93b4af27e8a4008b744ce1",
+    "tt_gcs_keys.xsa": "dbf0b52ccbd076c7dae4ed37e5ef6ed48b4f5bbc6ac76a174b8ad339ac282508",
+    "fsbl_a53.elf": "9e1a7e20737516c24475cff4e9f6145fa13adb67ed6ffb2d09cfa81bf262f886",
+    "gcs_keys.elf": "6230f8d024e99f3f92cca2240822bf423d1bf802bd23bdbc9ee8cc09bd5f7379"
+  }
+}

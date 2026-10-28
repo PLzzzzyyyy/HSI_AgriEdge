@@ -1,0 +1,1346 @@
+{
+  "font": "C:\\Windows\\Fonts\\NotoSansSC-VF.ttf",
+  "font_sha256": "763146584cf0710223441356b4395e279021b0806c196614377a7a0174ae074a",
+  "pillow": "12.3.0",
+  "license": "SIL OFL 1.1",
+  "font_binary_redistributed": false,
+  "labels": [
+    {
+      "name": "TITLE",
+      "text": "无人机高光谱张量农情分析系统",
+      "size": 24,
+      "width": 336,
+      "height": 24,
+      "sha256": "bbc88074f94ad2a0be418456b504fd83724e97340660ae31bee7f6cb525332d6"
+    },
+    {
+      "name": "SCENE",
+      "text": "龙口 / v2 · 二维分类图",
+      "size": 20,
+      "width": 211,
+      "height": 22,
+      "sha256": "9e68568b88ccfbf10ee42edd76afa00291d1b58ab5c240b1e217010eb44b6dac"
+    },
+    {
+      "name": "READY",
+      "text": "等待地面站任务",
+      "size": 22,
+      "width": 154,
+      "height": 23,
+      "sha256": "8ae50cd4bbbfc1cda9f2e2fddd9d98797def87aaa17c911a5b89fc17eebed37a"
+    },
+    {
+      "name": "RUNNING",
+      "text": "正在推理",
+      "size": 22,
+      "width": 88,
+      "height": 22,
+      "sha256": "fc04c0e63d256cc00ec6b91932a5edf408380b1bc31b5a66e3b0fe95dac24417"
+    },
+    {
+      "name": "DONE",
+      "text": "推理完成",
+      "size": 22,
+      "width": 88,
+      "height": 22,
+      "sha256": "9d66b1ad9cbc2524faa163d85e901c4e11ad0c5faec176ba52425063cd58a01f"
+    },
+    {
+      "name": "FAILED",
+      "text": "失败 · 保留已提交结果",
+      "size": 22,
+      "width": 229,
+      "height": 23,
+      "sha256": "2b8916c96b0d3230e40fcfee63a0cd0c50d86dd10ab3755d59b68463bb002a09"
+    },
+    {
+      "name": "TASK",
+      "text": "任务 · 整景巡检",
+      "size": 20,
+      "width": 152,
+      "height": 21,
+      "sha256": "f0cc4ff53ea0978323529a0d3b82a48f0088f8afc37ec48e5f63d65fa6ff7ea8"
+    },
+    {
+      "name": "PROGRESS",
+      "text": "已处理",
+      "size": 18,
+      "width": 54,
+      "height": 18,
+      "sha256": "fcb06a9484eec0ec614c679e9708f066fae64262e68c330ec7f60ada49fd1c09"
+    },
+    {
+      "name": "LEGEND",
+      "text": "类别图例",
+      "size": 18,
+      "width": 72,
+      "height": 18,
+      "sha256": "b6c355fb9b3a3be15f3ec6dc8c2f11030706c12185f1b57a8f34b91dd392bc17"
+    },
+    {
+      "name": "STRUCTURE",
+      "text": "种植结构",
+      "size": 20,
+      "width": 80,
+      "height": 20,
+      "sha256": "e61f714781d7722016e60bb7f0face61ca533425302d6278926af40e5eb451f2"
+    },
+    {
+      "name": "TELEMETRY",
+      "text": "遥测",
+      "size": 20,
+      "width": 40,
+      "height": 21,
+      "sha256": "97254944c2cb79d7c8444927ee8b6edadde23f61925bdd58a1ee1ff231decd39"
+    },
+    {
+      "name": "RATE",
+      "text": "像素 / 秒（计算）",
+      "size": 16,
+      "width": 126,
+      "height": 17,
+      "sha256": "01c5144ebb7bde720d4f1d6928fe82b7ce9258af3ddc08c3f19f96bc670c12f7"
+    },
+    {
+      "name": "LATENCY",
+      "text": "毫秒 / 像素",
+      "size": 16,
+      "width": 78,
+      "height": 17,
+      "sha256": "5c13d05cd198000ef2df66d27f18007f0674e6e357749799c5ebf2d0f0b398c8"
+    },
+    {
+      "name": "UNMEASURED",
+      "text": "未测",
+      "size": 28,
+      "width": 56,
+      "height": 27,
+      "sha256": "78bb3ff20f5fe80086b9027cc4e1ae541c8ad25492728d5f39ee7af1da38d4b3"
+    },
+    {
+      "name": "POWER",
+      "text": "功率 / 温度 / 能耗：未测",
+      "size": 17,
+      "width": 183,
+      "height": 19,
+      "sha256": "222cb49429ce93fddea3399b4e4a4d053ad8338e4ff140bf7ec0d8dd56b687df"
+    },
+    {
+      "name": "SOURCE",
+      "text": "DP与电脑同步显示 · 同一份板端分类结果",
+      "size": 18,
+      "width": 339,
+      "height": 18,
+      "sha256": "de4e9c8fd80e5f5e54d52cf67f2a479aed766ef8d3cb2e1b19d0588ebb24361a"
+    },
+    {
+      "name": "EMPTY",
+      "text": "未完成区域留空；图像比例、类别颜色与地面站一致",
+      "size": 18,
+      "width": 414,
+      "height": 20,
+      "sha256": "7ec9c1680d4830f8728996d7c93e4812ba61f723e56fe8fbc1028be034d5c46d"
+    },
+    {
+      "name": "FAULT",
+      "text": "外部PL复位后才可重新推理",
+      "size": 18,
+      "width": 220,
+      "height": 18,
+      "sha256": "932d0fe355f84c4102450e7d7eadc52e9e319ca2a392e28ed35570b6d65b236c"
+    },
+    {
+      "name": "CLASS0",
+      "text": "玉米",
+      "size": 18,
+      "width": 36,
+      "height": 16,
+      "sha256": "a66d9021d6ef26b6e92eade673afd8c3c579be80a8eb59002cdf7849ce7395e9"
+    },
+    {
+      "name": "CLASS1",
+      "text": "棉花",
+      "size": 18,
+      "width": 36,
+      "height": 18,
+      "sha256": "b6a002da550d1ec1c1e958e956fd8e25bd0bb5a947de86b82ab3c9983ae15796"
+    },
+    {
+      "name": "CLASS2",
+      "text": "芝麻",
+      "size": 18,
+      "width": 36,
+      "height": 18,
+      "sha256": "2544a4fbcfaa1fcbda8fc773ccc77a1c22653faadf15b688e17c96223a81f569"
+    },
+    {
+      "name": "CLASS3",
+      "text": "阔叶大豆",
+      "size": 18,
+      "width": 72,
+      "height": 17,
+      "sha256": "60d77d8880a995ce91891ac1659d4fc2a51ff758b38faf8fcf98127bea2ad9f7"
+    },
+    {
+      "name": "CLASS4",
+      "text": "窄叶大豆",
+      "size": 18,
+      "width": 72,
+      "height": 18,
+      "sha256": "a77c0c81a05acc3bd6c66076c9170b60e2a4914decb9321247da7bd70cced216"
+    },
+    {
+      "name": "CLASS5",
+      "text": "水稻",
+      "size": 18,
+      "width": 36,
+      "height": 17,
+      "sha256": "50e780b71ae3542bd6b3b295fa7bb110b18a8b8387bc6758047eaf446a0cf644"
+    },
+    {
+      "name": "CLASS6",
+      "text": "水体",
+      "size": 18,
+      "width": 36,
+      "height": 16,
+      "sha256": "273107b147738eb0150ce4e4c9ebe17ce12e3552d6e490c43d5f3c935d499c8d"
+    },
+    {
+      "name": "CLASS7",
+      "text": "道路与房屋",
+      "size": 18,
+      "width": 90,
+      "height": 18,
+      "sha256": "0f51d1674196476951044c2dcdff1c66e1a24423ca70848de56a77d82f73028e"
+    },
+    {
+      "name": "CLASS8",
+      "text": "混合杂草",
+      "size": 18,
+      "width": 72,
+      "height": 18,
+      "sha256": "fd13f4f994a25c82300d1eb9ecfce25aac78cd20cd1b43c5dccf958b6d2c3893"
+    },
+    {
+      "name": "SCENE0",
+      "text": "龙口 · 二维分类图",
+      "size": 20,
+      "width": 171,
+      "height": 21,
+      "sha256": "9a1208e56b64b9e26aad04c67363fe44d3efbb40c8801a401afec66f4bd52604"
+    },
+    {
+      "name": "SCENE1",
+      "text": "洪湖 · 二维分类图",
+      "size": 20,
+      "width": 171,
+      "height": 21,
+      "sha256": "bff061f41a1f30ec9d9e399f314d09c77b2452e030baaccfd04b62e1e2e609ae"
+    },
+    {
+      "name": "SCENE2",
+      "text": "汉川 · 二维分类图",
+      "size": 20,
+      "width": 171,
+      "height": 21,
+      "sha256": "56b9460594b90e7b0f4afbe0882605a8efeeec54bd9370e53c4681a677f585a4"
+    },
+    {
+      "name": "NO_TASK",
+      "text": "等待任务 · 尚未选择模型",
+      "size": 20,
+      "width": 231,
+      "height": 21,
+      "sha256": "185cecfac4c760a1a93d62dc0fe663c7b7ce702ecfab9f0b084ca1a97a3cd262"
+    },
+    {
+      "name": "REJECT",
+      "text": "输入或模型准备失败 · 未开始计算",
+      "size": 18,
+      "width": 278,
+      "height": 18,
+      "sha256": "6fa0d0609a6aab3324d129319c22e9b7b184d5aae0893075a2baabc832f98239"
+    },
+    {
+      "name": "HONGHU_0",
+      "text": "红色屋顶",
+      "size": 16,
+      "width": 64,
+      "height": 16,
+      "sha256": "ebddc61c113f74f560180196d1d876792bbf8d9cb92c03cf971611ecda2f9339"
+    },
+    {
+      "name": "HONGHU_1",
+      "text": "道路",
+      "size": 16,
+      "width": 32,
+      "height": 16,
+      "sha256": "28548fbf6237b34faab98ef0c6a9bc22d99c687a5cc584a95179f96e126c1bca"
+    },
+    {
+      "name": "HONGHU_2",
+      "text": "裸土",
+      "size": 16,
+      "width": 32,
+      "height": 15,
+      "sha256": "c43a88ee4d3cd143f9febff71a28cb668af5df3e6432c4932201fd06b66a5eb0"
+    },
+    {
+      "name": "HONGHU_3",
+      "text": "棉花",
+      "size": 16,
+      "width": 32,
+      "height": 17,
+      "sha256": "618a42ad7a73e7faf58f1ec941bf63521c7be90b5e310bff632b6cb688487848"
+    },
+    {
+      "name": "HONGHU_4",
+      "text": "棉秆",
+      "size": 16,
+      "width": 32,
+      "height": 17,
+      "sha256": "52b466c30578eb3ef07c6dba494fb5263234b942279e3a8eeca497a9b8a69f3e"
+    },
+    {
+      "name": "HONGHU_5",
+      "text": "油菜",
+      "size": 16,
+      "width": 32,
+      "height": 16,
+      "sha256": "f989a3e397e1a1220790398cf324d2c2c38f4b1c96ee125c878eddfce4103538"
+    },
+    {
+      "name": "HONGHU_6",
+      "text": "大白菜",
+      "size": 16,
+      "width": 48,
+      "height": 16,
+      "sha256": "d3f94606fda96c97d664f466a29bd38b2e703cea74e6b41831312b59a8d7fcf9"
+    },
+    {
+      "name": "HONGHU_7",
+      "text": "小白菜",
+      "size": 16,
+      "width": 48,
+      "height": 16,
+      "sha256": "c80d91ecad329608ddec68753b83d012b313abecb439ee8adb9110a7ef5dec4f"
+    },
+    {
+      "name": "HONGHU_8",
+      "text": "甘蓝",
+      "size": 16,
+      "width": 32,
+      "height": 15,
+      "sha256": "3d61a354179357135b7114ccd90447a7a207cc0824f8919fd892793035d28eba"
+    },
+    {
+      "name": "HONGHU_9",
+      "text": "榨菜",
+      "size": 16,
+      "width": 32,
+      "height": 16,
+      "sha256": "47b234f76a988002b73218618d9058a51be8aceb053bb695e9cdb5cd21c96c0d"
+    },
+    {
+      "name": "HONGHU_10",
+      "text": "菜心",
+      "size": 16,
+      "width": 32,
+      "height": 15,
+      "sha256": "cf319146afb6c396533d26fcdb43f708e63aa9219a6eeb733c4145e504abb344"
+    },
+    {
+      "name": "HONGHU_11",
+      "text": "青菜",
+      "size": 16,
+      "width": 32,
+      "height": 15,
+      "sha256": "fe6d07bc11b258af5cd4615a2c321c300813b9dc5314b1cd249f85185ca4351c"
+    },
+    {
+      "name": "HONGHU_12",
+      "text": "小青菜",
+      "size": 16,
+      "width": 48,
+      "height": 16,
+      "sha256": "0620f852a39ae474d687d2b98597caec19e59a431b8d3a29e593689f1bd361df"
+    },
+    {
+      "name": "HONGHU_13",
+      "text": "生菜",
+      "size": 16,
+      "width": 32,
+      "height": 15,
+      "sha256": "b16546471d9cc8ff19385f800a1ba6b396b4ef56bd14c900a39599e612279835"
+    },
+    {
+      "name": "HONGHU_14",
+      "text": "莴笋",
+      "size": 16,
+      "width": 32,
+      "height": 16,
+      "sha256": "e505845e14c631b5887b96652449d2dcfc925aad52c506118deb67e7ae8fa2ab"
+    },
+    {
+      "name": "HONGHU_15",
+      "text": "覆膜生菜",
+      "size": 16,
+      "width": 64,
+      "height": 16,
+      "sha256": "8c53938caab33d09605e36729cdb1d34c8bab96d40ac551fb3df9a5b58f84b11"
+    },
+    {
+      "name": "HONGHU_16",
+      "text": "罗马生菜",
+      "size": 16,
+      "width": 64,
+      "height": 16,
+      "sha256": "d6cc2c15064774c79915057b1a44b56ef3e20b97bd50a110b4f376bd5c545a02"
+    },
+    {
+      "name": "HONGHU_17",
+      "text": "胡萝卜",
+      "size": 16,
+      "width": 48,
+      "height": 16,
+      "sha256": "71670614fdf2757ea2d0be58dc05206e36f3fb5c713220ea337395cf1dcc49a9"
+    },
+    {
+      "name": "HONGHU_18",
+      "text": "白萝卜",
+      "size": 16,
+      "width": 48,
+      "height": 16,
+      "sha256": "94f880a4294b186efc3cd963ca6fd1feb365e76dea45502da43f6de92e0e5210"
+    },
+    {
+      "name": "HONGHU_19",
+      "text": "蒜苗",
+      "size": 16,
+      "width": 32,
+      "height": 16,
+      "sha256": "ad9d42956f8feb54c234433ff9cd526360f92d1ade455cb1808358e7c22e089c"
+    },
+    {
+      "name": "HONGHU_20",
+      "text": "蚕豆",
+      "size": 16,
+      "width": 32,
+      "height": 15,
+      "sha256": "85a094f6712a7236c52e3f7afad2dfe937f4de215cf8e8c0662a79771c52e63f"
+    },
+    {
+      "name": "HONGHU_21",
+      "text": "树木",
+      "size": 16,
+      "width": 32,
+      "height": 17,
+      "sha256": "2def6b6397e4b70d8b51f87e5fe351160778c4de90e348aa50e2f9b7411e9f70"
+    },
+    {
+      "name": "HANCHUAN_0",
+      "text": "草莓",
+      "size": 16,
+      "width": 32,
+      "height": 15,
+      "sha256": "24a09d734ed12705f7477e5ae5844c91676c03a7bce553ff2675a0b26776badd"
+    },
+    {
+      "name": "HANCHUAN_1",
+      "text": "豇豆",
+      "size": 16,
+      "width": 32,
+      "height": 14,
+      "sha256": "446f201b41effa9ee18fe95fc2f58ba836160e5a87535f994abebcdf98ead135"
+    },
+    {
+      "name": "HANCHUAN_2",
+      "text": "大豆",
+      "size": 16,
+      "width": 32,
+      "height": 16,
+      "sha256": "da1397e0ab59a9a42a1f499a15ec7669f89dd1f54e41687a854ccf7f71542d08"
+    },
+    {
+      "name": "HANCHUAN_3",
+      "text": "高粱",
+      "size": 16,
+      "width": 32,
+      "height": 16,
+      "sha256": "6ee2b1100f000daff7830624f533fe90460ec753fcbd60adb51ed057254f27bc"
+    },
+    {
+      "name": "HANCHUAN_4",
+      "text": "空心菜",
+      "size": 16,
+      "width": 48,
+      "height": 15,
+      "sha256": "9d8368fe028ddd27fdb16938f750f64ab1fef8a278ae54aa56958c0877a9f3e4"
+    },
+    {
+      "name": "HANCHUAN_5",
+      "text": "西瓜",
+      "size": 16,
+      "width": 32,
+      "height": 16,
+      "sha256": "81dddc737d6f2db8142f347190d7ba7ef0ccbcb55b3ed25f8be126fb5a0ddcbf"
+    },
+    {
+      "name": "HANCHUAN_6",
+      "text": "青菜",
+      "size": 16,
+      "width": 32,
+      "height": 15,
+      "sha256": "fe6d07bc11b258af5cd4615a2c321c300813b9dc5314b1cd249f85185ca4351c"
+    },
+    {
+      "name": "HANCHUAN_7",
+      "text": "树木",
+      "size": 16,
+      "width": 32,
+      "height": 17,
+      "sha256": "2def6b6397e4b70d8b51f87e5fe351160778c4de90e348aa50e2f9b7411e9f70"
+    },
+    {
+      "name": "HANCHUAN_8",
+      "text": "草地",
+      "size": 16,
+      "width": 32,
+      "height": 15,
+      "sha256": "aaeb35a089607d21590fd73704689f4eb3fb08c366358c9f9bed08b6403389d3"
+    },
+    {
+      "name": "HANCHUAN_9",
+      "text": "红色屋顶",
+      "size": 16,
+      "width": 64,
+      "height": 16,
+      "sha256": "ebddc61c113f74f560180196d1d876792bbf8d9cb92c03cf971611ecda2f9339"
+    },
+    {
+      "name": "HANCHUAN_10",
+      "text": "灰色屋顶",
+      "size": 16,
+      "width": 64,
+      "height": 17,
+      "sha256": "41c5239249eb391238f8c7ab014e2766440f42717b825e1cf00f4c4816d9d7dc"
+    },
+    {
+      "name": "HANCHUAN_11",
+      "text": "塑料",
+      "size": 16,
+      "width": 32,
+      "height": 17,
+      "sha256": "1b417b7829b7d4bd8115e8b236f07d6d9bc4a44dd4e2ec9baa63b80aaa43eb7b"
+    },
+    {
+      "name": "HANCHUAN_12",
+      "text": "裸土",
+      "size": 16,
+      "width": 32,
+      "height": 15,
+      "sha256": "c43a88ee4d3cd143f9febff71a28cb668af5df3e6432c4932201fd06b66a5eb0"
+    },
+    {
+      "name": "HANCHUAN_13",
+      "text": "道路",
+      "size": 16,
+      "width": 32,
+      "height": 16,
+      "sha256": "28548fbf6237b34faab98ef0c6a9bc22d99c687a5cc584a95179f96e126c1bca"
+    },
+    {
+      "name": "HANCHUAN_14",
+      "text": "高亮物体",
+      "size": 16,
+      "width": 65,
+      "height": 16,
+      "sha256": "1a0ebbfd7bd173849dbdd194a15657e2a490a629b0525f2203769c76b3420080"
+    },
+    {
+      "name": "HANCHUAN_15",
+      "text": "水体",
+      "size": 16,
+      "width": 33,
+      "height": 15,
+      "sha256": "27e17b4cc811b5a8efbf6ab2994d989ab06b283789f137d3c24ae251d980915b"
+    },
+    {
+      "name": "TASK_SCAN",
+      "text": "整景巡检",
+      "size": 36,
+      "width": 144,
+      "height": 35,
+      "sha256": "824fb2f03442c7708e115668b2055901232d77017688f1299a9dbd833f75878f"
+    },
+    {
+      "name": "TASK_REGION",
+      "text": "区域识别",
+      "size": 36,
+      "width": 144,
+      "height": 35,
+      "sha256": "ab74455fb94fe23406ad5dc4220b5edd9167cd02968f3b01f34e9d56c93284be"
+    },
+    {
+      "name": "TASK_WAIT",
+      "text": "等待任务",
+      "size": 36,
+      "width": 144,
+      "height": 35,
+      "sha256": "9572c6f84754fb93b08caca5f9dfb255aa326d1ef936f5602a7134455e6805f7"
+    },
+    {
+      "name": "STATE_PREP",
+      "text": "正在加载输入",
+      "size": 24,
+      "width": 144,
+      "height": 24,
+      "sha256": "fda89c0c3295e6149716efd90ff40b9db8d69be20c21d75305db30e07faf2e06"
+    },
+    {
+      "name": "STATE_RUNNING",
+      "text": "正在推理",
+      "size": 24,
+      "width": 96,
+      "height": 24,
+      "sha256": "8cf51adf7ecb7d72fba0a2fd31ef387a432350d4020932b1fc2bf2659178b5e2"
+    },
+    {
+      "name": "STATE_DONE",
+      "text": "已完成",
+      "size": 24,
+      "width": 72,
+      "height": 24,
+      "sha256": "82e6cdca5c76fbcb20aeba2d17e76f6c4c002099119bc1b3f3f47443ef9e2d36"
+    },
+    {
+      "name": "STATE_PAUSED",
+      "text": "已暂停",
+      "size": 24,
+      "width": 72,
+      "height": 24,
+      "sha256": "1c31d5318043ff448de446477e57565b94e440ea9e53beea24ec08745f1423c9"
+    },
+    {
+      "name": "STATE_STOPPED",
+      "text": "已停止",
+      "size": 24,
+      "width": 72,
+      "height": 24,
+      "sha256": "b979178bbd7d1970cc4c6a7eb440a17dc0b1d07704d2f1b773fe149029fa17dc"
+    },
+    {
+      "name": "STATE_FAILED",
+      "text": "任务失败",
+      "size": 24,
+      "width": 96,
+      "height": 24,
+      "sha256": "1c7bb96812d3d230a0add7213065432e320392ff6158da4dec10213b3f5f9bb8"
+    },
+    {
+      "name": "DIMENSION",
+      "text": "行 × 列",
+      "size": 20,
+      "width": 70,
+      "height": 21,
+      "sha256": "7ed4f72fde7ff889f2f8242c08121653c9b101d7041cf2fc80a4f4c54000e82f"
+    },
+    {
+      "name": "ROW",
+      "text": "行",
+      "size": 22,
+      "width": 22,
+      "height": 22,
+      "sha256": "1c44a311d6566bbfa685a23186d2ab73cb7d954fa20df48dcfcb450f4aa624ce"
+    },
+    {
+      "name": "COL",
+      "text": "列",
+      "size": 22,
+      "width": 22,
+      "height": 22,
+      "sha256": "dc7c567bc539f278737b4f52b90f4ff98d1d54217cefe263d35ac1d1a997715a"
+    },
+    {
+      "name": "COMPUTED",
+      "text": "已计算",
+      "size": 20,
+      "width": 60,
+      "height": 21,
+      "sha256": "34fd1705bac83094ffe85d84025053424711336dfb9430cb0bda8e30a8916179"
+    },
+    {
+      "name": "BOARD_TASK",
+      "text": "板端任务",
+      "size": 18,
+      "width": 72,
+      "height": 18,
+      "sha256": "0c58770cd47528f54190ac43f80661e294efabb3062aae09b21058336a28b8ab"
+    },
+    {
+      "name": "AREA_SCAN",
+      "text": "整景分类面积",
+      "size": 24,
+      "width": 144,
+      "height": 24,
+      "sha256": "363f64b26e41892dd773483ddb5a416efa1bfa73e8aea9aad462a5208f5916d2"
+    },
+    {
+      "name": "AREA_REGION",
+      "text": "当前矩形分类面积",
+      "size": 24,
+      "width": 192,
+      "height": 24,
+      "sha256": "55e30e38a95864c24569250bdef30eacd791d412c8aa476e79609368c93d7e7d"
+    },
+    {
+      "name": "AREA_BASIS",
+      "text": "仅统计板端已计算像素",
+      "size": 16,
+      "width": 160,
+      "height": 16,
+      "sha256": "8ed3fbd100cc75b92ddd43670c9a7ed01c7e4cfd9161f2881ec25d51842b7cee"
+    },
+    {
+      "name": "AREA_CLASS",
+      "text": "类别",
+      "size": 18,
+      "width": 36,
+      "height": 17,
+      "sha256": "e141aeaf2865b561001fc0ae4f8559c754bcbea6f3a643093980feeddec7524e"
+    },
+    {
+      "name": "AREA_M2",
+      "text": "面积（平方米）",
+      "size": 18,
+      "width": 126,
+      "height": 18,
+      "sha256": "44dbbb11f186a8a7072ef148bd2f5263cd764b69dee6c8e5155e56924f830a3e"
+    },
+    {
+      "name": "AREA_SHARE",
+      "text": "占比",
+      "size": 18,
+      "width": 36,
+      "height": 17,
+      "sha256": "7415fa6745ebfb776aecfd22fd48e1f92ce9792297a4639967a922e916528883"
+    },
+    {
+      "name": "AREA_PIXELS",
+      "text": "像素",
+      "size": 18,
+      "width": 36,
+      "height": 18,
+      "sha256": "ae9b39991ca81eff69a0a410925abc40d752ebed03f4efb9163887483badf9a9"
+    },
+    {
+      "name": "AREA_TOTAL",
+      "text": "已计算总面积",
+      "size": 18,
+      "width": 108,
+      "height": 18,
+      "sha256": "4a59631630fb8bfd0300eaf8adb2f0aae1dd709c3c8dbdc270c1c918b7c6c831"
+    },
+    {
+      "name": "PROBE_TITLE",
+      "text": "单点探查",
+      "size": 28,
+      "width": 112,
+      "height": 27,
+      "sha256": "404210dfad8641b76fe9aedf2fc6bf277015c3353d824215198613a10de94270"
+    },
+    {
+      "name": "PROBE_EMPTY",
+      "text": "尚无探查结果",
+      "size": 20,
+      "width": 120,
+      "height": 21,
+      "sha256": "b5c0251173df862161b888023c39fd10f0378ce189d8e721e596142e67413375"
+    },
+    {
+      "name": "PROBE_RUNNING",
+      "text": "板端正在探查",
+      "size": 20,
+      "width": 120,
+      "height": 21,
+      "sha256": "fa8a247916d740def4e1203226ceca7c692785299e369133423a1beaca5b93dd"
+    },
+    {
+      "name": "PROBE_DONE",
+      "text": "最近一次探查",
+      "size": 18,
+      "width": 108,
+      "height": 19,
+      "sha256": "e73f43c6b758304ae1eeff9c511eabe1b309b629c9bb28abf1404dcdc3682b2d"
+    },
+    {
+      "name": "PROBE_FAILED",
+      "text": "探查失败",
+      "size": 20,
+      "width": 80,
+      "height": 21,
+      "sha256": "80bbb80b001fc1e65b1375c2fabc1df035498a3c4ea66a629f51becba876f5e2"
+    },
+    {
+      "name": "PROBE_CONF",
+      "text": "置信度",
+      "size": 18,
+      "width": 54,
+      "height": 18,
+      "sha256": "57324557d328c0cf4010b73758090535d1c5f88d0c557bf76dbb09bba0a74f68"
+    },
+    {
+      "name": "PROBE_ATTN",
+      "text": "完整注意力已生成",
+      "size": 16,
+      "width": 128,
+      "height": 17,
+      "sha256": "31796ff8d6dbcca560851149da48e5ff2ebb62e3360b415ffb26c6bfea785ed6"
+    },
+    {
+      "name": "PROBE_ONLY",
+      "text": "独立探查不计入区域统计",
+      "size": 16,
+      "width": 176,
+      "height": 16,
+      "sha256": "6370082d95b9b226e98de2b6c5b21ac283a02716db95a4040f04d1a00e06d8a4"
+    },
+    {
+      "name": "SYSTEM",
+      "text": "系统状态",
+      "size": 22,
+      "width": 88,
+      "height": 23,
+      "sha256": "a7b68b40d0b21ed98fdd9176aa4bee44f29597383085c742d846379de78b734b"
+    },
+    {
+      "name": "LINK_WAIT",
+      "text": "等待 PC 连接",
+      "size": 22,
+      "width": 126,
+      "height": 22,
+      "sha256": "8cf6af70c23c2daf9df45c3697e87fd8e6de3209c938a99c0edfc49ac1d43d24"
+    },
+    {
+      "name": "LINK_ON",
+      "text": "PC 通信正常",
+      "size": 22,
+      "width": 121,
+      "height": 22,
+      "sha256": "18fb0abfa5dca66a54fa2c57556c47740a9b5735231d21069c5d9e904a7e7559"
+    },
+    {
+      "name": "LINK_TIMEOUT",
+      "text": "未收到 PC 消息",
+      "size": 22,
+      "width": 148,
+      "height": 22,
+      "sha256": "8a61fbe23125f2b8cfdcc9e0ff64f1eb1d88af8ce5dcd80dbd944f33d07b6e8a"
+    },
+    {
+      "name": "LINK_AGE",
+      "text": "距最近消息",
+      "size": 18,
+      "width": 90,
+      "height": 18,
+      "sha256": "484de166cdc429aa085ed9687fb1a3b7f4ef33852e4ced53a90db9814bd3f90f"
+    },
+    {
+      "name": "HINT_START",
+      "text": "请在 PC 控制台开始识别",
+      "size": 16,
+      "width": 173,
+      "height": 17,
+      "sha256": "042b086b3761039f236dbbbeef8c15cd256aa6c6957a8befb43a08e51f22e0f2"
+    },
+    {
+      "name": "HINT_RECOVER",
+      "text": "请在 PC 开始按钮旁恢复连接",
+      "size": 16,
+      "width": 205,
+      "height": 17,
+      "sha256": "992dc32e8cbdd328d70ef476740a6925b87fc5a3533df402955c59dba319db6a"
+    },
+    {
+      "name": "HINT_RUNNING",
+      "text": "当前任务正在运行",
+      "size": 16,
+      "width": 128,
+      "height": 16,
+      "sha256": "82ea01c0114ba3bc660e358ab224454b9ebaf832eca5f9ca4a819a4df442816a"
+    },
+    {
+      "name": "HINT_PREP",
+      "text": "正在准备数据，请稍候",
+      "size": 16,
+      "width": 160,
+      "height": 16,
+      "sha256": "7b2a6342f348dfb128c39b6f11125342ac37c8abfba8966bdd05854011fa5708"
+    },
+    {
+      "name": "HINT_PAUSED",
+      "text": "请在 PC 继续或停止任务",
+      "size": 16,
+      "width": 173,
+      "height": 17,
+      "sha256": "b4c09029e56177d30e0f3db6a11685e775ae4ee86835c6ff735be878d212b727"
+    },
+    {
+      "name": "HINT_NEXT",
+      "text": "可在 PC 下发下一任务",
+      "size": 16,
+      "width": 157,
+      "height": 16,
+      "sha256": "284fdc0c8805849fa9a8b3ec4dc11b86714b0fb9aaf2b0c8d39a1570d7533f7d"
+    },
+    {
+      "name": "RETAIN",
+      "text": "已完成的分类结果保留",
+      "size": 16,
+      "width": 160,
+      "height": 17,
+      "sha256": "788a204ac37ace6d426e54e410b5a059e2acbce2b73d311f0a7e0eb355b8dec4"
+    },
+    {
+      "name": "GSD_HINT",
+      "text": "面积按 GSD 换算；行列从 0 开始",
+      "size": 16,
+      "width": 234,
+      "height": 18,
+      "sha256": "86aa047a80deb4296058642a63902b51d8ef66d98231e3d59b2a628c84a4daff"
+    },
+    {
+      "name": "SCOPE_HINT",
+      "text": "青框：实际任务范围；灰色：尚无分类结果",
+      "size": 18,
+      "width": 342,
+      "height": 20,
+      "sha256": "37fb0d4dbf2a3f56b1c05fbc462e25a0119b15b7a66e8dd93d0ffae5bc382f8c"
+    },
+    {
+      "name": "PARCEL_HINT",
+      "text": "地块：在 PC 台账选择并同步",
+      "size": 16,
+      "width": 205,
+      "height": 16,
+      "sha256": "9646e230e6ca27f5f670e399c09745ded51eaa1d0478f21c725570918adf6f6c"
+    },
+    {
+      "name": "UNMEASURED_HINT",
+      "text": "芯片功率与能耗：模型估算",
+      "size": 16,
+      "width": 192,
+      "height": 17,
+      "sha256": "63e66b66809ed553542954760508c78d3d41d962c72d41fe42c98d7f00d1167d"
+    },
+    {
+      "name": "POWER_EST",
+      "text": "芯片功耗估算",
+      "size": 18,
+      "width": 108,
+      "height": 18,
+      "sha256": "93c88babf3ed6aa1ccbca17c271b901ebeb39cc8ec967ba1a4428f0fe00e68da"
+    },
+    {
+      "name": "ENERGY_EST",
+      "text": "本任务估算能耗（非实测）",
+      "size": 16,
+      "width": 192,
+      "height": 17,
+      "sha256": "30956b3aea4768198213b1c7842d6a5315a3c5693111d9a6ce0668a057d7f855"
+    },
+    {
+      "name": "POWER_MODEL",
+      "text": "温度修正模型 · 低置信 · 非实测",
+      "size": 14,
+      "width": 206,
+      "height": 15,
+      "sha256": "d253ba472633ad828295acf0b49a5b733b16cfd47b93e469adb8af4f88e51370"
+    },
+    {
+      "name": "POWER_FALLBACK",
+      "text": "40℃参考模型 · 低置信 · 非实测",
+      "size": 14,
+      "width": 208,
+      "height": 15,
+      "sha256": "a0c864c70696a9f751655a44514714e3606b04cadccb87ee85640c5f5fc60167"
+    },
+    {
+      "name": "PARCEL_TITLE",
+      "text": "地块统计",
+      "size": 24,
+      "width": 96,
+      "height": 24,
+      "sha256": "c207b7276ff1fb083893681f25679057bffa680c32c75997ac5e1fd09fb723ea"
+    },
+    {
+      "name": "PARCEL_TOTAL",
+      "text": "地块总面积",
+      "size": 16,
+      "width": 80,
+      "height": 16,
+      "sha256": "55ebe56c205d2e14a599edd7d179819402febf474c39cb191ff11641097f2c1d"
+    },
+    {
+      "name": "PARCEL_SEEN",
+      "text": "已识别面积",
+      "size": 16,
+      "width": 80,
+      "height": 16,
+      "sha256": "6b4176e91b534f3ed2136bcc30246ff90aa5fbeea94d07403cf4112f2d8a379e"
+    },
+    {
+      "name": "PARCEL_COVER",
+      "text": "识别覆盖率",
+      "size": 16,
+      "width": 80,
+      "height": 16,
+      "sha256": "784cd7a3164d41719872be03e4d5cfcd05b35eaad52376693e695081aa34e55a"
+    },
+    {
+      "name": "PARCEL_FULL",
+      "text": "完整覆盖",
+      "size": 18,
+      "width": 72,
+      "height": 18,
+      "sha256": "12c825e42b08cc227a88e3cf4f67e5f76d1bf2d73de953981e4db051a196a464"
+    },
+    {
+      "name": "PARCEL_PART",
+      "text": "部分覆盖",
+      "size": 18,
+      "width": 72,
+      "height": 18,
+      "sha256": "7a3cdecb7d85396bd62406bc410068444cf4ecc4deea7a3db0ba6c63c62b4a3e"
+    },
+    {
+      "name": "PARCEL_NONE",
+      "text": "任务未覆盖此地块",
+      "size": 16,
+      "width": 128,
+      "height": 16,
+      "sha256": "0fa981d7f8bb9b022c0f764b0bb572350235ca839708b21f0fdc54db04dc31b9"
+    },
+    {
+      "name": "PARCEL_MAIN",
+      "text": "主要类别",
+      "size": 16,
+      "width": 64,
+      "height": 17,
+      "sha256": "6a07929854586dd9d0b9a8b8c756c1ef6dcde71cec3a38d016a5b6c4fa5c4f13"
+    },
+    {
+      "name": "PARCEL_SHARE",
+      "text": "主类占比",
+      "size": 16,
+      "width": 64,
+      "height": 17,
+      "sha256": "f692640d68ac7fd1ca077231e97e1897b9eb9a3a0f2fe882a5959f29431df42e"
+    },
+    {
+      "name": "PARCEL_MIX",
+      "text": "混杂比例",
+      "size": 16,
+      "width": 64,
+      "height": 16,
+      "sha256": "6c67604eea1b6bf545a4d2324547da0a8e637af506de1383ef9c1d20980d597f"
+    },
+    {
+      "name": "PARCEL_LOW",
+      "text": "低置信占比",
+      "size": 16,
+      "width": 80,
+      "height": 16,
+      "sha256": "02a1c860e3a6b17c6596e3ac151ebaca7870cb5dc0cbd281a4e376dab66b428f"
+    },
+    {
+      "name": "PARCEL_SOURCE",
+      "text": "PC 汇总，基于板卡分类结果",
+      "size": 16,
+      "width": 201,
+      "height": 16,
+      "sha256": "b5facaafc1e8cc3f05a34b9743d14799da0c33133626392b32c7cb3802b46e79"
+    },
+    {
+      "name": "PARCEL_SCOPE",
+      "text": "仅统计地块内已接收像素；未识别不外推",
+      "size": 14,
+      "width": 252,
+      "height": 16,
+      "sha256": "6798204872ad86e2dface87e4f318d26a00c7ecbafeb44bbd4ceb643e2d9e74c"
+    },
+    {
+      "name": "PARCEL_STALE",
+      "text": "更新已暂停，保留上次统计",
+      "size": 16,
+      "width": 192,
+      "height": 16,
+      "sha256": "6dd5a1f7e4f0f1f6c1933da58c0196c019c79af6bb841f637d5267ab1d81ea8a"
+    },
+    {
+      "name": "PARCEL_LIVE",
+      "text": "地块统计同步中",
+      "size": 16,
+      "width": 112,
+      "height": 16,
+      "sha256": "3422222cc1dd3badb9ce72a89ab78587e0a980fffc3f340e89a02891678393be"
+    },
+    {
+      "name": "CHIP_TEMP",
+      "text": "芯片温度",
+      "size": 20,
+      "width": 80,
+      "height": 20,
+      "sha256": "3d33d37dddd4bd67ee390e11d9e35970982e93758959617b709fc2f3b23aac08"
+    },
+    {
+      "name": "TEMP_PEAK",
+      "text": "本次启动峰值",
+      "size": 16,
+      "width": 96,
+      "height": 17,
+      "sha256": "e1a4166b5206c88cc130657940958d2426d9762d6f712ba2ef433f965f49532a"
+    },
+    {
+      "name": "TEMP_FAIL",
+      "text": "温度读取不可用",
+      "size": 16,
+      "width": 112,
+      "height": 16,
+      "sha256": "75b5700719cca4f6e0a21b9a828e17d716e072568adaeebdc7cffabe02cd395a"
+    },
+    {
+      "name": "FAULT_HINT",
+      "text": "任务失败，请在 PC 查看错误",
+      "size": 16,
+      "width": 205,
+      "height": 16,
+      "sha256": "27a9bc55c3e033c942cea47d6f4094ae6cf4373dce176c05cae3a3e11f33a9ed"
+    },
+    {
+      "name": "DISPATCH_TITLE",
+      "text": "任务下发状态",
+      "size": 24,
+      "width": 144,
+      "height": 24,
+      "sha256": "b5480e040ac8fc5b13cec0bb03c95fccbdafc53f88809d0f8ff20d8393735188"
+    },
+    {
+      "name": "DISPATCH_NONE",
+      "text": "尚无任务指令",
+      "size": 18,
+      "width": 108,
+      "height": 18,
+      "sha256": "fc676c00a277c21759ac6b6dd7c8efc25d155557036e7a8aa34f95d8ac7302f8"
+    },
+    {
+      "name": "DISPATCH_PC",
+      "text": "来源：PC 控制台",
+      "size": 18,
+      "width": 136,
+      "height": 18,
+      "sha256": "049ed5fc96284d0c99bd5cf98c6033b1ffbb16c930fd7c318c9ae35cb23b969c"
+    },
+    {
+      "name": "DISPATCH_K5_ONE",
+      "text": "来源：KEY5 单击",
+      "size": 18,
+      "width": 137,
+      "height": 17,
+      "sha256": "bfe9670cd42f4d455b9c9978c5662d7bd4c82af5225188811f700244c864c185"
+    },
+    {
+      "name": "DISPATCH_K5_TWO",
+      "text": "来源：KEY5 双击",
+      "size": 18,
+      "width": 137,
+      "height": 17,
+      "sha256": "bb5c7677a95ef00c8a5cee8eceb2d9636f53fea07e5ff76ab74781357b529dfc"
+    },
+    {
+      "name": "DISPATCH_K5_HOLD",
+      "text": "来源：KEY5 长按",
+      "size": 18,
+      "width": 137,
+      "height": 18,
+      "sha256": "d687e802e9ef9b5f8513b65af777c8947b156f80581ea7d8befd34ee306c791a"
+    },
+    {
+      "name": "DISPATCH_K6_ONE",
+      "text": "来源：KEY6 单击",
+      "size": 18,
+      "width": 137,
+      "height": 17,
+      "sha256": "a7c7403cc18025fef7cafa323ef649af8f25997337a9c800a32dd129964948a2"
+    },
+    {
+      "name": "DISPATCH_K6_TWO",
+      "text": "来源：KEY6 双击",
+      "size": 18,
+      "width": 137,
+      "height": 17,
+      "sha256": "4185b29985afe4be6ba1e1f928f4282146cc482bef8b0c161d334b974a7aedfe"
+    },
+    {
+      "name": "DISPATCH_K6_HOLD",
+      "text": "来源：KEY6 长按",
+      "size": 18,
+      "width": 137,
+      "height": 18,
+      "sha256": "56cce82bab5ef8c9473141d4581b894135d92f045a27b46506585ec59f970222"
+    },
+    {
+      "name": "DISPATCH_ACTION",
+      "text": "动作：",
+      "size": 18,
+      "width": 54,
+      "height": 18,
+      "sha256": "06de6327f8519b51837f2c123de67ac23d4fa2088d27eb873e1b613ea3877445"
+    },
+    {
+      "name": "DISPATCH_POINT",
+      "text": "单点探查",
+      "size": 18,
+      "width": 72,
+      "height": 17,
+      "sha256": "086a17c15d2ab5baeef359e4bfe213cff929ba46c339c6d1ef48bc7e009feba0"
+    },
+    {
+      "name": "DISPATCH_SCAN",
+      "text": "整景巡检",
+      "size": 18,
+      "width": 72,
+      "height": 18,
+      "sha256": "97c6af534548bfcdb613ac143866485e0d9a5dd57b4b35ae3d0b057a09223338"
+    },
+    {
+      "name": "DISPATCH_REGION",
+      "text": "矩形区域识别",
+      "size": 18,
+      "width": 108,
+      "height": 17,
+      "sha256": "34902a7a8a0992f430481f0565ca232a14826a7fe7ea2b579ca4f10c98f77bb6"
+    },
+    {
+      "name": "DISPATCH_PARCEL",
+      "text": "地块外接框识别",
+      "size": 18,
+      "width": 126,
+      "height": 18,
+      "sha256": "b59ecbd261a006e8902d4e9172f781d726e3c5a352790f6a7043d16aa9cdb5df"
+    },
+    {
+      "name": "DISPATCH_SCENE",
+      "text": "切换场景",
+      "size": 18,
+      "width": 72,
+      "height": 17,
+      "sha256": "884c28eb01e738545a86b88d957e02d7266c4890d9a478567d39552404fee603"
+    },
+    {
+      "name": "DISPATCH_PAUSE",
+      "text": "暂停任务",
+      "size": 18,
+      "width": 72,
+      "height": 18,
+      "sha256": "12c5799e2bd350cadbdbbd224823ce32442560121d4c8490f46743afe3469bec"
+    },
+    {
+      "name": "DISPATCH_RESUME",
+      "text": "继续任务",
+      "size": 18,
+      "width": 72,
+      "height": 18,
+      "sha256": "564968515a6df39aabfa3fd741a214c5d4938e73ae5adc3cd08cd1a99b49e4a5"
+    },
+    {
+      "name": "DISPATCH_STOP",
+      "text": "停止任务",
+      "size": 18,
+      "width": 72,
+      "height": 18,
+      "sha256": "f13774c2f35cede7ddee58afb88ac926ad28def7918b4c27f28c29f30ced2adf"
+    },
+    {
+      "name": "DISPATCH_WAIT",
+      "text": "等待后台接收",
+      "size": 18,
+      "width": 108,
+      "height": 18,
+      "sha256": "18a8e0ce570716296617c2ea355db630792413a2fe3600bdc9cf512bf4e29cad"
+    },
+    {
+      "name": "DISPATCH_RECEIVED",
+      "text": "指令已接收，等待执行",
+      "size": 18,
+      "width": 180,
+      "height": 19,
+      "sha256": "f5107829f4c7a65d7b6c70ec08ed8b69eddb58baf53ac2f70350039b07bed59b"
+    },
+    {
+      "name": "DISPATCH_PREP",
+      "text": "加载输入，等待首批结果",
+      "size": 18,
+      "width": 198,
+      "height": 19,
+      "sha256": "b4a4835507f07c90fd71ca2fdd90e9b93205292bef40dfa75d4a4bf331568bd5"
+    },
+    {
+      "name": "DISPATCH_RUNNING",
+      "text": "任务正在执行",
+      "size": 18,
+      "width": 108,
+      "height": 18,
+      "sha256": "9155dd8b07c0bd55787b886fdfbe6fb66b4425367ed90f6ad9da8c1da037a5fc"
+    },
+    {
+      "name": "DISPATCH_DONE",
+      "text": "本次操作已完成",
+      "size": 18,
+      "width": 126,
+      "height": 19,
+      "sha256": "1d0805ad4e7dcf3644c66a5dd2d004c332be7a552ec4321f8588b22599d6c4eb"
+    },
+    {
+      "name": "DISPATCH_FAILED",
+      "text": "操作失败，请在 PC 查看日志",
+      "size": 16,
+      "width": 205,
+      "height": 16,
+      "sha256": "df74cb4f49ca725c9c30e51feec0fdf10169dbf826fb54a9d937c72929ff4b0b"
+    },
+    {
+      "name": "DISPATCH_SELECTED",
+      "text": "场景已选中，等待下发任务",
+      "size": 16,
+      "width": 192,
+      "height": 16,
+      "sha256": "16cbc646b5b96d3f8f8e360a7162f3e6ab17d5003d567293d56e40992158646d"
+    },
+    {
+      "name": "KEY_GUIDE5",
+      "text": "KEY5 单击：单点；双击：整景",
+      "size": 14,
+      "width": 190,
+      "height": 15,
+      "sha256": "2a825447cfd1525eb19a34348272100fbc2c33eaf167df69823ebe6dac406fd9"
+    },
+    {
+      "name": "KEY_GUIDE6",
+      "text": "KEY6 单击：矩形；双击：地块",
+      "size": 14,
+      "width": 190,
+      "height": 15,
+      "sha256": "696d0e59a5aa0b3bd67956af005c5d0c2c06ae1bc8aa2545318787580467d7a3"
+    },
+    {
+      "name": "KEY_GUIDE_HOLD",
+      "text": "两键各自长按2秒：切景；KEY7复位",
+      "size": 14,
+      "width": 223,
+      "height": 16,
+      "sha256": "736923555d88badc1db540de24897c4d7c6cd001d13af59054c6b2955f94b95f"
+    }
+  ],
+  "header_sha256": "92ff43208fd92519ce2de35640858d6a662c518a741e8b139dd0e18efcee6387"
+}

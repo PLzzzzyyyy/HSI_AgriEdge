@@ -1,0 +1,69 @@
+{
+  "schema": 2,
+  "scene": "hanchuan",
+  "shape": [
+    1217,
+    303
+  ],
+  "classes": [
+    "Strawberry",
+    "Cowpea",
+    "Soybean",
+    "Sorghum",
+    "Water spinach",
+    "Watermelon",
+    "Greens",
+    "Trees",
+    "Grass",
+    "Red roof",
+    "Gray roof",
+    "Plastic",
+    "Bare soil",
+    "Road",
+    "Bright object",
+    "Water"
+  ],
+  "bands": 270,
+  "label_base": 1,
+  "split": "WHU-Hi hanchuan official Train100/Test100",
+  "scope": "FIXED_LABELS_NOT_MODEL_OR_BOARD_SCORE",
+  "files": {
+    "train": {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Train100.mat",
+      "bytes": 6426,
+      "sha256": "8c9c14b7a0934dc2b7b7dcdc8f575680bd3c2581cc4eeda78067678471274199",
+      "crc32": "6491b488"
+    },
+    "test": {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Test100.mat",
+      "bytes": 24144,
+      "sha256": "8ed88c7b6323106a778289c987d28084edfa5b93c8f62b084044590ea02ce4de",
+      "crc32": "4f7c96e1"
+    },
+    "gt": {
+      "path": "data/scenes/hanchuan/gt_u8.bin",
+      "bytes": 368751,
+      "sha256": "9ee716a1ecdbe40c2b1b52fc2d5de0684ff3b02f9128b89e14f28e803974fce6",
+      "crc32": "26df4a9e"
+    }
+  },
+  "train_counts": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "test_pixels": 255930
+}

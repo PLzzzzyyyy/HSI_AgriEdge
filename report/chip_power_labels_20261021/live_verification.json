@@ -1,0 +1,58 @@
+{
+  "result": "PASS",
+  "boot": "228ce11b",
+  "release_id": "3db78827f96da19d3ab1c33206abf72b58217c397ef532a7a24032b3aafd8d8e",
+  "model_id": "a4363b00",
+  "telemetry": {
+    "device": "AXU5EV-E · 芯片温度实测；参考功耗/能耗来源：Vivado 模型（非实测）",
+    "temp_c": 29.168670654296875,
+    "power_w": null,
+    "ms_per_px": null,
+    "lost": null,
+    "rx_pkts": 0,
+    "rx_bytes": 0,
+    "tx_pkts": 0,
+    "tx_bytes": 0,
+    "temp_peak_c": 29.168670654296875,
+    "temp_state": "valid",
+    "temp_age_s": 0.6,
+    "temp_source": "PS_SYSMON_DIE",
+    "display": {
+      "state": "idle"
+    },
+    "power_est_w": 5.966177940368652,
+    "power_est_state": "valid",
+    "power_estimate": {
+      "measured": false,
+      "source": "VIVADO_VECTORLESS_TEMPERATURE",
+      "scope": "CHIP_PS_PL_ONLY",
+      "model_id": "a4363b00",
+      "confidence": "Low",
+      "calibrated": false,
+      "boot_id": "228ce11b",
+      "session": 1982525550,
+      "task": 0,
+      "counter": 14,
+      "sample_age_ms": 0,
+      "power_est_w": 5.966177940368652,
+      "temperature_used_c": 29.168670654296875,
+      "temperature_valid": true,
+      "energy_est_j": null,
+      "duration_s": 0,
+      "fallback_s": 0,
+      "active": false,
+      "done": 0,
+      "total": 0,
+      "energy_est_mj_per_px": null,
+      "age_s": 0.6
+    }
+  },
+  "labels": [
+    "芯片参考功耗",
+    "本任务参考能耗",
+    "参考 mJ / 像素"
+  ],
+  "source_notice_retained": "Vivado 模型／非实测",
+  "frame": "dp_live.png",
+  "scope": "Display wording only; power model and inference hardware unchanged"
+}

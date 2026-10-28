@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-07",
+  "status": "EVALUATION ONLY; candidate stopped at user request",
+  "candidate": "tt_engine_m3_k7_overlap_v2",
+  "csim": "12-layer CSim PASS; 137.174 seconds; no numerical mismatches",
+  "synthesis": "Entered source analysis but stopped, no synth.done or accepted synthesis results",
+  "actions": "No cosim/export/Vivado/system XSA build; no user App or serial XSA changes",
+  "decision": "Do not resume or implement INT8/frontend until user chooses after assessment",
+  "files": [
+    {
+      "path": "board/m3/20261007_optimization_assessment/.gitattributes",
+      "bytes": 86,
+      "sha256": "5e60f537c1684d18b95420e4aadd3c3f63e4751343438968f5db4cbf2b704a35"
+    },
+    {
+      "path": "board/m3/20261007_optimization_assessment/user_stop.json",
+      "bytes": 435,
+      "sha256": "0f8baa6ecc8daed06cb5328c4abf3ac259e41c740498124958513eb4cd395e18"
+    },
+    {
+      "path": "board/m3/20261007_optimization_assessment/v1_exit_code.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "board/m3/20261007_optimization_assessment/v1_open_project_failure.txt",
+      "bytes": 3044,
+      "sha256": "65b1415a169251065432519e21873dfd5dd3836c2538fea2289c11d023a92972"
+    },
+    {
+      "path": "board/m3/20261007_optimization_assessment/v2_console_stopped.txt",
+      "bytes": 10315,
+      "sha256": "3fa50b34c2d1982838e9318fc26cba7650be82167cc0f967b9b150bdd46d95fa"
+    },
+    {
+      "path": "board/m3/20261007_optimization_assessment/v2_flags.txt",
+      "bytes": 132,
+      "sha256": "e833445ea0b77b341692c62c079fdf694f54144a7eebb391a47bbc9c1ca5b1eb"
+    },
+    {
+      "path": "board/m3/20261007_optimization_assessment/v2_run_before_stop.json",
+      "bytes": 594,
+      "sha256": "dfb5c8879e3a6a8ebad9fc4a80d81e27a9dde17a634e2533b3d51eef384f2b2c"
+    },
+    {
+      "path": "board/m3/20261007_optimization_assessment/v2_run_stopped.json",
+      "bytes": 735,
+      "sha256": "7e8a09521112b74b4eb7dcf0784c5f7a43282223f82ef4a3e2cc4cfb2d69ce00"
+    }
+  ],
+  "candidate_sources": [
+    {
+      "path": "build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/hls/tt_attn.cpp",
+      "bytes": 18358,
+      "sha256": "06aa0f033af7c9d9ea404b3cd6aa87589888354bcaca11a1f8f4ea3e0ad2b91a"
+    },
+    {
+      "path": "build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/hls/tt_attn.h",
+      "bytes": 4448,
+      "sha256": "90777090acc481daa3142eadc9c47af445d629298f85bfe0cf5d5d5f4bd14555"
+    },
+    {
+      "path": "build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/hls/tt_engine.cpp",
+      "bytes": 41536,
+      "sha256": "44b7c68d9d224b7662bd6e9aa2be705f83ce7a56ad6238e381637df58f6f55b0"
+    },
+    {
+      "path": "build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/hls/tt_engine.h",
+      "bytes": 2687,
+      "sha256": "9083d7a2b8cd20de409bdf9c4b7a0264dbbe5824bd797cf68bb80587b4373a19"
+    },
+    {
+      "path": "build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/hls/tt_engine_regs.h",
+      "bytes": 12722,
+      "sha256": "63229431f96c5c1f7719a410121972d375b64af0d0a4f71e053ccf45f225a003"
+    },
+    {
+      "path": "build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/hls/tt_types.h",
+      "bytes": 1949,
+      "sha256": "98e6d7efff19714491a3122c760229fd4c1bd7927ec2c95a1988fc5d944f1cbc"
+    },
+    {
+      "path": "build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/ps/tt_ref_int.h",
+      "bytes": 4482,
+      "sha256": "cea5729fef9295be568ffe809ad2c45e6b3d5f338b7982334b0a530c11ccb738"
+    }
+  ],
+  "serial_xsa": {
+    "path": "build/vivado/tt_m3a_zu5ev.xsa",
+    "bytes": 3326853,
+    "sha256": "9813b5632250839274e6e298e5e4df8ea601b6d41016351148f98cf6057d9652"
+  }
+}

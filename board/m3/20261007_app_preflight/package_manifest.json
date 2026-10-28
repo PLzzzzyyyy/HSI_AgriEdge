@@ -1,0 +1,297 @@
+{
+  "status": "source-only; user Build/download pending; not board evidence",
+  "package_id": "d081e19d48e22c0e",
+  "source_parent_commit": "b236626b5419e73e6f3ac4e28eb4ee0d0c5f3062",
+  "inputs_digest": "d081e19d48e22c0ea6987f4660e35c3141e8c566482f250d95b2386f853a38b1",
+  "xsa_sha256": "9813b5632250839274e6e298e5e4df8ea601b6d41016351148f98cf6057d9652",
+  "app_directory": "tt_m3a_zu5ev/test_m3a",
+  "inputs": [
+    {
+      "path": "src/ps/tt_m3a.cpp",
+      "bytes": 5881,
+      "sha256": "90003a705d1a8562881e36c77ec1abde055f9e01d3292284db0c800f520944c3"
+    },
+    {
+      "path": "src/ps/tt_m3a.h",
+      "bytes": 1771,
+      "sha256": "fa448b9c71d15e2c0b4f515b094e9ce576e020c97cb5278fe12a3aece122cf25"
+    },
+    {
+      "path": "src/ps/tt_net.cpp",
+      "bytes": 31116,
+      "sha256": "913bc7531ad3dff7f9036ac9dfcd5c8e6f31ddc857b87ed1437fdbe2141294c6"
+    },
+    {
+      "path": "src/ps/tt_net.h",
+      "bytes": 5200,
+      "sha256": "75f3bdd3779d78c683b3b8e57dd8de667363acd0a32764781af3b97a3f216388"
+    },
+    {
+      "path": "src/ps/tt_hw.h",
+      "bytes": 2410,
+      "sha256": "f82fbf4d103aae471f4b236b53861f7a19ed14083be59482a329a32737e684d0"
+    },
+    {
+      "path": "src/ps/tt_hw_sim.cpp",
+      "bytes": 1900,
+      "sha256": "af043ff2e0241723f74a937c3a5d5beff500584ba892e2588d801bba236f92ee"
+    },
+    {
+      "path": "src/ps/tt_ref_int.h",
+      "bytes": 4482,
+      "sha256": "cea5729fef9295be568ffe809ad2c45e6b3d5f338b7982334b0a530c11ccb738"
+    },
+    {
+      "path": "src/ps/tt_data.c",
+      "bytes": 1746591,
+      "sha256": "cafbdc2a436ce90644dc664b15745265a5ebcc6b9c3d94dd7d08d12161a315f3"
+    },
+    {
+      "path": "src/ps/tt_data.h",
+      "bytes": 697,
+      "sha256": "ccd65495f173ba02e0534280b92561580d43ab928d9e506f51ef774bffd560e7"
+    },
+    {
+      "path": "src/hls/tt_engine_regs.h",
+      "bytes": 12722,
+      "sha256": "63229431f96c5c1f7719a410121972d375b64af0d0a4f71e053ccf45f225a003"
+    },
+    {
+      "path": "src/ps/m3a/main.cpp",
+      "bytes": 442,
+      "sha256": "a2e6328399ca6977b312e9acb85780896dc5fe715d1acb13efc71d6eb392422d"
+    },
+    {
+      "path": "src/ps/m3a/m3a_bench.cpp",
+      "bytes": 9902,
+      "sha256": "36d8e61525fba675c2b45368c8af82ed9baf308ad4e74cff1fac5e7086a729e9"
+    },
+    {
+      "path": "src/ps/m3a/m3a_bench.h",
+      "bytes": 139,
+      "sha256": "be48ebe21c2527db0be8185f48f291eded8cc554e9456ee6954fec91e7a34b15"
+    },
+    {
+      "path": "src/ps/m3a/m3a_vectors.h",
+      "bytes": 631,
+      "sha256": "57e9c7f0f7abd06b711494971c8f3a3c94f5d7ed39e11f5e4bbdf491ee3e9766"
+    },
+    {
+      "path": "sim/golden/n6_engine/weights_engine.bin",
+      "bytes": 480576,
+      "sha256": "15925d2dd8e273cc291f0a2d4a10ddde0bd02d27fa5c558d6b678df95bdf4e51"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/x_in_i16.bin",
+      "bytes": 31752,
+      "sha256": "270d06b33cf9c11ff25deb1f562d411ecb13be9d99e32ebda13050e59afb11b1"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/x_embed_i32.bin",
+      "bytes": 63504,
+      "sha256": "dbda05dc2d684377ccc51c06b1c603acf71e1f72b9888b5d2dabda82bd1fa64a"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "21b35c1067362b95bf0dfaafde76a3c92ef786bdf1f1ed33f04243baecf19974"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "160730f39517104d46500ea49c8ade64aa4fffcd0f8adb10f091689db73f639a"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "e72bbb7616b6508c7260b975620b14f5d46de3cf3a8f980bafe84e0b9fed3791"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "6140b1cca37450a0546fbb4aeff3402512cb6a35c25e36172f12aa7cf5d65238"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "d349a676efe4cc5cf251df649684c292d5108da7574b6e4e5b1a8496696b3a35"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "f08930c720c50f261529421653e4f5093157c6f09d2da81a767c624e2aa5c5a5"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "61111fc492af21a133c360b15b73c960adb74a82df9e1a10a1c092616f768a94"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "c901134c97e3328d2b1ec4a5e7e592f682591cf1c3cb487afdc6ae3646d6c7f0"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "31cee1af72ed6dd0ab91934dd55383d75679e5f07fb176a14c5c0ea62ba7f81b"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "651fdba136b2d047737b33528ae8f617195f2fb528980fbef8ce3d3d67a46d3d"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "b349b91ff7cc04acc66bd89e88d171c53bfd868555eea9b1c2c30ed760a764a0"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "2e5eb47d493051f29d2835edbfc32c114f8f6eb8b2eff1013cb2de981bc64da1"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/logits_q16_i32.bin",
+      "bytes": 128,
+      "sha256": "33cf8c3c83246e40cf78de78aee5797433f729dd6805181d7ac068a06bd31219"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/logits_q16_i32.bin",
+      "bytes": 128,
+      "sha256": "4bbaed5d13010f40252deb5f6f0a73063dd2701f244a20496133f546720d9e68"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/class_u32.bin",
+      "bytes": 4,
+      "sha256": "03e9364756098aa8362d55189df3f3231e7fc7a7b490adcf5306252f316bcde9"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/class_u32.bin",
+      "bytes": 4,
+      "sha256": "ac158c8db7ad4d29f2fff328188be5ed287dbaf6bdf97f651a8c3daa2a5428fa"
+    },
+    {
+      "path": "build/vivado/tt_m3a_zu5ev.xsa",
+      "bytes": 3326853,
+      "sha256": "9813b5632250839274e6e298e5e4df8ea601b6d41016351148f98cf6057d9652"
+    },
+    {
+      "path": "board/m3/20261007_system_impl/manifest.json",
+      "bytes": 7136,
+      "sha256": "2849bcb813e8fcec68d87bda4a635792f4527669f1a4f594ff7df93ba490548b"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/host_manifest.json",
+      "bytes": 60537,
+      "sha256": "aaded90d5eb0bda3f7cdcacef0967088f1702d71b25eb1e541c09ca7f39a8177"
+    },
+    {
+      "path": "board/m3/app_readme.md",
+      "bytes": 6940,
+      "sha256": "d726629bf32caf4e92a20647d773130c158e8d5642b24010fae93288d20d5c6d"
+    },
+    {
+      "path": "tools/prepare_m3a_sources.py",
+      "bytes": 6245,
+      "sha256": "473df4639ce1b3f006dda25d26c7e3c9aa0c077b97e6aedbb097521d9a2c33c6"
+    }
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6940,
+      "sha256": "d726629bf32caf4e92a20647d773130c158e8d5642b24010fae93288d20d5c6d"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/settings.json",
+      "bytes": 590,
+      "sha256": "226a45a9d91ce9e44c1baa72f3a50fed978d55ffa8e1082b5d099aadd870f8f8"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/m3a_bench.cpp",
+      "bytes": 9902,
+      "sha256": "36d8e61525fba675c2b45368c8af82ed9baf308ad4e74cff1fac5e7086a729e9"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/m3a_bench.h",
+      "bytes": 139,
+      "sha256": "be48ebe21c2527db0be8185f48f291eded8cc554e9456ee6954fec91e7a34b15"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/m3a_package.h",
+      "bytes": 182,
+      "sha256": "c996ad1ac05ba7b24d59627e0ddce98527e4eaa03e8983caa695d8a98aa01114"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/m3a_vectors.c",
+      "bytes": 2410708,
+      "sha256": "5e2ccbdbf724008ba65b0d8407bfe03887fd0a1d41b9c79e7359beb2f4ded6e7"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/m3a_vectors.h",
+      "bytes": 631,
+      "sha256": "57e9c7f0f7abd06b711494971c8f3a3c94f5d7ed39e11f5e4bbdf491ee3e9766"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/main.cpp",
+      "bytes": 442,
+      "sha256": "a2e6328399ca6977b312e9acb85780896dc5fe715d1acb13efc71d6eb392422d"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/tt_data.c",
+      "bytes": 1746591,
+      "sha256": "cafbdc2a436ce90644dc664b15745265a5ebcc6b9c3d94dd7d08d12161a315f3"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/tt_data.h",
+      "bytes": 697,
+      "sha256": "ccd65495f173ba02e0534280b92561580d43ab928d9e506f51ef774bffd560e7"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/tt_engine_regs.h",
+      "bytes": 12722,
+      "sha256": "63229431f96c5c1f7719a410121972d375b64af0d0a4f71e053ccf45f225a003"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/tt_hw.h",
+      "bytes": 2410,
+      "sha256": "f82fbf4d103aae471f4b236b53861f7a19ed14083be59482a329a32737e684d0"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/tt_hw_sim.cpp",
+      "bytes": 1900,
+      "sha256": "af043ff2e0241723f74a937c3a5d5beff500584ba892e2588d801bba236f92ee"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/tt_m3a.cpp",
+      "bytes": 5881,
+      "sha256": "90003a705d1a8562881e36c77ec1abde055f9e01d3292284db0c800f520944c3"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/tt_m3a.h",
+      "bytes": 1771,
+      "sha256": "fa448b9c71d15e2c0b4f515b094e9ce576e020c97cb5278fe12a3aece122cf25"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/tt_net.cpp",
+      "bytes": 31116,
+      "sha256": "913bc7531ad3dff7f9036ac9dfcd5c8e6f31ddc857b87ed1437fdbe2141294c6"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/tt_net.h",
+      "bytes": 5200,
+      "sha256": "75f3bdd3779d78c683b3b8e57dd8de667363acd0a32764781af3b97a3f216388"
+    },
+    {
+      "path": "tt_m3a_zu5ev/test_m3a/src/tt_ref_int.h",
+      "bytes": 4482,
+      "sha256": "cea5729fef9295be568ffe809ad2c45e6b3d5f338b7982334b0a530c11ccb738"
+    },
+    {
+      "path": "tt_m3a_zu5ev/tt_m3a_zu5ev.xsa",
+      "bytes": 3326853,
+      "sha256": "9813b5632250839274e6e298e5e4df8ea601b6d41016351148f98cf6057d9652"
+    }
+  ]
+}

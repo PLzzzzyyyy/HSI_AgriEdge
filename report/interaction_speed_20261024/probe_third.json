@@ -1,0 +1,19 @@
+{
+  "state": "done",
+  "row": 340,
+  "col": 283,
+  "req_seq": 268,
+  "class_id": 5,
+  "confidence_q16": 65534,
+  "identity": {
+    "scene": "longkou",
+    "model": "v3_board",
+    "wcrc": "ddf16522",
+    "shape": [
+      550,
+      400
+    ],
+    "classes": 9,
+    "kind": 1
+  }
+}

@@ -1,0 +1,2 @@
+# Preserve the exact LUT source bytes used by the frozen CSim snapshots.
+s2_exp.cpp -text

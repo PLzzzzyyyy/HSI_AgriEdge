@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "release_id": "c0ea04b7b9bb30c50652232b2d2886de4c33c670d26ed31294d4700758d8ff67",
+  "boot": "228ce124",
+  "dp_init_rc": 0,
+  "run_id": 103,
+  "pixels": 1600,
+  "history_before": 101,
+  "history_after": 103,
+  "physical_keys": "KEY5/KEY6 source and lifecycle covered by host rendering test; no physical key pressed by automation",
+  "captures": [
+    "live_idle_before.png",
+    "live_pc_running.png",
+    "live_idle_after.png"
+  ],
+  "image_check": "All three real framebuffer header crops exactly match expected artwork after RGB565 conversion",
+  "host_checks": [
+    "test_dp_command_status: PC, KEY5, KEY6, all phases, heartbeat isolation, stale-text clearing",
+    "test_dp_dashboard: three scenes area conservation, ROI bounds and marker restore"
+  ],
+  "build": "Vitis 2026.1, zero application warnings",
+  "warmup_run": 102
+}

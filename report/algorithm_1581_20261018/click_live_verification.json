@@ -1,0 +1,23 @@
+{
+  "release_id": "84284f8dd6346a48dbb5f276b9704933b17d2d3ce2d3121d8cd053769bb125d3",
+  "boot": "228ce114",
+  "cold": {
+    "run_id": 43,
+    "row": 1,
+    "col": 1,
+    "class_word": "E48B0000",
+    "attention_crc32": "00642670",
+    "end_to_end_ms": 1446,
+    "request": "/api/board/point-probe"
+  },
+  "warm": {
+    "run_id": 43,
+    "row": 1,
+    "col": 2,
+    "class_word": "FA0C0000",
+    "attention_crc32": "3da369e3",
+    "end_to_end_ms": 1201,
+    "request": "/api/run/43/board/probe"
+  },
+  "scope": "Actual served BoardPanel handler in DOM fixture, real HTTP and FPGA results; no manual send click and no desktop browser automation; timing includes task setup and polling."
+}

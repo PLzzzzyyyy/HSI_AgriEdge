@@ -1,0 +1,89 @@
+{
+  "inputs": {
+    "src\\hls\\m3_math\\s2_math.cpp": "0df54a9b84f7ceab297828075ddad1e38c149af1a358f8c0eaebe020cc227b8a",
+    "src\\hls\\m3_math\\s2_math.h": "abbde3330ca78c143e27ec563b99da2d563ad75934e691194367d0454c02e65f",
+    "src\\hls\\m3_s2\\s2_engine.cpp": "cd27e3b9b9cf6fd61fcbee9898fe2a2d36af1b03cdf68afaf6828b7185f3c408",
+    "src\\hls\\m3_s2\\s2_engine.h": "54c6af0208a6028a5041da60ff55fe34a76d167c61a8f9fb6a6a2b116bba9d23",
+    "src\\hls\\m3_s2\\s2_exp.cpp": "9398f3afe5fa866f97deb40b90a3bcc8bca355df3633dd3a3e10f50a5490b456",
+    "src\\hls\\m3_s2\\s2_index.h": "85a98fa457e87d54c8388315caafae50af53a0f03aef9b2602ae75383e872995",
+    "src\\hls\\m3_s2\\s2_internal.h": "368ff7cd139c0afa3959da064eb0f0eab0856bf5692d24996f1e9d0fb7d8629b",
+    "src\\hls\\m3_s2\\s2_projection.cpp": "85bd861743924a4be8d572feb98bd236bef3b2c30831f80e16a6e5eef006d7fa",
+    "src\\hls\\m3_s2\\s2_quant.h": "835a2bdfec18fda4ab0133465cc1d03a683962ddad631c6b6f75a9d30c4559d7",
+    "src\\hls\\m3_s2\\s2_state.h": "fcafaab8750c0db09a7db1309acc00af97d4714344b3b6eb94130563ce98f01a",
+    "src\\hls\\m3_s2\\s2_worker.h": "3b2e12e34d564c0d4985c8c15e5d1730b206bb634e50bd57a34089ea6f38a890",
+    "sim\\hls_tb\\tb_m3_s2.cpp": "1210616c15f11124bf74b249b9d307898f4c72a5fcf1cb837a7d2adbd98249f7",
+    "tests\\test_input_load.cpp": "0f4a00e9b759533da861c4a20e84622bfefe4e1aa4ff8b736da5f5bcea31139b"
+  },
+  "tests": [
+    {
+      "num": 8,
+      "contexts": 2,
+      "mode": "full",
+      "log": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\.runtime-tmp\\p2_xwrite_final0_full.log",
+      "sha256": "853556ffbd198084bce3944b7ec2e1f7f5535ee7cef7fbf367a9bfbed7d6e658"
+    },
+    {
+      "num": 8,
+      "contexts": 2,
+      "mode": "budget",
+      "log": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\.runtime-tmp\\p2_xwrite_final0_budget.log",
+      "sha256": "4a1c65c80693f2c660bad6b77a2a19cad59699362ab586b3a867d6a7457dda07"
+    },
+    {
+      "num": 8,
+      "contexts": 2,
+      "mode": "stress",
+      "log": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\.runtime-tmp\\p2_xwrite_final0_stress.log",
+      "sha256": "b999738192ce6805e04cafc99281e979123caf244ede25df3a5f1d876e668613"
+    },
+    {
+      "num": 8,
+      "contexts": 2,
+      "mode": "arbiter",
+      "log": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\.runtime-tmp\\p2_xwrite_final0_arbiter.log",
+      "sha256": "8bc4292dd3f5ab3e58cb41f1fd760582adc634e5d5fea0daf7709909128793d1"
+    },
+    {
+      "num": 8,
+      "contexts": 2,
+      "mode": "load",
+      "log": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\.runtime-tmp\\p2_xwrite_final0_load.log",
+      "sha256": "d59e9037dd6b2eba9ca28d59a5119568a673040c3db2dbd810ce1ae82a07368c"
+    },
+    {
+      "num": 8,
+      "contexts": 2,
+      "mode": "drain",
+      "log": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\.runtime-tmp\\p2_xwrite_final0_drain.log",
+      "sha256": "d4e0f42b104340f9acc95b8f2bbb3329f5934cfaca20d2df32849434fd4dff54"
+    },
+    {
+      "num": 16,
+      "contexts": 2,
+      "mode": "arbiter",
+      "log": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\.runtime-tmp\\p2_xwrite_final1_arbiter.log",
+      "sha256": "3ecfcedb1f131f6788f05064c5b607e2f0d184f83e0d223e1dbb83324a280d88"
+    },
+    {
+      "num": 8,
+      "contexts": 1,
+      "mode": "arbiter",
+      "log": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\.runtime-tmp\\p2_xwrite_final2_arbiter.log",
+      "sha256": "34cf2d442b30d93f1c7bc60105069db1b6a923887f188c0114a88fbf0efd0b1f"
+    },
+    {
+      "num": 8,
+      "contexts": 2,
+      "mode": "boundary",
+      "log": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\.runtime-tmp\\p2_xwrite_final3_boundary.log",
+      "sha256": "9ade39dc0db09755b8952fcea50b8ca7feedf458bc2770e8d72c74752d3536ce"
+    },
+    {
+      "num": 16,
+      "contexts": 2,
+      "mode": "boundary",
+      "log": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\.runtime-tmp\\p2_xwrite_final4_boundary.log",
+      "sha256": "75f3af65647cff9b9f40749cc6d606a89c574dd63db8e95002896b2fdee61929"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+=== TT serial benchmark ===
+Cortex-A53 clock (BSP)=1066656005 Hz, timer=33333000 Hz; PS glue float32 (NEON), PL normalize+projection v1.4, int16 x; tol=0.01
+Scope: preprocessed patch -> embed -> 12 layers -> 9 logits; batch=1
+One warmup + 10 timed forwards (profiling off) + one separate detail forward per mode
+Validation and serial output outside timing
+
+[1] PL acceleration   [2] PS-only   [3] Compare both
+[4] 64x64 pipelined + BMP   [5] Quick pair check   [6] 64x64 sequential + BMP
+Send ASCII 1..6 (HEX mode off). Block outputs are rendered on PS, read using XSCT.
+
+=== PS+PL full-network benchmark ===
+model=unoverlapping pixel=20,20 gt=1 N=6 runs=10
+Warming up...
+Warmup PASS
+forward run  1: 23.128 ms, argmax=0, PASS
+forward run  2: 23.136 ms, argmax=0, PASS
+forward run  3: 23.138 ms, argmax=0, PASS
+forward run  4: 23.138 ms, argmax=0, PASS
+forward run  5: 23.137 ms, argmax=0, PASS
+Xilinx Zynq MP First Stage Boot Loader 
+
+Release 2020.2   Oct  6 2026  -  17:27:10
+PMU-FW is not running, certain applications may not be supported.
+
+
+=== TT serial benchmark ===
+Cortex-A53 clock (BSP)=1066656005 Hz, timer=33333000 Hz; PS glue float32 (NEON), PL normalize+projection v1.4, int16 x; tol=0.01
+Scope: preprocessed patch -> embed -> 12 layers -> 9 logits; batch=1
+One warmup + 10 timed forwards (profiling off) + one separate detail forward per mode
+Validation and serial output outside timing
+
+[1] PL acceleration   [2] PS-only   [3] Compare both
+[4] 64x64 pipelined + BMP   [5] Quick pair check   [6] 64x64 sequential + BMP
+Send ASCII 1..6 (HEX mode off). Block outputs are rendered on PS, read using XSCT.
+
+=== PS+PL full-network benchmark ===
+model=unoverlapping pixel=20,20 gt=1 N=6 runs=10
+Warming up...
+Warmup PASS
+forward run  1: 23.128 ms, argmax=0, PASS
+forward run  2: 23.128 ms, argmax=0, PASS
+forward run  3: 23.142 ms, argmax=0, PASS
+forward run  4: 23.138 ms, argmax=0, PASS
+forward run  5: 23.139 ms, argmax=0, PASS
+forward run  6: 23.138 ms, argmax=0, PASS
+forward run  7: 23.136 ms, argmax=0, PASS
+forward run  8: 23.138 ms, argmax=0, PASS
+forward run  9: 23.137 ms, argmax=0, PASS
+forward run 10: 23.135 ms, argmax=0, PASS
+PS+PL: mean=23.136 ms, median=23.137 ms, min=23.128 ms, max=23.142 ms
+max|dlogit|=1.149e-03, argmax=0 ref=0 -> PASS
+class 0: computed=+9.446448326 reference=+9.446498123
+class 1: computed=-5.186377048 reference=-5.187222713
+class 2: computed=-4.413332462 reference=-4.414391526
+class 3: computed=+7.990158558 reference=+7.990295276
+class 4: computed=-6.058967590 reference=-6.059611158
+class 5: computed=+5.746128082 reference=+5.747276781
+class 6: computed=-2.261340857 reference=-2.261612762
+class 7: computed=-0.052608527 reference=-0.052160090
+class 8: computed=+1.129492998 reference=+1.129556231
+
+--- PS+PL detail: one extra profiled forward, excluded from benchmark mean ---
+Profile forward: 23.184 ms, max|dlogit|=1.149e-03 -> PASS
+segment (12 layers)            ms   % full
+  PL norm+qkv              11.780     50.8
+  attn scores               2.015      8.7
+  attn ctx+resid            2.461     10.6
+  PL norm+mlp               5.375     23.2
+  mlp resid                 1.044      4.5
+  12-layer sum             22.675
+  embed/head/overhead       0.509
+Projection backend: PS+PL (PL timings include driver/cache/wait)
+
+layer  total ms    PL qkv    scores   ctx+res    PL mlp   mlp res
+    0     1.890     0.982     0.168     0.205     0.448     0.087
+    1     1.890     0.982     0.168     0.205     0.448     0.087
+    2     1.890     0.982     0.168     0.205     0.448     0.087
+    3     1.890     0.982     0.168     0.205     0.448     0.087
+    4     1.889     0.982     0.168     0.205     0.448     0.087
+    5     1.889     0.982     0.168     0.205     0.448     0.087
+    6     1.889     0.982     0.168     0.205     0.448     0.087
+    7     1.890     0.982     0.168     0.205     0.448     0.087
+    8     1.890     0.982     0.168     0.205     0.448     0.087
+    9     1.889     0.982     0.168     0.205     0.448     0.087
+   10     1.890     0.982     0.168     0.205     0.448     0.087
+   11     1.889     0.982     0.168     0.205     0.448     0.087
+Detail includes timer bookkeeping; speedup uses the unprofiled mean above.
+
+[1] PL acceleration   [2] PS-only   [3] Compare both
+[4] 64x64 pipelined + BMP   [5] Quick pair check   [6] 64x64 sequential + BMP
+Send ASCII 1..6 (HEX mode off). Block outputs are rendered on PS, read using XSCT.

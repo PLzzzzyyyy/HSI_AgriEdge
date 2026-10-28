@@ -1,0 +1,341 @@
+{
+  "date": "2026-10-07",
+  "status": "G-M2 PASS for supplied benchmark/selfcheck scope",
+  "source_commit": "f0a1e8c",
+  "limitations": [
+    "Mode3 starts at final logits: no boot/warmup/individual timed runs supplied; mean from user summary, not independently reconstructed.",
+    "Mode5 supplied snippet does not include returned menu.",
+    "Selfcheck supplied from FSBL to returned menu; timings include CPU recomputation and are NOT performance.",
+    "Current filesystem hashes are not a readback or proof of historical board-loaded bytes.",
+    "Compile snapshots: -O2 and intended macros present; proposed -ffp-contract=off/-mcpu=cortex-a53/-Wextra/-Werror absent; no App changes or rebuild.",
+    "PSINTFP/SYSMON deferred FAIL and PMUFW warning unresolved; no inferred relationship."
+  ],
+  "files": [
+    {
+      "path": "board/m2/20261007_acceptance/mode3_user_excerpt.txt",
+      "bytes": 2350,
+      "sha256": "3f1bcabc039c48d6ec2e45cdca0eb97fe42afc917c10f8be1067b7a5274d617d",
+      "kind": "user-pasted UART; LF normalized",
+      "git_blob_bytes": 2350,
+      "git_blob_sha256": "3f1bcabc039c48d6ec2e45cdca0eb97fe42afc917c10f8be1067b7a5274d617d"
+    },
+    {
+      "path": "board/m2/20261007_acceptance/mode5_user.txt",
+      "bytes": 463,
+      "sha256": "48726a5c106ea92bb80226fca3fdf5120fcd2d54a07d041895667f4933f84cd0",
+      "kind": "user-pasted UART; LF normalized",
+      "git_blob_bytes": 463,
+      "git_blob_sha256": "48726a5c106ea92bb80226fca3fdf5120fcd2d54a07d041895667f4933f84cd0"
+    },
+    {
+      "path": "board/m2/20261007_acceptance/selfcheck_user.txt",
+      "bytes": 4572,
+      "sha256": "860f8afe5f96870e9870f0264a8f705e212f1b609c5f09f78ebc3f49d5648977",
+      "kind": "user-pasted UART; LF normalized",
+      "git_blob_bytes": 4572,
+      "git_blob_sha256": "860f8afe5f96870e9870f0264a8f705e212f1b609c5f09f78ebc3f49d5648977"
+    },
+    {
+      "path": "board/m2/20261007_acceptance/test_m2_subdir.mk.snapshot",
+      "bytes": 1838,
+      "sha256": "cc795c82d88e3fe3b0515b1856964bcd8869320b4cb91b6fa3e13173747607ed",
+      "kind": "current generated compile commands; read-only snapshot",
+      "git_blob_bytes": 1804,
+      "git_blob_sha256": "d3fc369e25672ee348c7bea57d734e1eaa2a8dfd438a86eb3d717a2224b27e12"
+    },
+    {
+      "path": "vitis/test_m2/Debug/test_m2.elf",
+      "bytes": 6757592,
+      "sha256": "0fab3d251a7796e6dc3f54c1a31181d472f90a6365da9a10eca489b6d9725208",
+      "kind": "current local ELF, not target readback; binary not archived"
+    },
+    {
+      "path": "vitis/test_m2/src/lscript.ld",
+      "bytes": 6891,
+      "sha256": "fc331e7d640dbfcbd15ed93c7b2da7ed9ea5ba779423ae12d130b84f8c555eeb",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/main_benchmark.cpp",
+      "bytes": 9376,
+      "sha256": "c061399234bc0ad51017f4558f58de2c27597ea6aca4a87630be9c6ea05c88f9",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/region_f32.bin",
+      "bytes": 5292000,
+      "sha256": "d6cbbeebed7ac54cc4240256c683a824e1b750553916a3ac0ac7547d3876ac2f",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_block_app.cpp",
+      "bytes": 9199,
+      "sha256": "4835eae81772d360ac8102bffec8a549269e24514f34c352c102778ae20c9808",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_block_app.h",
+      "bytes": 243,
+      "sha256": "9a787acb4a7e5d00a918bc4de6ce5ca5f7cc1acfe24ca8883bb8579e7bfb9d73",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_block_data.c",
+      "bytes": 17298,
+      "sha256": "61b99dbcb4e255e3d0731d8910d3a1f2ecdb40e988cc3ea7cd7222215748f8cc",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_block_data.h",
+      "bytes": 658,
+      "sha256": "7dd55b4d34940722aa945e50fe7d1ba773b26c9586f54f2be29f2ac6b4f3cc3c",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_block_render.cpp",
+      "bytes": 7077,
+      "sha256": "77cc9484687f640b59ddff4df271eca991a5c8e57057fb97bf991b9be5bfe4c1",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_block_render.h",
+      "bytes": 1930,
+      "sha256": "f66c63bd672e009e7b9466253708b3d89ddb2a268a5ec77a593280ca99112690",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_data.c",
+      "bytes": 1746591,
+      "sha256": "cafbdc2a436ce90644dc664b15745265a5ebcc6b9c3d94dd7d08d12161a315f3",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_data.h",
+      "bytes": 697,
+      "sha256": "ccd65495f173ba02e0534280b92561580d43ab928d9e506f51ef774bffd560e7",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_engine_regs.h",
+      "bytes": 12722,
+      "sha256": "63229431f96c5c1f7719a410121972d375b64af0d0a4f71e053ccf45f225a003",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_hw.h",
+      "bytes": 2410,
+      "sha256": "f82fbf4d103aae471f4b236b53861f7a19ed14083be59482a329a32737e684d0",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_hw_engine.cpp",
+      "bytes": 12882,
+      "sha256": "c63ba023def74fa8189aec30a59b83ed6c572776d3eca5f935601efcabc2c465",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_hw_engine.h",
+      "bytes": 1025,
+      "sha256": "a466ed240ceb724fbc56afd8994df5e14f7b4fa5fcf08d1058748c65e131adc5",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_hw_sim.cpp",
+      "bytes": 1900,
+      "sha256": "af043ff2e0241723f74a937c3a5d5beff500584ba892e2588d801bba236f92ee",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_hw_switch.cpp",
+      "bytes": 2696,
+      "sha256": "3136a81143ed5b0f6a8629a5327595b64c716f3df4b85d3353cfd05cf20ba672",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_hw_switch.h",
+      "bytes": 395,
+      "sha256": "c56d306dca63f03c538e41e8b559b0fe9b0124b375330c6a423ebfe9a6481e1c",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_net.cpp",
+      "bytes": 31116,
+      "sha256": "913bc7531ad3dff7f9036ac9dfcd5c8e6f31ddc857b87ed1437fdbe2141294c6",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_net.h",
+      "bytes": 5200,
+      "sha256": "75f3bdd3779d78c683b3b8e57dd8de667363acd0a32764781af3b97a3f216388",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2/src/tt_ref_int.h",
+      "bytes": 4482,
+      "sha256": "cea5729fef9295be568ffe809ad2c45e6b3d5f338b7982334b0a530c11ccb738",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "board/m2/20261007_acceptance/test_m2_chk_subdir.mk.snapshot",
+      "bytes": 1876,
+      "sha256": "dca69003605321f651a2ea83dd61c1b0bf3215fcd362af313edc840d337bf66f",
+      "kind": "current generated compile commands; read-only snapshot",
+      "git_blob_bytes": 1842,
+      "git_blob_sha256": "d24ab4ca27a1bee13ba86e2df09885ec45ad5e8958ba2e7ada9167823a27d8a2"
+    },
+    {
+      "path": "vitis/test_m2_chk/Debug/test_m2_chk.elf",
+      "bytes": 6765128,
+      "sha256": "d3c8aa3b97c120f0babbb5af2a45d66cd230f2abc33b3f8218d44e41d0e08365",
+      "kind": "current local ELF, not target readback; binary not archived"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/lscript.ld",
+      "bytes": 6891,
+      "sha256": "fc331e7d640dbfcbd15ed93c7b2da7ed9ea5ba779423ae12d130b84f8c555eeb",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/main_benchmark.cpp",
+      "bytes": 9376,
+      "sha256": "c061399234bc0ad51017f4558f58de2c27597ea6aca4a87630be9c6ea05c88f9",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/region_f32.bin",
+      "bytes": 5292000,
+      "sha256": "d6cbbeebed7ac54cc4240256c683a824e1b750553916a3ac0ac7547d3876ac2f",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_block_app.cpp",
+      "bytes": 9199,
+      "sha256": "4835eae81772d360ac8102bffec8a549269e24514f34c352c102778ae20c9808",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_block_app.h",
+      "bytes": 243,
+      "sha256": "9a787acb4a7e5d00a918bc4de6ce5ca5f7cc1acfe24ca8883bb8579e7bfb9d73",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_block_data.c",
+      "bytes": 17298,
+      "sha256": "61b99dbcb4e255e3d0731d8910d3a1f2ecdb40e988cc3ea7cd7222215748f8cc",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_block_data.h",
+      "bytes": 658,
+      "sha256": "7dd55b4d34940722aa945e50fe7d1ba773b26c9586f54f2be29f2ac6b4f3cc3c",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_block_render.cpp",
+      "bytes": 7077,
+      "sha256": "77cc9484687f640b59ddff4df271eca991a5c8e57057fb97bf991b9be5bfe4c1",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_block_render.h",
+      "bytes": 1930,
+      "sha256": "f66c63bd672e009e7b9466253708b3d89ddb2a268a5ec77a593280ca99112690",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_data.c",
+      "bytes": 1746591,
+      "sha256": "cafbdc2a436ce90644dc664b15745265a5ebcc6b9c3d94dd7d08d12161a315f3",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_data.h",
+      "bytes": 697,
+      "sha256": "ccd65495f173ba02e0534280b92561580d43ab928d9e506f51ef774bffd560e7",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_engine_regs.h",
+      "bytes": 12722,
+      "sha256": "63229431f96c5c1f7719a410121972d375b64af0d0a4f71e053ccf45f225a003",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_hw.h",
+      "bytes": 2410,
+      "sha256": "f82fbf4d103aae471f4b236b53861f7a19ed14083be59482a329a32737e684d0",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_hw_engine.cpp",
+      "bytes": 12882,
+      "sha256": "c63ba023def74fa8189aec30a59b83ed6c572776d3eca5f935601efcabc2c465",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_hw_engine.h",
+      "bytes": 1025,
+      "sha256": "a466ed240ceb724fbc56afd8994df5e14f7b4fa5fcf08d1058748c65e131adc5",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_hw_sim.cpp",
+      "bytes": 1900,
+      "sha256": "af043ff2e0241723f74a937c3a5d5beff500584ba892e2588d801bba236f92ee",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_hw_switch.cpp",
+      "bytes": 2696,
+      "sha256": "3136a81143ed5b0f6a8629a5327595b64c716f3df4b85d3353cfd05cf20ba672",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_hw_switch.h",
+      "bytes": 395,
+      "sha256": "c56d306dca63f03c538e41e8b559b0fe9b0124b375330c6a423ebfe9a6481e1c",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_net.cpp",
+      "bytes": 31116,
+      "sha256": "913bc7531ad3dff7f9036ac9dfcd5c8e6f31ddc857b87ed1437fdbe2141294c6",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_net.h",
+      "bytes": 5200,
+      "sha256": "75f3bdd3779d78c683b3b8e57dd8de667363acd0a32764781af3b97a3f216388",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "vitis/test_m2_chk/src/tt_ref_int.h",
+      "bytes": 4482,
+      "sha256": "cea5729fef9295be568ffe809ad2c45e6b3d5f338b7982334b0a530c11ccb738",
+      "kind": "current App source snapshot hash; original not modified"
+    },
+    {
+      "path": "build/vivado/tt_m2_zu5ev.xsa",
+      "bytes": 2729879,
+      "sha256": "81dfe6c8b153b58eef68a0d78e0eb78659ffd3bd1a47c6cb84c7b0608b53c2ee",
+      "kind": "current existing M2 XSA; not rebuilt"
+    },
+    {
+      "path": "vitis/m2_plat/hw/tt_m2_zu5ev.xsa",
+      "bytes": 2729879,
+      "sha256": "81dfe6c8b153b58eef68a0d78e0eb78659ffd3bd1a47c6cb84c7b0608b53c2ee",
+      "kind": "current user platform XSA"
+    },
+    {
+      "path": "board/m2/20261007_acceptance/mode3_repeat_user.txt",
+      "bytes": 6223,
+      "sha256": "eea94487781afbdf78679b482eb6bdfb34cb0ca82bd7fb88d646e4306293db95",
+      "git_blob_bytes": 6223,
+      "git_blob_sha256": "eea94487781afbdf78679b482eb6bdfb34cb0ca82bd7fb88d646e4306293db95",
+      "kind": "separate user-requested mode3 repeat, full application banner to menu; FSBL not supplied; LF normalized"
+    }
+  ],
+  "hash_scope": "bytes/sha256 describe capture-time filesystem bytes. Archived entries also have git_blob_bytes/git_blob_sha256 for Git LF-normalized repository content; use those after checkout with different line endings.",
+  "repeat_note": "mode3_repeat_user.txt independently closes benchmark-log coverage: both warmups, 10 PS + 10 PL runs, weight load, profiles and compare. Prior mode3 excerpt retained; no cross-run averaging. FSBL text absent in repeat; no new ELF/config verification for repeat."
+}

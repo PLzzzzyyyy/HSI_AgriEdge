@@ -1,0 +1,125 @@
+--- baseline/src/hls/m3_s2/s2_engine.cpp
++++ candidate/src/hls/m3_s2/s2_engine.cpp
+@@ -5,6 +5,9 @@
+ typedef hls::stream<m3math::Request> MathRequests;
+ typedef hls::stream<m3math::Response> MathResponses;
+ struct MathOffer {m3math::Request item;bool valid;};
++// Each producer emits a delta; only the constant-index commit loop owns the
++// context registers. This removes dynamic read/modify/write context selection.
++struct StatsDelta {bool valid;int slot;int64_t sum[6];uint64_t square[6];};
+ static const unsigned deps[14]={0,bit(N1),bit(Q),bit(CQ),bit(K),bit(CK),bit(CK),bit(V)|bit(S),bit(S),bit(CV)|bit(SM),bit(C),bit(N2),bit(M),0};
+ static const int unit_for[14]={NORMAL,PROJECT,COPY,PROJECT,COPY,SCORE,PROJECT,COPY,AUX,CONTEXT,NORMAL,PROJECT,RESIDUAL,AUX};
+ // x,xn,q,kv,xb,ob: per-bank peak. Contexts occupy depth, not more ports.
+@@ -191,7 +194,7 @@
+     return false;
+ }
+ static bool ctx_step(MainMemory &m,Slot &s,Job &j,int64_t sum[24],
+-                     int64_t slot_sum[6],uint64_t slot_square[6]) {
++                     StatsDelta &delta) {
+ #pragma HLS INLINE
+     S2_ASSERT(s.kv_kind==V);
+     if (j.t<6) {
+@@ -223,7 +226,7 @@
+                 d1+=value[b];d2+=uint64_t(int64_t(value[b])*value[b]);
+             }
+         }
+-        slot_sum[j.h]+=d1;slot_square[j.h]+=d2;
++        delta.valid=true;delta.slot=j.slot;delta.sum[j.h]+=d1;delta.square[j.h]+=d2;
+     }
+     if (j.c==5) {
+         for (int n=0;n<6;n++) for (int h=0;h<4;h++) sum[n*4+h]=j.acc[n][h]>>24;
+@@ -234,14 +237,14 @@
+     return ++j.phase==4002;
+ }
+ static bool res_step(MainMemory &m,Slot &s,Job &j,CoreOffer &offer,CoreResponse &response,bool &valid,
+-                     int64_t slot_sum[6],uint64_t slot_square[6]) {
++                     StatsDelta &delta) {
+ #pragma HLS INLINE
+     bool released=false;if(!consumer_data(j,offer,response,valid,released)) return released;
+     for (int t=0;t<6;t++) {
+ #pragma HLS UNROLL
+         int64_t v=int64_t(response.value[t][0])+get(m.xn,j.slot,j.p,t);
+         int32_t y=sat(v,S2_DB);put(m.x,j.slot,j.p,t,y);
+-        slot_sum[t]+=y;slot_square[t]+=uint64_t(int64_t(y)*y);
++        delta.valid=true;delta.slot=j.slot;delta.sum[t]+=y;delta.square[t]+=uint64_t(int64_t(y)*y);
+     }
+     if (++j.c==54) {j.c=0;if (++j.b==7) {j.b=0;if (j.a&1) j.i+=54;j.a++;}}
+     if(++j.p==2646) j.phase=1;return false;
+@@ -280,7 +283,7 @@
+ static bool io_step(MainMemory &m,Slot &s,Job &j,const uint64_t *input,
+                     uint64_t *logits,uint32_t *classes,uint64_t *features,
+                     unsigned count,unsigned flags,unsigned lo,
+-                    int64_t slot_sum[6],uint64_t slot_square[6]) {
++                    StatsDelta &delta) {
+ #pragma HLS INLINE
+     if (j.stage==IO_LOAD) {
+         const int lanes=flags&S2_RAW?2:4;
+@@ -289,7 +292,7 @@
+ #pragma HLS UNROLL
+             if (k<lanes) {
+                 int32_t v=flags&S2_RAW ? sat(int32_t(w>>(32*k)),S2_DB) : int32_t(quant(int16_t(w>>(16*k)),12-S2_DF));
+-                put(m.x,j.slot,j.a,j.t,v);slot_sum[j.t]+=v;slot_square[j.t]+=uint64_t(int64_t(v)*v);
++                put(m.x,j.slot,j.a,j.t,v);delta.valid=true;delta.slot=j.slot;delta.sum[j.t]+=v;delta.square[j.t]+=uint64_t(int64_t(v)*v);
+                 if (++j.t==6) {j.t=0;j.a++;}
+             }
+         }
+@@ -419,6 +422,13 @@
+             meta[1]%S2_P,accepted,retired,count,meta);
+         const int grant_unit=grant.stage>=IO_LOAD?TRANSFER:
+             grant.stage>=0?unit_for[grant.stage]:-1;
++        StatsDelta ctx_delta={},res_delta={},io_delta={};
++#pragma HLS ARRAY_PARTITION variable=ctx_delta.sum complete
++#pragma HLS ARRAY_PARTITION variable=ctx_delta.square complete
++#pragma HLS ARRAY_PARTITION variable=res_delta.sum complete
++#pragma HLS ARRAY_PARTITION variable=res_delta.square complete
++#pragma HLS ARRAY_PARTITION variable=io_delta.sum complete
++#pragma HLS ARRAY_PARTITION variable=io_delta.square complete
+         MathOffer offer={};
+         CoreOffer core={};
+ #ifdef __SYNTHESIS__
+@@ -455,9 +465,9 @@
+                 done=copy_step(mem,j,core,returned,returned_valid);
+             } else if (u==SCORE) done=score_step(mem,s,j,slot_scores[j.slot]);
+             else if (u==AUX) done=j.stage==HEAD?head_step(mem,s,j,offer,head_sum):softmax_step(s,j,offer,slot_scores[j.slot]);
+-            else if (u==CONTEXT) done=ctx_step(mem,s,j,ctx_sum,slot_sum[j.slot],slot_square[j.slot]);
+-            else if (u==RESIDUAL) {S2_ASSERT(ob_owner==j.slot && ob_kind==M);done=res_step(mem,s,j,core,returned,returned_valid,slot_sum[j.slot],slot_square[j.slot]);}
+-            else done=io_step(mem,s,j,input,logits,classes,features,count,flags,lo,slot_sum[j.slot],slot_square[j.slot]);
++            else if (u==CONTEXT) done=ctx_step(mem,s,j,ctx_sum,ctx_delta);
++            else if (u==RESIDUAL) {S2_ASSERT(ob_owner==j.slot && ob_kind==M);done=res_step(mem,s,j,core,returned,returned_valid,res_delta);}
++            else done=io_step(mem,s,j,input,logits,classes,features,count,flags,lo,io_delta);
+             j.check_bounds();
+             S2_ASSERT(s.id>=0 && s.id<64 && s.layer>=0 && s.layer<12);
+             S2_ASSERT(s.done>=0 && s.done<16384 && s.kv_kind>=-1 && s.kv_kind<=V);
+@@ -512,12 +522,30 @@
+             Slot &s=slots[sl];S2_ASSERT(jobs[u].active && jobs[u].slot==sl && jobs[u].stage==st);
+             if(u==PROJECT) {S2_ASSERT(xb_owner==sl && ob_owner<0);ob_owner=sl;ob_kind=st;}
+             if(u==NORMAL) {S2_ASSERT(xb_owner<0);xb_owner=sl;norm_received=0;}
+-            if(st==C || st==R) for(int t=0;t<6;t++) {slot_sum[sl][t]=0;slot_square[sl][t]=0;}
++
+             if(st==HEAD) for(int c=0;c<32;c++) s.logits[c]=0;
+             if(st==IO_LOAD) {
+                 s.live=true;s.loaded=s.final=s.output=s.dump=false;
+                 s.id=accepted++;s.layer=lo;s.done=0;s.kv_kind=-1;
+-                for(int t=0;t<6;t++) {slot_sum[sl][t]=0;slot_square[sl][t]=0;}
++
++            }
++        }
++        // Clear wins over the same tick's updates, as in the baseline.
++        // Different producers cannot write the same context: C -> N2 -> M -> R
++        // and IO_LOAD -> N1 dependencies establish mutually exclusive owners.
++        for(int sl=0;sl<S2_P;++sl) {
++#pragma HLS UNROLL
++            const bool dc=ctx_delta.valid&&ctx_delta.slot==sl;
++            const bool dr=res_delta.valid&&res_delta.slot==sl;
++            const bool di=io_delta.valid&&io_delta.slot==sl;
++            S2_ASSERT(unsigned(dc)+unsigned(dr)+unsigned(di)<=1);
++            const bool clear=grant.slot==sl&&(grant.stage==C||grant.stage==R||grant.stage==IO_LOAD);
++            for(int t=0;t<6;++t) {
++#pragma HLS UNROLL
++                const int64_t sum=dc?ctx_delta.sum[t]:dr?res_delta.sum[t]:io_delta.sum[t];
++                const uint64_t square=dc?ctx_delta.square[t]:dr?res_delta.square[t]:io_delta.square[t];
++                if(clear){slot_sum[sl][t]=0;slot_square[sl][t]=0;}
++                else if(dc||dr||di){slot_sum[sl][t]+=sum;slot_square[sl][t]+=square;}
+             }
+         }
+         unsigned live=0;

@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>高光谱农情地面站</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/web/style.css">
+<script src="/web/vendor/echarts.min.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <svg viewBox="0 0 32 32" class="logo"><path d="M16 3 29 10v12L16 29 3 22V10z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 13h16M8 16h16M8 19h16" stroke="currentColor" stroke-width="1.6" opacity=".7"/></svg>
+    <div><div class="brand-title">无人机高光谱张量农情分析系统</div><div class="brand-sub">GROUND CONTROL STATION · Tensor Transformer on Zynq UltraScale+</div></div>
+  </div>
+  <div class="top-fields">
+    <label class="field">景<select id="sel-scene"></select></label>
+    <label class="field">权重<select id="sel-version"></select></label>
+    <div class="seg top-seg" id="seg-view" title="C 键切换"><button data-view="2d" class="on">二维地图</button><button data-view="3d">三维立方体</button></div>
+  </div>
+  <div class="top-status">
+    <div class="pill" id="pill-source" title="板卡连接状态"><span class="dot" id="dot-link"></span><span id="txt-source">板卡</span></div>
+    <div class="pill mono" id="pill-clock">--:--:--</div>
+  </div>
+</header>
+
+<main class="layout">
+  <nav class="rail">
+    <button class="tool active" data-tool="pan" title="平移 / 单击探查像素 (V)"><svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M12 2l-3 3M12 2l3 3M12 22l-3-3M12 22l3-3M2 12l3-3M2 12l3 3M22 12l-3-3M22 12l-3 3"/></svg><span>平移探查</span></button>
+    <button class="tool" data-tool="box" title="框选区域识别 (B)"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" stroke-dasharray="3 2"/></svg><span>框选区域</span></button>
+    <button class="tool" data-tool="poly" title="绘制地块多边形 (P)，双击结束"><svg viewBox="0 0 24 24"><path d="M5 18 4 8l8-5 8 6-3 10z"/><circle cx="4" cy="8" r="1.5"/><circle cx="12" cy="3" r="1.5"/><circle cx="20" cy="9" r="1.5"/></svg><span>绘制地块</span></button>
+    <div class="rail-sep"></div>
+    <button class="tool" id="btn-fit" title="缩放到整幅图 (F)"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg><span>适应窗口</span></button>
+    <button class="tool" id="btn-follow" title="跟随推扫线"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg><span>跟随</span></button>
+  </nav>
+
+  <section class="map-wrap" id="map-wrap">
+    <canvas id="map"></canvas>
+    <div class="cube-wrap" id="cube-wrap" hidden>
+      <div class="cube-stage" id="cube-stage">
+        <div class="cube" id="cube">
+          <canvas class="face top"></canvas><canvas class="face front"></canvas><canvas class="face back"></canvas>
+          <canvas class="face left"></canvas><canvas class="face right"></canvas><div class="face bottom"></div>
+        </div>
+      </div>
+      <div class="cube-info mono" id="cube-info">—</div>
+      <div class="map-panel cube-ctl">
+        <div class="slider-row">剥离到波段<input type="range" id="rng-peel" min="0" max="269" value="0"><span class="mono peel-txt" id="txt-peel">顶面：假彩色</span></div>
+        <div class="ctl-row small">
+          <span class="colorbar"></span><span>低 → 高（预处理后）</span>
+          <select id="sel-cube-scope"><option value="scene">立方体：整景</option><option value="rect">立方体：框选区</option></select>
+          <label><input type="checkbox" id="chk-spin"> 自转</label>
+          <button class="btn" id="btn-cube-reset">复位</button>
+        </div>
+        <div class="note">拖动旋转 · 滚轮缩放 · 单击顶面探查像素 · 侧面 = 边缘像素的全部波段</div>
+      </div>
+    </div>
+    <div class="map-panel layers">
+      <div class="panel-title fold">图层</div>
+      <label><input type="checkbox" data-layer="base" checked>假彩色底图</label>
+      <label><input type="checkbox" data-layer="pred" checked>分类结果</label>
+      <label><input type="checkbox" data-layer="conf">置信度热力</label>
+      <label><input type="checkbox" data-layer="gt">真值（仅评测）</label>
+      <label><input type="checkbox" data-layer="err">误分像素（对真值）</label>
+      <label><input type="checkbox" data-layer="marks" checked>斑块 / 采样 / 标注</label>
+      <label><input type="checkbox" data-layer="parcels" checked>地块</label>
+      <div class="slider-row">透明度<input type="range" id="rng-opacity" min="0" max="100" value="80"></div>
+    </div>
+    <div class="map-panel legend"><div class="panel-title fold">类别（点击隐藏）</div><div id="legend"></div></div>
+    <div class="hud-bottom">
+      <div class="scalebar"><div class="scalebar-bar" id="scalebar-bar"></div><span id="scalebar-txt">—</span></div>
+      <div class="cursor mono" id="cursor">行 — 列 —</div>
+    </div>
+    <div class="swipe" id="swipe" hidden><div class="swipe-handle"></div><div class="swipe-tag left" id="swipe-a">A</div><div class="swipe-tag right" id="swipe-b">B</div></div>
+    <div class="toast" id="toast" hidden></div>
+  </section>
+
+  <aside class="side">
+    <div class="card">
+      <div class="card-title">任务<span class="badge" id="run-badge">空闲</span>
+        <select id="sel-pace" title="回放限速只影响显示节奏；吞吐按纯计算时间统计">
+          <option value="0">全速</option><option value="30">30 行/s</option><option value="10">10 行/s</option><option value="3">3 行/s</option>
+        </select></div>
+      <div class="note" id="physical-key-state" role="status" hidden></div>
+      <div class="seg" id="seg-kind">
+        <button data-kind="scan" class="on">整景巡检</button>
+        <button data-kind="region">区域识别</button>
+        <button data-kind="eval">评测</button>
+      </div>
+      <div class="rect-row"><span class="mono" id="rect-row">区域：未框选（工具栏"框选区域"）</span><button class="btn mini" id="btn-rect-clear" hidden>清除框选</button></div>
+      <div class="ctl-row">
+        <button class="btn primary" id="btn-start">▶ 开始</button>
+        <button class="btn" id="btn-pause" disabled>❚❚ 暂停</button>
+        <button class="btn danger" id="btn-stop" disabled>■ 停止</button>
+        <button class="btn" id="btn-clear-map" title="清空当前显示、框选、单点卡片及统计；历史任务和已保存地块保留">清空内容</button>
+      </div>
+      <div class="ctl-row small"><span class="note" id="task-connection-state" role="status">正在读取板卡连接状态…</span><button class="btn" id="task-recover" hidden disabled>恢复任务连接</button></div>
+      <div id="task-error" class="note" role="alert" hidden></div>
+      <div class="progress"><div class="progress-bar" id="progress-bar"></div><span class="progress-txt mono" id="progress-txt">0 / 0</span></div>
+      <div class="note" id="board-first-result" role="status" aria-live="polite" hidden>正在准备输入、等待首批结果；新场景首次加载约15～40秒，实际时间以板卡回传为准。</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">遥测<span class="sub" id="telem-src">—</span></div>
+      <div class="tiles tiles-main">
+        <div class="tile big"><div class="t-val mono" id="t-rate">—</div><div class="t-lab">像素 / 秒（计算）</div></div>
+        <div class="tile big"><div class="t-val mono" id="t-mspx">—</div><div class="t-lab">ms / 像素</div></div>
+      </div>
+      <div class="tiles tiles-4 telemetry-tiles">
+        <div class="tile"><div class="t-val mono" id="t-done">—</div><div class="t-lab">已处理</div></div>
+        <div class="tile"><div class="t-val mono" id="t-elapsed">—</div><div class="t-lab">用时</div></div>
+        <div class="tile"><div class="t-val mono" id="t-row">—</div><div class="t-lab">推扫行</div></div>
+        <div class="tile"><div class="t-val mono" id="t-power">—</div><div class="t-lab">芯片功耗 W</div></div>
+        <div class="tile"><div class="t-val mono" id="t-temp">—</div><div class="t-lab">芯片温度 °C</div><div id="t-temp-detail" class="note"></div></div>
+        <div class="tile"><div class="t-val mono" id="t-jpx">—</div><div class="t-lab">mJ / 像素</div></div>
+        <div class="tile"><div class="t-val mono" id="t-bytes">—</div><div class="t-lab">结果量 4 B/px</div></div>
+      </div>
+      <div class="note" id="t-power-detail">板端更新 · 芯片 PS＋PL</div>
+      <div class="tile"><div class="t-val mono" id="t-energy">—</div><div class="t-lab">本任务能耗 J</div><div class="note" id="t-energy-detail">从板卡接收任务至完成或停止，含准备和暂停。</div></div>
+      <div id="chart-rate" class="chart spark"></div>
+    </div>
+
+    <div class="card grow">
+      <div class="card-title">种植结构<span class="sub" id="area-sub">—</span></div>
+      <div class="area-list" id="area-list"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">飞行任务<span class="sub">WHU-Hi 官方说明</span></div>
+      <div class="kv kv4" id="mission"></div>
+    </div>
+  </aside>
+
+  <section class="drawer" id="drawer">
+    <div class="tabs" id="tabs">
+      <button data-tab="probe" class="on">单点探查</button>
+      <button data-tab="agri">农情分析</button>
+      <button data-tab="parcel">地块台账</button>
+      <button data-tab="eval">评测指标</button>
+      <button data-tab="loop">闭环更新</button>
+      <button data-tab="link">链路与下发</button>
+      <button data-tab="runs">历史对比</button>
+      <button data-tab="speed">速度对比</button>
+      <button data-tab="log">日志</button>
+      <div class="tabs-fill"></div>
+      <button class="tab-toggle" id="btn-drawer" title="收起/展开">▾</button>
+    </div>
+
+    <div class="tab-body" data-body="probe">
+      <div class="probe-grid">
+        <div class="probe-info">
+          <div class="probe-head" id="probe-head">单击地图上的像素查看模型输入与输出</div>
+          <button class="btn" id="board-probe-run" hidden disabled>发送单点探查</button>
+          <div class="note" id="board-probe-state" role="status" aria-live="polite" hidden></div>
+          <div class="patch-row">
+            <div><canvas id="patch-rgb" width="140" height="140"></canvas><div class="cap">7×7 输入窗（假彩色）</div></div>
+            <div><canvas id="patch-pred" width="140" height="140"></canvas><div class="cap">邻域分类</div></div>
+          </div>
+          <div class="kv small" id="probe-kv"></div>
+        </div>
+        <div id="chart-spectrum" class="chart" data-empty="光谱曲线：单击地图（或立方体顶面）上的像素"></div>
+        <div id="chart-prob" class="chart" data-empty="各类 softmax 概率"></div>
+        <div class="attn-box">
+          <div id="chart-attn" class="chart" data-empty="12 层注意力矩阵"></div>
+          <div class="slider-row">层 <input type="range" id="rng-layer" min="1" max="12" value="12"><span id="txt-layer" class="mono">12</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-body" data-body="agri" hidden>
+      <div class="agri-grid">
+        <div>
+          <div class="sub-title">待核查斑块 <span class="sub" id="patch-sub"></span></div>
+          <div class="ctl-row small">
+            置信阈值 <input type="range" id="rng-conf" min="30" max="95" value="60"><span class="mono" id="txt-conf">0.60</span>
+            最小面积 <input type="number" id="num-minpx" value="6" min="1" max="500"> 像素
+            <button class="btn" id="btn-analyze">刷新分析</button>
+            <button class="btn" id="btn-export" disabled>导出报告包</button>
+          </div>
+          <div id="report-state" class="note" role="status"></div>
+          <div class="table-wrap"><table id="tbl-patches"><thead><tr><th>#</th><th>类型</th><th>主类</th><th>面积 m²</th><th>像素</th><th>均置信</th><th>中心 行,列</th></tr></thead><tbody></tbody></table></div>
+        </div>
+        <div>
+          <div class="sub-title">补采样建议（置信度最低的 15×15 窗）</div>
+          <div class="table-wrap"><table id="tbl-sampling"><thead><tr><th>#</th><th>中心 行,列</th><th>地面坐标 m</th><th>窗均置信</th></tr></thead><tbody></tbody></table></div>
+        </div>
+        <div>
+          <div class="sub-title">作物面积</div>
+          <div class="table-wrap"><table id="tbl-area"><thead><tr><th>类别</th><th>像素</th><th>面积 m²</th><th>占比</th><th>均置信</th></tr></thead><tbody></tbody></table></div>
+          <div class="note">面积 = 像素数 × GSD²（GSD 取数据集官方说明）。低置信与碎斑只触发"待核查"，不作病害诊断。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-body" data-body="parcel" hidden>
+      <div class="ctl-row small">用左侧"绘制地块"在地图上点多边形顶点，双击结束。地块边界由人工给出，不用真值图。
+        <button class="btn" id="btn-parcel-clear">清空地块</button><button class="btn" id="btn-parcel-reload">重新加载台账</button><span id="parcel-state" class="note" role="status"></span></div>
+      <div class="ctl-row small"><button class="btn" id="btn-dp-task">DP 显示任务统计</button><a class="btn" href="/dp" target="_blank" rel="noopener">打开 DP 镜像／录制页</a><span class="note" id="dp-parcel-state" role="status">选择已保存地块行中的“显示到 DP”；仅同步当前板卡任务。</span></div>
+      <div class="table-wrap"><table id="tbl-parcels"><thead><tr><th>地块</th><th>面积 m²</th><th>已识别</th><th>主栽作物</th><th>主栽占比</th><th>混杂比例</th><th>低置信占比</th><th></th></tr></thead><tbody></tbody></table></div>
+    </div>
+
+    <div class="tab-body" data-body="eval" hidden>
+      <div class="ctl-row small eval-actions">
+        <label>评测任务 <select id="sel-eval-run"><option value="">请选择已识别的板卡任务</option></select></label>
+        <button class="btn" id="btn-metrics">评测当前结果</button>
+        <button class="btn" id="btn-eval-scan" title="下发整景巡检，完成后自动计算测试集指标">整景巡检并评测</button>
+        <label><input type="checkbox" id="chk-eval-live" checked>自动更新</label>
+        <button class="btn" id="btn-metrics-export" disabled>导出 JSON</button>
+        <button class="btn" id="btn-metrics-csv" disabled>导出 CSV</button>
+      </div>
+      <div class="note" id="eval-summary">选择当前或历史板卡任务；评测只读取分类结果，不重新推理。</div>
+      <div class="eval-coverage"><span id="m-total-coverage">全测试集覆盖：—</span><span id="m-task-coverage">任务范围内测试点覆盖：—</span></div>
+      <div class="eval-grid">
+        <div>
+          <div class="tiles tiles-4">
+            <div class="tile"><div class="t-val mono" id="m-oa">—</div><div class="t-lab">OA 总体准确率 %</div></div>
+            <div class="tile"><div class="t-val mono" id="m-aa">—</div><div class="t-lab">AA 平均召回率 %</div></div>
+            <div class="tile"><div class="t-val mono" id="m-kappa">—</div><div class="t-lab">Kappa 一致性</div></div>
+            <div class="tile"><div class="t-val mono" id="m-f1">—</div><div class="t-lab">宏平均 F1 %</div></div>
+          </div>
+          <div class="note mono" id="m-n"></div>
+          <div class="note">固定测试集采用官方 Test100 划分；标签仅用于对照。AA、宏 F1 只平均本次有真实测试像素的类别，未覆盖类别显示“—”。</div>
+          <div id="chart-perclass" class="chart"></div>
+          <div class="table-wrap eval-class-table"><table id="tbl-eval-classes"><thead><tr><th>类别</th><th>测试像素</th><th>正确像素</th><th>精确率</th><th>召回率</th><th>F1</th></tr></thead><tbody></tbody></table></div>
+        </div>
+        <div id="chart-cm" class="chart"></div>
+      </div>
+    </div>
+
+    <div class="tab-body" data-body="loop" hidden>
+      <div class="loop-grid">
+        <div><div id="loop-model-state" class="note" role="status"></div><div class="steps" id="loop-steps"></div></div>
+        <div class="loop-cmp">
+          <div class="sub-title">前后对比（区域 64×64，真值只作评测）</div>
+          <div id="loop-compare-state" class="note" role="status"></div>
+          <div class="table-wrap"><table id="tbl-loop"><thead><tr><th>指标</th><th>更新前</th><th>更新后</th></tr></thead><tbody></tbody></table></div>
+          <div id="chart-loop" class="chart"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-body" data-body="link" hidden>
+      <div class="link-grid">
+        <div>
+          <div class="sub-title">板卡连接</div>
+          <div class="ctl-row small">
+            <span>AXU5EV-E</span>
+            <input type="text" id="txt-board-ip" value="192.168.1.10" class="mono" size="13" readonly aria-label="板卡地址">
+          </div>
+          <div class="kv small" id="link-kv"></div>
+          <div class="sub-title">连接板卡</div>
+          <div class="note">你先启动新版 → 选择实际启动方式 → 连接板卡 → 开始任务。身份、启动状态与计时记录走以太网，无需串口线或手填身份码。</div>
+          <div class="ctl-row small">
+            <label>本次启动 <select id="board-boot-method" aria-label="实际启动方式"><option value="">请选择实际方式</option><option value="jtag">JTAG 下载运行</option><option value="sd">SD 启动</option></select></label>
+            <button class="btn primary" id="board-connect" disabled>连接 / 刷新启动状态</button>
+          </div>
+          <div id="board-connect-state" class="note" role="status">未连接；只有显式点击才读取板卡，不自动下载、复位或推理。</div>
+          <div class="note">板载按键（需按键版固件、PC 后台保持运行）：KEY5 单击单点探查、双击整景巡检；KEY6 单击随机区域、双击随机地块；两键各自长按 2 秒切景。KEY7 保留复位。</div>
+          <details id="board-connect-diagnostics"><summary>本次启动回执（独立冷启动仍需人工验收）</summary><pre id="board-connect-details" style="white-space:pre-wrap;overflow-wrap:anywhere"></pre></details>
+          <div class="sub-title">权重下发</div>
+          <div class="ctl-row small">
+            <select id="sel-upload"></select>
+            <button class="btn primary" id="btn-upload">上传并激活</button>
+          </div>
+          <div class="progress"><div class="progress-bar" id="upload-bar"></div><span class="progress-txt mono" id="upload-txt">—</span></div>
+          <div class="ctl-row small"><button class="btn" id="btn-model-query">查询板端目录</button><button class="btn" id="btn-model-activate">激活已登记版本</button></div>
+          <div class="note" id="model-state">尚未查询板端目录。本地候选不是已登记或已激活模型。</div>
+          <details><summary>恢复已有模型连接（不自动上传或推理）</summary>
+            <div class="ctl-row small"><button class="btn" id="btn-model-channels">读取本地记录</button><select id="sel-model-channel"></select><button class="btn" id="btn-model-recover" disabled>恢复此连接</button></div>
+          </details>
+          <details id="board-records">
+            <summary>任务记录与导出</summary>
+            <section id="board-roi" hidden aria-label="板卡任务记录">
+              <div class="card-title"><span id="board-identity">尚无任务</span><span id="board-status" role="status">等待连接</span></div>
+              <p id="board-shape">LongKou / v2 · 整景 400 × 550</p>
+              <div id="board-progress">已接收 0 / 220000</div>
+              <progress id="board-progress-bar" max="220000" value="0"></progress>
+              <div id="board-error" role="alert"></div>
+              <div class="ctl-row"><button class="btn" id="board-export-json" disabled>导出本次JSON</button><button class="btn" id="board-export-csv" disabled>导出本次CSV</button></div>
+              <div id="board-session" class="note">等待连接</div>
+              <div class="ctl-row"><button class="btn" id="board-session-close" disabled>关闭连接（保留结果）</button><button class="btn" id="board-recover" disabled>恢复本任务连接</button><button class="btn primary" id="board-acceptance" disabled>核验任务并下载证据包</button></div>
+              <div class="note" id="board-acceptance-state">可核验并下载本次任务记录。</div>
+              <details id="task-timing-details"><summary>任务分项耗时（App墙钟，非纯PL）</summary>
+                <div class="ctl-row small"><button class="btn" id="task-timing-read" disabled>读取本任务计时</button><button class="btn" id="task-timing-export" disabled>导出计时JSON</button></div>
+                <div class="note" id="task-timing-state">未测；缺少板端记录时不回填。</div>
+                <div class="table-wrap"><table id="task-timing-table"><thead><tr><th>阶段</th><th>调用数</th><th>累计ms</th></tr></thead><tbody></tbody></table></div>
+              </details>
+              <details id="board-details"><summary>逐像素验收详情</summary><div id="board-grid" class="board-grid" aria-label="逐像素验收数据"></div></details>
+            </section>
+          </details>
+        </div>
+        <div id="chart-bytes" class="chart"></div>
+      </div>
+    </div>
+
+    <div class="tab-body" data-body="runs" hidden>
+      <div class="ctl-row small">选 A 显示在地图上；再选 B 时出现左右滑动对比，"变化像素"高亮两次结果不同的位置。
+        <label><input type="checkbox" id="chk-diff"> 只看变化像素</label><button class="btn" id="btn-compare-refresh">刷新对比快照</button></div>
+      <div class="table-wrap"><table id="tbl-runs"><thead><tr><th>#</th><th>类型</th><th>景</th><th>权重</th><th>源</th><th>像素</th><th>状态</th><th>用时 s</th><th>计算 px/s</th><th>A</th><th>B</th></tr></thead><tbody></tbody></table></div>
+      <div class="note mono" id="cmp-txt"></div>
+    </div>
+
+    <div class="tab-body" data-body="speed" hidden>
+      <div class="ctl-row small">
+        <label>权重 A <select id="speed-a"></select></label><label>权重 B <select id="speed-b"></select></label>
+        <button class="btn" id="speed-use-roi">使用当前框选</button><button class="btn" id="speed-default-roi">中心 32×64 区域</button>
+        <button class="btn primary" id="speed-start">开始实测对比</button><button class="btn" id="speed-stop" disabled>停止对比</button>
+        <button class="btn" id="speed-focus">放大对比</button>
+      </div>
+      <div class="note" id="speed-scope"></div>
+      <div class="note">同一板卡依次运行 A、B，使用相同区域；计算速度取板端计时。完成后可按真实记录同步回放。相同计算结构的不同权重可能速度接近。</div>
+      <div class="note" id="speed-state">请选择两个权重开始比较。</div>
+      <div class="speed-results">
+        <section class="speed-card"><strong id="speed-title-a">A · 等待</strong><canvas id="speed-map-a" width="640" height="270"></canvas><div class="mono" id="speed-value-a">—</div></section>
+        <section class="speed-card"><strong id="speed-title-b">B · 等待</strong><canvas id="speed-map-b" width="640" height="270"></canvas><div class="mono" id="speed-value-b">—</div></section>
+      </div>
+      <div class="speed-delta mono" id="speed-delta">—</div>
+      <div class="ctl-row small"><label>回放口径 <select id="speed-clock"><option value="compute">板端累计计算时间</option><option value="wall">实际任务时间（含准备）</option></select></label>
+        <button class="btn" id="speed-replay" disabled>同步回放</button><button class="btn" id="speed-export" disabled>导出对比 JSON</button>
+        <button class="btn" id="speed-history-refresh">刷新对比历史</button><select id="speed-history" aria-label="速度对比历史"><option value="">选择已保存对比</option></select>
+      </div>
+    </div>
+
+    <div class="tab-body" data-body="log" hidden>
+      <div class="log mono" id="log"></div>
+    </div>
+  </section>
+</main>
+<script src="/web/core.js"></script>
+<script src="/web/map.js"></script>
+<script src="/web/panels.js"></script>
+<script src="/web/panels2.js"></script>
+<script src="/web/evaluation.js"></script>
+<script src="/web/agri.js"></script>
+<script src="/web/loop.js"></script>
+<script src="/web/cube.js"></script>
+<script src="/web/timing.js"></script>
+<script src="/web/speed.js"></script>
+<script src="/web/board.js"></script>
+<script src="/web/connection.js"></script>
+<script src="/web/app.js"></script>
+</body>
+</html>

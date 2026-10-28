@@ -1,0 +1,12 @@
+test_changed_golden_rejected (__main__.M3aPackageTests.test_changed_golden_rejected) ... ok
+test_existing_directory_refused (__main__.M3aPackageTests.test_existing_directory_refused) ... ok
+test_generated_arrays_roundtrip (__main__.M3aPackageTests.test_generated_arrays_roundtrip) ... ok
+test_integrity_and_exact_file_set (__main__.M3aPackageTests.test_integrity_and_exact_file_set) ... ok
+test_only_serial_xsa_and_source_app (__main__.M3aPackageTests.test_only_serial_xsa_and_source_app) ... ok
+test_replacement_xsa_rejected (__main__.M3aPackageTests.test_replacement_xsa_rejected) ... ok
+test_settings_no_legacy_defines (__main__.M3aPackageTests.test_settings_no_legacy_defines) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.675s
+
+OK

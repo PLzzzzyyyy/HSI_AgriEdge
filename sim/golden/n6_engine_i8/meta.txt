@@ -1,0 +1,9 @@
+pixel=20,20 (LongKou, QAT 权重 data/ckpt/longkou_qat8_s0.pth = data/scenes/longkou/weights/v2_int8，由自训 s0 续训)
+cube=bfp（契约 v3，波段 270 = 光谱指数 e ∈ [13, 14, 15]）
+num=8 DF=4 DB=8 MF=4 MB=8 WF=逐矩阵 2 幂（48 投影 × {e1,e2,e3} ∈ [8, 10]，权重包投影段末 144 B）
+FRONT_S=48 FRONT_T=24 GMAX=33554431 GC=281464339955712.0（前端与 int16 版相同，x_embed 为 >> 20 的 Q3.4）
+a={"label": 0, "conf": 57110, "logits": [10.71652, -3.14752, -3.73576, 8.78851, -7.42612, 4.4584, -3.55241, -0.84273, 2.0443]}
+b={"label": 0, "conf": 56388, "logits": [10.81885, -3.19067, -3.70509, 8.98752, -7.55046, 4.55716, -3.61264, -0.89267, 1.7392]}
+fq=[10.79166, -3.18324, -3.65154, 8.88138, -7.51149, 4.52653, -3.52866, -0.89999, 1.83888]（torch 假量化前向，qat.py，float64；只有投影是 Q3.4，其余浮点，不逐位）
+qat_float=[11.10543, -3.26272, -3.79439, 8.97609, -7.6326, 4.74397, -3.73982, -0.93834, 1.89391]（同一 QAT 模型的浮点路径）
+文件：结构与 sim/golden/n6_engine 相同。cube_win_i16.bin (7,7,272) int16；weights_engine.bin（int8 版 336,064 B）；a/ 入口 A（x_in_i16.bin 为 Q3.12 块，装载时舍入到 Q3.4），b/ 入口 B；每层 L<l>_<量>：块 (p,n) 内存序 int32（值为 Q3.4 整数），s 为 (6,6) int64（Q.8），attn (6,6) int32 Q0.24，stats (6,2) {mean_q24, inv_q24}；logits_q16_i32.bin 32 槽；class_u32.bin {conf<<16 | label}；batch_hanchuan/ 为 HanChuan QAT 权重（v1_int8）32 像素，像素同 n6_engine/batch_hanchuan

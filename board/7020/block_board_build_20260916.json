@@ -1,0 +1,60 @@
+{
+  "built_at_utc": "2026-09-16T06:07:34.657925+00:00",
+  "compiler": "arm-xilinx-eabi-g++.exe (GCC) 9.2.0",
+  "options": [
+    "-mcpu=cortex-a9",
+    "-mfpu=vfpv3",
+    "-mfloat-abi=hard",
+    "-O2",
+    "-std=c++11",
+    "-ffp-contract=off",
+    "-Wall",
+    "-DTT_HW_RUNTIME_SWITCH",
+    "-DTT_BENCH_RUNS=10",
+    "-ID:\\TT_HSI_FPGA\\vitis\\tsamapp\\src",
+    "-ID:\\TT_HSI_FPGA\\vitis\\tsam\\export\\tsam\\sw\\tsam\\standalone_domain\\bspinclude\\include"
+  ],
+  "runs": 10,
+  "warmup": 1,
+  "source_sha256": {
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\main_benchmark.cpp": "93f1a871457a018566a9509e89d98bf53103b8fe22d112fcc52cdca99f836696",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_net.cpp": "d0d53d79c544ff831273ea98db4d4cd97944930bb3b0111f76da463dd0ec9947",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_data.c": "cafbdc2a436ce90644dc664b15745265a5ebcc6b9c3d94dd7d08d12161a315f3",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_hw_sim.cpp": "feb9c73bf7f19de39dd72b416725b6c23e8faa1b32042fdeedbfd7cf3f95b893",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_hw_xil.cpp": "9559cc4d30561ddde7f7a509984823fcf5cf261558cac2b1e85b2e80cb98b6df",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_hw_switch.cpp": "60c04299b28e0f33859a8d1efafaa24227e7fc56a459b0ff4291e746425bf20f",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_block_app.cpp": "e7dfc3bdf1f29da360392cb5dca1669897c378039bc8cadcc1147ed38cf87739",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_block_render.cpp": "77cc9484687f640b59ddff4df271eca991a5c8e57057fb97bf991b9be5bfe4c1",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_block_data.c": "a9a98c77fa5fcf4fa5b44944c580b196f74c0c5c055fcee9c13eebea38bf432a",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_net.h": "c96a710d842f180410e2e383040a6238e0a43ad0a21e703fe8efe3910564ea67",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_data.h": "ccd65495f173ba02e0534280b92561580d43ab928d9e506f51ef774bffd560e7",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_hw.h": "76466ba7bddcf1cdc0f51ec41aad349aead0f5c52d76b743f75903de32dc8433",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_hw_switch.h": "c56d306dca63f03c538e41e8b559b0fe9b0124b375330c6a423ebfe9a6481e1c",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_block_app.h": "9a787acb4a7e5d00a918bc4de6ce5ca5f7cc1acfe24ca8883bb8579e7bfb9d73",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_block_render.h": "f66c63bd672e009e7b9466253708b3d89ddb2a268a5ec77a593280ca99112690",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\tt_block_data.h": "7dd55b4d34940722aa945e50fe7d1ba773b26c9586f54f2be29f2ac6b4f3cc3c",
+    "D:\\TT_HSI_FPGA\\model\\data\\block\\region_f32.bin": "d6cbbeebed7ac54cc4240256c683a824e1b750553916a3ac0ac7547d3876ac2f",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\lscript.ld": "2fafd52696ed3d2a649277fb0f832b1b99ee04ad0c33a6dd2087691d447778e7",
+    "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\Xilinx.spec": "f100af82b444989adf5aad4ad612b9ae3b4ddac007f5d9653f1abf254235b085",
+    "D:\\TT_HSI_FPGA\\vitis\\tsam\\export\\tsam\\sw\\tsam\\standalone_domain\\bsplib\\lib\\libxil.a": "6530d341598dd7b888f4a78a86c7bb01168d37f05ed922409adc0826442a41b4",
+    "D:\\TT_HSI_FPGA\\vitis\\tsam\\export\\tsam\\sw\\tsam\\standalone_domain\\bspinclude\\include\\xparameters.h": "dc7289a924dde61c801f160b11ac03b372bf6795834d96b60bcb957331b2eea9",
+    "D:\\TT_HSI_FPGA\\vitis\\tsam\\export\\tsam\\sw\\tsam\\standalone_domain\\bspinclude\\include\\xtucker_proj.h": "ad9e15aa0eed77971cec7231e1abf18ebb146d64835ef534ae0600f9654109b5"
+  },
+  "source_directory": "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src",
+  "main_source": "D:\\TT_HSI_FPGA\\vitis\\tsamapp\\src\\main_benchmark.cpp",
+  "canonical_source_mismatches": [],
+  "data_header": "// \u7531 model/export_c_arrays.py \u751f\u6210\uff0c\u52ff\u624b\u6539\n#ifndef TT_DATA_H\n#define TT_DATA_H\n#include <stdint.h>\n#define TT_DATA_N 6\n#define TT_DATA_MODEL \"unoverlapping\"\n#define TT_DATA_PIXEL \"20,20\"\n#define TT_DATA_GT 1\n#define TT_DATA_REF_ARGMAX 0\nextern const int16_t tt_weights[];      // [12][4][3014] Q1.14\nextern const float tt_cls_token[];      // [2646]\nextern const float tt_pos_embed[];      // [2646*6]\nextern const float tt_classifier_w[];   // [9][2646]\nextern const float tt_classifier_b[];   // [9]\nextern const float tt_patch[];          // [270*7*7] \u9884\u5904\u7406\u5b8c\u6210\u7684\u9ec4\u91d1 patch\nextern const double tt_ref_logits[];    // [9] PC \u5b9a\u70b9\u4eff\u771f\u7684\u53c2\u8003 logits\n#endif\n",
+  "block_data_header": "// \u7531 model/export_block.py \u751f\u6210\uff0c\u52ff\u624b\u6539\n#ifndef TT_BLOCK_DATA_H\n#define TT_BLOCK_DATA_H\n#include <stdint.h>\n#define TT_BLOCK_SIZE 64\n#define TT_BLOCK_ROW0 112\n#define TT_BLOCK_COL0 196\n#define TT_BLOCK_PAD 3\n#define TT_BLOCK_RW (TT_BLOCK_SIZE + 2 * TT_BLOCK_PAD)      // \u56fe\u5757\u8fb9\u957f 70\n#define TT_BLOCK_BANDS 270\n#define TT_BLOCK_MODEL \"unoverlapping\"\n#define TT_BLOCK_N 6\nextern const float tt_block_region[];      // [RW][RW][270] float32 HWC\uff0c\u9884\u5904\u7406\u540e\u3001patch \u5f52\u4e00\u5316\u524d\nextern const uint8_t tt_block_gt[];        // [S][S] 0 = \u65e0\u6807\u7b7e\nextern const uint8_t tt_block_ref[];       // [S][S] PC \u5b9a\u70b9\u4eff\u771f argmax+1\n#endif\n",
+  "elf_sha256": {
+    "tt_bench_switch.elf": "e94c537a192e52baf481921d24d6e1f421b1a65dae233f9c3e9a6ece1163a80e"
+  },
+  "board_execution": "not performed; build only",
+  "validation_notes": {
+    "board_execution": "not performed; user operates Vitis Build/Debug and hardware",
+    "host_block_math": "4096 sequential/pair logits and final activations bitwise equal; labels 4096/4096 vs PC fixed",
+    "app_control": "passed real app and renderer with mocked inference/clock/cache; test_block_app.log is NOT board output",
+    "output": "D:/TT_HSI_FPGA/board_results/board_prediction.bmp",
+    "image_bytes": 786486,
+    "sync_backup": "vitis/benchmark_build/before_block_integration_20260916_140715"
+  }
+}

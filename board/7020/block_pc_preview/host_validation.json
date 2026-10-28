@@ -1,0 +1,38 @@
+{
+  "source": "host simulation; delayed PL stub uses integer software projections; NOT board measurements",
+  "model": "unoverlapping",
+  "size": 64,
+  "origin": [
+    112,
+    196
+  ],
+  "patch_windows": 9,
+  "patch_max_abs_error_vs_numpy": 9.5367431640625e-07,
+  "N6_real_pair_bitwise_equal": true,
+  "N10_synthetic_pair_bitwise_equal": true,
+  "source_sha256": {
+    "vitis\\test_block_pipeline.cpp": "c8e89c9fb278b5acead0295d782b538c4d89f8742b8c810ebb2e60d8c1a03afb",
+    "vitis\\src\\tt_net.cpp": "d0d53d79c544ff831273ea98db4d4cd97944930bb3b0111f76da463dd0ec9947",
+    "vitis\\src\\tt_hw_sim.cpp": "feb9c73bf7f19de39dd72b416725b6c23e8faa1b32042fdeedbfd7cf3f95b893"
+  },
+  "host_seconds": 52.92993379999825,
+  "pixels": 4096,
+  "all_sequential_vs_pair_logits_and_final_activations_bitwise_equal": true,
+  "deferred_projection_calls_per_pair": 48,
+  "max_logit_abs_error_vs_pc_fixed": 0.004231394221309692,
+  "worst_error_local_pixel": [
+    41,
+    23
+  ],
+  "pixels_exceeding_single_patch_0p01_tolerance": 0,
+  "label_agreement_vs_pc_fixed": 1.0,
+  "label_agreement_vs_pc_float": 0.999755859375,
+  "host_labeled_accuracy": 0.9881228273464658,
+  "mismatch_fixed_local_pixels": [],
+  "mismatch_float_local_pixels": [
+    [
+      35,
+      50
+    ]
+  ]
+}

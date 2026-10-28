@@ -1,0 +1,5 @@
+--- C3a SD read (quick): FatFs on SD1 "1:/", buffer 512 MiB, timing = f_open .. last f_read, 1 MB = 10^6 B ---
+  mounted in 2.3 ms: FAT32, cluster 512 B
+  1:/scenes/longkou/cube_i16.bin                    122800384 B  50717.0 ms   2.42 MB/s crc32 378F4ADF (expect 378F4ADF, 122800384 B) OK
+  1:/scenes/longkou/weights/v2/weights_engine.bin      480576 B    200.6 ms   2.40 MB/s crc32 27231983 (expect 27231983, 480576 B) OK
+C3a SD PASS: 2 file(s) read and matched

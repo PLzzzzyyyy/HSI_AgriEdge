@@ -1,0 +1,5 @@
+set_property PACKAGE_PIN AA11 [get_ports {fan[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {fan[0]}]
+set_property PACKAGE_PIN AF12 [get_ports key6_n]
+set_property IOSTANDARD LVCMOS33 [get_ports key6_n]
+set_false_path -from [get_ports key6_n] -to [get_pins -hier -filter {NAME =~ */key6_sync/inst/meta_reg/D}]

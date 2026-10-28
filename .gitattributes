@@ -1,0 +1,11 @@
+# Release identities include exact text bytes: disable checkout EOL conversion.
+* -text
+*.bit binary
+*.elf binary
+*.xsa binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.docx binary
+*.pth binary
+*.npy binary

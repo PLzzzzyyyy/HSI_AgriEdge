@@ -1,0 +1,2378 @@
+[
+  {
+    "destination": "build/hls/run_gcs_round1.tcl",
+    "target": "D:\\gcs_20261012\\build\\hls\\run_gcs_round1.tcl",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\build\\hls\\run_gcs_round1.tcl",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "8fa660121f7d4d5c6531309971730cf95a0595cbf81fa0001933d326516e8c04",
+    "expected_baseline_bytes": 2566,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 2566,
+      "reparse_point": false,
+      "mtime_ns": 1791769156494342000,
+      "payload_read": false
+    },
+    "final_sha256": "8fa660121f7d4d5c6531309971730cf95a0595cbf81fa0001933d326516e8c04",
+    "final_bytes": 2566,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/ckpt/hanchuan_unoverlapping_s0.pth",
+    "target": "D:\\gcs_20261012\\data\\ckpt\\hanchuan_unoverlapping_s0.pth",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\ckpt\\hanchuan_unoverlapping_s0.pth",
+    "roles": [
+      "registered_checkpoint"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "05538d45df2121f414e4d785d2daee1b4a451f11668dacf06053b7d1f7211f4e",
+    "expected_baseline_bytes": 871162,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 871162,
+      "reparse_point": false,
+      "mtime_ns": 1790081018168593400,
+      "payload_read": false
+    },
+    "final_sha256": "05538d45df2121f414e4d785d2daee1b4a451f11668dacf06053b7d1f7211f4e",
+    "final_bytes": 871162,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/ckpt/honghu_unoverlapping_s0.pth",
+    "target": "D:\\gcs_20261012\\data\\ckpt\\honghu_unoverlapping_s0.pth",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\ckpt\\honghu_unoverlapping_s0.pth",
+    "roles": [
+      "registered_checkpoint"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "2bcb0b8f47423698808e82e60a2b6d26dd1534f98bc8d41d1658708297f2ccd1",
+    "expected_baseline_bytes": 934346,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 934346,
+      "reparse_point": false,
+      "mtime_ns": 1790079603002673500,
+      "payload_read": false
+    },
+    "final_sha256": "2bcb0b8f47423698808e82e60a2b6d26dd1534f98bc8d41d1658708297f2ccd1",
+    "final_bytes": 934346,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/ckpt/longkou_unoverlapping_s0.pth",
+    "target": "D:\\gcs_20261012\\data\\ckpt\\longkou_unoverlapping_s0.pth",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\ckpt\\longkou_unoverlapping_s0.pth",
+    "roles": [
+      "registered_checkpoint"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "3f8acada1311f7cda9f324df840d7aefdb71022e79acbbf3d25cf6753931ef3c",
+    "expected_baseline_bytes": 796834,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 796834,
+      "reparse_point": false,
+      "mtime_ns": 1790078947043216400,
+      "payload_read": false
+    },
+    "final_sha256": "3f8acada1311f7cda9f324df840d7aefdb71022e79acbbf3d25cf6753931ef3c",
+    "final_bytes": 796834,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/ckpt/longkou_unoverlapping_s0_hold3.pth",
+    "target": "D:\\gcs_20261012\\data\\ckpt\\longkou_unoverlapping_s0_hold3.pth",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\ckpt\\longkou_unoverlapping_s0_hold3.pth",
+    "roles": [
+      "registered_checkpoint"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "63c3d7e20a1f25ad8108182a6479fdd5ec9427a6599e1fee3c0b4b7f59ec50a4",
+    "expected_baseline_bytes": 797810,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 797810,
+      "reparse_point": false,
+      "mtime_ns": 1790087464023936500,
+      "payload_read": false
+    },
+    "final_sha256": "63c3d7e20a1f25ad8108182a6479fdd5ec9427a6599e1fee3c0b4b7f59ec50a4",
+    "final_bytes": 797810,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/ckpt/longkou_unoverlapping_s0_hold3_ft30.pth",
+    "target": "D:\\gcs_20261012\\data\\ckpt\\longkou_unoverlapping_s0_hold3_ft30.pth",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\ckpt\\longkou_unoverlapping_s0_hold3_ft30.pth",
+    "roles": [
+      "registered_checkpoint"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "5ab7c5f1f31a970fcadcbe52cd891099ce9858e44d61a709955daf45fbc396fa",
+    "expected_baseline_bytes": 798634,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 798634,
+      "reparse_point": false,
+      "mtime_ns": 1790088003913726200,
+      "payload_read": false
+    },
+    "final_sha256": "5ab7c5f1f31a970fcadcbe52cd891099ce9858e44d61a709955daf45fbc396fa",
+    "final_bytes": 798634,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/ckpt/longkou_unoverlapping_s0_hold3_ft30_live1012_093738.pth",
+    "target": "D:\\gcs_20261012\\data\\ckpt\\longkou_unoverlapping_s0_hold3_ft30_live1012_093738.pth",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\ckpt\\longkou_unoverlapping_s0_hold3_ft30_live1012_093738.pth",
+    "roles": [
+      "saved_recovery_checkpoint"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "e2879018833417b8071fff32e2596560b855a5e32dcb010e21a49feb17fb2b7e",
+    "expected_baseline_bytes": 801194,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 801194,
+      "reparse_point": false,
+      "mtime_ns": 1791769099970945500,
+      "payload_read": false
+    },
+    "final_sha256": "e2879018833417b8071fff32e2596560b855a5e32dcb010e21a49feb17fb2b7e",
+    "final_bytes": 801194,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/ckpt/longkou_unoverlapping_s0_hold3_ft50.pth",
+    "target": "D:\\gcs_20261012\\data\\ckpt\\longkou_unoverlapping_s0_hold3_ft50.pth",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\ckpt\\longkou_unoverlapping_s0_hold3_ft50.pth",
+    "roles": [
+      "registered_checkpoint"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "e76acaa3772b0c800e33210500cddc82384e3c001530b5a35935d40cdea4ad79",
+    "expected_baseline_bytes": 798634,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 798634,
+      "reparse_point": false,
+      "mtime_ns": 1790088452840241200,
+      "payload_read": false
+    },
+    "final_sha256": "e76acaa3772b0c800e33210500cddc82384e3c001530b5a35935d40cdea4ad79",
+    "final_bytes": 798634,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/hanchuan/weights/v1/classifier_b.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\hanchuan\\weights\\v1\\classifier_b.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\hanchuan\\weights\\v1\\classifier_b.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "04ae62c4e6a5a20225b1154fb4f7514485df947a4c63f5be8993249200399cc1",
+    "expected_baseline_bytes": 64,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 64,
+      "reparse_point": false,
+      "mtime_ns": 1790082584402414400,
+      "payload_read": false
+    },
+    "final_sha256": "04ae62c4e6a5a20225b1154fb4f7514485df947a4c63f5be8993249200399cc1",
+    "final_bytes": 64,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/hanchuan/weights/v1/classifier_w.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\hanchuan\\weights\\v1\\classifier_w.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\hanchuan\\weights\\v1\\classifier_w.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "b677f40c6f5f5704f26cd302dab4de38b24abe5b87982f2c3774038d2490fa2f",
+    "expected_baseline_bytes": 169344,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 169344,
+      "reparse_point": false,
+      "mtime_ns": 1790082584402414400,
+      "payload_read": false
+    },
+    "final_sha256": "b677f40c6f5f5704f26cd302dab4de38b24abe5b87982f2c3774038d2490fa2f",
+    "final_bytes": 169344,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/hanchuan/weights/v1/cls_token.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\hanchuan\\weights\\v1\\cls_token.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\hanchuan\\weights\\v1\\cls_token.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "37070dc0956d506c20a02601fddc5311b4d3fd16a9d9fdaf3c5be9a8ff6138dd",
+    "expected_baseline_bytes": 10584,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 10584,
+      "reparse_point": false,
+      "mtime_ns": 1790082584400414200,
+      "payload_read": false
+    },
+    "final_sha256": "37070dc0956d506c20a02601fddc5311b4d3fd16a9d9fdaf3c5be9a8ff6138dd",
+    "final_bytes": 10584,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/hanchuan/weights/v1/pos_embed.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\hanchuan\\weights\\v1\\pos_embed.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\hanchuan\\weights\\v1\\pos_embed.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "99adc378e93e323aeb6c1642ba1f82854f0d8e80f629f57449305cfe09dc27a5",
+    "expected_baseline_bytes": 63504,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 63504,
+      "reparse_point": false,
+      "mtime_ns": 1790082584401414100,
+      "payload_read": false
+    },
+    "final_sha256": "99adc378e93e323aeb6c1642ba1f82854f0d8e80f629f57449305cfe09dc27a5",
+    "final_bytes": 63504,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/hanchuan/weights/v1/weights_all.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\hanchuan\\weights\\v1\\weights_all.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\hanchuan\\weights\\v1\\weights_all.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "f8747fef9310667497a0277b4c0099ad8bb08bbe8ddd0eab9d575c4aa321fe6f",
+    "expected_baseline_bytes": 289344,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 289344,
+      "reparse_point": false,
+      "mtime_ns": 1790082584400414200,
+      "payload_read": false
+    },
+    "final_sha256": "f8747fef9310667497a0277b4c0099ad8bb08bbe8ddd0eab9d575c4aa321fe6f",
+    "final_bytes": 289344,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/hanchuan/weights/v1/weights_engine.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\hanchuan\\weights\\v1\\weights_engine.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\hanchuan\\weights\\v1\\weights_engine.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "1919c8b69f0a5871a97fc62dec89ef8cb6d9db4e8777e20a10779268398ae52d",
+    "expected_baseline_bytes": 480576,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 480576,
+      "reparse_point": false,
+      "mtime_ns": 1790246991541536900,
+      "payload_read": false
+    },
+    "final_sha256": "1919c8b69f0a5871a97fc62dec89ef8cb6d9db4e8777e20a10779268398ae52d",
+    "final_bytes": 480576,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/honghu/weights/v1/classifier_b.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\honghu\\weights\\v1\\classifier_b.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\honghu\\weights\\v1\\classifier_b.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "856ebac80f38729fe1dee87bce139c92c857957dfb1b0b57022de93181b65fa4",
+    "expected_baseline_bytes": 88,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 88,
+      "reparse_point": false,
+      "mtime_ns": 1790082572330685900,
+      "payload_read": false
+    },
+    "final_sha256": "856ebac80f38729fe1dee87bce139c92c857957dfb1b0b57022de93181b65fa4",
+    "final_bytes": 88,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/honghu/weights/v1/classifier_w.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\honghu\\weights\\v1\\classifier_w.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\honghu\\weights\\v1\\classifier_w.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "26a77d0dbe032e8a62e4e2fff70767891898e068c3511e3aef303df25ae11089",
+    "expected_baseline_bytes": 232848,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 232848,
+      "reparse_point": false,
+      "mtime_ns": 1790082572330685900,
+      "payload_read": false
+    },
+    "final_sha256": "26a77d0dbe032e8a62e4e2fff70767891898e068c3511e3aef303df25ae11089",
+    "final_bytes": 232848,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/honghu/weights/v1/cls_token.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\honghu\\weights\\v1\\cls_token.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\honghu\\weights\\v1\\cls_token.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "77ed16718dcf7b9e4204e6727c6e22dcb023453b8ada8ccd4fa8df5cb9f67893",
+    "expected_baseline_bytes": 10584,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 10584,
+      "reparse_point": false,
+      "mtime_ns": 1790082572329573400,
+      "payload_read": false
+    },
+    "final_sha256": "77ed16718dcf7b9e4204e6727c6e22dcb023453b8ada8ccd4fa8df5cb9f67893",
+    "final_bytes": 10584,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/honghu/weights/v1/pos_embed.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\honghu\\weights\\v1\\pos_embed.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\honghu\\weights\\v1\\pos_embed.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "da75130037879436086fae3c8eb5065afe9fbf6da544b4166bd7acc6af545f4b",
+    "expected_baseline_bytes": 63504,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 63504,
+      "reparse_point": false,
+      "mtime_ns": 1790082572330685900,
+      "payload_read": false
+    },
+    "final_sha256": "da75130037879436086fae3c8eb5065afe9fbf6da544b4166bd7acc6af545f4b",
+    "final_bytes": 63504,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/honghu/weights/v1/weights_all.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\honghu\\weights\\v1\\weights_all.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\honghu\\weights\\v1\\weights_all.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "3b2d8cd042bea345efceecaf2af530305e1c38ba873ea8ff814055d23d401190",
+    "expected_baseline_bytes": 289344,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 289344,
+      "reparse_point": false,
+      "mtime_ns": 1790082572328500100,
+      "payload_read": false
+    },
+    "final_sha256": "3b2d8cd042bea345efceecaf2af530305e1c38ba873ea8ff814055d23d401190",
+    "final_bytes": 289344,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/honghu/weights/v1/weights_engine.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\honghu\\weights\\v1\\weights_engine.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\honghu\\weights\\v1\\weights_engine.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "dd2ee0c70016a314dbfb2e887c4a75afd1a39aedc7c11b6d3a8f7358c6bbe972",
+    "expected_baseline_bytes": 480576,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 480576,
+      "reparse_point": false,
+      "mtime_ns": 1790246985612776400,
+      "payload_read": false
+    },
+    "final_sha256": "dd2ee0c70016a314dbfb2e887c4a75afd1a39aedc7c11b6d3a8f7358c6bbe972",
+    "final_bytes": 480576,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/hold3/board_model.json",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\hold3\\board_model.json",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\hold3\\board_model.json",
+    "roles": [
+      "model_provenance"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "c3cf6432a8b501fbb0ba68f91d649cc9a7b6e41e07381d9b142ba516dd1725d8",
+    "expected_baseline_bytes": 1805,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 1805,
+      "reparse_point": false,
+      "mtime_ns": 1791655508152504300,
+      "payload_read": false
+    },
+    "final_sha256": "c3cf6432a8b501fbb0ba68f91d649cc9a7b6e41e07381d9b142ba516dd1725d8",
+    "final_bytes": 1805,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/hold3/classifier_b.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\hold3\\classifier_b.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\hold3\\classifier_b.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "2c8af2ae80594daf7962ab7da87883f0c6cf89e892f8489fb238ae760f18c94d",
+    "expected_baseline_bytes": 36,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 36,
+      "reparse_point": false,
+      "mtime_ns": 1791655508094268000,
+      "payload_read": false
+    },
+    "final_sha256": "2c8af2ae80594daf7962ab7da87883f0c6cf89e892f8489fb238ae760f18c94d",
+    "final_bytes": 36,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/hold3/classifier_w.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\hold3\\classifier_w.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\hold3\\classifier_w.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "dd727ad5c296b139b3f439b480d2bc0faf78a4493620c5ef7027c98655fe4f6a",
+    "expected_baseline_bytes": 95256,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 95256,
+      "reparse_point": false,
+      "mtime_ns": 1791655508093266500,
+      "payload_read": false
+    },
+    "final_sha256": "dd727ad5c296b139b3f439b480d2bc0faf78a4493620c5ef7027c98655fe4f6a",
+    "final_bytes": 95256,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/hold3/cls_token.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\hold3\\cls_token.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\hold3\\cls_token.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "65493cc4246636cb5cee23bb479b2fbdff14155aa9d1671cabac231fd7bfb0f5",
+    "expected_baseline_bytes": 10584,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 10584,
+      "reparse_point": false,
+      "mtime_ns": 1791655508092259900,
+      "payload_read": false
+    },
+    "final_sha256": "65493cc4246636cb5cee23bb479b2fbdff14155aa9d1671cabac231fd7bfb0f5",
+    "final_bytes": 10584,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/hold3/pos_embed.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\hold3\\pos_embed.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\hold3\\pos_embed.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "93cf1cb163fdc51204f37276dbdfefb3d3b7e28f03dab47f9d1dc594621a6f1c",
+    "expected_baseline_bytes": 63504,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 63504,
+      "reparse_point": false,
+      "mtime_ns": 1791655508092259900,
+      "payload_read": false
+    },
+    "final_sha256": "93cf1cb163fdc51204f37276dbdfefb3d3b7e28f03dab47f9d1dc594621a6f1c",
+    "final_bytes": 63504,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/hold3/weights_all.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\hold3\\weights_all.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\hold3\\weights_all.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "c8f0a8b34def0f355bfb5ce068e6c12d30ae296b5b5c4abaddbcf773d2981284",
+    "expected_baseline_bytes": 289344,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 289344,
+      "reparse_point": false,
+      "mtime_ns": 1791655508090915700,
+      "payload_read": false
+    },
+    "final_sha256": "c8f0a8b34def0f355bfb5ce068e6c12d30ae296b5b5c4abaddbcf773d2981284",
+    "final_bytes": 289344,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/hold3/weights_engine.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\hold3\\weights_engine.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\hold3\\weights_engine.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "5a10756080ee4bdf744d64726497b39d4146ae3880679e6bd2a5672f81c10f01",
+    "expected_baseline_bytes": 480576,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 480576,
+      "reparse_point": false,
+      "mtime_ns": 1791655508096792500,
+      "payload_read": false
+    },
+    "final_sha256": "5a10756080ee4bdf744d64726497b39d4146ae3880679e6bd2a5672f81c10f01",
+    "final_bytes": 480576,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/live1012_093738/board_model.json",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\live1012_093738\\board_model.json",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\live1012_093738\\board_model.json",
+    "roles": [
+      "saved_recovery_export"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "ee2b9ff08ab1d2c654f2ba9af60fab4962f5be8ffe2f16b6a4ce53aec25b0097",
+    "expected_baseline_bytes": 1906,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 1906,
+      "reparse_point": false,
+      "mtime_ns": 1791771734023162000,
+      "payload_read": false
+    },
+    "final_sha256": "ee2b9ff08ab1d2c654f2ba9af60fab4962f5be8ffe2f16b6a4ce53aec25b0097",
+    "final_bytes": 1906,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/live1012_093738/classifier_b.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\live1012_093738\\classifier_b.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\live1012_093738\\classifier_b.bin",
+    "roles": [
+      "saved_recovery_export"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "461aca8b45a59bfac274a0448187d3eeafe3400cf6f79975a9d57db199e52b11",
+    "expected_baseline_bytes": 36,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 36,
+      "reparse_point": false,
+      "mtime_ns": 1791771733918230000,
+      "payload_read": false
+    },
+    "final_sha256": "461aca8b45a59bfac274a0448187d3eeafe3400cf6f79975a9d57db199e52b11",
+    "final_bytes": 36,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/live1012_093738/classifier_w.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\live1012_093738\\classifier_w.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\live1012_093738\\classifier_w.bin",
+    "roles": [
+      "saved_recovery_export"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "3d131a7c0999b6d9a37ea75f24ab5e7946560b490e2a0acbfae4260304d3f2a2",
+    "expected_baseline_bytes": 95256,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 95256,
+      "reparse_point": false,
+      "mtime_ns": 1791771733916273500,
+      "payload_read": false
+    },
+    "final_sha256": "3d131a7c0999b6d9a37ea75f24ab5e7946560b490e2a0acbfae4260304d3f2a2",
+    "final_bytes": 95256,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/live1012_093738/cls_token.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\live1012_093738\\cls_token.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\live1012_093738\\cls_token.bin",
+    "roles": [
+      "saved_recovery_export"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "ec1dfc2cc24c1d906297f8a74e8ccbecd0db558814ddb2564a6d365d1c5b931f",
+    "expected_baseline_bytes": 10584,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 10584,
+      "reparse_point": false,
+      "mtime_ns": 1791771733913229300,
+      "payload_read": false
+    },
+    "final_sha256": "ec1dfc2cc24c1d906297f8a74e8ccbecd0db558814ddb2564a6d365d1c5b931f",
+    "final_bytes": 10584,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/live1012_093738/pos_embed.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\live1012_093738\\pos_embed.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\live1012_093738\\pos_embed.bin",
+    "roles": [
+      "saved_recovery_export"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "a1436c7f0d9584571575a9fc72bd0582a47606e71fbeaa9a6175cf9b7fcec984",
+    "expected_baseline_bytes": 63504,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 63504,
+      "reparse_point": false,
+      "mtime_ns": 1791771733915223200,
+      "payload_read": false
+    },
+    "final_sha256": "a1436c7f0d9584571575a9fc72bd0582a47606e71fbeaa9a6175cf9b7fcec984",
+    "final_bytes": 63504,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/live1012_093738/weights_all.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\live1012_093738\\weights_all.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\live1012_093738\\weights_all.bin",
+    "roles": [
+      "saved_recovery_export"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "8738c17fb3672ff677d6322bf68ca9d7f739995052a5cbd64018e2989e6e76ff",
+    "expected_baseline_bytes": 289344,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 289344,
+      "reparse_point": false,
+      "mtime_ns": 1791771733911222600,
+      "payload_read": false
+    },
+    "final_sha256": "8738c17fb3672ff677d6322bf68ca9d7f739995052a5cbd64018e2989e6e76ff",
+    "final_bytes": 289344,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/live1012_093738/weights_engine.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\live1012_093738\\weights_engine.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\live1012_093738\\weights_engine.bin",
+    "roles": [
+      "saved_recovery_export"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "e5615b1f4f88eaf6ccf8a9fd6e42f8fa603abea91ca2a720c5519b0d2f88e22e",
+    "expected_baseline_bytes": 480576,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 480576,
+      "reparse_point": false,
+      "mtime_ns": 1791771733924102200,
+      "payload_read": false
+    },
+    "final_sha256": "e5615b1f4f88eaf6ccf8a9fd6e42f8fa603abea91ca2a720c5519b0d2f88e22e",
+    "final_bytes": 480576,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v1_board/board_model.json",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v1_board\\board_model.json",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v1_board\\board_model.json",
+    "roles": [
+      "model_provenance"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "ee99f6ab4e2570a0e47291131f7565a30bd183c012bd05cbc98fd2de6aa0f8f4",
+    "expected_baseline_bytes": 1903,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 1903,
+      "reparse_point": false,
+      "mtime_ns": 1791671075382822400,
+      "payload_read": false
+    },
+    "final_sha256": "ee99f6ab4e2570a0e47291131f7565a30bd183c012bd05cbc98fd2de6aa0f8f4",
+    "final_bytes": 1903,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v1_board/classifier_b.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v1_board\\classifier_b.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v1_board\\classifier_b.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "4425a5a6f503f7594e6faca3b3c3695bf5be49c974d6067b12af527d3ca6c443",
+    "expected_baseline_bytes": 36,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 36,
+      "reparse_point": false,
+      "mtime_ns": 1791671075324272200,
+      "payload_read": false
+    },
+    "final_sha256": "4425a5a6f503f7594e6faca3b3c3695bf5be49c974d6067b12af527d3ca6c443",
+    "final_bytes": 36,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v1_board/classifier_w.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v1_board\\classifier_w.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v1_board\\classifier_w.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "24825f3cf64df4bdb09b50d07895358519856e4b2280dd9bc838821b93712e57",
+    "expected_baseline_bytes": 95256,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 95256,
+      "reparse_point": false,
+      "mtime_ns": 1791671075324272200,
+      "payload_read": false
+    },
+    "final_sha256": "24825f3cf64df4bdb09b50d07895358519856e4b2280dd9bc838821b93712e57",
+    "final_bytes": 95256,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v1_board/cls_token.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v1_board\\cls_token.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v1_board\\cls_token.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "c291733811a0f6485e57abcda48531fb84becd44100e4edf0381acd2143999c3",
+    "expected_baseline_bytes": 10584,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 10584,
+      "reparse_point": false,
+      "mtime_ns": 1791671075322956100,
+      "payload_read": false
+    },
+    "final_sha256": "c291733811a0f6485e57abcda48531fb84becd44100e4edf0381acd2143999c3",
+    "final_bytes": 10584,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v1_board/pos_embed.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v1_board\\pos_embed.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v1_board\\pos_embed.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "d456b08bc8f012a35ece49fb8020af49d3be8ce4430edf1d1e19a6308f90ccd9",
+    "expected_baseline_bytes": 63504,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 63504,
+      "reparse_point": false,
+      "mtime_ns": 1791671075322956100,
+      "payload_read": false
+    },
+    "final_sha256": "d456b08bc8f012a35ece49fb8020af49d3be8ce4430edf1d1e19a6308f90ccd9",
+    "final_bytes": 63504,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v1_board/weights_all.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v1_board\\weights_all.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v1_board\\weights_all.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "4169e25ea589829456deadcbcb17c8f6eca54dd562b6162bd72feb7e8b1b4969",
+    "expected_baseline_bytes": 289344,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 289344,
+      "reparse_point": false,
+      "mtime_ns": 1791671075322956100,
+      "payload_read": false
+    },
+    "final_sha256": "4169e25ea589829456deadcbcb17c8f6eca54dd562b6162bd72feb7e8b1b4969",
+    "final_bytes": 289344,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v1_board/weights_engine.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v1_board\\weights_engine.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v1_board\\weights_engine.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "15925d2dd8e273cc291f0a2d4a10ddde0bd02d27fa5c558d6b678df95bdf4e51",
+    "expected_baseline_bytes": 480576,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 480576,
+      "reparse_point": false,
+      "mtime_ns": 1791671075324272200,
+      "payload_read": false
+    },
+    "final_sha256": "15925d2dd8e273cc291f0a2d4a10ddde0bd02d27fa5c558d6b678df95bdf4e51",
+    "final_bytes": 480576,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v2/classifier_b.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v2\\classifier_b.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v2\\classifier_b.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "c25f3bda70a6136079263e5a7aea3d1447756c1a0d8f043a7952f48c28bb332a",
+    "expected_baseline_bytes": 36,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 36,
+      "reparse_point": false,
+      "mtime_ns": 1790082559617818600,
+      "payload_read": false
+    },
+    "final_sha256": "c25f3bda70a6136079263e5a7aea3d1447756c1a0d8f043a7952f48c28bb332a",
+    "final_bytes": 36,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v2/classifier_w.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v2\\classifier_w.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v2\\classifier_w.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "34de511843664a4fdbf85c8b53879491b1a65ee2878445f921a40f04fe9db039",
+    "expected_baseline_bytes": 95256,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 95256,
+      "reparse_point": false,
+      "mtime_ns": 1790082559616308300,
+      "payload_read": false
+    },
+    "final_sha256": "34de511843664a4fdbf85c8b53879491b1a65ee2878445f921a40f04fe9db039",
+    "final_bytes": 95256,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v2/cls_token.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v2\\cls_token.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v2\\cls_token.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "fffe63befdc243b47cf79d712debac71a99cd3c4e7f9fca8816dc23438364e41",
+    "expected_baseline_bytes": 10584,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 10584,
+      "reparse_point": false,
+      "mtime_ns": 1790082559615309000,
+      "payload_read": false
+    },
+    "final_sha256": "fffe63befdc243b47cf79d712debac71a99cd3c4e7f9fca8816dc23438364e41",
+    "final_bytes": 10584,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v2/pos_embed.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v2\\pos_embed.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v2\\pos_embed.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "56b14e785090d7f44bec2884616749bee835590940afb03ae50c24746e13cb96",
+    "expected_baseline_bytes": 63504,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 63504,
+      "reparse_point": false,
+      "mtime_ns": 1790082559616308300,
+      "payload_read": false
+    },
+    "final_sha256": "56b14e785090d7f44bec2884616749bee835590940afb03ae50c24746e13cb96",
+    "final_bytes": 63504,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v2/weights_all.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v2\\weights_all.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v2\\weights_all.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "707255f33447f510b9b7b924dbbab7d32f5aa7f98e5d2cd128c4324af20c7637",
+    "expected_baseline_bytes": 289344,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 289344,
+      "reparse_point": false,
+      "mtime_ns": 1790082559615309000,
+      "payload_read": false
+    },
+    "final_sha256": "707255f33447f510b9b7b924dbbab7d32f5aa7f98e5d2cd128c4324af20c7637",
+    "final_bytes": 289344,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v2/weights_engine.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v2\\weights_engine.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v2\\weights_engine.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "9177beec3b5b53c56d693f69d7383157264721b96080e2528bb0f4e7189211f2",
+    "expected_baseline_bytes": 480576,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 480576,
+      "reparse_point": false,
+      "mtime_ns": 1790224542922363900,
+      "payload_read": false
+    },
+    "final_sha256": "9177beec3b5b53c56d693f69d7383157264721b96080e2528bb0f4e7189211f2",
+    "final_bytes": 480576,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3_board/board_model.json",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3_board\\board_model.json",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3_board\\board_model.json",
+    "roles": [
+      "model_provenance"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "239ec434906b2f97d5895431d5ce976b04805ad5eb6fb629bbee98b7a95c234e",
+    "expected_baseline_bytes": 1813,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 1813,
+      "reparse_point": false,
+      "mtime_ns": 1791655508271780600,
+      "payload_read": false
+    },
+    "final_sha256": "239ec434906b2f97d5895431d5ce976b04805ad5eb6fb629bbee98b7a95c234e",
+    "final_bytes": 1813,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3_board/classifier_b.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3_board\\classifier_b.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3_board\\classifier_b.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "461aca8b45a59bfac274a0448187d3eeafe3400cf6f79975a9d57db199e52b11",
+    "expected_baseline_bytes": 36,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 36,
+      "reparse_point": false,
+      "mtime_ns": 1791655508208726400,
+      "payload_read": false
+    },
+    "final_sha256": "461aca8b45a59bfac274a0448187d3eeafe3400cf6f79975a9d57db199e52b11",
+    "final_bytes": 36,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3_board/classifier_w.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3_board\\classifier_w.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3_board\\classifier_w.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "3d131a7c0999b6d9a37ea75f24ab5e7946560b490e2a0acbfae4260304d3f2a2",
+    "expected_baseline_bytes": 95256,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 95256,
+      "reparse_point": false,
+      "mtime_ns": 1791655508207502500,
+      "payload_read": false
+    },
+    "final_sha256": "3d131a7c0999b6d9a37ea75f24ab5e7946560b490e2a0acbfae4260304d3f2a2",
+    "final_bytes": 95256,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3_board/cls_token.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3_board\\cls_token.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3_board\\cls_token.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "ec1dfc2cc24c1d906297f8a74e8ccbecd0db558814ddb2564a6d365d1c5b931f",
+    "expected_baseline_bytes": 10584,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 10584,
+      "reparse_point": false,
+      "mtime_ns": 1791655508206022400,
+      "payload_read": false
+    },
+    "final_sha256": "ec1dfc2cc24c1d906297f8a74e8ccbecd0db558814ddb2564a6d365d1c5b931f",
+    "final_bytes": 10584,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3_board/pos_embed.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3_board\\pos_embed.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3_board\\pos_embed.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "a1436c7f0d9584571575a9fc72bd0582a47606e71fbeaa9a6175cf9b7fcec984",
+    "expected_baseline_bytes": 63504,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 63504,
+      "reparse_point": false,
+      "mtime_ns": 1791655508206022400,
+      "payload_read": false
+    },
+    "final_sha256": "a1436c7f0d9584571575a9fc72bd0582a47606e71fbeaa9a6175cf9b7fcec984",
+    "final_bytes": 63504,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3_board/weights_all.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3_board\\weights_all.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3_board\\weights_all.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "8738c17fb3672ff677d6322bf68ca9d7f739995052a5cbd64018e2989e6e76ff",
+    "expected_baseline_bytes": 289344,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 289344,
+      "reparse_point": false,
+      "mtime_ns": 1791655508206022400,
+      "payload_read": false
+    },
+    "final_sha256": "8738c17fb3672ff677d6322bf68ca9d7f739995052a5cbd64018e2989e6e76ff",
+    "final_bytes": 289344,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3_board/weights_engine.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3_board\\weights_engine.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3_board\\weights_engine.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "e5615b1f4f88eaf6ccf8a9fd6e42f8fa603abea91ca2a720c5519b0d2f88e22e",
+    "expected_baseline_bytes": 480576,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 480576,
+      "reparse_point": false,
+      "mtime_ns": 1791655508209736500,
+      "payload_read": false
+    },
+    "final_sha256": "e5615b1f4f88eaf6ccf8a9fd6e42f8fa603abea91ca2a720c5519b0d2f88e22e",
+    "final_bytes": 480576,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3ft50_board/board_model.json",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3ft50_board\\board_model.json",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3ft50_board\\board_model.json",
+    "roles": [
+      "model_provenance"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "3e8d183310cdc0103df1665af94bb41e244369f4690434fbb06b52958f7b2f0d",
+    "expected_baseline_bytes": 1817,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 1817,
+      "reparse_point": false,
+      "mtime_ns": 1791655508390233800,
+      "payload_read": false
+    },
+    "final_sha256": "3e8d183310cdc0103df1665af94bb41e244369f4690434fbb06b52958f7b2f0d",
+    "final_bytes": 1817,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3ft50_board/classifier_b.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3ft50_board\\classifier_b.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3ft50_board\\classifier_b.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "870c561e8d23dfe0dbb9975fdf9afcb608e9065fd2c809d16b0c8097e82b188e",
+    "expected_baseline_bytes": 36,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 36,
+      "reparse_point": false,
+      "mtime_ns": 1791655508331236300,
+      "payload_read": false
+    },
+    "final_sha256": "870c561e8d23dfe0dbb9975fdf9afcb608e9065fd2c809d16b0c8097e82b188e",
+    "final_bytes": 36,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3ft50_board/classifier_w.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3ft50_board\\classifier_w.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3ft50_board\\classifier_w.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "5ea48a731570d2ab2262fcb40a299a6fc00686737885a507ae50f19c47848900",
+    "expected_baseline_bytes": 95256,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 95256,
+      "reparse_point": false,
+      "mtime_ns": 1791655508330235900,
+      "payload_read": false
+    },
+    "final_sha256": "5ea48a731570d2ab2262fcb40a299a6fc00686737885a507ae50f19c47848900",
+    "final_bytes": 95256,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3ft50_board/cls_token.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3ft50_board\\cls_token.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3ft50_board\\cls_token.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "61e1e38d1a1e37d9d3ecf46e6fba117426969df3acb04ea005e9aead239bb11f",
+    "expected_baseline_bytes": 10584,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 10584,
+      "reparse_point": false,
+      "mtime_ns": 1791655508329234700,
+      "payload_read": false
+    },
+    "final_sha256": "61e1e38d1a1e37d9d3ecf46e6fba117426969df3acb04ea005e9aead239bb11f",
+    "final_bytes": 10584,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3ft50_board/pos_embed.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3ft50_board\\pos_embed.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3ft50_board\\pos_embed.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "3c798691d4858bb6776740030115145e0731ac8266796a341d64be2f1b39828a",
+    "expected_baseline_bytes": 63504,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 63504,
+      "reparse_point": false,
+      "mtime_ns": 1791655508330235900,
+      "payload_read": false
+    },
+    "final_sha256": "3c798691d4858bb6776740030115145e0731ac8266796a341d64be2f1b39828a",
+    "final_bytes": 63504,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3ft50_board/weights_all.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3ft50_board\\weights_all.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3ft50_board\\weights_all.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "b2687630f0502643783299666a4b4c960adc9d51be266e598247341f9daf4c9b",
+    "expected_baseline_bytes": 289344,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 289344,
+      "reparse_point": false,
+      "mtime_ns": 1791655508329234700,
+      "payload_read": false
+    },
+    "final_sha256": "b2687630f0502643783299666a4b4c960adc9d51be266e598247341f9daf4c9b",
+    "final_bytes": 289344,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "data/scenes/longkou/weights/v3ft50_board/weights_engine.bin",
+    "target": "D:\\gcs_20261012\\data\\scenes\\longkou\\weights\\v3ft50_board\\weights_engine.bin",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\data\\scenes\\longkou\\weights\\v3ft50_board\\weights_engine.bin",
+    "roles": [
+      "board_runtime"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "875c0de86c5cbc1b083d3849cf60f88ab4ea7c977067adecb3ae3fb3d22686df",
+    "expected_baseline_bytes": 480576,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 480576,
+      "reparse_point": false,
+      "mtime_ns": 1791655508333235500,
+      "payload_read": false
+    },
+    "final_sha256": "875c0de86c5cbc1b083d3849cf60f88ab4ea7c977067adecb3ae3fb3d22686df",
+    "final_bytes": 480576,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "gcs/board_models.py",
+    "target": "D:\\gcs_20261012\\gcs\\board_models.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\gcs\\board_models.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "c5aef4eacc896eb32fa5fafb2cc61c9c370ec5feb3f393381a2cf30355d0520d",
+    "expected_baseline_bytes": 11962,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 11962,
+      "reparse_point": false,
+      "mtime_ns": 1791773887549249200,
+      "payload_read": false
+    },
+    "final_sha256": "c5aef4eacc896eb32fa5fafb2cc61c9c370ec5feb3f393381a2cf30355d0520d",
+    "final_bytes": 11962,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "gcs/engine.py",
+    "target": "D:\\gcs_20261012\\gcs\\engine.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\gcs\\engine.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "7bdfaf56b0b9e56dc117a7c31c26ebedd793f706c8f882553e25ea2cb35c3255",
+    "expected_baseline_bytes": 13802,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 13802,
+      "reparse_point": false,
+      "mtime_ns": 1791774007650991800,
+      "payload_read": false
+    },
+    "final_sha256": "7bdfaf56b0b9e56dc117a7c31c26ebedd793f706c8f882553e25ea2cb35c3255",
+    "final_bytes": 13802,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "gcs/finetune_guard.py",
+    "target": "D:\\gcs_20261012\\gcs\\finetune_guard.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\gcs\\finetune_guard.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "04d320d4ac9707c03b79d0eafce30fde369a990b8c8ac73048931143eff0a0fd",
+    "expected_baseline_bytes": 6392,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 6392,
+      "reparse_point": false,
+      "mtime_ns": 1791773887545250700,
+      "payload_read": false
+    },
+    "final_sha256": "04d320d4ac9707c03b79d0eafce30fde369a990b8c8ac73048931143eff0a0fd",
+    "final_bytes": 6392,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/engine_gpu.py",
+    "target": "D:\\gcs_20261012\\model\\engine_gpu.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\engine_gpu.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "92c8384dc5a86e6ef1f0cac30c83bb5dc8bb92e2806213461ab3aef39b795c33",
+    "expected_baseline_bytes": 14611,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 14611,
+      "reparse_point": false,
+      "mtime_ns": 1791769156620721000,
+      "payload_read": false
+    },
+    "final_sha256": "92c8384dc5a86e6ef1f0cac30c83bb5dc8bb92e2806213461ab3aef39b795c33",
+    "final_bytes": 14611,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/engine_ref.py",
+    "target": "D:\\gcs_20261012\\model\\engine_ref.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\engine_ref.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "f0f74a013cd70748072baabab24d3aa4f593c0331f8fb9ebf967bd73405d2cb8",
+    "expected_baseline_bytes": 44026,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 44026,
+      "reparse_point": false,
+      "mtime_ns": 1791769156623720000,
+      "payload_read": false
+    },
+    "final_sha256": "f0f74a013cd70748072baabab24d3aa4f593c0331f8fb9ebf967bd73405d2cb8",
+    "final_bytes": 44026,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/export_block.py",
+    "target": "D:\\gcs_20261012\\model\\export_block.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\export_block.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "dc8db7cd8b3234723fedb047e66180008795d2ddb66372fbea6e5511f58d33bf",
+    "expected_baseline_bytes": 11837,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 11837,
+      "reparse_point": false,
+      "mtime_ns": 1791769156625721100,
+      "payload_read": false
+    },
+    "final_sha256": "dc8db7cd8b3234723fedb047e66180008795d2ddb66372fbea6e5511f58d33bf",
+    "final_bytes": 11837,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/export_board_candidate.py",
+    "target": "D:\\gcs_20261012\\model\\export_board_candidate.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\export_board_candidate.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "2f763310e0109d4ca3de7c9b4fe7332212741af85309bd41871411242811207a",
+    "expected_baseline_bytes": 4312,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 4312,
+      "reparse_point": false,
+      "mtime_ns": 1791769156628721900,
+      "payload_read": false
+    },
+    "final_sha256": "2f763310e0109d4ca3de7c9b4fe7332212741af85309bd41871411242811207a",
+    "final_bytes": 4312,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/export_c_arrays.py",
+    "target": "D:\\gcs_20261012\\model\\export_c_arrays.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\export_c_arrays.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "6a871be3c3d8661f1f0cc1614dacc164e61f1555a2d74208bd60bb95856ab546",
+    "expected_baseline_bytes": 3397,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 3397,
+      "reparse_point": false,
+      "mtime_ns": 1791769156631638500,
+      "payload_read": false
+    },
+    "final_sha256": "6a871be3c3d8661f1f0cc1614dacc164e61f1555a2d74208bd60bb95856ab546",
+    "final_bytes": 3397,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/export_golden.py",
+    "target": "D:\\gcs_20261012\\model\\export_golden.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\export_golden.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "2911e41673f053f529a2facb8dddae3a1d573d65988271c8b9a210ab7b31967d",
+    "expected_baseline_bytes": 4250,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 4250,
+      "reparse_point": false,
+      "mtime_ns": 1791769156633821000,
+      "payload_read": false
+    },
+    "final_sha256": "2911e41673f053f529a2facb8dddae3a1d573d65988271c8b9a210ab7b31967d",
+    "final_bytes": 4250,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/export_scene.py",
+    "target": "D:\\gcs_20261012\\model\\export_scene.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\export_scene.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "4b46bf24155f3c983e2a502f8f4fd6cc199e748d19b49496bb0d784a4f2a4e64",
+    "expected_baseline_bytes": 10026,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 10026,
+      "reparse_point": false,
+      "mtime_ns": 1791769156635964100,
+      "payload_read": false
+    },
+    "final_sha256": "4b46bf24155f3c983e2a502f8f4fd6cc199e748d19b49496bb0d784a4f2a4e64",
+    "final_bytes": 10026,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/finetune_region.py",
+    "target": "D:\\gcs_20261012\\model\\finetune_region.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\finetune_region.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "26711ee59d9b97eec7790abdecb4649e260daad3056c4dd9ad2c53088042e7ab",
+    "expected_baseline_bytes": 16207,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 16207,
+      "reparse_point": false,
+      "mtime_ns": 1791774007656512100,
+      "payload_read": false
+    },
+    "final_sha256": "26711ee59d9b97eec7790abdecb4649e260daad3056c4dd9ad2c53088042e7ab",
+    "final_bytes": 16207,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/fixed_point_sim.py",
+    "target": "D:\\gcs_20261012\\model\\fixed_point_sim.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\fixed_point_sim.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "0e8918d2f6e72415adb0d07af9234044d96d7f901c6f0e716fe23431f04283de",
+    "expected_baseline_bytes": 5427,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 5427,
+      "reparse_point": false,
+      "mtime_ns": 1791769156639882900,
+      "payload_read": false
+    },
+    "final_sha256": "0e8918d2f6e72415adb0d07af9234044d96d7f901c6f0e716fe23431f04283de",
+    "final_bytes": 5427,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/fixed_regression.py",
+    "target": "D:\\gcs_20261012\\model\\fixed_regression.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\fixed_regression.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "d19f445bcd03d2a5b1417cec42d9f41b7c0360136e693d53a3daea3e89d0d5c8",
+    "expected_baseline_bytes": 6751,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 6751,
+      "reparse_point": false,
+      "mtime_ns": 1791769156641446000,
+      "payload_read": false
+    },
+    "final_sha256": "d19f445bcd03d2a5b1417cec42d9f41b7c0360136e693d53a3daea3e89d0d5c8",
+    "final_bytes": 6751,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/format_scan.py",
+    "target": "D:\\gcs_20261012\\model\\format_scan.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\format_scan.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "a8909edf8fd68bfb932597565e908cf8d80ab6e56b287a8fb84ed3c429f851e4",
+    "expected_baseline_bytes": 8083,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 8083,
+      "reparse_point": false,
+      "mtime_ns": 1791769156643463200,
+      "payload_read": false
+    },
+    "final_sha256": "a8909edf8fd68bfb932597565e908cf8d80ab6e56b287a8fb84ed3c429f851e4",
+    "final_bytes": 8083,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/layer_stats.py",
+    "target": "D:\\gcs_20261012\\model\\layer_stats.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\layer_stats.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "3f4f85b1d9394d1ded6afe7c2f6482fd4faca0d780817d8fd2044f967882df20",
+    "expected_baseline_bytes": 4769,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 4769,
+      "reparse_point": false,
+      "mtime_ns": 1791769156646529800,
+      "payload_read": false
+    },
+    "final_sha256": "3f4f85b1d9394d1ded6afe7c2f6482fd4faca0d780817d8fd2044f967882df20",
+    "final_bytes": 4769,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/measure_ranges.py",
+    "target": "D:\\gcs_20261012\\model\\measure_ranges.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\measure_ranges.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "1767548e89d8b93a3b4b828d4f0379875f38ce03b2b83a27ed9f2fd6d7d43eb9",
+    "expected_baseline_bytes": 2735,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 2735,
+      "reparse_point": false,
+      "mtime_ns": 1791769156648534300,
+      "payload_read": false
+    },
+    "final_sha256": "1767548e89d8b93a3b4b828d4f0379875f38ce03b2b83a27ed9f2fd6d7d43eb9",
+    "final_bytes": 2735,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/preprocess.py",
+    "target": "D:\\gcs_20261012\\model\\preprocess.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\preprocess.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "9c211a7d07d0f58561a84e40c196f8267d8428d8daa77434ac52737a472ad56f",
+    "expected_baseline_bytes": 3922,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 3922,
+      "reparse_point": false,
+      "mtime_ns": 1791769156650550500,
+      "payload_read": false
+    },
+    "final_sha256": "9c211a7d07d0f58561a84e40c196f8267d8428d8daa77434ac52737a472ad56f",
+    "final_bytes": 3922,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/qat.py",
+    "target": "D:\\gcs_20261012\\model\\qat.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\qat.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "5a780e3c0714582769cdba42c7fa11d704f7b08844942a501fdb670f28f0b5cb",
+    "expected_baseline_bytes": 1726,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 1726,
+      "reparse_point": false,
+      "mtime_ns": 1791769156652533100,
+      "payload_read": false
+    },
+    "final_sha256": "5a780e3c0714582769cdba42c7fa11d704f7b08844942a501fdb670f28f0b5cb",
+    "final_bytes": 1726,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/qat_eval.py",
+    "target": "D:\\gcs_20261012\\model\\qat_eval.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\qat_eval.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "560c2f23c7abcd8545152e6e568b1cc9425b7a3a1d2c03792fc3a09ea3f402ae",
+    "expected_baseline_bytes": 6468,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 6468,
+      "reparse_point": false,
+      "mtime_ns": 1791769156654533600,
+      "payload_read": false
+    },
+    "final_sha256": "560c2f23c7abcd8545152e6e568b1cc9425b7a3a1d2c03792fc3a09ea3f402ae",
+    "final_bytes": 6468,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/quant.py",
+    "target": "D:\\gcs_20261012\\model\\quant.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\quant.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "aa3b169edc4a816720b620ad32a8e5400d110ef95e3e76a334195342d681830b",
+    "expected_baseline_bytes": 3985,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 3985,
+      "reparse_point": false,
+      "mtime_ns": 1791769156656533600,
+      "payload_read": false
+    },
+    "final_sha256": "aa3b169edc4a816720b620ad32a8e5400d110ef95e3e76a334195342d681830b",
+    "final_bytes": 3985,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/saturation_stats.py",
+    "target": "D:\\gcs_20261012\\model\\saturation_stats.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\saturation_stats.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "5f6c0f8ae57ff5d0e43079b134a41bb28dd2f792273a9136dee13727091b7a3f",
+    "expected_baseline_bytes": 2072,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 2072,
+      "reparse_point": false,
+      "mtime_ns": 1791769156658533100,
+      "payload_read": false
+    },
+    "final_sha256": "5f6c0f8ae57ff5d0e43079b134a41bb28dd2f792273a9136dee13727091b7a3f",
+    "final_bytes": 2072,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/scenes.py",
+    "target": "D:\\gcs_20261012\\model\\scenes.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\scenes.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "724ae4536d72bd94d4620d210d0e5d64e765b10d7aedf420ffb4aa7a9cf425a3",
+    "expected_baseline_bytes": 4321,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 4321,
+      "reparse_point": false,
+      "mtime_ns": 1791769156660534500,
+      "payload_read": false
+    },
+    "final_sha256": "724ae4536d72bd94d4620d210d0e5d64e765b10d7aedf420ffb4aa7a9cf425a3",
+    "final_bytes": 4321,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/train_scene.py",
+    "target": "D:\\gcs_20261012\\model\\train_scene.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\train_scene.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "4dbd0ad581af19bd150f67b9b4897f6581767aa0907d9fa1c01e376ed094816b",
+    "expected_baseline_bytes": 9772,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 9772,
+      "reparse_point": false,
+      "mtime_ns": 1791769156662533600,
+      "payload_read": false
+    },
+    "final_sha256": "4dbd0ad581af19bd150f67b9b4897f6581767aa0907d9fa1c01e376ed094816b",
+    "final_bytes": 9772,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/tt_model.py",
+    "target": "D:\\gcs_20261012\\model\\tt_model.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\tt_model.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "49dd3c1f42eda43c38d07cbdff46666bfcfffd9b70125ee3ac5d58d5fd20c010",
+    "expected_baseline_bytes": 6855,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 6855,
+      "reparse_point": false,
+      "mtime_ns": 1791769156664533400,
+      "payload_read": false
+    },
+    "final_sha256": "49dd3c1f42eda43c38d07cbdff46666bfcfffd9b70125ee3ac5d58d5fd20c010",
+    "final_bytes": 6855,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/visualize.py",
+    "target": "D:\\gcs_20261012\\model\\visualize.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\visualize.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "8913b9d5015de87881a36396107f817f9fc123766618c536d15cf887cc7e3e66",
+    "expected_baseline_bytes": 3478,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 3478,
+      "reparse_point": false,
+      "mtime_ns": 1791769156666538200,
+      "payload_read": false
+    },
+    "final_sha256": "8913b9d5015de87881a36396107f817f9fc123766618c536d15cf887cc7e3e66",
+    "final_bytes": 3478,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "model/visualize_block.py",
+    "target": "D:\\gcs_20261012\\model\\visualize_block.py",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\model\\visualize_block.py",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "de8ac82c68c87ef052cced6f7dad1401832fa469edb75b7f4a611e49b18363fa",
+    "expected_baseline_bytes": 5965,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 5965,
+      "reparse_point": false,
+      "mtime_ns": 1791769156668536900,
+      "payload_read": false
+    },
+    "final_sha256": "de8ac82c68c87ef052cced6f7dad1401832fa469edb75b7f4a611e49b18363fa",
+    "final_bytes": 5965,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/hls/tt_attn.cpp",
+    "target": "D:\\gcs_20261012\\src\\hls\\tt_attn.cpp",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\hls\\tt_attn.cpp",
+    "roles": [
+      "frozen_source_or_asset",
+      "hardware_input_witness"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "06aa0f033af7c9d9ea404b3cd6aa87589888354bcaca11a1f8f4ea3e0ad2b91a",
+    "expected_baseline_bytes": 18358,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 18358,
+      "reparse_point": false,
+      "mtime_ns": 1791769156670537400,
+      "payload_read": false
+    },
+    "final_sha256": "06aa0f033af7c9d9ea404b3cd6aa87589888354bcaca11a1f8f4ea3e0ad2b91a",
+    "final_bytes": 18358,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/hls/tt_attn.h",
+    "target": "D:\\gcs_20261012\\src\\hls\\tt_attn.h",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\hls\\tt_attn.h",
+    "roles": [
+      "frozen_source_or_asset",
+      "hardware_input_witness"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "90777090acc481daa3142eadc9c47af445d629298f85bfe0cf5d5d5f4bd14555",
+    "expected_baseline_bytes": 4448,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 4448,
+      "reparse_point": false,
+      "mtime_ns": 1791769156672538000,
+      "payload_read": false
+    },
+    "final_sha256": "90777090acc481daa3142eadc9c47af445d629298f85bfe0cf5d5d5f4bd14555",
+    "final_bytes": 4448,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/hls/tt_engine.cpp",
+    "target": "D:\\gcs_20261012\\src\\hls\\tt_engine.cpp",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\hls\\tt_engine.cpp",
+    "roles": [
+      "frozen_source_or_asset",
+      "hardware_input_witness"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "df386b5318638fbd0f2d131b2808a4164dfd2ddaffd1206bec115e4dc1fa3598",
+    "expected_baseline_bytes": 43457,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 43457,
+      "reparse_point": false,
+      "mtime_ns": 1791769156674537200,
+      "payload_read": false
+    },
+    "final_sha256": "df386b5318638fbd0f2d131b2808a4164dfd2ddaffd1206bec115e4dc1fa3598",
+    "final_bytes": 43457,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/hls/tt_engine.h",
+    "target": "D:\\gcs_20261012\\src\\hls\\tt_engine.h",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\hls\\tt_engine.h",
+    "roles": [
+      "frozen_source_or_asset",
+      "hardware_input_witness"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "9083d7a2b8cd20de409bdf9c4b7a0264dbbe5824bd797cf68bb80587b4373a19",
+    "expected_baseline_bytes": 2687,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 2687,
+      "reparse_point": false,
+      "mtime_ns": 1791769156676557700,
+      "payload_read": false
+    },
+    "final_sha256": "9083d7a2b8cd20de409bdf9c4b7a0264dbbe5824bd797cf68bb80587b4373a19",
+    "final_bytes": 2687,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/hls/tt_engine_regs.h",
+    "target": "D:\\gcs_20261012\\src\\hls\\tt_engine_regs.h",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\hls\\tt_engine_regs.h",
+    "roles": [
+      "frozen_source_or_asset",
+      "frozen_source_or_asset",
+      "hardware_input_witness"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "ef116d5924a035cba11d4e7b7650b9facfce9e9bfa84e6d03a58384e87a65961",
+    "expected_baseline_bytes": 13494,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 13494,
+      "reparse_point": false,
+      "mtime_ns": 1791769156839505600,
+      "payload_read": false
+    },
+    "final_sha256": "ef116d5924a035cba11d4e7b7650b9facfce9e9bfa84e6d03a58384e87a65961",
+    "final_bytes": 13494,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/hls/tt_types.h",
+    "target": "D:\\gcs_20261012\\src\\hls\\tt_types.h",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\hls\\tt_types.h",
+    "roles": [
+      "frozen_source_or_asset",
+      "hardware_input_witness"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "98e6d7efff19714491a3122c760229fd4c1bd7927ec2c95a1988fc5d944f1cbc",
+    "expected_baseline_bytes": 1949,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 1949,
+      "reparse_point": false,
+      "mtime_ns": 1791769156680553600,
+      "payload_read": false
+    },
+    "final_sha256": "98e6d7efff19714491a3122c760229fd4c1bd7927ec2c95a1988fc5d944f1cbc",
+    "final_bytes": 1949,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/hls/tucker_proj.cpp",
+    "target": "D:\\gcs_20261012\\src\\hls\\tucker_proj.cpp",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\hls\\tucker_proj.cpp",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "ff6f7b48988688aafa3705f1cdd57810cacb6f0aaba21a829890151f6af7e296",
+    "expected_baseline_bytes": 27045,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 27045,
+      "reparse_point": false,
+      "mtime_ns": 1791769156683051800,
+      "payload_read": false
+    },
+    "final_sha256": "ff6f7b48988688aafa3705f1cdd57810cacb6f0aaba21a829890151f6af7e296",
+    "final_bytes": 27045,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/ps/system/m3a_app.h",
+    "target": "D:\\gcs_20261012\\src\\ps\\system\\m3a_app.h",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\ps\\system\\m3a_app.h",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "a5deaa2896acd5d941c519aaa945c958a2f550357d5ea6d73a55fedc1d636466",
+    "expected_baseline_bytes": 588,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 588,
+      "reparse_point": false,
+      "mtime_ns": 1791769156835505600,
+      "payload_read": false
+    },
+    "final_sha256": "a5deaa2896acd5d941c519aaa945c958a2f550357d5ea6d73a55fedc1d636466",
+    "final_bytes": 588,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/ps/system/m3a_roi.cpp",
+    "target": "D:\\gcs_20261012\\src\\ps\\system\\m3a_roi.cpp",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\ps\\system\\m3a_roi.cpp",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "95cce295ba6ecaec9e411de94a3f9ddd4e05e77b6e1b599782adac97f4abdcb0",
+    "expected_baseline_bytes": 6905,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 6905,
+      "reparse_point": false,
+      "mtime_ns": 1791769156826522800,
+      "payload_read": false
+    },
+    "final_sha256": "95cce295ba6ecaec9e411de94a3f9ddd4e05e77b6e1b599782adac97f4abdcb0",
+    "final_bytes": 6905,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/ps/system/m3a_roi.h",
+    "target": "D:\\gcs_20261012\\src\\ps\\system\\m3a_roi.h",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\ps\\system\\m3a_roi.h",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "f59df7ef123ee64ee78f6245a659ec5ea163adfeed0a368798d085161b28b2eb",
+    "expected_baseline_bytes": 2683,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 2683,
+      "reparse_point": false,
+      "mtime_ns": 1791769156828523100,
+      "payload_read": false
+    },
+    "final_sha256": "f59df7ef123ee64ee78f6245a659ec5ea163adfeed0a368798d085161b28b2eb",
+    "final_bytes": 2683,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/ps/system/m3a_sd.cpp",
+    "target": "D:\\gcs_20261012\\src\\ps\\system\\m3a_sd.cpp",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\ps\\system\\m3a_sd.cpp",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "5b052fe771580cf0da46259341b3dd51215511aa33a8b85945cfbc5985a5844a",
+    "expected_baseline_bytes": 4829,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 4829,
+      "reparse_point": false,
+      "mtime_ns": 1791769156830505800,
+      "payload_read": false
+    },
+    "final_sha256": "5b052fe771580cf0da46259341b3dd51215511aa33a8b85945cfbc5985a5844a",
+    "final_bytes": 4829,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/ps/system/m3a_sd.h",
+    "target": "D:\\gcs_20261012\\src\\ps\\system\\m3a_sd.h",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\ps\\system\\m3a_sd.h",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "26bca93d7fa68d2c5c210b82d46bbd47494396c2df4186c8bfef310a80cfadfa",
+    "expected_baseline_bytes": 1553,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 1553,
+      "reparse_point": false,
+      "mtime_ns": 1791769156832517600,
+      "payload_read": false
+    },
+    "final_sha256": "26bca93d7fa68d2c5c210b82d46bbd47494396c2df4186c8bfef310a80cfadfa",
+    "final_bytes": 1553,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/ps/system/s1b/legacy_traps.cpp",
+    "target": "D:\\gcs_20261012\\src\\ps\\system\\s1b\\legacy_traps.cpp",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\ps\\system\\s1b\\legacy_traps.cpp",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "7484abaffefba5f2b76b413d6cc75c3d29b0812825c6188af44e7da3f165ccfc",
+    "expected_baseline_bytes": 571,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 571,
+      "reparse_point": false,
+      "mtime_ns": 1791769156837505700,
+      "payload_read": false
+    },
+    "final_sha256": "7484abaffefba5f2b76b413d6cc75c3d29b0812825c6188af44e7da3f165ccfc",
+    "final_bytes": 571,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/ps/tt_net.cpp",
+    "target": "D:\\gcs_20261012\\src\\ps\\tt_net.cpp",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\ps\\tt_net.cpp",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "b3da8e12e5a7ce7a41262c06a40080e9d4657e48a43d2d031f61e3a408ef5d03",
+    "expected_baseline_bytes": 31822,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 31822,
+      "reparse_point": false,
+      "mtime_ns": 1791769156818507400,
+      "payload_read": false
+    },
+    "final_sha256": "b3da8e12e5a7ce7a41262c06a40080e9d4657e48a43d2d031f61e3a408ef5d03",
+    "final_bytes": 31822,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/ps/tt_net.h",
+    "target": "D:\\gcs_20261012\\src\\ps\\tt_net.h",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\ps\\tt_net.h",
+    "roles": [
+      "frozen_source_or_asset"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "b2e070d41bf4428d1fe133424ca9b13c71d4c6d6446864af96e23ae4ed414826",
+    "expected_baseline_bytes": 5282,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 5282,
+      "reparse_point": false,
+      "mtime_ns": 1791769156820523400,
+      "payload_read": false
+    },
+    "final_sha256": "b2e070d41bf4428d1fe133424ca9b13c71d4c6d6446864af96e23ae4ed414826",
+    "final_bytes": 5282,
+    "content_sha_rechecked": true,
+    "new_destination_must_be_absent": true
+  },
+  {
+    "destination": "src/ps/tt_ref_int.h",
+    "target": "D:\\gcs_20261012\\src\\ps\\tt_ref_int.h",
+    "source": "C:\\Users\\86187\\.codex\\worktrees\\1581\\HSI_AgriEdge\\src\\ps\\tt_ref_int.h",
+    "roles": [
+      "hardware_input_witness"
+    ],
+    "action": "COPY_V8_BYTES",
+    "baseline_sha256": "cea5729fef9295be568ffe809ad2c45e6b3d5f338b7982334b0a530c11ccb738",
+    "expected_baseline_bytes": 4482,
+    "observed": {
+      "exists": true,
+      "is_file": true,
+      "bytes": 4482,
+      "reparse_point": false,
+      "mtime_ns": 1791777137334406300,
+      "payload_read": false
+    },
+    "final_sha256": "cea5729fef9295be568ffe809ad2c45e6b3d5f338b7982334b0a530c11ccb738",
+    "final_bytes": 4482,
+    "content_sha_rechecked": false,
+    "new_destination_must_be_absent": true
+  }
+]

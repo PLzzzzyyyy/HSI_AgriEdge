@@ -1,0 +1,85 @@
+{
+  "result": "PASS",
+  "time": "2026-10-24T09:18:50.785Z",
+  "release_id": "342273bc4a349cdda65a7ffea68cee4524f229f6c738ca84bf556b0f4dfbb055",
+  "boot": "228ce11f",
+  "history_before": 66,
+  "history_after": 66,
+  "no_inference_started": true,
+  "startup": {
+    "ready": true,
+    "dp_rc": 0,
+    "log": ".runtime-tmp/download_20261024_171652_26736.log"
+  },
+  "metrics": {
+    "task": 66,
+    "test_pixels": 388,
+    "correct_pixels": 337,
+    "OA": 0.8685567010309279,
+    "AA": 0.8982422511925618,
+    "Kappa": 0.8227469387389486,
+    "macro_F1": 0.8210418777253802,
+    "coverage": 0.0019053044067530273,
+    "task_test_coverage": 0.0019053044067530273,
+    "complete_test_coverage": false
+  },
+  "csv_utf8_bom": true,
+  "telemetry": {
+    "device": "AXU5EV-E · 芯片温度 / 芯片功耗 / 任务能耗",
+    "temp_c": 32.51043701171875,
+    "power_w": null,
+    "ms_per_px": null,
+    "lost": null,
+    "rx_pkts": 0,
+    "rx_bytes": 0,
+    "tx_pkts": 0,
+    "tx_bytes": 0,
+    "temp_peak_c": 33.427459716796875,
+    "temp_state": "valid",
+    "temp_age_s": 0.4,
+    "temp_source": "PS_SYSMON_DIE",
+    "display": {
+      "state": "idle"
+    },
+    "power_est_w": 5.985560417175293,
+    "power_est_state": "valid",
+    "power_estimate": {
+      "measured": false,
+      "source": "VIVADO_VECTORLESS_TEMPERATURE",
+      "scope": "CHIP_PS_PL_ONLY",
+      "model_id": "a4363b00",
+      "confidence": "Low",
+      "calibrated": false,
+      "boot_id": "228ce11f",
+      "session": 3193049206,
+      "task": 0,
+      "counter": 72,
+      "sample_age_ms": 0,
+      "power_est_w": 5.985560417175293,
+      "temperature_used_c": 32.51043701171875,
+      "temperature_valid": true,
+      "energy_est_j": null,
+      "duration_s": 0,
+      "fallback_s": 0,
+      "active": false,
+      "done": 0,
+      "total": 0,
+      "energy_est_mj_per_px": null,
+      "age_s": 0.4
+    }
+  },
+  "manual_browser_checks": [
+    "startup without default 1x1 or automatic probe",
+    "evaluation dropdown and main evaluation action",
+    "history 66 evaluated with charts and Chinese class table",
+    "clear removes current results and keeps history entries",
+    "delayed tick and reload do not restore cleared result",
+    "explicit history selection restores evaluation"
+  ],
+  "screenshots": [
+    "pc_evaluation.jpg",
+    "pc_cleared.jpg",
+    "dp_final.png"
+  ],
+  "scope": "Local demonstration verification; fixed inference hardware and power model retained; no full-scene benchmark in this test"
+}

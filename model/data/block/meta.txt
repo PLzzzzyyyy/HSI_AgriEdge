@@ -1,0 +1,10 @@
+model=unoverlapping
+size=64
+row0=112
+col0=196
+classes=6
+labeled=0.8428
+oa_fixed=0.9881
+oa_float=0.9884
+fixed_vs_float_agree=0.9998
+seconds=110

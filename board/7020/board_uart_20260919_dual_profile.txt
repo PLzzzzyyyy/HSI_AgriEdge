@@ -1,0 +1,30 @@
+# 2026-09-19 用户截图转录（串口 1，PS+PL detail，dual IP v1.3 = vivado/tt_soc_fm64_wt32_df_dual.xsa）
+Profile forward: 38.807 ms, max|dlogit|=4.226e-04 -> PASS
+segment (12 layers)          ms   % full
+  norm+quant x2           9.839    25.4
+  quant (fused above)     0.000     0.0
+  PL qkv                 10.488    27.0
+  attn scores             5.685    14.7
+  attn ctx+resid          5.471    14.1
+  PL mlp                  4.453    11.5
+  mlp resid               2.070     5.3
+  12-layer sum           38.007
+  embed/head/overhead     0.799
+Projection backend: PS+PL (PL timings include driver/cache/wait)
+layer  total ms  norm+q  q(fused)   qkv  scores  ctx+res   mlp  mlp res
+  0     3.167    0.819   0.000    0.874  0.474   0.456   0.371  0.173
+  1     3.169    0.821   0.000    0.874  0.474   0.456   0.371  0.173
+# 10 次正式均值、串口 5/4 的输出尚未提供
+
+# 2026-09-19 串口 5（dual IP）
+PAIR BENCH: sequential 38.903 ms/pixel; pipelined 29.055 ms/pixel; ratio 1.339x
+Pipelined ms/pixel is two-patch throughput; excludes extraction/validation/UART.
+
+# 2026-09-19 串口 4（dual IP）
+Block 4096/4096; compute 29.459 ms/pixel; PC agreement 4096/4096
+BLOCK COMPLETE: 4096/4096 predictions
+Network only: 29.068 ms/pixel, 119.063 s total
+Patch extraction + normalization: 0.391 ms/pixel
+Compute incl. extraction: 29.459 ms/pixel; loop wall incl. progress UART: 120.668 s
+Board vs PC fixed labels: 4096/4096 (100.0000%); all-label check PASS
+Ground-truth OA (nonzero labels only): 3411/3452 (98.8123%)

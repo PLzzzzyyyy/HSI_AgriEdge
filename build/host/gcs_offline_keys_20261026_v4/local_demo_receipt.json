@@ -1,0 +1,832 @@
+{
+  "result": "LOCAL_DEMO_UNREVIEWED",
+  "demo": true,
+  "app_id": "gcs_r1_abi4",
+  "release_id": "2c861dad3ec37fbcbfcd5a08dcc56aae62d1aec2b342007f1bbaf04041b59094",
+  "source_set_sha256": "9dbbe7f3f117f3b5349fd5aeecb10a29907a5fa71c6e57e9388706f9d164dc67",
+  "hardware_xsa_sha256": "dbf0b52ccbd076c7dae4ed37e5ef6ed48b4f5bbc6ac76a174b8ad339ac282508",
+  "facts": {
+    "schema": 1,
+    "app_id": "gcs_r1_abi4",
+    "engine_abi": 4,
+    "source_set_sha256": "9dbbe7f3f117f3b5349fd5aeecb10a29907a5fa71c6e57e9388706f9d164dc67",
+    "asset_set_sha256": "559d8692000227994d376118b41648713375ab20d1e3d3bba5e3a04b7d975f5a",
+    "hardware_xsa_sha256": "dbf0b52ccbd076c7dae4ed37e5ef6ed48b4f5bbc6ac76a174b8ad339ac282508",
+    "data_set_sha256": "1216c54310d7428ec6c12a74e120363b9c92bfb36efec397aef58b418ea1d9b2"
+  },
+  "sources": [
+    {
+      "path": "src/ps/s2c_roi_app/main.cpp",
+      "bytes": 40713,
+      "sha256": "689e2740394f44efaf7752f5ea07a459bcdd8bc40f9d579ad27c16723a5e9052"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_protocol.h",
+      "bytes": 7949,
+      "sha256": "9f4b8ef3a71deb4f0f45759c1775f8a7a74e5b632831588491d2923b110fb497"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_protocol.cpp",
+      "bytes": 41397,
+      "sha256": "d9d8ed055da1b4a843c73eaa7c9100bfb4efd77a9016c3f046bfc4e29aa28ee4"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_runtime.h",
+      "bytes": 1847,
+      "sha256": "2ee442e63903ffc7cbe3a01de9dbe28b0857523791bdc67f034dc36670ff8177"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_runtime.cpp",
+      "bytes": 14901,
+      "sha256": "66799a9c03c5fb3ad91a8b1ec8faf155eca04fb507bcde841a78ff8ffc002c7e"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/s1b_profile.h",
+      "bytes": 598,
+      "sha256": "4285cbf7c2880df717602dbae17521400ffccf7ae03fc7847ef7a19330baeb7b"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_canvas.h",
+      "bytes": 5004,
+      "sha256": "9272595bae67049ce6315de7685e20bffb8913e65788af0b4bab560f8aeaaf78"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_canvas.cpp",
+      "bytes": 28773,
+      "sha256": "02ddf6f9bdd63127a247a6e8e9ca91f351c738302318a105e6dec41500adc3b7"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_display.h",
+      "bytes": 1138,
+      "sha256": "0a75d097f22adbf0ea9a8ca4d6a7ec8944b57c4f8598441b8d2b2085097a424f"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_display.cpp",
+      "bytes": 10687,
+      "sha256": "4314098729655ba3ccb0f011b4c1965390786071b71d777cf86ddb4e72839577"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_labels.h",
+      "bytes": 243404,
+      "sha256": "a0f2e75af61b5c0dd33f84cdd7e0d0507662ba678d131c9f9483551b43567f78"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_results.h",
+      "bytes": 2240,
+      "sha256": "62bfbee6099076085ddcab745bfeb164b8db79ebbad45ba1fe483bc7cbfe25ef"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_models.h",
+      "bytes": 3799,
+      "sha256": "fefd3a8e364a69ea029fee949375f571bb7f494258bee72839417f8cb51d631c"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_models.cpp",
+      "bytes": 8464,
+      "sha256": "613c6e01b0678b96e9e33404b7bf81f85e148fc9806e4279f80295ce49b26793"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_model_sd.h",
+      "bytes": 1788,
+      "sha256": "794267fed2b282a013299dcdc6ae8f7d5a14739c9b7e11823ab37cfa7efbd815"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_model_sd.cpp",
+      "bytes": 9865,
+      "sha256": "ea822d276350cd54539fb24ab9361ed40bc6db01ed5a75ca0831bf112b667ec1"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_timing.h",
+      "bytes": 3514,
+      "sha256": "3d8771bdc8f8328b9aaf038d05f6f629e4f6178789a9c40f75efbd13f8cc70fe"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_boot_id.h",
+      "bytes": 962,
+      "sha256": "83818d25f3c990d79a7d22751760f8e7432521d7cb58de29e170e8f4f44b6748"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_boot_id.cpp",
+      "bytes": 2274,
+      "sha256": "c0da58b0dea05242e40c25a982203e7b4138e633513e75a28ef978d4eb8cb46f"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_boot_sd.cpp",
+      "bytes": 1455,
+      "sha256": "a8ba1979a6507ea0bc32245d064720f656b551e3bfd6ca1a0444ae7fa32d1592"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_release.h",
+      "bytes": 400,
+      "sha256": "7e69a17a5f9d8e65aa54432553756ef391143f623a957bfeddd88e6db73a017d"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_board_log.h",
+      "bytes": 2870,
+      "sha256": "39737148bafc4d53d55301fc36b7fe507c84d2a40046c25b718b516d1de888c6"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_keys.h",
+      "bytes": 5125,
+      "sha256": "81439412b1c7b734547dd18c95d8f2aafcc7e65287f67ae4cf10cddb880ed3a8"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_power.h",
+      "bytes": 2477,
+      "sha256": "fcbec52d7194710d4fae56abd3a224cccc01168ec7c1afbaa759a5b57a307c47"
+    },
+    {
+      "path": "src/ps/s2c_roi_app/roi_power_profile.h",
+      "bytes": 487,
+      "sha256": "44cda76971b780a33b48e6f69a9625ba47aa2e43a319a235a81cc1ecb209d93f"
+    },
+    {
+      "path": "src/ps/tt_m3a.cpp",
+      "bytes": 8615,
+      "sha256": "739f11f7619dd6efc3c0ed8b9d30b916886a4ac585d35283ee71fd748789ddbb"
+    },
+    {
+      "path": "src/ps/tt_m3a.h",
+      "bytes": 3449,
+      "sha256": "2c4c7e8cb60f85e1442d0c8410cfc87a0a6e9e8123dfe6bfb8a3f215b32bfb74"
+    },
+    {
+      "path": "src/ps/tt_net.cpp",
+      "bytes": 31319,
+      "sha256": "44c91c2498277a23a464c1d13ff61e7106dea69e785fac09ef5dfc2d72e6f03a"
+    },
+    {
+      "path": "src/ps/tt_net.h",
+      "bytes": 5200,
+      "sha256": "75f3bdd3779d78c683b3b8e57dd8de667363acd0a32764781af3b97a3f216388"
+    },
+    {
+      "path": "src/ps/tt_hw.h",
+      "bytes": 2410,
+      "sha256": "f82fbf4d103aae471f4b236b53861f7a19ed14083be59482a329a32737e684d0"
+    },
+    {
+      "path": "src/ps/tt_measure.h",
+      "bytes": 2274,
+      "sha256": "f9d97c9add878159add09de2d7fa6c06b28d0d0d785a8dc21758a30df383a537"
+    },
+    {
+      "path": "src/ps/system/m3a_roi.cpp",
+      "bytes": 6905,
+      "sha256": "95cce295ba6ecaec9e411de94a3f9ddd4e05e77b6e1b599782adac97f4abdcb0"
+    },
+    {
+      "path": "src/ps/system/m3a_roi.h",
+      "bytes": 2683,
+      "sha256": "f59df7ef123ee64ee78f6245a659ec5ea163adfeed0a368798d085161b28b2eb"
+    },
+    {
+      "path": "src/ps/system/m3a_sd.cpp",
+      "bytes": 4734,
+      "sha256": "2643f51aa4e0bbcbdf5bd5465b28fff8b8adf2a069a1025b14e8770e392ff8a4"
+    },
+    {
+      "path": "src/ps/system/m3a_sd.h",
+      "bytes": 1522,
+      "sha256": "0b8cda143a519253bcaa760f03d57a167392a353860d33c8eb875d09ec2e43fc"
+    },
+    {
+      "path": "src/ps/system/m3a_app.h",
+      "bytes": 572,
+      "sha256": "1ef113bf03820645b6347b7efb22328256b9e07a1e5fb1b5f59236c6ffad50fa"
+    },
+    {
+      "path": "src/ps/system/s1b/legacy_traps.cpp",
+      "bytes": 560,
+      "sha256": "5b7fa79ff3d97965d6b49f7325a07938e5e32414a15591e919a4fc325d4e3429"
+    },
+    {
+      "path": "src/hls/tt_engine_regs.h",
+      "bytes": 13494,
+      "sha256": "ef116d5924a035cba11d4e7b7650b9facfce9e9bfa84e6d03a58384e87a65961"
+    }
+  ],
+  "assets": [
+    {
+      "path": "board/boot/gcs_round1.bif.in",
+      "bytes": 341,
+      "sha256": "a782cfb45a83b2f232c4134a282f9034df40153327b85601597807e096e32828"
+    },
+    {
+      "path": "build/hls/run_gcs_round1.tcl",
+      "bytes": 2524,
+      "sha256": "798684fa76bdbb7ce5b4881d2d3c7919723fa40f31d9231172b0b91363e0f9a5"
+    },
+    {
+      "path": "build/vivado/build_gcs_round1.tcl",
+      "bytes": 4761,
+      "sha256": "88e4341d03f02f453f5736123655baf14fc6cfcd5e21307c8ab3fd59260b1b2d"
+    },
+    {
+      "path": "build/vivado/finalize_gcs_ip.tcl",
+      "bytes": 573,
+      "sha256": "7f7d192bca529df7803fa48eaa333a0897fab080eb91b1835d5f5113c0dae558"
+    },
+    {
+      "path": "build/vivado/psu_cfg_factory.tcl",
+      "bytes": 55611,
+      "sha256": "c208ce86752b9c838fea8f34b3b020990d7fd9adc0f7d43f6232e02ee0e18874"
+    },
+    {
+      "path": "build/vivado/zu5ev_pins.xdc",
+      "bytes": 329,
+      "sha256": "5f0f33526229a27bf2a1308045238b63c8ce3103c431faeadbe33ba919dc90f3"
+    },
+    {
+      "path": "gcs/analysis.py",
+      "bytes": 4320,
+      "sha256": "0facf5885fee686a4853cb87d3a415a88736e877f0839700495ca723427318f2"
+    },
+    {
+      "path": "gcs/board_agri.py",
+      "bytes": 23143,
+      "sha256": "0b2d16670413c135f2ca6779e4b831fc28be8b9b409c352bc4e298f519aafe5e"
+    },
+    {
+      "path": "gcs/board_attention.py",
+      "bytes": 3022,
+      "sha256": "5fb1865f5e2a498f15a399f8d7db5e1aabf720d4b86dcb51a82a59120149077f"
+    },
+    {
+      "path": "gcs/board_boot.py",
+      "bytes": 7576,
+      "sha256": "1f3ad94a8544de4702213f5a5faa52b4f289a9e18e75bfde4116c3549b216d55"
+    },
+    {
+      "path": "gcs/board_display.py",
+      "bytes": 3018,
+      "sha256": "58e11258d8c8e31ee7c71e52d7e6732ce5f9e4264c307c1922c73a65cdd8ea30"
+    },
+    {
+      "path": "gcs/board_engine_timing.py",
+      "bytes": 4001,
+      "sha256": "af17da7e5a002a8185f7d6c3adb3b1164d9469454eda8d56ac00cac98ab0a2cb"
+    },
+    {
+      "path": "gcs/board_history.py",
+      "bytes": 9741,
+      "sha256": "a415eb0e9da50659f1f53365f4fbb1dea74dc191fdca0870d68242804877b259"
+    },
+    {
+      "path": "gcs/board_keys.py",
+      "bytes": 2440,
+      "sha256": "3cfa27ed7e64bb518b48d92ef87b71e0ccb36e8da23a7a7f5c0242f5d17b024f"
+    },
+    {
+      "path": "gcs/board_link.py",
+      "bytes": 61235,
+      "sha256": "ae507a06c131e4e199cf13e382d2e7ac8bc1283c3857025e855edeceec837261"
+    },
+    {
+      "path": "gcs/board_log.py",
+      "bytes": 14807,
+      "sha256": "71388e3c130949bb1fdbd2446052621111356712e470bb756feb834b0b13dfed"
+    },
+    {
+      "path": "gcs/board_metrics.py",
+      "bytes": 9095,
+      "sha256": "82a25d2a0f4ec5abdb748b345acde7914d961fbad66e50cbd49a5403fe2da7be"
+    },
+    {
+      "path": "gcs/board_models.py",
+      "bytes": 9697,
+      "sha256": "55a718e70299caa10eb7094987b25d1bc654491440fcf25a13e097f364b59af9"
+    },
+    {
+      "path": "gcs/board_power.py",
+      "bytes": 3188,
+      "sha256": "6a8774127303db073582dc6261e20b60629884951130ab5368f50e3dc0fd88f6"
+    },
+    {
+      "path": "gcs/board_probe.py",
+      "bytes": 7914,
+      "sha256": "75b4f689ca45736a8aef144badbc2bb5fc256d70060ecd6979eabb3a4c357f2f"
+    },
+    {
+      "path": "gcs/board_release.py",
+      "bytes": 2007,
+      "sha256": "e5813f69bae611282fd2cb0906955c5e1908d374038d6adde90f99a0dce5381d"
+    },
+    {
+      "path": "gcs/board_roi.py",
+      "bytes": 18911,
+      "sha256": "dbdf95fdd85a9abe6fa8f76f10444f07a06646923512eeb24a49e4d49ef4be2b"
+    },
+    {
+      "path": "gcs/board_scene.py",
+      "bytes": 4500,
+      "sha256": "95f8dc727a5655779eb53bd359f0cd748abd297dffe8a06a93c029266e277a13"
+    },
+    {
+      "path": "gcs/board_task.py",
+      "bytes": 38499,
+      "sha256": "f38532be743d76c61eb85ae66ee6b39b35e805fcc15351992b8bb3ec88a6ba30"
+    },
+    {
+      "path": "gcs/board_timing.py",
+      "bytes": 7978,
+      "sha256": "13936cd7d0b6458b6665fad06eb0025dca0a00a841f4a76eb234191815a34ed2"
+    },
+    {
+      "path": "gcs/board_upload.py",
+      "bytes": 9783,
+      "sha256": "fa8887184c72000fa367785737574a2e66a248c63c541e44c68dea2f8216bab3"
+    },
+    {
+      "path": "gcs/chip_power_profile.json",
+      "bytes": 3537,
+      "sha256": "8c2de660a0c36624a648eb5e087f717732e2c65428e6029a711c4386bb9de26d"
+    },
+    {
+      "path": "gcs/class_labels_zh.json",
+      "bytes": 6383,
+      "sha256": "16dfe6ea1dfcdd9fe8040b6c68b2872593d872559e25ee45b675dc6a5ab4eb34"
+    },
+    {
+      "path": "gcs/display_labels.py",
+      "bytes": 877,
+      "sha256": "b102f14076bcb73b283cce573fe0b708be88a104192177696c5b72c0857e6cd9"
+    },
+    {
+      "path": "gcs/display_name.py",
+      "bytes": 1021,
+      "sha256": "dada8cb3209e01b8bf80d7b15e2f692e82cbbe57c3aa279cf1c9a3886adbdbf4"
+    },
+    {
+      "path": "gcs/engine.py",
+      "bytes": 12776,
+      "sha256": "1dc3a19323faa43589c1ea6a76f948352c0dcd195d4cacc41d90e59d1fbba1a1"
+    },
+    {
+      "path": "gcs/eval_hanchuan.json",
+      "bytes": 1505,
+      "sha256": "f124725d47e42cad8762d7197bb1faeee2f2c53fa6d24e26ab7568754d752347"
+    },
+    {
+      "path": "gcs/eval_honghu.json",
+      "bytes": 1737,
+      "sha256": "6442b8488517ab81204551f3d4469391d0fba45a81a866d5a2ee3e848ca54e55"
+    },
+    {
+      "path": "gcs/eval_longkou.json",
+      "bytes": 1322,
+      "sha256": "432ce75c745427f097c5b9ab1c93161990d09eb695e2a3f463031726eaf7c0d7"
+    },
+    {
+      "path": "gcs/eval_longkou_v2.json",
+      "bytes": 1113,
+      "sha256": "af289cb26ef4ae1b839887fd4e5744f1d2a036163d8235a513432545b8baf423"
+    },
+    {
+      "path": "gcs/fake_board.py",
+      "bytes": 4773,
+      "sha256": "7d3245d915526557a50085326cd5ae56a3640c98658ac0c2497a7f8aa490dfe7"
+    },
+    {
+      "path": "gcs/protocol.py",
+      "bytes": 2964,
+      "sha256": "70e830937f98c9bc3d72bfa772ed7d78c89383b9a8e93fff242e330d9559d9dd"
+    },
+    {
+      "path": "gcs/scene_input.py",
+      "bytes": 4841,
+      "sha256": "70a64a94a6551250f515e4bd7ba4e28b8fc90ac9383a1c80a31f205046c09982"
+    },
+    {
+      "path": "gcs/selftest_engine.py",
+      "bytes": 1701,
+      "sha256": "50276cfb3e81b1a42a20fa871d6c6bc12176a1bb234655f587459b85a2413c56"
+    },
+    {
+      "path": "gcs/server.py",
+      "bytes": 70789,
+      "sha256": "c035c70ebf6388ab1ef65c7c20ffcb5932aa5947fb39ba98b34453e332876629"
+    },
+    {
+      "path": "gcs/sources.py",
+      "bytes": 9240,
+      "sha256": "433d52d0c03577f5a6993643bf24aae2e0e556df0ac1f3a5137c90ab4124272f"
+    },
+    {
+      "path": "gcs/speed_compare.py",
+      "bytes": 5885,
+      "sha256": "efc364442c66617b616ee5fc05bc912a25ef3e6cdf5709827da164b8c4338747"
+    },
+    {
+      "path": "gcs/uart_capture.py",
+      "bytes": 16411,
+      "sha256": "ed693f2175133f6db8ac140195dfe464ef88eecfae2daa568db9f0364edcf89c"
+    },
+    {
+      "path": "gcs/udp_frame_view.py",
+      "bytes": 11607,
+      "sha256": "ee121024bf96b3613b17a0cc242a0bf574cfcae2140fcf9bc93576b8c48f5cf7"
+    },
+    {
+      "path": "gcs/web/agri.js",
+      "bytes": 11404,
+      "sha256": "d73e21c81c9897fbfeb15975f54a3a44aa83c57995138417e1ae390585c3889e"
+    },
+    {
+      "path": "gcs/web/app.js",
+      "bytes": 8291,
+      "sha256": "46185115b86d1ca5a50c90423289980e630138d5f7b3172971475f9a7991e834"
+    },
+    {
+      "path": "gcs/web/board.js",
+      "bytes": 32048,
+      "sha256": "23b8f545bd78406191494f707382a35a518d11f824ab13ad8c985c3daf5a9055"
+    },
+    {
+      "path": "gcs/web/connection.js",
+      "bytes": 4214,
+      "sha256": "5c264449c169ef7c04cb8d93d8cded9ef665567c3e357ebcfb377974fab3f724"
+    },
+    {
+      "path": "gcs/web/core.js",
+      "bytes": 10075,
+      "sha256": "10b8fe6a92223c4de85aff4828c5d02e671d0265b745b5428eccf7d332838719"
+    },
+    {
+      "path": "gcs/web/cube.js",
+      "bytes": 9391,
+      "sha256": "3d0e59aac64a743df80ce1c6a3832b656c48f5260f3ec302be575e998625cb17"
+    },
+    {
+      "path": "gcs/web/dp.html",
+      "bytes": 2274,
+      "sha256": "83dbce80801e0d05d99e499f7e9e98b9a878b82cd6ab45d578db4fc342713bca"
+    },
+    {
+      "path": "gcs/web/evaluation.js",
+      "bytes": 7090,
+      "sha256": "fd9eed4c9d8d72bf9f51f6b37ecd509237630915007e200cec968663ba8df47c"
+    },
+    {
+      "path": "gcs/web/index.html",
+      "bytes": 25249,
+      "sha256": "0a71807d861e329b2458eb290a6588c0dd5093fd6e62ea123646722ff58d7ae9"
+    },
+    {
+      "path": "gcs/web/longkou_v2_classes.json",
+      "bytes": 1532,
+      "sha256": "d38edba9b7d2f9384baad5e1b34fe6488f2789736be6235df1ee948938098321"
+    },
+    {
+      "path": "gcs/web/loop.js",
+      "bytes": 9656,
+      "sha256": "a67f7429d25af359a67b2299756ec463e1e22721d687cdd125b8c2276b570f7e"
+    },
+    {
+      "path": "gcs/web/map.js",
+      "bytes": 15638,
+      "sha256": "3254403bdf1d25c89424c2343d36dd15ea2de03bd3e6fb770b47f948932c6cd6"
+    },
+    {
+      "path": "gcs/web/panels.js",
+      "bytes": 20106,
+      "sha256": "fc66e6242495d50417d6f4a4282867954304dde8b3442633664305a753491389"
+    },
+    {
+      "path": "gcs/web/panels2.js",
+      "bytes": 10047,
+      "sha256": "93c793e8fb2f27b0fc39c90e512cff90b7dddabe79e323913923517e3a1cdc92"
+    },
+    {
+      "path": "gcs/web/speed.js",
+      "bytes": 9281,
+      "sha256": "3a52ec0ed1e189b9fd2188cdcf29b29f2bfb69c74adbb0cb29ec43422d4d5472"
+    },
+    {
+      "path": "gcs/web/style.css",
+      "bytes": 23037,
+      "sha256": "c7c02375a950cfd2d851e68bab2d931453a5b0acb5e5f58f5a28cbe233c8bc85"
+    },
+    {
+      "path": "gcs/web/timing.js",
+      "bytes": 4954,
+      "sha256": "49640ddf41cb7e1e8a1a1e69ceb3a429320ec477d194fd5e266e72c13409840c"
+    },
+    {
+      "path": "gcs/web/uart.js",
+      "bytes": 4544,
+      "sha256": "50a734841ba69fc8abfad37f3ba29054b65768c94dc6fda8db80a4636225bb39"
+    },
+    {
+      "path": "gcs/web/vendor/echarts.min.js",
+      "bytes": 1030855,
+      "sha256": "e84270bd0cd5bdf60fefc26d00c2a391cb2e81f4d26a7a9ee16185a54773a3cf"
+    },
+    {
+      "path": "gcs/web/vendor/ECHARTS_LICENSE.txt",
+      "bytes": 11990,
+      "sha256": "634293835b43a6dd2094fa39182a3d9a6b9ca43b7fdb9ac354e8037af2a3093a"
+    },
+    {
+      "path": "model/engine_gpu.py",
+      "bytes": 14329,
+      "sha256": "3f5900eae63ebf445173341c34ed4626b19a9716adf35c6d7b4039de4893dbaa"
+    },
+    {
+      "path": "model/engine_ref.py",
+      "bytes": 44026,
+      "sha256": "f0f74a013cd70748072baabab24d3aa4f593c0331f8fb9ebf967bd73405d2cb8"
+    },
+    {
+      "path": "model/export_block.py",
+      "bytes": 11589,
+      "sha256": "ce4562fa2d1f36db1c1cb73747f53689838a1f57906bdcdba4796275086c054f"
+    },
+    {
+      "path": "model/export_board_candidate.py",
+      "bytes": 4246,
+      "sha256": "ec171b327de052dfb6e39fbf8f5097efabecb44f8db695710eaaddf513627aca"
+    },
+    {
+      "path": "model/export_c_arrays.py",
+      "bytes": 3336,
+      "sha256": "bc6cc049b302e138467080080728fb329c0cda53a2ac73183248e7b732ec4d11"
+    },
+    {
+      "path": "model/export_golden.py",
+      "bytes": 4159,
+      "sha256": "b6f253a55b9037577841a9ba163c38467724d41a144e0bd173bbb1875b4f651a"
+    },
+    {
+      "path": "model/export_scene.py",
+      "bytes": 9829,
+      "sha256": "26d5c95490f6b800b8c0146bc3550afc7c11e485efe40344de94ea92be32544d"
+    },
+    {
+      "path": "model/finetune_region.py",
+      "bytes": 14593,
+      "sha256": "099d24aa8201c445e864a6f02fe5a4868e6e7b9f180397c85dcad8a38c0fdb5a"
+    },
+    {
+      "path": "model/fixed_point_sim.py",
+      "bytes": 5317,
+      "sha256": "d48a656d75aa8e769dc5159f45c13d4c81209bd938c2c82944ff7d393097c57a"
+    },
+    {
+      "path": "model/fixed_regression.py",
+      "bytes": 6611,
+      "sha256": "6610b1c4a4417d78c05e16a4520a2f6f825cca1e8aeab42313fdad785d8ca87a"
+    },
+    {
+      "path": "model/format_scan.py",
+      "bytes": 7940,
+      "sha256": "e6a3581d77e6a148ccfe3490c694e475c5b67cdf58f4e9ce1bbe6683575690ec"
+    },
+    {
+      "path": "model/layer_stats.py",
+      "bytes": 4687,
+      "sha256": "67ef3cbe7b9dec212058fae4bd36ad9753f7f6ed3814d47e1f5ede601ce6df0f"
+    },
+    {
+      "path": "model/measure_ranges.py",
+      "bytes": 2690,
+      "sha256": "22ddc12a912760fd60ef7bd1e7d7b13c18e67c6f643c69276ef32d213570b1cd"
+    },
+    {
+      "path": "model/preprocess.py",
+      "bytes": 3838,
+      "sha256": "7e133ca64a37d89302e7248d7084aabd52c1d8007a3e6afea40ab34df6fb4400"
+    },
+    {
+      "path": "model/qat.py",
+      "bytes": 1679,
+      "sha256": "eb68643f00944c4f6f3d2d5e2ce179def266aeafada88e27e6f1c4df6f1bb158"
+    },
+    {
+      "path": "model/qat_eval.py",
+      "bytes": 6468,
+      "sha256": "560c2f23c7abcd8545152e6e568b1cc9425b7a3a1d2c03792fc3a09ea3f402ae"
+    },
+    {
+      "path": "model/quant.py",
+      "bytes": 3892,
+      "sha256": "4cf6b7beb7f7e3530f08bcdd1cfac673c4f45d525de83b6c31c97748842bdcc7"
+    },
+    {
+      "path": "model/saturation_stats.py",
+      "bytes": 2030,
+      "sha256": "af23a428854126c0707dc01a279fb5089997e0956d493937c6d39dbec2aee211"
+    },
+    {
+      "path": "model/scenes.py",
+      "bytes": 4249,
+      "sha256": "5d2928dd20a433e58bf78b2150cdcb9458e7c5f3a07dce432cb1aaa264ef9a30"
+    },
+    {
+      "path": "model/train_scene.py",
+      "bytes": 9772,
+      "sha256": "4dbd0ad581af19bd150f67b9b4897f6581767aa0907d9fa1c01e376ed094816b"
+    },
+    {
+      "path": "model/tt_model.py",
+      "bytes": 6705,
+      "sha256": "4ad336b9c92bcec4c0b68122584f7d07e0e3947c3b88debb9f63bf0daa922873"
+    },
+    {
+      "path": "model/visualize.py",
+      "bytes": 3408,
+      "sha256": "2c95b303e9f0a0ef73a13caa4732ec41f28ffa34c12c9ebda0528eee5397bffa"
+    },
+    {
+      "path": "model/visualize_block.py",
+      "bytes": 5864,
+      "sha256": "a5caee1b2d76a98c3f78ac9244d0b958fd776d9768e384868726834e6d4f9137"
+    },
+    {
+      "path": "src/hls/tt_attn.cpp",
+      "bytes": 18358,
+      "sha256": "06aa0f033af7c9d9ea404b3cd6aa87589888354bcaca11a1f8f4ea3e0ad2b91a"
+    },
+    {
+      "path": "src/hls/tt_attn.h",
+      "bytes": 4448,
+      "sha256": "90777090acc481daa3142eadc9c47af445d629298f85bfe0cf5d5d5f4bd14555"
+    },
+    {
+      "path": "src/hls/tt_engine.cpp",
+      "bytes": 43457,
+      "sha256": "df386b5318638fbd0f2d131b2808a4164dfd2ddaffd1206bec115e4dc1fa3598"
+    },
+    {
+      "path": "src/hls/tt_engine.h",
+      "bytes": 2687,
+      "sha256": "9083d7a2b8cd20de409bdf9c4b7a0264dbbe5824bd797cf68bb80587b4373a19"
+    },
+    {
+      "path": "src/hls/tt_engine_regs.h",
+      "bytes": 13494,
+      "sha256": "ef116d5924a035cba11d4e7b7650b9facfce9e9bfa84e6d03a58384e87a65961"
+    },
+    {
+      "path": "src/hls/tt_types.h",
+      "bytes": 1949,
+      "sha256": "98e6d7efff19714491a3122c760229fd4c1bd7927ec2c95a1988fc5d944f1cbc"
+    },
+    {
+      "path": "src/hls/tucker_proj.cpp",
+      "bytes": 26523,
+      "sha256": "6ff31e61e8a37e3e5a1ca9359de982d5e5f4120cf79f7917fd4dd4e205fa2137"
+    },
+    {
+      "path": "src/rtl/tt_gcs_cycle_counter.v",
+      "bytes": 850,
+      "sha256": "889210c8e61e02a85276f789cd75dfa544da0bfc238e3e02848610315ffbf611"
+    },
+    {
+      "path": "src/rtl/tt_key_sync.v",
+      "bytes": 418,
+      "sha256": "1bc59186b2d8504c0923006d0629a89d37dcf4b0eee2a43b34d2795eafae9e28"
+    },
+    {
+      "path": "tools/build_keys_hardware.tcl",
+      "bytes": 5112,
+      "sha256": "52083f03cca451dcb3e1245b099e72ed2962e0a1e32ae0539255a2c44d3e0e81"
+    },
+    {
+      "path": "tools/check_gcs_hardware.py",
+      "bytes": 10971,
+      "sha256": "9ae7e305abc10f230c4792bbbcccfcaa785cd196034055dd10b906f31b7fcf1c"
+    },
+    {
+      "path": "tools/eco_keys_hardware.tcl",
+      "bytes": 3997,
+      "sha256": "4e92601bfbbec1f14bca84a78780b12a5cf4a0f3bfba3df92b06373b0ea6e87e"
+    },
+    {
+      "path": "tools/export_keys_engine.tcl",
+      "bytes": 645,
+      "sha256": "4e6ca135e3e171ffe954139006fc390c43f1484d7aebe48a517d98ec2986722e"
+    },
+    {
+      "path": "tools/finalize_gcs_ip.py",
+      "bytes": 3982,
+      "sha256": "6d2bc57e4c73d16b799c965fe2f14db7f3f53330ffb8ca37080b303679a70599"
+    },
+    {
+      "path": "tools/gcs_boot_bundle.py",
+      "bytes": 6288,
+      "sha256": "954aae32ec746de1b81b40a0564130ae9efd9ea1fd72e5d1996bf86f559570a3"
+    },
+    {
+      "path": "tools/gcs_boot_provision.py",
+      "bytes": 1956,
+      "sha256": "e113ce39abde029b836f69375a13df7c6b199538168dd761b8fdd8a7f129ea90"
+    },
+    {
+      "path": "tools/gcs_data_inventory.py",
+      "bytes": 5893,
+      "sha256": "bb905e241f68c92eebd6d7c298d7f2035e6978d2db52a5bb461b7a15dedfb071"
+    },
+    {
+      "path": "tools/gcs_model_verify.py",
+      "bytes": 11541,
+      "sha256": "964c34be24879aed27f8367765109b21d2692c41e8f4e3ac234a2d841bfeba3a"
+    },
+    {
+      "path": "tools/gcs_probe_verify.py",
+      "bytes": 4390,
+      "sha256": "a9931a9c0432ffc66b356b3bfbad317ca679dd0e62b297cd6129d81ab57350b9"
+    },
+    {
+      "path": "tools/gcs_release.py",
+      "bytes": 15157,
+      "sha256": "aacec363322b86cc4c96498056092d4e9e4fd90871b4794c2823079b361fd63f"
+    },
+    {
+      "path": "tools/gcs_release_elf.py",
+      "bytes": 17184,
+      "sha256": "7fd37f8062b22d90056091b390328844ba994cb4bceefc0bc19a6b1bd834c79f"
+    },
+    {
+      "path": "tools/gcs_release_platform.py",
+      "bytes": 16699,
+      "sha256": "7741e46a0df25c37e30a5dacb19ce0ee12f28a38eaf564d70fade4719c97a7cb"
+    },
+    {
+      "path": "tools/gcs_roi.py",
+      "bytes": 6263,
+      "sha256": "3e9a4567411f8f14dcc0b8d5f0084936cd1b23eeea4e68c4e6860a78c66941d2"
+    },
+    {
+      "path": "tools/gcs_scene_verify.py",
+      "bytes": 7191,
+      "sha256": "659b85a779bef9578a3e18ee5e045f3a9048904395ecd53280ac4395f891a8ad"
+    },
+    {
+      "path": "tools/gcs_sd_boot_verify.py",
+      "bytes": 5754,
+      "sha256": "1a214d77d9b65eaa55c87b4dda904edfd5eaa9e3eae39399a5fbbe64b3c6b497"
+    },
+    {
+      "path": "tools/gcs_task_verify.py",
+      "bytes": 22168,
+      "sha256": "f5425035210e98b7f6455437d5eae6f71dd6dea900da900af42c9d936bfca967"
+    },
+    {
+      "path": "tools/install_gcs_cycle_counter.py",
+      "bytes": 3494,
+      "sha256": "0c8f1558551ad1989da501ea0036822d99b462896d374af0b12072997118f0fa"
+    },
+    {
+      "path": "tools/launcher/dl_gcs_demo.tcl",
+      "bytes": 4565,
+      "sha256": "a65a03c546f33cdf59fe950b67818ce841dbc557acadf09559060be9f99a0e26"
+    },
+    {
+      "path": "tools/launcher/start_demo.py",
+      "bytes": 9442,
+      "sha256": "31e7f14496c2e530db3a2d0fab02985924bde043211d24d2f2e744ad8839ca36"
+    },
+    {
+      "path": "tools/link_keys_hardware.tcl",
+      "bytes": 2698,
+      "sha256": "be5b4630ec54c398258d509a4701273d5e47ba56cdbafff6e84acc0606f06cf2"
+    },
+    {
+      "path": "tools/package_keys_hardware.py",
+      "bytes": 1786,
+      "sha256": "78f48fdcf8ebee8e9ef64b4b33818925c3a74fe1c60af95c34120c5f5b835292"
+    },
+    {
+      "path": "tools/prepare_gcs_platform.tcl",
+      "bytes": 2117,
+      "sha256": "c5ed2af1d60801dddb7e4631b5415ab1f482b682f1ffaf3558d14abe2159d46c"
+    },
+    {
+      "path": "tools/run_gcs_hardware.py",
+      "bytes": 5399,
+      "sha256": "108cee1ba8cf772e93abba09184831d12ddf1046bb7aa5637cfae3c551a87bad"
+    },
+    {
+      "path": "tools/s2c_roi_client.py",
+      "bytes": 16875,
+      "sha256": "d5ed2d1bb8e37eee93deae0ca405372c30a84921eaf0d65f341c552b56eaf1a8"
+    },
+    {
+      "path": "vitis/s1b_m3a_plat/psu_cortexa53_0/standalone_domain/bsp/psu_cortexa53_0/libsrc/lwip211_v1_3/src/contrib/ports/xilinx/netif/xemacpsif_physpeed.c",
+      "bytes": 36762,
+      "sha256": "6ce8adbed4c4e8683a41f7f752955a7d83548a2c5e45d369f4f1dca34496e198"
+    },
+    {
+      "path": "vitis/s1b_m3a_plat/psu_cortexa53_0/standalone_domain/bsp/system.mss",
+      "bytes": 14282,
+      "sha256": "e85cc00f202cfb308d69bab4cde0e5c51bcc28b11f80c8c2cf5c32e8c687c9e2"
+    },
+    {
+      "path": "vitis/s2c_roi_app/src/lscript.ld",
+      "bytes": 6891,
+      "sha256": "fc331e7d640dbfcbd15ed93c7b2da7ed9ea5ba779423ae12d130b84f8c555eeb"
+    }
+  ],
+  "warning": "本地演示模式（GCS_LOCAL_DEMO=1）：未做发布审查，不得作为验收/发布证据"
+}

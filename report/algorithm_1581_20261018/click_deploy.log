@@ -1,0 +1,14 @@
+[2/4] 正在下载板卡固件，约需 30～60 秒。
+下载日志：D:\FPGA.GAME\HSI_AgriEdge_team_20261017\.runtime-tmp\download_keys_20261018_214140.log
+  下载进行中……已等待 10 秒
+  下载进行中……已等待 20 秒
+ROOT   : D:/FPGA.GAME/HSI_AgriEdge_team_20261017
+APP    : gcs_keys.elf
+== [1/4] System reset ==
+== [2/4] Program PL ==
+== [3/4] Run FSBL / initialize PS and DDR ==
+== [4/4] Download application ==
+== Firmware download complete; monitor output still requires verification ==
+板卡固件下载完成。
+[3/4] 控制台在后台启动；关闭本窗口不会关闭网页服务。
+{"release_id": "84284f8dd6346a48dbb5f276b9704933b17d2d3ce2d3121d8cd053769bb125d3", "boot": "228ce114", "startup": {"build": {"app_id": "gcs_r1_abi4", "release_id": "84284f8dd6346a48dbb5f276b9704933b17d2d3ce2d3121d8cd053769bb125d3", "source_set_sha256": "b4c16f8fa7db340b9a74a8a877b6c4510ae158845f1d81a90b4885e7900916c7", "hardware_xsa_sha256": "dbf0b52ccbd076c7dae4ed37e5ef6ed48b4f5bbc6ac76a174b8ad339ac282508"}, "boot_id": 579658004, "generation": 44, "nonce": "17257ba62731594b", "state": "ready", "registry_count": 14, "scan_ok": true, "independent_cold_start_verified": false, "transport": "ethernet", "scan_progress": {"bytes": 4696500, "directories": 5, "registered": 9, "rejected": 0}, "dp_rc": 0, "scan_receipt": {"complete": true, "entries": 14, "rejected": 0, "rc": 0, "cleanup": 0, "reject_rc": 0, "reject_code": 0}}, "stamp": "keys_20261018_214140"}

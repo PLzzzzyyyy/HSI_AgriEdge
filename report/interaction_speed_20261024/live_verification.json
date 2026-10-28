@@ -1,0 +1,137 @@
+{
+  "result": "PASS",
+  "time": "2026-10-24T10:29:49.837Z",
+  "release_id": "d0f9bde2125ddb4ed96c46986b04fed91daab0a264d679c067db09a2fd2fdb29",
+  "boot": "228ce121",
+  "dp_init_rc": 0,
+  "startup_log": ".runtime-tmp/download_20261024_182703_25604.log",
+  "history_before": 85,
+  "history_after": 89,
+  "continuous_click": {
+    "run": 86,
+    "host_version": "v3",
+    "board_model": "v3_board",
+    "clear_between_clicks": false,
+    "probes": [
+      {
+        "row": 176,
+        "col": 152,
+        "state": "done",
+        "req_seq": 159,
+        "class_id": 6,
+        "confidence_q16": 65480
+      },
+      {
+        "row": 225,
+        "col": 168,
+        "state": "done",
+        "req_seq": 212,
+        "class_id": 6,
+        "confidence_q16": 65477
+      },
+      {
+        "row": 340,
+        "col": 283,
+        "state": "done",
+        "req_seq": 268,
+        "class_id": 5,
+        "confidence_q16": 65534
+      }
+    ]
+  },
+  "final_roi": {
+    "run": 89,
+    "received": 1089,
+    "total": 1089,
+    "status": "done",
+    "roi": {
+      "x": 280,
+      "y": 180,
+      "width": 33,
+      "height": 33
+    }
+  },
+  "speed": {
+    "id": "e6800bc325e2493083444f3bdb1e60e0",
+    "rect": [
+      259,
+      168,
+      32,
+      64
+    ],
+    "items": [
+      {
+        "version": "v2",
+        "run_id": 87,
+        "status": "done",
+        "done": 2048,
+        "total": 2048,
+        "elapsed_s": 9.268971200000124,
+        "ms_per_pixel": 4.4052205085754395,
+        "compute_ms": 9021.8916015625,
+        "rate": 227.00339246431506,
+        "identity": {
+          "boot_id": "228ce120",
+          "session": "cad1e5dc",
+          "task": 2,
+          "scene": "longkou",
+          "model": "v2",
+          "wcrc": "27231983"
+        },
+        "trace_points": 35
+      },
+      {
+        "version": "v3",
+        "run_id": 88,
+        "status": "done",
+        "done": 2048,
+        "total": 2048,
+        "elapsed_s": 9.284820899999431,
+        "ms_per_pixel": 4.404965400695801,
+        "compute_ms": 9021.369140625,
+        "rate": 227.01653907248436,
+        "identity": {
+          "boot_id": "228ce120",
+          "session": "cad1e5dc",
+          "task": 3,
+          "scene": "longkou",
+          "model": "v3_board",
+          "wcrc": "ddf16522"
+        },
+        "trace_points": 34
+      }
+    ],
+    "ratio": 1.0000579137079257,
+    "difference_percent": 0.005791370792573858,
+    "conclusion": "Same fixed inference structure; measured speeds effectively equal; no artificial delay or multiplier",
+    "measured_release_id": "52ec92b504bd898a58f810187cdac9a3e632cc12bf6978f9cccf3a44e7f39c75",
+    "final_change": "Only speed.js record selector restoration changed after measurement; backend and inference unchanged"
+  },
+  "browser_manual_checks": [
+    "three consecutive native map clicks, including box tool, no clear",
+    "fresh region 89 completed then clear, same region mode and probe drawer",
+    "history and raw results preserved",
+    "real comparison progress on two maps",
+    "comparison history reopened after service and board restart",
+    "model selectors match saved comparison",
+    "recorded-time replay"
+  ],
+  "screenshots": [
+    "continuous_probe_v3.jpg",
+    "final_roi_done.jpg",
+    "final_roi_cleared.jpg",
+    "final_clear_mode.jpg",
+    "speed_final.jpg"
+  ],
+  "inference_hardware_unchanged": true,
+  "final_roi_image_comparison": {
+    "image_crop": [
+      320,
+      45,
+      560,
+      375
+    ],
+    "cleared_vs_base_max_rgb_difference": 0,
+    "classified_vs_base_max_rgb_difference": 224
+  }
+}

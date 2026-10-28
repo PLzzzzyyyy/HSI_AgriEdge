@@ -1,0 +1,108 @@
+{
+ "time": "2026-10-07T11:47:16",
+ "board": "192.168.1.10:5010",
+ "size": 1412,
+ "ping": {
+  "sent": 1000,
+  "size": 1412,
+  "replies": 1000,
+  "lost": 0,
+  "payload_mismatch": 0,
+  "rtt_us": {
+   "min": 135.59999933931977,
+   "mean": 446.4198000005126,
+   "p50": 418.4000008535804,
+   "p99": 615.0000008346979,
+   "max": 1007.5999998662155
+  },
+  "pass": true
+ },
+ "tx_100M": {
+  "count": 20000,
+  "size": 1412,
+  "rate_cap_kbps": 100000,
+  "received_unique": 20000,
+  "duplicates": 0,
+  "lost": 0,
+  "loss": 0.0,
+  "payload_errors": 0,
+  "out_of_order": 0,
+  "pc_mbps": 100.02280973426778,
+  "board": {
+   "packets": 20000,
+   "bytes": 28240000,
+   "elapsed_us": 2258912,
+   "errors": 0,
+   "extra": 0,
+   "seq_max": 20000,
+   "link_mbps": 1000
+  },
+  "board_mbps": 100.01274950064456,
+  "pass": true
+ },
+ "tx_max": {
+  "count": 50000,
+  "size": 1412,
+  "rate_cap_kbps": 0,
+  "received_unique": 50000,
+  "duplicates": 0,
+  "lost": 0,
+  "loss": 0.0,
+  "payload_errors": 0,
+  "out_of_order": 0,
+  "pc_mbps": 955.9771506564304,
+  "board": {
+   "packets": 50000,
+   "bytes": 70600000,
+   "elapsed_us": 591021,
+   "errors": 0,
+   "extra": 0,
+   "seq_max": 50000,
+   "link_mbps": 1000
+  },
+  "board_mbps": 955.6344021616829,
+  "pass": true
+ },
+ "rx_100M": {
+  "count": 20000,
+  "size": 1412,
+  "rate_cap_kbps": 100000,
+  "pc_send_s": 2.259098599999561,
+  "pc_send_mbps": 100.00448851592573,
+  "board": {
+   "packets": 20000,
+   "bytes": 28240000,
+   "elapsed_us": 2258951,
+   "errors": 0,
+   "extra": 0,
+   "seq_max": 19999,
+   "link_mbps": 1000
+  },
+  "lost": 0,
+  "loss": 0.0,
+  "board_mbps": 100.01102281545727,
+  "pass": true
+ },
+ "rx_max": {
+  "count": 50000,
+  "size": 1412,
+  "rate_cap_kbps": 0,
+  "pc_send_s": 0.5933705999996164,
+  "pc_send_mbps": 951.8503276036345,
+  "board": {
+   "packets": 50000,
+   "bytes": 70600000,
+   "elapsed_us": 594294,
+   "errors": 0,
+   "extra": 0,
+   "seq_max": 49999,
+   "link_mbps": 1000
+  },
+  "lost": 0,
+  "loss": 0.0,
+  "board_mbps": 950.3713650146224,
+  "pass": true
+ },
+ "windows_10054": 0,
+ "pass": true
+}

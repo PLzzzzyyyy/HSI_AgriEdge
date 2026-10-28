@@ -1,0 +1,51 @@
+{
+  "result": "PASS",
+  "release_id": "2c861dad3ec37fbcbfcd5a08dcc56aae62d1aec2b342007f1bbaf04041b59094",
+  "boot": "228ce12a",
+  "dp_init_rc": 0,
+  "history_before": 106,
+  "history_after": 106,
+  "default_version": "v2",
+  "active_local_model_crc": "27231983",
+  "physical_unplug_user_checks": {
+    "KEY5_single_point": true,
+    "KEY6_single_region": true,
+    "KEY6_double_polygon": true,
+    "KEY5_hold_scene_switch": true
+  },
+  "reconnected_live_info": {
+    "boot_id": 579658024,
+    "task": 4,
+    "session": 2276503305,
+    "state": 1,
+    "scene": 0,
+    "rect": [
+      0,
+      0,
+      550,
+      400
+    ],
+    "front_row": 22,
+    "wcrc": 656611715,
+    "terminal_owned": true,
+    "release_tag": "10c9dc15abcc79e9c8c4540b730eae3b"
+  },
+  "pc_handoff": "Real terminal-to-PC handoff, telemetry and framebuffer verified on v3 boot 228ce129; v4 adds only the completed-observation status branch covered by protocol regression",
+  "host_verification": "host_verification.json",
+  "previous_boot_frame": "live_ready.png",
+  "final_candidate": "gcs_offline_keys_20261026_v4",
+  "final_pc_connection": {
+    "active": true,
+    "channel_ready": true,
+    "registry_count": 14,
+    "model_query": "done",
+    "dp_rc": 0,
+    "frame": "final_pc_connected_v4.png",
+    "run_started": false
+  },
+  "final_change_validation": "test_offline_keys.cpp: retained power task header and completed point status after explicit handoff PASS",
+  "final_frame_checks": {
+    "standby_header": "exact RGB565 pixel match",
+    "removed_scope_GSD_text": "no text pixels in original regions"
+  }
+}

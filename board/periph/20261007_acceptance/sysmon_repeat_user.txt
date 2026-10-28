@@ -1,0 +1,10 @@
+--- C3d SYSMON: current / min / max since power-up; PASS window temp 10..85 C, supplies nominal +-5% ---
+  PS temp (LPD)      29.557 C  (min  229.075, max -280.231)  OK
+  PS VCC_PSINTLP      0.849 V  (min    0.848, max    0.849)  OK
+  PS VCC_PSINTFP      0.000 V  (min    3.000, max    0.000)  OUT OF RANGE
+  PS VCC_PSAUX        1.792 V  (min    1.792, max    1.793)  OK
+  PL temp            28.998 C  (min   28.664, max   29.262)  OK
+  PL VCCINT           0.855 V  (min    0.855, max    0.856)  OK
+  PL VCCAUX           1.786 V  (min    1.785, max    1.787)  OK
+  PL VCCBRAM          0.856 V  (min    0.855, max    0.857)  OK
+C3d SYSMON FAIL (PL rows all near 0 or -280 C = PL SYSMON not reachable: bitstream not loaded?)

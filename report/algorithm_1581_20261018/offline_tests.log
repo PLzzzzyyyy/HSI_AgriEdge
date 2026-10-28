@@ -1,0 +1,50 @@
+test_all_six_files_equivalent_keep_both_sources_without_retagging (sim.host.test_gcs_finetune_guard.EquivalenceTests.test_all_six_files_equivalent_keep_both_sources_without_retagging) ... ok
+test_catalog_restart_keeps_run_provenance_but_does_not_add_upload_alias (sim.host.test_gcs_finetune_guard.EquivalenceTests.test_catalog_restart_keeps_run_provenance_but_does_not_add_upload_alias) ... ok
+test_forged_equal_file_hashes_are_rejected_and_missing_package_is_not_reused (sim.host.test_gcs_finetune_guard.EquivalenceTests.test_forged_equal_file_hashes_are_rejected_and_missing_package_is_not_reused) ... ok
+test_one_crc_equal_is_not_byte_equivalence_or_permission_to_upload_alias (sim.host.test_gcs_finetune_guard.EquivalenceTests.test_one_crc_equal_is_not_byte_equivalence_or_permission_to_upload_alias) ... ok
+test_service_returns_canonical_version_and_keeps_new_run_candidate_receipt (sim.host.test_gcs_finetune_guard.EquivalenceTests.test_service_returns_canonical_version_and_keeps_new_run_candidate_receipt) ... D:\FPGA.GAME\HSI_AgriEdge_team_20261017\gcs\server.py:319: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event('startup')
+D:\FPGA.GAME\HSI_AgriEdge_team_20261017\.venv\Lib\site-packages\fastapi\applications.py:4745: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  return self.router.on_event(event_type)  # ty: ignore[deprecated]
+D:\FPGA.GAME\HSI_AgriEdge_team_20261017\gcs\server.py:328: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event('shutdown')
+ok
+test_annotation_count_preserves_holdout_and_input_drift_is_detected (sim.host.test_gcs_finetune_guard.PreflightTests.test_annotation_count_preserves_holdout_and_input_drift_is_detected) ... ok
+test_changed_checkpoint_or_manifest_binding_is_rejected (sim.host.test_gcs_finetune_guard.PreflightTests.test_changed_checkpoint_or_manifest_binding_is_rejected) ... ok
+test_cli_rejects_missing_input_before_scene_preprocessing (sim.host.test_gcs_finetune_guard.PreflightTests.test_cli_rejects_missing_input_before_scene_preprocessing) ... ok
+test_gt_crop_and_old_prediction_statistics_are_not_trusted_by_size (sim.host.test_gcs_finetune_guard.PreflightTests.test_gt_crop_and_old_prediction_statistics_are_not_trusted_by_size) ... ok
+test_missing_or_wrong_size_baselines_fail_before_training (sim.host.test_gcs_finetune_guard.PreflightTests.test_missing_or_wrong_size_baselines_fail_before_training) ... ok
+test_missing_raw_input_and_overlapping_train_test_fail (sim.host.test_gcs_finetune_guard.PreflightTests.test_missing_raw_input_and_overlapping_train_test_fail) ... ok
+test_receipt_binds_local_checkpoint_baseline_gt_and_official_splits (sim.host.test_gcs_finetune_guard.PreflightTests.test_receipt_binds_local_checkpoint_baseline_gt_and_official_splits) ... ok
+test_recipe_identity_and_region_bounds_are_strict (sim.host.test_gcs_finetune_guard.PreflightTests.test_recipe_identity_and_region_bounds_are_strict) ... ok
+test_service_rejects_missing_baseline_before_claim_thread_or_popen (sim.host.test_gcs_finetune_guard.PreflightTests.test_service_rejects_missing_baseline_before_claim_thread_or_popen) ... ok
+test_each_scene_checks_pair_not_merely_tte2_header (sim.host.test_gcs_models.ModelContracts.test_each_scene_checks_pair_not_merely_tte2_header) ... ok
+test_info_entries_match_both_packages_and_reject_crc_alias (sim.host.test_gcs_models.ModelContracts.test_info_entries_match_both_packages_and_reject_crc_alias) ... ok
+test_local_package_never_means_present_or_activated_on_board (sim.host.test_gcs_models.ModelContracts.test_local_package_never_means_present_or_activated_on_board) ... ok
+test_pair_embedding_mismatch_rejected (sim.host.test_gcs_models.ModelContracts.test_pair_embedding_mismatch_rejected) ... ok
+test_rejects_bad_shape_width_reserved_padding_nan_and_paths (sim.host.test_gcs_models.ModelContracts.test_rejects_bad_shape_width_reserved_padding_nan_and_paths) ... ok
+test_scene_dimensions_and_preprocessing_are_explicit (sim.host.test_gcs_models.ModelContracts.test_scene_dimensions_and_preprocessing_are_explicit) ... ok
+test_absolute_and_parent_paths_are_rejected (tools.tests.test_algorithm_baseline.BaselineTests.test_absolute_and_parent_paths_are_rejected) ... ok
+test_changed_algorithm_and_missing_file_are_rejected (tools.tests.test_algorithm_baseline.BaselineTests.test_changed_algorithm_and_missing_file_are_rejected) ... ok
+test_lf_and_crlf_are_the_same_algorithm (tools.tests.test_algorithm_baseline.BaselineTests.test_lf_and_crlf_are_the_same_algorithm) ... ok
+test_weights_require_exact_bytes (tools.tests.test_algorithm_baseline.BaselineTests.test_weights_require_exact_bytes) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 5.696s
+
+OK

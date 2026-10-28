@@ -1,0 +1,1736 @@
+{
+  "scope": "host model, not RTL/board",
+  "commands": [
+    {
+      "name": "driver_syntax",
+      "argv": [
+        "D:/mingw64/bin/g++.exe",
+        "-std=c++14",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fsyntax-only",
+        "-I",
+        "D:\\HSI_AgriEdge\\sim\\host\\xil_stubs",
+        "-I",
+        "D:\\HSI_AgriEdge\\src\\ps",
+        "-I",
+        "D:\\HSI_AgriEdge\\src\\hls",
+        "D:\\HSI_AgriEdge\\src\\ps\\tt_m3a.cpp"
+      ],
+      "exit": 0,
+      "seconds": 0.105,
+      "pass": true,
+      "log": "driver_syntax.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "compile",
+      "argv": [
+        "D:/mingw64/bin/g++.exe",
+        "-O2",
+        "-std=c++14",
+        "-ffp-contract=off",
+        "-include",
+        "array",
+        "-DTT_DB=18",
+        "-DTT_K3=7",
+        "-I",
+        "D:\\HSI_AgriEdge\\sim\\host\\xil_stubs",
+        "-I",
+        "D:\\HSI_AgriEdge\\src\\ps",
+        "-I",
+        "D:\\HSI_AgriEdge\\src\\hls",
+        "-I",
+        "D:/xilinx/Vitis_HLS/2020.2/include",
+        "D:\\HSI_AgriEdge\\sim\\host\\test_m3a_driver.cpp",
+        "D:\\HSI_AgriEdge\\src\\ps\\tt_m3a.cpp",
+        "D:\\HSI_AgriEdge\\src\\hls\\tt_engine.cpp",
+        "D:\\HSI_AgriEdge\\src\\hls\\tt_attn.cpp",
+        "-Wl,--image-base=0x10000000",
+        "-Wl,--disable-dynamicbase",
+        "-o",
+        "D:\\HSI_AgriEdge\\build\\host\\m3a_driver_20261007_verified\\test_m3a_driver.exe"
+      ],
+      "exit": 0,
+      "seconds": 8.827,
+      "pass": true,
+      "log": "compile.log",
+      "sha256": "b396b06723d1527bf553e86e348483ab6e87993e87b1ca77227cadaf72da62af"
+    },
+    {
+      "name": "load-contract",
+      "argv": [
+        "D:\\HSI_AgriEdge\\build\\host\\m3a_driver_20261007_verified\\test_m3a_driver.exe",
+        "load-contract"
+      ],
+      "exit": 0,
+      "seconds": 0.135,
+      "pass": true,
+      "log": "load-contract.log",
+      "sha256": "a40f6602aa6c9c6d1b9aa7d92b60d23f63e2d769117a18393dab5f3047cca4cb"
+    },
+    {
+      "name": "load-timeout",
+      "argv": [
+        "D:\\HSI_AgriEdge\\build\\host\\m3a_driver_20261007_verified\\test_m3a_driver.exe",
+        "load-timeout"
+      ],
+      "exit": 0,
+      "seconds": 0.035,
+      "pass": true,
+      "log": "load-timeout.log",
+      "sha256": "78056e7896aac5726271b43a4bdd59f61c76d91b454b88de2d921519d7b6d163"
+    },
+    {
+      "name": "timeout",
+      "argv": [
+        "D:\\HSI_AgriEdge\\build\\host\\m3a_driver_20261007_verified\\test_m3a_driver.exe",
+        "timeout"
+      ],
+      "exit": 0,
+      "seconds": 0.028,
+      "pass": true,
+      "log": "timeout.log",
+      "sha256": "67ee5189c2aaa451daffe289afe0bd1d9abaf231af795f4ba77552f339d90a76"
+    },
+    {
+      "name": "contract",
+      "argv": [
+        "D:\\HSI_AgriEdge\\build\\host\\m3a_driver_20261007_verified\\test_m3a_driver.exe",
+        "contract"
+      ],
+      "exit": 0,
+      "seconds": 0.032,
+      "pass": true,
+      "log": "contract.log",
+      "sha256": "051e58b6e7d364f4adfe620ee07a5a1d95942b5d08b360e9e9531ab6d0ff5179"
+    },
+    {
+      "name": "engine-error",
+      "argv": [
+        "D:\\HSI_AgriEdge\\build\\host\\m3a_driver_20261007_verified\\test_m3a_driver.exe",
+        "engine-error"
+      ],
+      "exit": 0,
+      "seconds": 0.03,
+      "pass": true,
+      "log": "engine-error.log",
+      "sha256": "198d678a6e1f4cd5f4a7eeed1f8f07b5188b4e2405cb5960cb61b1aa50f00425"
+    },
+    {
+      "name": "full",
+      "argv": [
+        "D:\\HSI_AgriEdge\\build\\host\\m3a_driver_20261007_verified\\test_m3a_driver.exe",
+        "full"
+      ],
+      "exit": 0,
+      "seconds": 17.966,
+      "pass": true,
+      "log": "full.log",
+      "sha256": "eb4704e7220ff114fde92f3ff5a7dc47b50f09188f437d87ae7f2dc822c2c69b"
+    }
+  ],
+  "files": [
+    {
+      "path": "sim/golden/n6_engine/a/class_u32.bin",
+      "bytes": 4,
+      "sha256": "03e9364756098aa8362d55189df3f3231e7fc7a7b490adcf5306252f316bcde9"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "ed1553279fef4e6ffacd7bdc588fa58bd0d09637493ef93f81a1f58b3c5b11a6"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "c3a9882b32952c53a5c7baeb33120f54cd113f9c5f9abdc8dd384844084e8543"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "70b8b9183ee3faf43c83d3cfd000bbcaa44693e568df2bb4aa0c56db62afee5c"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "79274f17e0220e2abe48c3b37e78a271b44c2e57d97188630e215f8a31327eee"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_s_i8.bin",
+      "bytes": 288,
+      "sha256": "e2bc3b3e001ce903076081b5dc9d2b3e30d7e28dbf72ac5dfc922eb0d551ccb2"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "e4691c460fcc0495ddbd45bf55064ced117543c94b83735a67d7ac25860a112c"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "5ac7a5433320fdc5c6d2c56b9a1ebbe8da31686fdca6dc3ed8e99e72e24787cb"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "8c53db0c832e959adc7e83b2db35d5abea0eb67a464fbea6532b01a729e4ef26"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "8783d0dc51d676701bd3a58632357189e2985a92bc02dd327fcac5df03c36687"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "21b35c1067362b95bf0dfaafde76a3c92ef786bdf1f1ed33f04243baecf19974"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "d1867883361a21eb62e306edb5cc1c03d7464d1c6393acd1a342fd5e381ae4a5"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L0_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "ea75e264f4670cacc5e1759b24ea3afe2312c2931f94a43b94f04826c866f238"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "a7e6fbe704156f95979b54346ee49b00675e24193c93bb20a06c70a1e2508c79"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "bef0a750bda0289c1d46105be93b051b6231562e7962a7512e73496042e93844"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "1a253a77edb4406fb7c0feeb3d1008c2d92bc45a56658231a36f57c595544754"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "51d7613cb27959feeb3a2df903b03205653c10a61a346f77b1814c9fbc94dea2"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_s_i8.bin",
+      "bytes": 288,
+      "sha256": "95eb7c823a48aaff71e673b1cffb3e984fd47f061836df44739af28d52dd5821"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "e1eb5ee10b916063963f121153bb894d49eb9f76b20be3dcf93b4105e42c3499"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "80441fe0e3d3a13ca107018c28bfa73a550ec84f00c88c0b0e723c714d969927"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "bdaaf5dc5722988c942694061db554b66ee4fb4231dadf1a0cec8bd7794e0596"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "a0d7a5a50af21e08d806bf58cd9c8d1deba4a023087cd88efd7801f5e40358a2"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "b349b91ff7cc04acc66bd89e88d171c53bfd868555eea9b1c2c30ed760a764a0"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "8f436e9e9db8cc07bce626791db3030ce70964bfbaf244424d6c0e15ffecac19"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L10_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "9844c67747466acd90f83e7e8db25d753fcc1755eb38585a8c17b5539a43bad3"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "7fb8394111c326267164091db77f633cfc302da2cecc38c65862cfb733016181"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "5972b2c2c2b798e5232d74794eb3b08970caa00dc22543e19dc83926935380fd"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "4fc362f811e8830ef1ae10dd53a485a4db6f2a0b25a5c05b435565bc4f238521"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "82c276e2f3d298f522f7e3cef1630beac5d07a32f4e32cda1ff0d2729a640797"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_s_i8.bin",
+      "bytes": 288,
+      "sha256": "68061c69b7dd6df7de5e29421728b8de4f0fdb20679abfc2c8d66061a8519b1a"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "18cf8b80734606de3b290ce426fc13088434143cdacec72756621b609b7f5ec5"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "3a5ab71dcf08abc9fb4c6264c9e38a936c8585c9919ebfa4f794ddd421114499"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "40f93613bcfa2d560acb1bf347ab02b38908825ab879d8f4613d14a7539a9784"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "aed0725550c5c1b7d51f12b3e404aefab0a4d6af06b8b1c71681af52605e76f4"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "2e5eb47d493051f29d2835edbfc32c114f8f6eb8b2eff1013cb2de981bc64da1"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "03730325208c0491b45404ba146fce83a1bfd7e287ec8e3cc5657a287a776b86"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L11_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "251b42ed852eeef08324b5af05ecdbb034a2d76d6bb34a0179546d3a9b45225b"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "979aaeacb49a388b9ca2c1342464ca7bb6e16166f5bb0d2f831deaeb653d1a8a"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "9baf2b8b699cebd60d881263d9c7bdc9d18ced7ee05557b9083bb2dca445ebc5"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "65746523b380e3d979300d49ce4d92c9d93ad04803aad39ae33bc06b479ba118"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "1681986563526064c806b4c02e6fb17ba500133c736708fe76613775a00a89c4"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_s_i8.bin",
+      "bytes": 288,
+      "sha256": "f924e529a8f2e7fe59daf297a46a20b1e46c8a4b36ea424cc114ad7773ff4ef9"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "280c02bb859d8eb0fe5245daed993adb6878bc55674d7a8438a499412526c7be"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "607bae2943d04409549c5cb56bb8dec96c37ad3c6175f24b8c6647b876064410"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "82a27ef3a6d59e77fb0c1fa9c691602955c714703b6d9fa87816225a565e81b3"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "d1ab0f3ef1912ceb97be71a5b323485a872d9e1dfa6a3ca9d89874933d8f19f1"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "160730f39517104d46500ea49c8ade64aa4fffcd0f8adb10f091689db73f639a"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "ff5889d530329343ad6e28067f224d3c068a2d95b4722af92455210385a90c65"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L1_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "8a5b149942c61b5175164c670eb2dd800db530c8b98958efc1e28f7c71964b45"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "e7feba8c36f32932056aacecb42efb1db4379d76c21ef756ecb048a8627ac29b"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "078e7c5ebec72e8f6b9d1e93e8ae7d60e3302bbb57d9621902dcb8a93b52f482"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "8f3eb34813e5fdc7b82caafdec6ac3ded8fd411f15fd0a425529c4b8f6fb8be1"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "b106a85653058f29896050091297948bb9386e95ded942254957801e674b57cf"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_s_i8.bin",
+      "bytes": 288,
+      "sha256": "3c23bb3c7f2d6fc2e1aae6dacb8d94cf9323321d213f1628ee3ae1fda8b29ca3"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "c5386ff85066a7c2c6e7c40c2b04f9087f403955b3f927d883e4193fea5306e5"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "c1668061ec226371ac9d67e52fdd5bd0980c00b5b759fa3b1b7a0b1e0874da1d"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "b0a1d066313adb08d7afec413abf487acb515d5f80c91fc111aac33dc0be051c"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "25f5fd738bb4bb0441e50eb0d4d84bc6b96677dbc05f4b731fa6e016c63f28d6"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "e72bbb7616b6508c7260b975620b14f5d46de3cf3a8f980bafe84e0b9fed3791"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "0521cf9ba027e1218e60519d698fd445aeb676c4c12eb6885738809acf794752"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L2_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "a10bfc04c29341aef3577b319b057a683b33d51bb04e54b897249cde31cdac5c"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "6e248120bdcfca78d107fd9cb8718e93315db1632a387b1ac787172a56a38487"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "ff2dd41d7b36b18ec0dc239f37b1411ea674c71c490f7189e403a9726857bc71"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "fc2e2a6773cbef88be3ed54f218b3a286a7119ec6f377160946492b1bbd7f9de"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "5fdd8ab91f1077a47fa8dc54b2930d94302a3636006a38b46954b563fd64575a"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_s_i8.bin",
+      "bytes": 288,
+      "sha256": "297a95f6bde443b2ffb8e71ea4a19a6d72aa86aa1db0176e0d765a2985e6bbbc"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "f46662855699b6c7474a9e8a2aa8db7318a894cbfb4eec3b7900cf401f158730"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "3183131c7f02e84c2c260e9f7151f6b223813c15f6c722f9db77b9f6fab19eb2"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "ad7f4ef5dc95ee755da55af1096ac3d7e97f2b4cb3b887385c396552b780e452"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "47d756a1ec1df8b8e0762a0364581ba359650de4baae4e4cfd74ffdba1a12967"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "6140b1cca37450a0546fbb4aeff3402512cb6a35c25e36172f12aa7cf5d65238"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "ef94b88af772e4136f1d2d7cd771c1752fb3dad0ebd5abcbad06e9b4c6503282"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L3_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "1b564e415f2ae0fa21f77b3afed746826523eb5b3856066904f6e90e7050fbbc"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "bbfab139f110d1464f6af77cbbb49a4a0f6f369e63175f75f36eae60ed649745"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "50f366906a4ba3ef076634efb6abe83a62d1e7a93a2152775a38892da54e120c"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "58d2c977335c76695607ce63591e19db0cd66d35c26078e816fbf0bcf7cd5d79"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "c800dc0efdeb8ba334224f656bbdbc1d256705bb1bcfb30344bd3ce28671d7d7"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_s_i8.bin",
+      "bytes": 288,
+      "sha256": "49fb7b1f4c2ca34fce40d0933d2064b7290ddd3e4147701d94791f2d7954a1d6"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "39d17fefc260cd0586ded087d7744c2e2ee3f2a206ef02502d7195ec8e1c1154"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "2e57a41b411591fd100b5bf9cb4e151cda3637919580a10d2ee3adee1a6ff504"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "596b318ba694e891cceb6cb571bb5d80dfcf5f03128d8ebe7bc4a7710851cc95"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "b0a3cdca237b03411f4aa05b65de26977e16be61de4ba3a8883eec29529e936c"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "d349a676efe4cc5cf251df649684c292d5108da7574b6e4e5b1a8496696b3a35"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "5c8592c315a31723ab77d7e09ae3e5db1d527e1b1b8a1fd609decf5b763217ae"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L4_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "c769099f97797de340a58fd5c735cdcd864287f72c894d68176c997215275b47"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "9a9d1177fe795e31fbaa23b81602e112f1982a33525fe8f056bd4cfbea09c9d9"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "dd553e8fdf82085b0901fabe33e3c3bc2e05d228d3422bfcc9db265aebcf97bf"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "66dad6127cb11b60277fd3aea9a6b7a20642b435b8298989c66e5f549e44861b"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "657eff301b99be4ec7901f741ed54edfb5f302146c1db70ede1ddab51518548c"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_s_i8.bin",
+      "bytes": 288,
+      "sha256": "65af87691a5e7fde8999c4a6d14497bda769d5478c078ad28ba69d19e05744cc"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "1013420d6b9a1aa3ddca59ce778f03c241bc0a2bed1f323f6c8d551f69192ee4"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "032ecc7bee3d8f4a5088ef8020f4aeca9206344bd98f534f695d4f683b9a3a0e"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "00088fd4b24928fa88aa287524520e33664bf9448c1ead2e21e2c4a4f82c3bb9"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "e2e478f2e1bfb2caa2d8d253a76ad2cd7375596d21eb86974ec521dad152cba1"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "f08930c720c50f261529421653e4f5093157c6f09d2da81a767c624e2aa5c5a5"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "255dd6b072f28a1dafea1dff923db13fd8b04483c065b1f44a8bc1b9cad8f4f5"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L5_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "cdd0f5a611651d3db7c7e1060f0dda38d66b570324b65f874e8cbb5d26a86751"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "2e287323aaad9adb3234c1f716419ed4069f0eb83f86f197f43d45b2fe48af53"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "bd6cb79dcac9b27b9a3e4209ee8b9d8cfa62e2dc5ebb448c06f530eb45296a71"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "87477b5f827d8e0faddcba4a849e1ffab47a5f36d7debb8e4627cb40ad78ad59"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "6e52615dd423ae93843a1da121a5fa9dfc819bb4c45c9c278d19bb6b6da728e2"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_s_i8.bin",
+      "bytes": 288,
+      "sha256": "4be18d50537f2501b4037f201776431ca8f468f3e615e5bb859cd78120078f47"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "aacb9cb7dd56b42d9275369ca7a55aaac37b856c32062508dc0dd5a705a3cae9"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "8423ca3c97a5327e03532dba1fd032a7004aa7d0580b23a18ee7e347f46dd741"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "d7de5f7524a30fa7ce472b5da6e852cd5e1e96fef10f517b29fc34214261727b"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "dde69bb60c3caf25f161fb58fbed21012698ea32f709e68b11eabf583607788d"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "61111fc492af21a133c360b15b73c960adb74a82df9e1a10a1c092616f768a94"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "84db7d5effaaba7ad3ecf802fadc1b206f42bad0819782ce4c05c69c1df3e2bd"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L6_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "4644403be34540f66a63fc14d5315df4ef2e3cf5436470fd3a5dcae3f40c9f46"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "dc0b161c7bd5d4f8af1f5cde9873eefc3f8bfe712cfe6cd8a2f6cc2d3a86fdce"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "c428b014ed3e97860f06ffb374d42eb89752fdb4c20272e2735ecb48fe5df1c0"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "ca4214fa6509646821d5d2ae51f06e4afaa53c9369ce1bd20dd55d021a95fbe3"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "c2f19fd338d0f539604316258f6216c88e095cfc0817bf61355a7f9536e379ee"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_s_i8.bin",
+      "bytes": 288,
+      "sha256": "bef03cf8e659b64f47d1afef5fb4361d6d77597d7bf0ee318a1ac019f48ee3c8"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "61b05822999535269e531c957a2550f9fd1fda18970cd1d7a3d0a8b47c62e24b"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "41dafe0cb31ce9f0903869decc8119b1b3d68ab1921d5291b72fcb5833fdf27f"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "277a9775ef2e8b3b87aa75e39318cfba0cf3ec53b7c8c66b9b99862ee43f8785"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "528135dd2591e0009b04c4256270658cae4e3417c3b46711987cb463323832a6"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "c901134c97e3328d2b1ec4a5e7e592f682591cf1c3cb487afdc6ae3646d6c7f0"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "c498ceb69a6d8cbc0f4f8cb31350bcd00cea53674d10776c367d41d523082b78"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L7_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "a05492d3058dfd34619dfae1419a408fe2410104091a9ebb4f9285038d1113a4"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "3dcab74a1bad566b217892f7e32aa958068df46a42a79b2a87f61e7d5867c681"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "6aba07e6f2a30c6fedee199b91d6387e5b82a2d7001f88a60fe723eeab19fd4f"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "95345f826285b954ea9b264bb6de5a383f541eb39554ccba047e645e3fb352a0"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "b2feb5dff9be2c4859384f89cabe3b5bfa837f595b03b25c29f5d0d7deeba60c"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_s_i8.bin",
+      "bytes": 288,
+      "sha256": "3f89dc50807175c184aedf11b98d37fff8fef33907ba8e181ae46150847f7c05"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "b0ab9792b04f484c93879ed6ae70aceca046cbb312e4ad2a90ea67447e95df80"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "926c7e7833992d003bf6185d9d76d194fef62ee4982795a3d8714d5c0ad10be0"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "9517dd364bbaec66526b782d40d0ac0cd6eee293ebed1001d87c670da45bd596"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "8b87b331a24ea6c01462cb7c47cdcb89cff941a90acefeb9d985bb4f01c1774b"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "31cee1af72ed6dd0ab91934dd55383d75679e5f07fb176a14c5c0ea62ba7f81b"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "b772de56700f622714c2bc96ae541d2f8719ebc004bd139275ad0b222ae8ae30"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L8_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "e4e987de26d8ab9770e118a4ea5f924730ec1bb5eb39ebf00e10a6ad2613a6b4"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "853f084e808dac28663e6d58720eb76865fc5dad95e7e907b62371fc903b4125"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "2bd747969fabd54a62b16e329b244e00a305f20cbf888660845e708bdbd077e9"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "0f90aaef140b39dd82bec6d6e5dbfa6cd2b6b068c08e9a4e197929c55899ea5a"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "c903c5815538fa99a7696f58daefe33ff5c08a973da1e38c9a55dca052b9988d"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_s_i8.bin",
+      "bytes": 288,
+      "sha256": "c5bf221eb5d2631ab43cb9b11c1ccce422e1850d7621761bd3c2e7602b8699d4"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "4e99002841dccce768f4046a1f49a8d469e1321ac3a6d49ae13df61483d825c5"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "61d794cd9050f5b7cb54a4c66d0992de0ee7fcd2d9b6212e0e22ede7a1d22e5c"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "3611933012f8875a404f8ef143a56f92a54340e513ac2d93fc1078153574a88e"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "86a1a466d09fae1706a8084c7da0a8faf4c36c1a7ec60cd6e27c0fd42abb51d8"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "651fdba136b2d047737b33528ae8f617195f2fb528980fbef8ce3d3d67a46d3d"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "e3465eff0ca8210e0c3fd4136a7b5fc94dde01c7a7b8b206451598cc0f9da693"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/L9_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "7911ec60d060e92c107afe9466654400e2bdd1daea73179bbce11fa045a12ce4"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/logits_q16_i32.bin",
+      "bytes": 128,
+      "sha256": "33cf8c3c83246e40cf78de78aee5797433f729dd6805181d7ac068a06bd31219"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/x_embed_i32.bin",
+      "bytes": 63504,
+      "sha256": "b2ceebba0d821047cb5154874dc474a837b031ce69544303b61b562fee534139"
+    },
+    {
+      "path": "sim/golden/n6_engine/a/x_in_i16.bin",
+      "bytes": 31752,
+      "sha256": "270d06b33cf9c11ff25deb1f562d411ecb13be9d99e32ebda13050e59afb11b1"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/class_u32.bin",
+      "bytes": 4,
+      "sha256": "ac158c8db7ad4d29f2fff328188be5ed287dbaf6bdf97f651a8c3daa2a5428fa"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/front_s1_sxx_v_g_i64.bin",
+      "bytes": 32,
+      "sha256": "9c97ee4a3ee4110ea68407896aff316ae8cc37ccbc90d85077c03ca5aff783bb"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/front_xn24_i32.bin",
+      "bytes": 52920,
+      "sha256": "300fecf5ffcb493fa585c09307d4089ba2f60b2d102ba7ca9e3802c27491be1a"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L0_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "e17295d0422547f95db2d378b1a626d2933edfae2f855533d3180e028925dd3e"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L0_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "dfa7b689c57f38204f00d5edbd5075cb06bccaef0148034451568322ca12f50d"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L0_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "7c52971d5799c275b48f2b4724c34f1a512f33cbd898365c8a578f086f8b2de8"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L0_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "ed407c4d59c35d4c94db897752438576262f6bfbe67c5c1e682ce0e5d83c802e"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L0_s_i8.bin",
+      "bytes": 288,
+      "sha256": "f5d622f390d89ccc9350debf8698bf3c4b5f6b27ed755af001b950c97ffab370"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L0_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "49a2f788557f1dc7d3cb4db497d784c26daeea27968cc9c6a2192c1e99d80fc7"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L0_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "efd8ad4b66906b9dc360f4129aebba6e9052700a950df3dc6c6b5a7551e18d73"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L0_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "4adc51ba0082d7d85ddbedfa5d1bfd7d7005781d1b4a5d25a864bf55f2347660"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L0_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "a3e08422a27a13361c7f6a72f7db56440373cc20794bd086e5c52a271023144b"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L0_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "e69847536878acc4cea45e8e82dbc1d0d399475a5865aec5520894575a471865"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L0_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "bd046ec0e9d4928b684b7162367bd2f92c37eb05c809cfb93d81ef47ae49b955"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L0_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "d3d9d0ef8a899d7ab379a0da77fd19dd0f732374e5043a01b85b0e83797e671e"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L10_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "0ba8483c4a389419149f5e530bf349997012e8d4d44907d11c2980cc176f6d08"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L10_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "936b13ed907e6541a4d6b1ea029e26d86b4e9e813646965479869cd76ee55936"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L10_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "29ddbd765b5dbaa4b5a73c98bbc6a68df7a18baff1e3226486dae6835b5cfb1f"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L10_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "1931554cbf5edf546d14c4cb66796feb822d20566eb459ed29270182902f8087"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L10_s_i8.bin",
+      "bytes": 288,
+      "sha256": "329958bb1e56d53b0f09d9682b7b028dccc7c0402c9ad516748f45babe7c5c2b"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L10_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "093fd3bf30dc1c8d08284324fd59c1e73a1012a31959e5ef1e026577f29f7f19"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L10_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "f32ffeeac1a72967a1ab21b59860f38f0b4d6151749719fb236a29b53d6e8622"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L10_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "eceb07cedc73d7343a3e9eecc27673a250ca7dbc839a598307733f6a54bd266e"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L10_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "49d9053ab30182b0f06bcce4b793f872412963c604025f66ae19092c27ed0fe6"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L10_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "6e1a9b869d508af5b66079a0fcc1c840e9a2ed4817c80c8e67ddca6032210cb1"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L10_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "9a8809925d6ae63f66d3aa9531e228d27ce640d33c7be86529f8b0662e361e3f"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L10_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "9fc118e8112f59bb7c0f184baae45e9943c0880fdcd714cbe3a8f9b5cdd45f9f"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L11_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "b21ac344ecc1ef3b7f90c24a75f95bdb218fda746db502cf5787c7c1d770dd7a"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L11_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "95b939417a8676cc049470f83ed3c2f4bbc4778b0f88d059bdd4302c023fbd1b"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L11_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "faaebc6e5fc0355624d4529d3ab94d31b2f4d4841ec3d36e4d0c4503ec2039d9"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L11_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "190279a945dbb1b0f85ed9e750cd8510225d2930339a43f0662a549353b3dfa9"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L11_s_i8.bin",
+      "bytes": 288,
+      "sha256": "53779aaf81ff199d821bd074c6c6523dc02eabeb534167b85c128b9bfb4662c0"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L11_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "5470df0ad47826d287e8cd2588592497eed955ab34429d76cb5d16afdbea57f4"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L11_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "961c23256415058a70a54ef214994de72d4d7dc9fd993e7d74d0e1dde44be736"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L11_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "2691aaf9412ce0e1f534eb874ebcac9b3acfadb9493a7ea51e51e449b9d26518"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L11_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "a5ec3ee48985dec4a371ea46b84d742996ae53ed4cfa189903c2acd024b50999"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L11_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "08359112d5c4d8d9f8ba8dab9e6e45f7f19975f69897bda14dfbcc0d7c335d8e"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L11_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "c9c793db2325fd1253314ad464cfc682117267dc39527cb641b3a759542d7762"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L11_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "f3e2e325c6ef9dec71289ed40d106ef812cb17935f02c72c4d7bffd075f4a0ec"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L1_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "ebe2b7c8803eb1fedb0e9c580314fb28bdb7a124df19263b358ec0f71555ce52"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L1_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "4e7ff43b77f9ea8f7f0cb5f2b8a13a6fd9b6357387a1929257cae3bef7cb2594"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L1_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "3d4350ce6cf8ece399808c4fe947b70cfe725c73e2f21fc419c65b70e5f5d9b7"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L1_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "6e162a1a1dc701f438a45f84dc57cecfc46a6760ab9130796ab702935ecb7286"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L1_s_i8.bin",
+      "bytes": 288,
+      "sha256": "74235491cdb71a8c576e2030a474a9a1886f8245305e81c1b598bf52b5dd9efe"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L1_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "eef04ec6fc12ecb497ac6e6fe3a5c1d796d9f3ac8f33f8d109009c99b542165f"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L1_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "7b0c4ba0b248ef13b0be0e7a47be71de73b65d849b22c9f5f5e8b1b812f12f49"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L1_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "334d1e71cbcd8fad62bcbc9ccbb1790bf0e1db976c6ef0c6f8690540dfb14cf9"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L1_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "9b8ba26b179443f211cdb10e68a764e67201dd26f6877cf5ba13c8db3c6866a1"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L1_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "c01a7b6259d1bde4e6549f84b9b259c72a56e6ad636bb6ec109e509c19d2b127"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L1_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "6e5be1bd4699dc0a2dece7539b3adcb03fd18bf175c3a305dd865936c8f15f59"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L1_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "f8ec51181e0cc7ced6494c1f88906528fffa9024e6aae983c9b9bf6e61dfca85"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L2_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "026c11915fc3926d07c213d0c956eca8cb65aa6afef6f3ca3e136718c73debea"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L2_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "eb7934c6dcec8cdde968a6fee037aacca8ff7c692e89218b27c12873ed0928f6"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L2_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "5bb0318d3a8ebdc72ddccff7681fdcfea41e1e34a2dfb247231b7a3c2f02bfa7"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "8ec7e751ee98f96940e0e17191b108a43960d4a88390246b45366d7ebd31b9c5"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L2_s_i8.bin",
+      "bytes": 288,
+      "sha256": "3e6e7ed2b6aaa9653a7b10bd5a66b24caa9cbb47ef31d319c70d2105d31b87e3"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L2_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "f2186a8f2ff68da7b9141754a190a17505fb57b6cda9424de367c94e74ac46a9"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L2_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "1b90d83988706112f3bcb4c83dddbbf7074e3e74f1a0b150833d06d0a677ce86"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L2_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "c46cc7b204068e195488ea5964c64124676b86f1684c889feeed23f447b1885e"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L2_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "6934b111262afa24e15d00ae3576bbf87b91313a34bdf7babd7f4bfe34dbac57"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L2_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "c72d181db34c9f16656a18860158ef8f321ae4aee6288db1b10ccd1ae510ad72"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L2_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "334e35846c9f155595dde40f948a42351c295640ab2c622a527950387e8ccf42"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L2_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "cde6efb3954b9fc0167e659f929236c3c9d73ebfe9cdb8ae1748310bd123d993"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L3_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "32600c90ea90a25407043910554290ab7e183d3eaf9385aa34dfc13fab9f0491"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L3_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "7f667598d6f41778664bcc8c98c7fe2ca8524231d163cfc65f71c9b1992a75ee"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L3_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "2e9fc1a2b394dffc66f100fb160842837ef1e328af46598f4a1c4eea862a6e19"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L3_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "ed12ce40b0b0167c06634784d3b07adc75062874bfef31e6acc3f2ad665508e6"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L3_s_i8.bin",
+      "bytes": 288,
+      "sha256": "8d57d599373468171a7b3df6a75095350ab20d4e992a6b16d2fa2e7493b72e69"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L3_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "a084b781f32ba4e9d0e8b767eed1da05ad334c4c97dce1f42207c290cf242e88"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L3_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "0d7d675403ed0143cce6b3f75eeb5cf7387817eaee126b569153fb760aaedc13"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L3_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "721d57dfd96e246224a4f991219e3b4eb26a3e2eaf732cc8dfa30c2592426b1e"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L3_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "826935c84ea07d9236ce027b124328c4cfeb515cbf03ed3229e445d8b21525ee"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L3_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "cb7236cdab104cac94e1c3a697e4ddf3be0a45b82026934ec73989d0dc09226e"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L3_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "67641ecb7901b179506427d5041609ffea9a32236426eed300bc8e9412d18d3f"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L3_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "f8238929bc5fa9d680c71049cdf9436c623e0cff5657e90d9f16427105157557"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L4_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "482452b4aec1dd3616f62b73260c14c1419a919b4e1ab6c0abc6dda15cae07af"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L4_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "0421f11f37bf9114c1dab7cae7697b3773eee9436036d6d5b5366944f6892f96"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L4_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "b14597aa60802ce85492b98b4c09c5fa7e8f50966c692f1e00ddf359ad8d4520"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L4_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "69e1c6172c0d570804cbd7b64f8f91e764c4e781f34e37377f97419c7f3b3598"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L4_s_i8.bin",
+      "bytes": 288,
+      "sha256": "c7cfe2a15c3c9aa3a35c0b79026292f0eefeac514e2f9c475bdea41bd1582438"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L4_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "d87a0c21f2d3c504399dee6cae4331b5cfe0171a8a2da6a5be5f8543106e131f"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L4_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "2c276a75b167660d3465a2d8a6ee5054252d5d6f73e8df0e4bdd563b1bc05551"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L4_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "734308d66cb394850697f7c73909cc07c6caaa826d00ac66c3a6ca02cbc6cbc0"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L4_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "95a201f63eed8d705a5dcf097d1ffdf1680f5f5c70ae13b8e9d4a246d3a8d414"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L4_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "e2722ea92ac4af57dfad56852d97f6c21625a97cd33154110836f48f5c3991c8"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L4_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "6232a4103e5b79f737e9b7d55a5e9b7a7524b0e0803b7de2a84198708e619b6e"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L4_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "be11a9bc4514ddd5d1fa3daf99e13f1b049e54428305c5286cfaeff8804e9151"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L5_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "b9eccfbf15678ded3f8e9a4dd2c2c61a056cfba187c63657fdbdd224205a51de"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L5_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "19b0bcce3c7bbb5b2e749c127e03737f4c560159bd4a35d6b48a165d70677756"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L5_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "23207fc7d7b07f30ba3e369dbbc049ab2887ff520c967c43ee2a9c25c0e69a27"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L5_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "b424687efcb12d48ab6179fe5be4902a8813c18e8546d319d8afca05d98da265"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L5_s_i8.bin",
+      "bytes": 288,
+      "sha256": "d903ab7579f684a89e80bdabbe25293ce6f6f0cd821e4ce62956ab74decb2106"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L5_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "03dfbf344b52db508d12308bb7db16794c1f4668e10d381db2b92d9fb2e51f1c"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L5_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "07a97e4895e4adaaedb10ac0662d70d5ee8d7a960c493ad2d11bf4e429f4c257"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L5_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "6d709a276ee632d3716dcdd0a28e66183c099bda28ab09968570b0a58c0e3046"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L5_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "05f7fdf938f4ad23b69af0671c3fb28ff22343fee181ba3f32f7fb669ff43732"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L5_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "c9ee378f45a1d234940de58a52ee20d27e7550d37cdf933a27a417a60d0f269e"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L5_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "a909c0962cc88a6814f31a521205e0c6631d9225937c3d03412e875b2ab58124"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L5_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "fd32c58f1ac3c74c1a4c7df94cd21d2eed5ff56544302e07a43460b122dca961"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L6_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "df2397615f21ec6596e243090559bdc73fc9c0f35c08065c10734c6a15c1dfa6"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L6_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "5d12a5bfbb790e6a6a643cafaf1f9cabd5e9ce19f01dce3e12a510a6dc6d90ef"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L6_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "455f18137b6008b3861324b14c14b2a29b4d5dcd26c1582ea8dab95419806043"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L6_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "baa6c5914261919ebe43492b81706d30cb45c7ede84ad1c6f9cb8b667c4aafbb"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L6_s_i8.bin",
+      "bytes": 288,
+      "sha256": "27a3588ecf9aaef7ff2c30a1152a051fb6623be250e5a893daa5d910ccde9ed7"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L6_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "ddfeec63899027a50a0ef8609bb5fbc8fb60c59e1af21815c54b3d193ae6d240"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L6_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "b0f0b9d11fb58cba4f1238be7c88d08b18f265e6ca9c92614f3afe225b88c1a2"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L6_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "9246240163786ce030ad16d55a236d158b766375a6ff17451e9d498b5b8ec626"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L6_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "f1bb1cd518e70a50a503d69f7bcbf38fe2b9795f8b8f4f2968111c13cbf05cda"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L6_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "21b92af9f7aa798249a4251ebeb90f066d416173d934d423b2e02d9aebe8871c"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L6_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "cc3799298f3e440a24acaa09a9f194e7c40528ed338c8b7e715b05cf4c64a48f"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L6_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "67750ca5f09c1f94051bbff37499635d02a399dc0e205419192403270c3aac69"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L7_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "4e0cb2d00613c5faef50c2f28f6d9bedfffbe80bd95aa294b323aab86dc75046"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L7_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "3b51c5e25855efe4f81311ecc3fffa175fce490ab7d55bc297023b6cc600f94a"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L7_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "6c2329750549fd9f8539accb5f977b8eeb81392372d2d227119aa0b5a5f5e038"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L7_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "97edc42be83efe0b2a6217eb534c2b0e154c7acc007805f66112259217f164f0"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L7_s_i8.bin",
+      "bytes": 288,
+      "sha256": "f1fb31d5b93eb5928fd906a3c13d2d83508ad3ff777a2a9abdf1a55cd56062ed"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L7_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "f2d522f50ef280d10aa87e3385612e6d1798f118d643dbbf9f4a9d4688e67235"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L7_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "4448bc0bc62955552d3b69b1734cbd41dbe34525b5e58f8aa1c85ee693682d1f"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L7_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "2e57780b3cdd98d657ae2827a2cd99a5c2b911663b19050f4ae38dfdb83d5d5b"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L7_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "121855e29b884f50bc9ee51c68f6c036a91a0eee16929efd92b63c05b7454e66"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L7_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "717db9a15067cf4aeee87871c4eebc8ab62d1f2e2c24ef4a8091beb170466967"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L7_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "b84ac1db38b915b13dbaef7af763627f0de9a59b36b2ce1cdaa83b8e7f230f13"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L7_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "8a7fa6ae62b10b946efcf0c52c5b40c64fb5ae3301d0902f9a8b27763233a9ad"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L8_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "572ebe155a45800e6503fbfdc8c07f7be09fe18e3dc6dfbbc557bdeb969f40e3"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L8_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "e93d60a1132b13be0be6c37062dc162692faf8d6d8c47094df4a4f3ee24a2bc8"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L8_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "010c00bc005ea140abd1dc7e592adb09fef6f682b575df7c8827798b721377d8"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L8_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "6d37d855fb4ac860d81564ac95562744407674953e1f1babf6a02203a00d7434"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L8_s_i8.bin",
+      "bytes": 288,
+      "sha256": "f69bf44034014418d2f4ef62bc87ea6cad7ab38a3cda0227cd4e57ea84be3c28"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L8_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "a8f64dfa276a6794abfce6528fccd2b878c351b2e36e9150f46fbb8e46a3e169"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L8_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "078a042e75c58759b0e8c69067343a7933075946a7f43394c317d541265bd9f5"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L8_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "3fc5b2271753ff09a6665116cdd1929e68aea345f909a9192a148450cbed486d"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L8_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "c46e5ff8d3384f84ff2ed6b04f83a9fb5161a281e16a8b8804249f88ee64319c"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L8_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "e51f92ce7e802dcf886e2340482ebbec6620d5ce8912141ba03db284f3271b20"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L8_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "2cd128cc610acbbb755184c35e84583e6ef2bf9104528109ac5789bde9c3b1e2"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L8_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "600b6ebda2f154132e731d652ec7381f97e71f4387b22d969d1ef5e8ce15eec3"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L9_attn_i4.bin",
+      "bytes": 144,
+      "sha256": "3757a30220c9ab7e78dfc2608efcd0ab9e142df06a97cc9a04d8e5917919f2aa"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L9_k_i4.bin",
+      "bytes": 63504,
+      "sha256": "83ce4928f9db6676cbe6103dc872f7ee447b8caf871cf78471d554ce0a7ed7eb"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L9_m_i4.bin",
+      "bytes": 63504,
+      "sha256": "488c352da962d87944045ca2a555d5a6d34f73faa474dc1991eeac04bc4ef0af"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L9_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "82f399861cb1b93648e8cf9a037a2d7c5e675a8bc17203f213a3bb471b2a2a23"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L9_s_i8.bin",
+      "bytes": 288,
+      "sha256": "860d0ddec2fb9c576923ffd161334e21e1d8eb5e6c55c065ebde1becd523fa67"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L9_stats_mlp_i4.bin",
+      "bytes": 48,
+      "sha256": "f13f289c9609ad215bae4fe2b6545229673a8878e27a0bb8f5959330bf6384a1"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L9_stats_qkv_i4.bin",
+      "bytes": 48,
+      "sha256": "0339f64ec554e20a69a342ab84e2f2ec3d85df878e3c8618923deee4c2d4b3bf"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L9_v_i4.bin",
+      "bytes": 63504,
+      "sha256": "171258c8fe3c3332b9cb217ccf7b4f78737e89608e9d046258d8ce6474b25778"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L9_x_mid_i4.bin",
+      "bytes": 63504,
+      "sha256": "42699c42a9523fd9927aabbcde460bf386bbf967dd0985553e087cf7531541e9"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L9_x_out_i4.bin",
+      "bytes": 63504,
+      "sha256": "7688131fa508579440326e29d0d73e013ca9723423356ccce9214ea07550fa1d"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L9_xn2_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "82515833cf560532b7b936c9bd726c4cd7d2bb0c5a8deccbf984e4673dbe325e"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/L9_xn_q_i4.bin",
+      "bytes": 63504,
+      "sha256": "0db52e0b43661b84f8a6dce6d0d34406b301334260adbc404c55a1cad8566233"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/logits_q16_i32.bin",
+      "bytes": 128,
+      "sha256": "4bbaed5d13010f40252deb5f6f0a73063dd2701f244a20496133f546720d9e68"
+    },
+    {
+      "path": "sim/golden/n6_engine/b/x_embed_i32.bin",
+      "bytes": 63504,
+      "sha256": "dbda05dc2d684377ccc51c06b1c603acf71e1f72b9888b5d2dabda82bd1fa64a"
+    },
+    {
+      "path": "sim/golden/n6_engine/batch_hanchuan/coords.txt",
+      "bytes": 291,
+      "sha256": "4aef739bc66fd1cbc13923b4150d00f5e761e236ca47483e15a973c9e0ec3aa9"
+    },
+    {
+      "path": "sim/golden/n6_engine/batch_hanchuan/expect_class_u32.bin",
+      "bytes": 128,
+      "sha256": "5189b72289386a83e0bd1f5ed1a053d7d397a9e1e94bf4a848fc4a281dd8296e"
+    },
+    {
+      "path": "sim/golden/n6_engine/batch_hanchuan/expect_logits_i32.bin",
+      "bytes": 4096,
+      "sha256": "5adecbe87ba505e2da9b51ff337c6d052f71825c27eade4cfb57eb27e767c9d7"
+    },
+    {
+      "path": "sim/golden/n6_engine/batch_hanchuan/weights_engine.bin",
+      "bytes": 480576,
+      "sha256": "1919c8b69f0a5871a97fc62dec89ef8cb6d9db4e8777e20a10779268398ae52d"
+    },
+    {
+      "path": "sim/golden/n6_engine/batch_hanchuan/wins_i16.bin",
+      "bytes": 852992,
+      "sha256": "eb915cc4c981ea9406aa4540fd11c793c65e64a4045cbc98e5595729bb30c9c4"
+    },
+    {
+      "path": "sim/golden/n6_engine/cube_win_i16.bin",
+      "bytes": 26656,
+      "sha256": "ef7e20a1fa14072c24061dafb19cc8b7bc2723bf9f00f4cb4531986ee9b85ce4"
+    },
+    {
+      "path": "sim/golden/n6_engine/meta.txt",
+      "bytes": 852,
+      "sha256": "9d89d13b839243285408239625545be6723e40a1afa4ffeb76f53b2ba6710e7e"
+    },
+    {
+      "path": "sim/golden/n6_engine/weights_engine.bin",
+      "bytes": 480576,
+      "sha256": "15925d2dd8e273cc291f0a2d4a10ddde0bd02d27fa5c558d6b678df95bdf4e51"
+    },
+    {
+      "path": "sim/host/test_m3a_driver.cpp",
+      "bytes": 9927,
+      "sha256": "9224fcc6746d788aceabcdc72cb339fff8390181b257d04a16e1cf2ba632e5af"
+    },
+    {
+      "path": "sim/host/xil_stubs/xil_cache.h",
+      "bytes": 198,
+      "sha256": "fcd5b805006fa6a1965851b1d7093e19dd84ab30be0c35c72e8281c1fdbdf26c"
+    },
+    {
+      "path": "sim/host/xil_stubs/xil_printf.h",
+      "bytes": 100,
+      "sha256": "1732d234ff61caffbf4aab85293e4b33a950547bc35364693c68dea2deba7bd0"
+    },
+    {
+      "path": "sim/host/xil_stubs/xtime_l.h",
+      "bytes": 174,
+      "sha256": "ac7c4adde45df4c4fd46934b503f7d7491cac21aefa045f9f626dd219d713236"
+    },
+    {
+      "path": "sim/host/xil_stubs/xtt_engine.h",
+      "bytes": 1133,
+      "sha256": "e2017a85d40bb29bfb0d581730105b3423c7dd1f6ab22bf6a6a35c98c13e0331"
+    },
+    {
+      "path": "sim/host/xil_stubs/xtucker_proj.h",
+      "bytes": 919,
+      "sha256": "249115aa93bedf4f019e212aeabc869ff64909538696d042f23e72af403ddea9"
+    },
+    {
+      "path": "src/hls/tt_attn.cpp",
+      "bytes": 18358,
+      "sha256": "06aa0f033af7c9d9ea404b3cd6aa87589888354bcaca11a1f8f4ea3e0ad2b91a"
+    },
+    {
+      "path": "src/hls/tt_attn.h",
+      "bytes": 4448,
+      "sha256": "90777090acc481daa3142eadc9c47af445d629298f85bfe0cf5d5d5f4bd14555"
+    },
+    {
+      "path": "src/hls/tt_engine.cpp",
+      "bytes": 39701,
+      "sha256": "e9f7fe9f0aa0151e37a89f96a20ee8a5a5d22ae996228d00e9ef1092d9067661"
+    },
+    {
+      "path": "src/hls/tt_engine.h",
+      "bytes": 2477,
+      "sha256": "e85b7a9b1ddbad36bc30a93f95ffcbadb01e1d33fba7dfdf8b36616fa7c55080"
+    },
+    {
+      "path": "src/hls/tt_engine_regs.h",
+      "bytes": 12722,
+      "sha256": "63229431f96c5c1f7719a410121972d375b64af0d0a4f71e053ccf45f225a003"
+    },
+    {
+      "path": "src/hls/tt_types.h",
+      "bytes": 1949,
+      "sha256": "98e6d7efff19714491a3122c760229fd4c1bd7927ec2c95a1988fc5d944f1cbc"
+    },
+    {
+      "path": "src/ps/tt_m3a.cpp",
+      "bytes": 5881,
+      "sha256": "90003a705d1a8562881e36c77ec1abde055f9e01d3292284db0c800f520944c3"
+    },
+    {
+      "path": "src/ps/tt_m3a.h",
+      "bytes": 1771,
+      "sha256": "fa448b9c71d15e2c0b4f515b094e9ce576e020c97cb5278fe12a3aece122cf25"
+    },
+    {
+      "path": "tools/test_m3a_driver.py",
+      "bytes": 3574,
+      "sha256": "57aba766e93d4bea06f03d5c08e2350a1c6434e9f55a1b08cb9c5dde128ee338"
+    }
+  ]
+}

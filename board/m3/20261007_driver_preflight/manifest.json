@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-07",
+  "source_base_commit": "9411977",
+  "scope": "M3a driver host preflight only; no board validation",
+  "host_suite": "8 phases passed: strict driver syntax, compile, 6 runtime modes",
+  "a53_syntax": {
+    "exit": 0,
+    "command": "D:/xilinx/Vitis/2020.2/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-g++.exe -std=c++14 -Wall -Wextra -Werror -mcpu=cortex-a53 -fsyntax-only -I vitis/m2_plat/export/m2_plat/sw/m2_plat/standalone_domain/bspinclude/include -I src/hls src/ps/tt_m3a.cpp",
+    "note": "uses compatible existing generated register API headers only, does not run M3 against M2 hardware"
+  },
+  "rtl_cosim": {
+    "status": "RUNNING at record creation; not PASS",
+    "last_observed": "14 / 20 transactions, 2026-10-07 14:45 Asia/Shanghai",
+    "pid_hls": 8908,
+    "pid_xsim": 35288,
+    "log": "build/host/m3a_full_20261007/console.log",
+    "tool_session": 70515,
+    "working_directory": "D:/HSI_AgriEdge",
+    "command": "D:/xilinx/Vitis_HLS/2020.2/bin/vitis_hls.bat -f D:/HSI_AgriEdge/build/host/m3a_full_20261007/cosim_full.tcl -l D:/HSI_AgriEdge/build/host/m3a_full_20261007/vitis_hls.log",
+    "completion_check": "Require layers=12, all twelve zero-mismatch DUMP lines, batch LOGITS+CLASS and layer5..11 zero mismatch, and COSIM finished PASS. Process exit / old done file alone insufficient."
+  },
+  "files": [
+    {
+      "path": "board/m3/20261007_driver_preflight/driver_syntax.txt",
+      "source": "build/host/m3a_driver_20261007_verified/driver_syntax.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "host driver validation, NOT RTL or board",
+      "git_blob_bytes": 0,
+      "git_blob_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/compile.txt",
+      "source": "build/host/m3a_driver_20261007_verified/compile.log",
+      "bytes": 447,
+      "sha256": "b396b06723d1527bf553e86e348483ab6e87993e87b1ca77227cadaf72da62af",
+      "kind": "host driver validation, NOT RTL or board",
+      "git_blob_bytes": 447,
+      "git_blob_sha256": "b396b06723d1527bf553e86e348483ab6e87993e87b1ca77227cadaf72da62af"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/load-contract.txt",
+      "source": "build/host/m3a_driver_20261007_verified/load-contract.log",
+      "bytes": 33,
+      "sha256": "a40f6602aa6c9c6d1b9aa7d92b60d23f63e2d769117a18393dab5f3047cca4cb",
+      "kind": "host driver validation, NOT RTL or board",
+      "git_blob_bytes": 32,
+      "git_blob_sha256": "7a0fcfdf348e18b7a2385deb43b7cf6e66ace1c602798f30ab9f063a1c191736"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/load-timeout.txt",
+      "source": "build/host/m3a_driver_20261007_verified/load-timeout.log",
+      "bytes": 32,
+      "sha256": "78056e7896aac5726271b43a4bdd59f61c76d91b454b88de2d921519d7b6d163",
+      "kind": "host driver validation, NOT RTL or board",
+      "git_blob_bytes": 31,
+      "git_blob_sha256": "f3d124ae3cb3709eec516a658ea205c1b104d89de30ded1ae2303f6af3a5e758"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/timeout.txt",
+      "source": "build/host/m3a_driver_20261007_verified/timeout.log",
+      "bytes": 88,
+      "sha256": "67ee5189c2aaa451daffe289afe0bd1d9abaf231af795f4ba77552f339d90a76",
+      "kind": "host driver validation, NOT RTL or board",
+      "git_blob_bytes": 86,
+      "git_blob_sha256": "9cfb6e836f9465e65b9b44c256f7093afa55ac1217b7ba8c1f696a4cd388e8f2"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/contract.txt",
+      "source": "build/host/m3a_driver_20261007_verified/contract.log",
+      "bytes": 89,
+      "sha256": "051e58b6e7d364f4adfe620ee07a5a1d95942b5d08b360e9e9531ab6d0ff5179",
+      "kind": "host driver validation, NOT RTL or board",
+      "git_blob_bytes": 87,
+      "git_blob_sha256": "b215e36d8729927e52b930e9c71a9d45da3ebbc9d3f2035576fbbcf2f454f94e"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/engine-error.txt",
+      "source": "build/host/m3a_driver_20261007_verified/engine-error.log",
+      "bytes": 93,
+      "sha256": "198d678a6e1f4cd5f4a7eeed1f8f07b5188b4e2405cb5960cb61b1aa50f00425",
+      "kind": "host driver validation, NOT RTL or board",
+      "git_blob_bytes": 91,
+      "git_blob_sha256": "82fbfb695a52d8a8e45790abf7bfa189ad41707ce2a353a70fcee3ce76443eeb"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/full.txt",
+      "source": "build/host/m3a_driver_20261007_verified/full.log",
+      "bytes": 416,
+      "sha256": "eb4704e7220ff114fde92f3ff5a7dc47b50f09188f437d87ae7f2dc822c2c69b",
+      "kind": "host driver validation, NOT RTL or board",
+      "git_blob_bytes": 399,
+      "git_blob_sha256": "e87dbe10474155cf59a8b55bf2911b85954389c583072a7b381cd1300953f6b3"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/host_manifest.json",
+      "source": "build/host/m3a_driver_20261007_verified/manifest.json",
+      "bytes": 60537,
+      "sha256": "aaded90d5eb0bda3f7cdcacef0967088f1702d71b25eb1e541c09ca7f39a8177",
+      "kind": "compiler commands, durations, source/golden hashes",
+      "git_blob_bytes": 58801,
+      "git_blob_sha256": "eb70625d4356b3c086c79e04488c5da4497131fa4352ff251589d9b8ec9049f4"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/rtl_snapshot_match.json",
+      "source": "build/host/m3a_full_20261007/source_manifest.json",
+      "bytes": 55523,
+      "sha256": "bd05bcd68e9890fe5c5f08a1921ad4e556de4dd0896ff9e1eceaa198cda30d1c",
+      "kind": "313 files matched existing M3a synthesis snapshot before cosim",
+      "git_blob_bytes": 53953,
+      "git_blob_sha256": "6347a20b5204bfae422a610674f373c65d5382e51fcd034d4a25ef2edb9d66c5"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/cosim_full.tcl.snapshot",
+      "source": "build/host/m3a_full_20261007/cosim_full.tcl",
+      "bytes": 152,
+      "sha256": "3ec752468b87e8ce71e78628f72788ee75289cf3f19fbc654198774466b888c8",
+      "kind": "12-layer cosim recipe; uses existing synthesized snapshot",
+      "git_blob_bytes": 147,
+      "git_blob_sha256": "f78b8545f8bd4b33085b9a28318f03e2b87c4f78f16bf56a652310275062e39c"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/a53_syntax.txt",
+      "source": "build/host/m3a_full_20261007/a53_syntax.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "AArch64 -fsyntax-only output; successful, no App/ELF build",
+      "git_blob_bytes": 0,
+      "git_blob_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/previous_ooc_20260927.rpt",
+      "source": "build/hls/optimization_build/tt_engine_m3_k7/sol/impl/report/verilog/tt_engine_export.rpt",
+      "bytes": 541,
+      "sha256": "c9627b719168f9ec34bfb5993d0cc895633705768f37b365078f2911f6753a02",
+      "kind": "historical Vivado OOC, NOT system timing",
+      "git_blob_bytes": 520,
+      "git_blob_sha256": "0f19ef3fea05528bd4cbe0f508188402cdf22ae6f34b0492ce694fc1ae640049"
+    },
+    {
+      "path": "board/m3/20261007_driver_preflight/previous_1layer_cosim.txt",
+      "source": "build/host/m3a_full_20261007/previous_1layer_cosim.log",
+      "bytes": 99236,
+      "sha256": "533f703ba8d3a4395ffba29fe11f6d494aa9c53c1f8994c98ec03a426f616893",
+      "kind": "historical one-layer RTL cosim, NOT full coverage",
+      "git_blob_bytes": 99236,
+      "git_blob_sha256": "533f703ba8d3a4395ffba29fe11f6d494aa9c53c1f8994c98ec03a426f616893"
+    }
+  ],
+  "hash_scope": "bytes/sha256: original filesystem capture; git_blob_bytes/git_blob_sha256: Git LF-normalized archived content. Native/compiler trailing whitespace retained as evidence."
+}

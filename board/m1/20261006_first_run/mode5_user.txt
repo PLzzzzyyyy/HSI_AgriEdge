@@ -1,0 +1,10 @@
+PL acceleration   [2] PS-only   [3] Compare both
+[4] 64x64 pipelined + BMP   [5] Quick pair check   [6] 64x64 sequential + BMP
+Send ASCII 1..6 (HEX mode off). Block outputs are rendered on PS, read using XSCT.
+PAIR CHECK PASS: 10 repeats, two distinct patches, sequential/pair logits bitwise equal
+PAIR BENCH: sequential 23.130 ms/pixel; pipelined 17.437 ms/pixel; ratio 1.326x
+Pipelined ms/pixel is two-patch throughput; excludes extraction/validation/UART.
+
+[1] PL acceleration   [2] PS-only   [3] Compare both
+[4] 64x64 pipelined + BMP   [5] Quick pair check   [6] 64x64 sequential + BMP
+Send ASCII 1..6 (HEX mode off). Block outputs are rendered on PS, read using XSCT.

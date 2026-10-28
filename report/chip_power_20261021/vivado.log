@@ -1,0 +1,195 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 17-oct-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Oct 21 18:33:24 2026
+# Process ID         : 19548
+# Current directory  : D:/FPGA.GAME/HSI_AgriEdge_team_20261017
+# Command line       : vivado.exe -mode batch -source tools/report_chip_power.tcl -log report/chip_power_20261021/vivado.log -journal report/chip_power_20261021/vivado.jou
+# Log file           : D:/FPGA.GAME/HSI_AgriEdge_team_20261017/report/chip_power_20261021/vivado.log
+# Journal file       : D:/FPGA.GAME/HSI_AgriEdge_team_20261017\report/chip_power_20261021/vivado.jou
+# Running On         : PLzzyµÄµçÄÔ
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14650HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 16944 MB
+# Swap memory        : 16944 MB
+# Total Virtual      : 33889 MB
+# Available Virtual  : 7833 MB
+#-----------------------------------------------------------
+source tools/report_chip_power.tcl
+# set ROOT [file normalize [file dirname [info script]]/..]
+# set OUT $ROOT/report/chip_power_20261021
+# file mkdir $OUT
+# set_param general.maxThreads 2
+# open_checkpoint $ROOT/build/keys_eco_20261018_v4/keys_routed.dcp
+Command: open_checkpoint D:/FPGA.GAME/HSI_AgriEdge_team_20261017/build/keys_eco_20261018_v4/keys_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 427.863 ; gain = 8.578
+INFO: [Device 21-403] Loading part xczu5ev-sfvc784-2-i
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.563 . Memory (MB): peak = 1779.781 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10492 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.102 . Memory (MB): peak = 2131.836 ; gain = 10.551
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/ap_CS_fsm_reg[103]_bufg_place' is LOCed to site 'BUFGCE_X0Y49'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/grp_load_weights_fu_5243/q0_reg_pipe_1_i_1_bufg_place' is LOCed to site 'BUFGCE_X0Y24'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4660/acc_V_0_0_2_load_reg_6894[47]_i_1_bufg_place' is LOCed to site 'BUFGCE_X0Y72'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/grp_ta_head_fu_4754/acc_V_0_01_reg_876[47]_i_1_bufg_place' is LOCed to site 'BUFGCE_X0Y73'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4445/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/acc_V_0_3_1_1_fu_910[38]_i_1_bufg_place' is LOCed to site 'BUFGCE_X0Y50'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4445/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/pend_V_0_3_0_1_reg_5718[23]_i_1_bufg_place' is LOCed to site 'BUFGCE_X0Y86'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4445/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/pend_V_0_3_1_2_reg_33939[23]_i_1_bufg_place' is LOCed to site 'BUFGCE_X0Y68'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG' is LOCed to site 'BUFG_PS_X0Y80'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.182 . Memory (MB): peak = 3116.988 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 3116.988 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3116.988 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3222.340 ; gain = 105.352
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3222.340 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3800.398 ; gain = 578.059
+Read Physdb Files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3800.398 ; gain = 683.410
+Restored from archive | CPU: 9.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3800.398 ; gain = 683.410
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/ap_CS_fsm_reg[103]_bufg_place' is LOCed to site 'BUFGCE_X0Y49'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/grp_load_weights_fu_5243/q0_reg_pipe_1_i_1_bufg_place' is LOCed to site 'BUFGCE_X0Y24'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/grp_ta_ctx_fu_4660/acc_V_0_0_2_load_reg_6894[47]_i_1_bufg_place' is LOCed to site 'BUFGCE_X0Y72'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/grp_ta_head_fu_4754/acc_V_0_01_reg_876[47]_i_1_bufg_place' is LOCed to site 'BUFGCE_X0Y73'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4445/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/acc_V_0_3_1_1_fu_910[38]_i_1_bufg_place' is LOCed to site 'BUFGCE_X0Y50'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4445/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/pend_V_0_3_0_1_reg_5718[23]_i_1_bufg_place' is LOCed to site 'BUFGCE_X0Y86'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/tt_engine_0/inst/grp_token_pipeline_fu_4445/dataflow_in_loop_VITIS_LOOP_275_1_U0/mode36_U0/pend_V_0_3_1_2_reg_33939[23]_i_1_bufg_place' is LOCed to site 'BUFGCE_X0Y68'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'design_1_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG' is LOCed to site 'BUFG_PS_X0Y80'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 4107.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4521 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 617 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 150 instances
+  RAM16X1S => RAM32X1S (RAMS32): 1856 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32X1S => RAM32X1S (RAMS32): 1568 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 294 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1 (64-bit) build 6511674
+open_checkpoint: Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 4109.621 ; gain = 3699.332
+# foreach temperature {-40 0 25 40 55 70 85 100 125} {
+#     set_operating_conditions -junction_temp $temperature
+#     report_power -file $OUT/junction_${temperature}.rpt
+# }
+Command: report_power -file D:/FPGA.GAME/HSI_AgriEdge_team_20261017/report/chip_power_20261021/junction_-40.rpt
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+0 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:39 ; elapsed = 00:01:00 . Memory (MB): peak = 4911.953 ; gain = 802.332
+Command: report_power -file D:/FPGA.GAME/HSI_AgriEdge_team_20261017/report/chip_power_20261021/junction_0.rpt
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+0 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 4976.129 ; gain = 64.176
+Command: report_power -file D:/FPGA.GAME/HSI_AgriEdge_team_20261017/report/chip_power_20261021/junction_25.rpt
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+0 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 4994.637 ; gain = 18.508
+Command: report_power -file D:/FPGA.GAME/HSI_AgriEdge_team_20261017/report/chip_power_20261021/junction_40.rpt
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+0 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 4995.594 ; gain = 0.957
+Command: report_power -file D:/FPGA.GAME/HSI_AgriEdge_team_20261017/report/chip_power_20261021/junction_55.rpt
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+0 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 4996.535 ; gain = 0.941
+Command: report_power -file D:/FPGA.GAME/HSI_AgriEdge_team_20261017/report/chip_power_20261021/junction_70.rpt
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+0 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 4997.582 ; gain = 1.047
+Command: report_power -file D:/FPGA.GAME/HSI_AgriEdge_team_20261017/report/chip_power_20261021/junction_85.rpt
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+0 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 4999.551 ; gain = 1.969
+Command: report_power -file D:/FPGA.GAME/HSI_AgriEdge_team_20261017/report/chip_power_20261021/junction_100.rpt
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+0 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 4999.562 ; gain = 0.012
+Command: report_power -file D:/FPGA.GAME/HSI_AgriEdge_team_20261017/report/chip_power_20261021/junction_125.rpt
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+0 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 4999.562 ; gain = 0.000
+# close_design
+# exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 21 18:37:44 2026...

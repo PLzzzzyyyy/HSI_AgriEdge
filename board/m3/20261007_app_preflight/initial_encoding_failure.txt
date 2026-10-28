@@ -1,0 +1,32 @@
+test_changed_golden_rejected (__main__.M3aPackageTests.test_changed_golden_rejected) ... ok
+test_existing_directory_refused (__main__.M3aPackageTests.test_existing_directory_refused) ... ok
+test_generated_arrays_roundtrip (__main__.M3aPackageTests.test_generated_arrays_roundtrip) ... ok
+test_integrity_and_exact_file_set (__main__.M3aPackageTests.test_integrity_and_exact_file_set) ... ok
+test_only_serial_xsa_and_source_app (__main__.M3aPackageTests.test_only_serial_xsa_and_source_app) ... ERROR
+test_replacement_xsa_rejected (__main__.M3aPackageTests.test_replacement_xsa_rejected) ... ok
+test_settings_no_legacy_defines (__main__.M3aPackageTests.test_settings_no_legacy_defines) ... ok
+
+======================================================================
+ERROR: test_only_serial_xsa_and_source_app (__main__.M3aPackageTests.test_only_serial_xsa_and_source_app)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\HSI_AgriEdge\tools\test_m3a_sources.py", line 36, in test_only_serial_xsa_and_source_app
+    self.assertEqual(sum(len(re.findall(r"\bint\s+main\s*\(", p.read_text()))
+                     ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        for p in self.src.iterdir() if p.suffix in (".cpp", ".c")), 1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HSI_AgriEdge\tools\test_m3a_sources.py", line 36, in <genexpr>
+    self.assertEqual(sum(len(re.findall(r"\bint\s+main\s*\(", p.read_text()))
+                                                              ~~~~~~~~~~~^^
+  File "D:\minconda\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\minconda\Lib\pathlib\_abc.py", line 633, in read_text
+    return f.read()
+           ~~~~~~^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xb1 in position 5: illegal multibyte sequence
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.706s
+
+FAILED (errors=1)

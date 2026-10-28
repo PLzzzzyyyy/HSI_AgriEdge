@@ -1,0 +1,33 @@
+PS+PL detail: one extra profiled forward, excluded from benchmark mean ---
+Profile forward: 23.186 ms, max|dlogit|=1.149e-03 -> PASS
+segment (12 layers)            ms   % full
+  PL norm+qkv              11.780     50.8
+  attn scores               2.015      8.7
+  attn ctx+resid            2.461     10.6
+  PL norm+mlp               5.375     23.2
+  mlp resid                 1.045      4.5
+  12-layer sum             22.676
+  embed/head/overhead       0.510
+Projection backend: PS+PL (PL timings include driver/cache/wait)
+
+layer  total ms    PL qkv    scores   ctx+res    PL mlp   mlp res
+    0     1.891     0.982     0.168     0.205     0.448     0.087
+    1     1.890     0.982     0.168     0.205     0.448     0.087
+    2     1.890     0.982     0.168     0.205     0.448     0.087
+    3     1.890     0.982     0.168     0.205     0.448     0.087
+    4     1.890     0.982     0.168     0.205     0.448     0.087
+    5     1.889     0.982     0.168     0.205     0.448     0.087
+    6     1.890     0.982     0.168     0.205     0.448     0.087
+    7     1.889     0.982     0.168     0.205     0.448     0.087
+    8     1.890     0.982     0.168     0.205     0.448     0.087
+    9     1.889     0.982     0.168     0.205     0.448     0.087
+   10     1.889     0.982     0.168     0.205     0.448     0.087
+   11     1.889     0.982     0.168     0.205     0.448     0.087
+Detail includes timer bookkeeping; speedup uses the unprofiled mean above.
+
+COMPARE PASS: PS-only 356.957 ms / PS+PL 23.135 ms = 15.429x speedup (mean)
+Median speedup=15.439x; PS-only vs PS+PL max|dlogit|=0.000e+00
+
+[1] PL acceleration   [2] PS-only   [3] Compare both
+[4] 64x64 pipelined + BMP   [5] Quick pair check   [6] 64x64 sequential + BMP
+Send ASCII 1..6 (HEX mode off). Block outputs are rendered on PS, read using XSCT.

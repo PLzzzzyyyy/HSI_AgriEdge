@@ -1,0 +1,27 @@
+{
+  "verified_at_utc": "2026-09-16T06:22:41.155674+00:00",
+  "source": "Actual BMP saved by user XSCT mrd after board 4096-pixel inference; decoded and verified locally",
+  "board_file": "board_results\\board_prediction.bmp",
+  "file_bytes": 786486,
+  "format": "BMP",
+  "width": 512,
+  "height": 512,
+  "source_map_shape": [
+    64,
+    64
+  ],
+  "nearest_neighbor_scale": 8,
+  "file_sha256": "30f3017885f4e305854b3627e6a7131521d84bfa8f1b1db7e69c1eca6bcbddae",
+  "decoded_rgb_sha256": "1983c4560e90b9679284b9e03dd9d69706442aa704c32ff30634a3743a5e585a",
+  "pc_reference": "docs\\results\\block_pc_preview\\pc_prediction_512.png",
+  "decoded_pixels_equal_to_pc": true,
+  "different_display_pixels": 0,
+  "source_pixels_equal_to_pc": 4096,
+  "board_network_ms_per_pixel": 37.307,
+  "board_network_seconds": 152.81,
+  "board_loop_wall_seconds": 154.406,
+  "labeled_correct": 3411,
+  "labeled_total": 3452,
+  "read_address_this_run": "0x0070b860",
+  "jtag_read_time": "not measured; excluded from board inference timing"
+}

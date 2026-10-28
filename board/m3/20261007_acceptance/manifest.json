@@ -1,0 +1,214 @@
+{
+  "date": "2026-10-07",
+  "status": "SERIAL M3A board baseline PASS, scope limited to supplied UART",
+  "uart_origin": "User pasted FSBL -> HALTED text in this conversation, transcribed UTF-8 LF; not a byte capture from the serial port",
+  "source_parent": "d526007",
+  "package_id": "d081e19d48e22c0e",
+  "user_action": "User built and downloaded test_m3a; agent only read/archived local artifacts",
+  "xsa": [
+    {
+      "path": "build/vivado/tt_m3a_zu5ev.xsa",
+      "bytes": 3326853,
+      "sha256": "9813b5632250839274e6e298e5e4df8ea601b6d41016351148f98cf6057d9652"
+    },
+    {
+      "path": "vitis/m3a_plat/hw/tt_m3a_zu5ev.xsa",
+      "bytes": 3326853,
+      "sha256": "9813b5632250839274e6e298e5e4df8ea601b6d41016351148f98cf6057d9652"
+    },
+    {
+      "path": "vitis/m3a_plat/export/m3a_plat/hw/tt_m3a_zu5ev.xsa",
+      "bytes": 3326853,
+      "sha256": "9813b5632250839274e6e298e5e4df8ea601b6d41016351148f98cf6057d9652"
+    }
+  ],
+  "elf": {
+    "path": "vitis/test_m3a/Debug/test_m3a.elf",
+    "bytes": 2600432,
+    "sha256": "57dfce1c6efb1ed12e0b510b91cc6453a1e803a59371069f9cacaf03fa3e2563"
+  },
+  "source_files": [
+    {
+      "path": "vitis/test_m3a/src/m3a_bench.cpp",
+      "bytes": 9902,
+      "sha256": "36d8e61525fba675c2b45368c8af82ed9baf308ad4e74cff1fac5e7086a729e9"
+    },
+    {
+      "path": "vitis/test_m3a/src/m3a_bench.h",
+      "bytes": 139,
+      "sha256": "be48ebe21c2527db0be8185f48f291eded8cc554e9456ee6954fec91e7a34b15"
+    },
+    {
+      "path": "vitis/test_m3a/src/m3a_package.h",
+      "bytes": 182,
+      "sha256": "c996ad1ac05ba7b24d59627e0ddce98527e4eaa03e8983caa695d8a98aa01114"
+    },
+    {
+      "path": "vitis/test_m3a/src/m3a_vectors.c",
+      "bytes": 2410708,
+      "sha256": "5e2ccbdbf724008ba65b0d8407bfe03887fd0a1d41b9c79e7359beb2f4ded6e7"
+    },
+    {
+      "path": "vitis/test_m3a/src/m3a_vectors.h",
+      "bytes": 631,
+      "sha256": "57e9c7f0f7abd06b711494971c8f3a3c94f5d7ed39e11f5e4bbdf491ee3e9766"
+    },
+    {
+      "path": "vitis/test_m3a/src/main.cpp",
+      "bytes": 442,
+      "sha256": "a2e6328399ca6977b312e9acb85780896dc5fe715d1acb13efc71d6eb392422d"
+    },
+    {
+      "path": "vitis/test_m3a/src/tt_data.c",
+      "bytes": 1746591,
+      "sha256": "cafbdc2a436ce90644dc664b15745265a5ebcc6b9c3d94dd7d08d12161a315f3"
+    },
+    {
+      "path": "vitis/test_m3a/src/tt_data.h",
+      "bytes": 697,
+      "sha256": "ccd65495f173ba02e0534280b92561580d43ab928d9e506f51ef774bffd560e7"
+    },
+    {
+      "path": "vitis/test_m3a/src/tt_engine_regs.h",
+      "bytes": 12722,
+      "sha256": "63229431f96c5c1f7719a410121972d375b64af0d0a4f71e053ccf45f225a003"
+    },
+    {
+      "path": "vitis/test_m3a/src/tt_hw.h",
+      "bytes": 2410,
+      "sha256": "f82fbf4d103aae471f4b236b53861f7a19ed14083be59482a329a32737e684d0"
+    },
+    {
+      "path": "vitis/test_m3a/src/tt_hw_sim.cpp",
+      "bytes": 1900,
+      "sha256": "af043ff2e0241723f74a937c3a5d5beff500584ba892e2588d801bba236f92ee"
+    },
+    {
+      "path": "vitis/test_m3a/src/tt_m3a.cpp",
+      "bytes": 5881,
+      "sha256": "90003a705d1a8562881e36c77ec1abde055f9e01d3292284db0c800f520944c3"
+    },
+    {
+      "path": "vitis/test_m3a/src/tt_m3a.h",
+      "bytes": 1771,
+      "sha256": "fa448b9c71d15e2c0b4f515b094e9ce576e020c97cb5278fe12a3aece122cf25"
+    },
+    {
+      "path": "vitis/test_m3a/src/tt_net.cpp",
+      "bytes": 31116,
+      "sha256": "913bc7531ad3dff7f9036ac9dfcd5c8e6f31ddc857b87ed1437fdbe2141294c6"
+    },
+    {
+      "path": "vitis/test_m3a/src/tt_net.h",
+      "bytes": 5200,
+      "sha256": "75f3bdd3779d78c683b3b8e57dd8de667363acd0a32764781af3b97a3f216388"
+    },
+    {
+      "path": "vitis/test_m3a/src/tt_ref_int.h",
+      "bytes": 4482,
+      "sha256": "cea5729fef9295be568ffe809ad2c45e6b3d5f338b7982334b0a530c11ccb738"
+    }
+  ],
+  "build": {
+    "origin": "Existing user Vitis Debug/test_m3a_Debug.build.ui.log, read-only recovered",
+    "source_units": 7,
+    "compiler": "All .c and .cpp files compiled using aarch64-none-elf-g++; no explicit -std flag",
+    "flags": "-Wall -O2 -g3 -mcpu=cortex-a53 -ffp-contract=off -ffunction-sections -fdata-sections -Wall -Wextra -Werror",
+    "linker": "-Wl,--gc-sections; -lm; xil/gcc/c/stdc++",
+    "warnings": 0,
+    "errors": 0,
+    "stack_heap": "Both default 0x2000 (8 KiB), NOT proposed 0x10000; only this observed run accepted"
+  },
+  "warning": "PMU-FW is not running; retained and unresolved; not a SYSMON root cause",
+  "limitations": [
+    "UART expected hash does not read back programmed bitstream",
+    "Local current ELF/source hashes support provenance but no on-chip ELF hash readback",
+    "No scene I/O/window/normalization, no long duration validation, no M3b/CUBE",
+    "No HLS/Vivado or board operation for this evidence audit"
+  ],
+  "files": [
+    {
+      "path": "board/m3/20261007_acceptance/.gitattributes",
+      "bytes": 91,
+      "sha256": "3eae72d5cebfe8f93fa0b6d1a84ea879b1034925d88b6743bc6e5ca61f064498"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/app_cproject.xml",
+      "bytes": 28747,
+      "sha256": "32cad82585cf8f13f0a325d9a6f034bb80e7ab233d9ec9ae547735b9389cb332"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/app_makefile.txt",
+      "bytes": 1860,
+      "sha256": "1e47d7b45f077f32bc96314992cee04eadb5b737fa706f96643dc1f0b0b146d5"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/app_objects.mk",
+      "bytes": 298,
+      "sha256": "e75b8e6905229bb3359add7984fa8aeb22f2ed53d0058ded0b7ee37777bee864"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/app_subdir.mk",
+      "bytes": 1768,
+      "sha256": "69913602b96cd5e68604f17a1e45468cc6ae015166d440c132b0305a25ed9f1e"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/build_console.txt",
+      "bytes": 4479,
+      "sha256": "186c6ce2759e0709910fd4175b08939caf9ae91779f4f97aa321b175b039a86e"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/build_ui_raw.txt",
+      "bytes": 5151,
+      "sha256": "87ddb7b3bd2060083d0e1a66183f3c75b999b507a4686f79353b4d13bb1d6e21"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/elf_readelf.txt",
+      "bytes": 1505,
+      "sha256": "000ee968f4262362d6b0d027992984ca5d3fd40695376a80cf6200a698ca98fb"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/elf_selected_symbols.txt",
+      "bytes": 392,
+      "sha256": "c193f891b23ffb25ed84ad77ede56ad99de663bd7bf5578bfd9d1b24f02990d2"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/launch.xml",
+      "bytes": 12378,
+      "sha256": "636e0d0f4adb1bfbdca3aaea4631bcf1f8edd9352869a79e64619512638691d3"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/lscript.ld",
+      "bytes": 6891,
+      "sha256": "fc331e7d640dbfcbd15ed93c7b2da7ed9ea5ba779423ae12d130b84f8c555eeb"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/uart_checker_tests.txt",
+      "bytes": 635,
+      "sha256": "899498f26c7ece075011be22bfdd0d24a71ae805637942c26e8f1b78fec5df82"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/uart_user.txt",
+      "bytes": 11459,
+      "sha256": "caa75304ef21df140050fcd851957fd2a8fed21e1eb334b967fceb3879cdd02f"
+    },
+    {
+      "path": "board/m3/20261007_acceptance/uart_verified.json",
+      "bytes": 4389,
+      "sha256": "76b1b1497274cbb93e0fb8c932b3f2e7dc6f0f7545d415c4a95ff68808883066"
+    }
+  ],
+  "checker_sources": [
+    {
+      "path": "tools/check_m3a_uart.py",
+      "bytes": 4651,
+      "sha256": "aaac2a25144b3fc20702850123ca8196708d5894ef7969967ae749812e5f9be9"
+    },
+    {
+      "path": "tools/test_m3a_uart.py",
+      "bytes": 1582,
+      "sha256": "6f83c4acf1cd2ec545d4adde1b087b981b8bb6f52e50c7233d68f4502484ca4f"
+    }
+  ],
+  "uart_checker_tests": "8 PASS"
+}

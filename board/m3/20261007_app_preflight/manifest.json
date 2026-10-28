@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-07",
+  "status": "PASS source/App preflight only; user Vitis Build/link/download and M3a board acceptance PENDING",
+  "package_id": "d081e19d48e22c0e",
+  "package": "build\\board\\m3a_sources_20261007",
+  "archive": {
+    "path": "build/board/m3a_sources_20261007.zip",
+    "bytes": 4967263,
+    "sha256": "632bfbccec99c9bafd8d0e897bf77c78c63f6b602b59df52f72fc4f4e9864e31"
+  },
+  "final_identical_to_tested_manifest": true,
+  "checks": 16,
+  "a53_units": 7,
+  "package_tests": 7,
+  "host_modes": 7,
+  "numerical_scope": "First 7 transactions: real serial HLS C model through packaged App and real driver; not RTL/board",
+  "timing_scope": "All 12 performance loops: synthetic golden transport and synthetic 1MHz timer; NOT speed measurements",
+  "hardware_actions": "No HLS/Vivado/Vitis platform build, bitstream replacement or board download",
+  "xsa": {
+    "path": "build/vivado/tt_m3a_zu5ev.xsa",
+    "bytes": 3326853,
+    "sha256": "9813b5632250839274e6e298e5e4df8ea601b6d41016351148f98cf6057d9652"
+  },
+  "warnings": "A53 App objects: zero warnings. Host HLS vendor hls_preserve attribute warning retained.",
+  "final_link": "Not done. Read-only older common standalone BSP headers + frozen M3a XSA IP headers for object compilation ONLY; no old BSP library/linker/ELF used.",
+  "files": [
+    {
+      "path": "board/m3/20261007_app_preflight/a53_m3a_bench.txt",
+      "bytes": 483,
+      "sha256": "a708796de38ec4c4f918f829cbdd4bd5e313832e2c8499847781b7d05b9e387c"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/a53_m3a_vectors.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/a53_main.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/a53_tt_data.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/a53_tt_hw_sim.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/a53_tt_m3a.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/a53_tt_net.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/checks_manifest.json",
+      "bytes": 30677,
+      "sha256": "b15cee9f8a5cc30fc9de2a8e526c6d17705e405c72d019c5fa9ab9fe4a7e5dd1"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/host_compile.txt",
+      "bytes": 447,
+      "sha256": "b396b06723d1527bf553e86e348483ab6e87993e87b1ca77227cadaf72da62af"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/host_contract.txt",
+      "bytes": 864,
+      "sha256": "9abe33631a1492bd8a04c860c8fc61867be5c69c7a7ca221f6e21ff9341a046f"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/host_guard.txt",
+      "bytes": 1565,
+      "sha256": "81147172c16ccc0f4cd52c46e0cfdbdf68523298b8467b022e3757c95469e77f"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/host_load-timeout.txt",
+      "bytes": 868,
+      "sha256": "6d64ee30874b4c057a0eab5dde0081d25287ac9e7fbcd933f5725af04baca03c"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/host_mismatch.txt",
+      "bytes": 892,
+      "sha256": "8eff5e4ddfb76a6f373361176fe199f652d3a628dac03cb22b21dd1b02c2ed8b"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/host_none.txt",
+      "bytes": 11190,
+      "sha256": "25ec31b9217dd267ecc906a8ea81000852202ab2dc7dd6194a940262e4d8b4fa"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/host_timed-mismatch.txt",
+      "bytes": 1570,
+      "sha256": "47ca2e858c3b4ba7f757d81f04aae4fe149005a951fc2f70c8b905fbfc414058"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/host_timeout.txt",
+      "bytes": 980,
+      "sha256": "f214bcf80911c83ce775d2970ef258fbf1cce0647edb1f0ab59a1910a9baaaa3"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/initial_encoding_failure.txt",
+      "bytes": 2137,
+      "sha256": "644a3de179092f801b2b6b6068a7efc8f68c86a5785e19ae78c10db76b7d5507"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/package_manifest.json",
+      "bytes": 10268,
+      "sha256": "cf102fe4a4ff4cf72a1a605fcbeb74f443760218469b499d9e9c6a128319b4e9"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/package_tests.txt",
+      "bytes": 798,
+      "sha256": "11073b25db3ce1ee75c183f44356e377b444e97001b07227d92aecef0a8a2e5e"
+    },
+    {
+      "path": "board/m3/20261007_app_preflight/.gitattributes",
+      "bytes": 145,
+      "sha256": "325fc7488b0238ca742fef597065cbe82a5c86b172d65ac268ab45a728d62a83"
+    }
+  ],
+  "git_byte_preservation": "Local .gitattributes * -text; staged blobs verified byte-identical to raw artifacts"
+}

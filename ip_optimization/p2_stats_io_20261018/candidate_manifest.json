@@ -1,0 +1,18 @@
+{
+  "parent": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\ip_optimization\\p2_stats_20261018",
+  "parent_engine_sha256": "07e399793ba0c83ea178c2c8da4181ebfdf975bbe52d8b5ca1cbffcdad8ba227",
+  "sources": {
+    "src\\hls\\m3_math\\s2_math.cpp": "0df54a9b84f7ceab297828075ddad1e38c149af1a358f8c0eaebe020cc227b8a",
+    "src\\hls\\m3_math\\s2_math.h": "abbde3330ca78c143e27ec563b99da2d563ad75934e691194367d0454c02e65f",
+    "src\\hls\\m3_s2\\s2_engine.cpp": "2a57977c4d3c8a01a536922e7abb36d26f37652a79c1351e2374aaf491a8872b",
+    "src\\hls\\m3_s2\\s2_engine.h": "54c6af0208a6028a5041da60ff55fe34a76d167c61a8f9fb6a6a2b116bba9d23",
+    "src\\hls\\m3_s2\\s2_exp.cpp": "9398f3afe5fa866f97deb40b90a3bcc8bca355df3633dd3a3e10f50a5490b456",
+    "src\\hls\\m3_s2\\s2_index.h": "85a98fa457e87d54c8388315caafae50af53a0f03aef9b2602ae75383e872995",
+    "src\\hls\\m3_s2\\s2_internal.h": "368ff7cd139c0afa3959da064eb0f0eab0856bf5692d24996f1e9d0fb7d8629b",
+    "src\\hls\\m3_s2\\s2_projection.cpp": "85bd861743924a4be8d572feb98bd236bef3b2c30831f80e16a6e5eef006d7fa",
+    "src\\hls\\m3_s2\\s2_quant.h": "835a2bdfec18fda4ab0133465cc1d03a683962ddad631c6b6f75a9d30c4559d7",
+    "src\\hls\\m3_s2\\s2_state.h": "fcafaab8750c0db09a7db1309acc00af97d4714344b3b6eb94130563ce98f01a",
+    "src\\hls\\m3_s2\\s2_worker.h": "3b2e12e34d564c0d4985c8c15e5d1730b206bb634e50bd57a34089ea6f38a890",
+    "sim\\hls_tb\\tb_m3_s2.cpp": "d9d1e2d5b30ab6869bcea6e356e936377fdc4898e4db5ee4a966a0f5264c6def"
+  }
+}

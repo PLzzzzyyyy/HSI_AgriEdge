@@ -1,0 +1,160 @@
+HOST TEST ONLY: correctness=serial HLS C model; PERF=synthetic transport/clock, NOT measurements
+M3A_SERIAL_BASELINE v1
+package=d081e19d48e22c0e source=b236626b5419+manifest expected_xsa_sha256=9813b5632250839274e6e298e5e4df8ea601b6d41016351148f98cf6057d9652
+Expected serial XSA only; software cannot identify the programmed bitstream hash.
+timer_hz=1000000 runs=10 batch=16 max_polls=8 PS_backend=scalar
+Timer: driver input clean + output flush + MMIO + FULL + poll + output invalidate.
+PS_EMBED_PLUS_FULL adds PS tt_embed on preprocessed CHW patch; no extract/normalize/I-O.
+Weights loaded once, measured separately. DUMP/checks/UART/warmup excluded from PERF.
+LOAD_W PASS bytes=480576 ticks=1001 ms=1.001000 return=0x120c0300
+PASS PS embed vs golden A (all 15876 int16 values)
+PASS A/B/A LOGITS32; A_q16=619049,-339876,-289188,523618,-397143,376596,-148177,-3497,74020
+PASS A/B/A CLASS+confidence+odd_tail; A=0xcb770000 B=0xcb790000 (labels zero-based)
+PASS DUMP layer=0 elements=15876
+PASS DUMP layer=1 elements=15876
+PASS DUMP layer=2 elements=15876
+PASS DUMP layer=3 elements=15876
+PASS DUMP layer=4 elements=15876
+PASS DUMP layer=5 elements=15876
+PASS DUMP layer=6 elements=15876
+PASS DUMP layer=7 elements=15876
+PASS DUMP layer=8 elements=15876
+PASS DUMP layer=9 elements=15876
+PASS DUMP layer=10 elements=15876
+PASS DUMP layer=11 elements=15876
+PASS resume actual DUMP L4 -> L5..11 FEAT/CLASS
+M3A_CORRECTNESS PASS mismatches=0
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=1 run=0 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=1 run=1 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=1 run=2 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=1 run=3 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=1 run=4 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=1 run=5 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=1 run=6 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=1 run=7 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=1 run=8 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=1 run=9 ticks=1001
+PERF scope=PREEMBED_FULL out=LOGITS n=1 runs=10 total_ticks=10010 mean_batch_ms=1.001000 min_batch_ms=1.001000 max_batch_ms=1.001000 ms_per_patch=1.001000 patches_per_s=999.001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=1 run=0 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=1 run=1 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=1 run=2 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=1 run=3 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=1 run=4 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=1 run=5 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=1 run=6 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=1 run=7 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=1 run=8 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=1 run=9 ticks=1001
+PERF scope=PS_EMBED_PLUS_FULL out=LOGITS n=1 runs=10 total_ticks=10010 mean_batch_ms=1.001000 min_batch_ms=1.001000 max_batch_ms=1.001000 ms_per_patch=1.001000 patches_per_s=999.001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=1 run=0 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=1 run=1 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=1 run=2 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=1 run=3 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=1 run=4 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=1 run=5 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=1 run=6 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=1 run=7 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=1 run=8 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=1 run=9 ticks=1001
+PERF scope=PREEMBED_FULL out=CLASS n=1 runs=10 total_ticks=10010 mean_batch_ms=1.001000 min_batch_ms=1.001000 max_batch_ms=1.001000 ms_per_patch=1.001000 patches_per_s=999.001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=1 run=0 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=1 run=1 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=1 run=2 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=1 run=3 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=1 run=4 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=1 run=5 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=1 run=6 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=1 run=7 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=1 run=8 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=1 run=9 ticks=1001
+PERF scope=PS_EMBED_PLUS_FULL out=CLASS n=1 runs=10 total_ticks=10010 mean_batch_ms=1.001000 min_batch_ms=1.001000 max_batch_ms=1.001000 ms_per_patch=1.001000 patches_per_s=999.001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=3 run=0 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=3 run=1 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=3 run=2 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=3 run=3 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=3 run=4 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=3 run=5 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=3 run=6 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=3 run=7 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=3 run=8 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=3 run=9 ticks=1001
+PERF scope=PREEMBED_FULL out=LOGITS n=3 runs=10 total_ticks=10010 mean_batch_ms=1.001000 min_batch_ms=1.001000 max_batch_ms=1.001000 ms_per_patch=0.333667 patches_per_s=2997.003
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=3 run=0 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=3 run=1 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=3 run=2 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=3 run=3 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=3 run=4 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=3 run=5 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=3 run=6 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=3 run=7 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=3 run=8 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=3 run=9 ticks=1001
+PERF scope=PS_EMBED_PLUS_FULL out=LOGITS n=3 runs=10 total_ticks=10010 mean_batch_ms=1.001000 min_batch_ms=1.001000 max_batch_ms=1.001000 ms_per_patch=0.333667 patches_per_s=2997.003
+SAMPLE scope=PREEMBED_FULL out=CLASS n=3 run=0 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=3 run=1 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=3 run=2 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=3 run=3 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=3 run=4 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=3 run=5 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=3 run=6 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=3 run=7 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=3 run=8 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=3 run=9 ticks=1001
+PERF scope=PREEMBED_FULL out=CLASS n=3 runs=10 total_ticks=10010 mean_batch_ms=1.001000 min_batch_ms=1.001000 max_batch_ms=1.001000 ms_per_patch=0.333667 patches_per_s=2997.003
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=3 run=0 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=3 run=1 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=3 run=2 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=3 run=3 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=3 run=4 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=3 run=5 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=3 run=6 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=3 run=7 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=3 run=8 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=3 run=9 ticks=1001
+PERF scope=PS_EMBED_PLUS_FULL out=CLASS n=3 runs=10 total_ticks=10010 mean_batch_ms=1.001000 min_batch_ms=1.001000 max_batch_ms=1.001000 ms_per_patch=0.333667 patches_per_s=2997.003
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=16 run=0 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=16 run=1 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=16 run=2 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=16 run=3 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=16 run=4 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=16 run=5 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=16 run=6 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=16 run=7 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=16 run=8 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=LOGITS n=16 run=9 ticks=1001
+PERF scope=PREEMBED_FULL out=LOGITS n=16 runs=10 total_ticks=10010 mean_batch_ms=1.001000 min_batch_ms=1.001000 max_batch_ms=1.001000 ms_per_patch=0.062562 patches_per_s=15984.016
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=16 run=0 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=16 run=1 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=16 run=2 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=16 run=3 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=16 run=4 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=16 run=5 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=16 run=6 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=16 run=7 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=16 run=8 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=LOGITS n=16 run=9 ticks=1001
+PERF scope=PS_EMBED_PLUS_FULL out=LOGITS n=16 runs=10 total_ticks=10010 mean_batch_ms=1.001000 min_batch_ms=1.001000 max_batch_ms=1.001000 ms_per_patch=0.062562 patches_per_s=15984.016
+SAMPLE scope=PREEMBED_FULL out=CLASS n=16 run=0 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=16 run=1 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=16 run=2 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=16 run=3 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=16 run=4 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=16 run=5 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=16 run=6 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=16 run=7 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=16 run=8 ticks=1001
+SAMPLE scope=PREEMBED_FULL out=CLASS n=16 run=9 ticks=1001
+PERF scope=PREEMBED_FULL out=CLASS n=16 runs=10 total_ticks=10010 mean_batch_ms=1.001000 min_batch_ms=1.001000 max_batch_ms=1.001000 ms_per_patch=0.062562 patches_per_s=15984.016
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=16 run=0 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=16 run=1 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=16 run=2 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=16 run=3 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=16 run=4 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=16 run=5 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=16 run=6 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=16 run=7 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=16 run=8 ticks=1001
+SAMPLE scope=PS_EMBED_PLUS_FULL out=CLASS n=16 run=9 ticks=1001
+PERF scope=PS_EMBED_PLUS_FULL out=CLASS n=16 runs=10 total_ticks=10010 mean_batch_ms=1.001000 min_batch_ms=1.001000 max_batch_ms=1.001000 ms_per_patch=0.062562 patches_per_s=15984.016
+M3A_BASELINE PASS mismatches=0
+M3A_APP_HOST PASS mode=none starts=139

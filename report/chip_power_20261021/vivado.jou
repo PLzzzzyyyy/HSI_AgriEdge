@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Oct 21 18:33:24 2026
+# Process ID         : 19548
+# Current directory  : D:/FPGA.GAME/HSI_AgriEdge_team_20261017
+# Command line       : vivado.exe -mode batch -source tools/report_chip_power.tcl -log report/chip_power_20261021/vivado.log -journal report/chip_power_20261021/vivado.jou
+# Log file           : D:/FPGA.GAME/HSI_AgriEdge_team_20261017/report/chip_power_20261021/vivado.log
+# Journal file       : D:/FPGA.GAME/HSI_AgriEdge_team_20261017\report/chip_power_20261021/vivado.jou
+# Running On         : PLzzyµÄµçÄÔ
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14650HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 16944 MB
+# Swap memory        : 16944 MB
+# Total Virtual      : 33889 MB
+# Available Virtual  : 7833 MB
+#-----------------------------------------------------------
+source tools/report_chip_power.tcl

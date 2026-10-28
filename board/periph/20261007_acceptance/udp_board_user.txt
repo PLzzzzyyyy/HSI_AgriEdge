@@ -1,0 +1,5 @@
+C3b UDP: peer 192.168.1.102:5011
+C3b UDP TX: 20000/20000 pkts x 1412 B in 2258.9 ms = 100.0 Mbps UDP payload (cap 100000 kbps), ring waits 0, errors 0
+C3b UDP TX: 50000/50000 pkts x 1412 B in 591.0 ms = 955.6 Mbps UDP payload (cap 0 kbps), ring waits 0, errors 0
+C3b UDP RX: 20000 pkts, 28240000 B, first..last 2259.0 ms = 100.0 Mbps, payload errors 0, out-of-order 0, max seq 19999; pings answered 1003
+C3b UDP RX: 50000 pkts, 70600000 B, first..last 594.3 ms = 950.4 Mbps, payload errors 0, out-of-order 0, max seq 49999; pings answered 1003

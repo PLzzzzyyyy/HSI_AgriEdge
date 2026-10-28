@@ -1,0 +1,116 @@
+{
+  "recorded_at": "2026-10-06T17:46:21.323599+08:00",
+  "source_commit": "a67abde88f5366b998372542674e9fcf5fbb45ba",
+  "provenance": "UART text pasted by user; stored as UTF-8 with LF line endings; not captured directly from COM by agent",
+  "workspace": "vitis",
+  "platform": "test",
+  "app": "test_phy",
+  "actual_build": "Debug, -Wall -O0 -g3, Vitis 2020.2",
+  "observed": {
+    "gem_base": "0xFF0E0000",
+    "phy_id": "0x00221622",
+    "phy_model": "KSZ9031",
+    "mdio_address": 1,
+    "stable_read_pairs": 2,
+    "responders": 1,
+    "board_model": "UNCONFIRMED",
+    "pmu_fw_warning": true
+  },
+  "launch_evidence": {
+    "source": "IDE.log excerpt, 17:41:09-17:41:23 successful launch",
+    "fsbl_then_app": true,
+    "pl_bitstream_programmed": true,
+    "note": "The diagnostic is PS-only by design, but this real run did program the existing PL bitstream; not a no-PL validation."
+  },
+  "not_validated": [
+    "full E/B PCB identification",
+    "Ethernet link/UDP throughput",
+    "C2/G-M1",
+    "D2/G-M2",
+    "complete PMUFW-dependent peripheral flow"
+  ],
+  "files": [
+    {
+      "path": "vitis/test_phy/Debug/test_phy.elf",
+      "bytes": 280480,
+      "sha256": "5b18088e834571fbbdd0ec69a3b54f8cfe95ccc70032a6ddbd75f5efb9d04111"
+    },
+    {
+      "path": "vitis/test_phy/src/main.c",
+      "bytes": 3330,
+      "sha256": "46377bd083241766e3b8d6ac4742ceff5d513a4b49312cb955360ed5fed840bb"
+    },
+    {
+      "path": "vitis/test_phy/src/phy_id.c",
+      "bytes": 2340,
+      "sha256": "eee0b4a157591d7ee4c8653ea81b2f9700b1d82615cd517d3c8c6d4fe0e41bec"
+    },
+    {
+      "path": "vitis/test_phy/src/phy_id.h",
+      "bytes": 1177,
+      "sha256": "49e6a527fd2083f2fa426839505452d50d87d4441a3679abb39ea6120196820e"
+    },
+    {
+      "path": "vitis/test_phy/src/lscript.ld",
+      "bytes": 6891,
+      "sha256": "fc331e7d640dbfcbd15ed93c7b2da7ed9ea5ba779423ae12d130b84f8c555eeb"
+    },
+    {
+      "path": "vitis/test_phy/Debug/src/subdir.mk",
+      "bytes": 880,
+      "sha256": "b81619b775ddfef391cdc81032ae5e86d91b42fdf493366a01f0f343491c0351"
+    },
+    {
+      "path": "vitis/test_phy/Debug/objects.mk",
+      "bytes": 285,
+      "sha256": "72d815c1d72811e888ff7fe3de24a99593b696b983ecee1ef860e7b756ea7fdc"
+    },
+    {
+      "path": "vitis/test/export/test/hw/tt_zu5ev.xsa",
+      "bytes": 1892713,
+      "sha256": "1fbcf068ca6577d2d0b21da417e21d360e893802562a3e6a45a8fd0c524f13bd"
+    },
+    {
+      "path": "vitis/test/export/test/sw/test/boot/fsbl.elf",
+      "bytes": 131600,
+      "sha256": "360f26e25db2cdf469afa72c14378c22bc95c1c88105a6bcf0fb1e1c43fb9079"
+    },
+    {
+      "path": "vitis/test/export/test/sw/test/standalone_domain/bsplib/lib/libxil.a",
+      "bytes": 4658596,
+      "sha256": "8d6124ef4abf41be45afcbee3a04f46099fcc06fe27d50403c9e77450357792b"
+    },
+    {
+      "path": "vitis/test/export/test/sw/test/standalone_domain/system.mss",
+      "bytes": 13813,
+      "sha256": "0debcc6ee3456582bedc4415d1ad6f9b4cf2f6e035e82b092761650d36d8d185"
+    },
+    {
+      "path": "vitis/test_phy/_ide/bitstream/tt_zu5ev.bit",
+      "bytes": 7797812,
+      "sha256": "5e97723265460ca2c55ce6942840807c83d29e3b2dc2531f7591570b6d890203"
+    },
+    {
+      "path": "vitis/test_phy/_ide/launch/Debugger_test_phy-Default.launch",
+      "bytes": 12374,
+      "sha256": "16af1c9cf3de0faa13e8192ee3230790a331eb7136663f7ec23640c62da0a239"
+    },
+    {
+      "path": "board/phy_id/20261006_first_run/uart_user.txt",
+      "bytes": 2054,
+      "sha256": "ae89167d5f36190f2f0b7b698a0a22f000e88a9785fe30d3151571216c211012"
+    },
+    {
+      "path": "board/phy_id/20261006_first_run/ide_launch_excerpt.txt",
+      "bytes": 3621,
+      "sha256": "987e55ce452002531d107f9a8e41a3e91ff9a31eb82475c5349b7c2c91bbe244"
+    }
+  ],
+  "board_identity": {
+    "model": "AXU5EV-E",
+    "basis": "user explicit confirmation after the PHY test; not inferred solely from the ID/address",
+    "user_statement": "就是 AXU5EV-E 这个可以确定了",
+    "date": "2026-10-06",
+    "complete_silicon_part_and_pcb_revision": "not independently verified"
+  }
+}

@@ -1,0 +1,11 @@
+HOST TEST ONLY: correctness=serial HLS C model; PERF=synthetic transport/clock, NOT measurements
+M3A_SERIAL_BASELINE v1
+package=d081e19d48e22c0e source=b236626b5419+manifest expected_xsa_sha256=9813b5632250839274e6e298e5e4df8ea601b6d41016351148f98cf6057d9652
+Expected serial XSA only; software cannot identify the programmed bitstream hash.
+timer_hz=1000000 runs=10 batch=16 max_polls=8 PS_backend=scalar
+Timer: driver input clean + output flush + MMIO + FULL + poll + output invalidate.
+PS_EMBED_PLUS_FULL adds PS tt_embed on preprocessed CHW patch; no extract/normalize/I-O.
+Weights loaded once, measured separately. DUMP/checks/UART/warmup excluded from PERF.
+FAIL LOAD_W driver=-6 last_return=0x00000000 (may be stale on timeout)
+ABORT: no more DMA/buffer access. External PL reset and App restart required.
+M3A_APP_HOST PASS mode=contract starts=1

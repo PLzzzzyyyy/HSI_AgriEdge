@@ -1,0 +1,41 @@
+{
+  "scene": "longkou",
+  "model": "v2",
+  "wcrc": "27231983",
+  "shape": [
+    550,
+    400
+  ],
+  "classes": [
+    "玉米",
+    "棉花",
+    "芝麻",
+    "阔叶大豆",
+    "窄叶大豆",
+    "水稻",
+    "水体",
+    "道路与房屋",
+    "混合杂草"
+  ],
+  "split": "WHU-Hi LongKou official Train100/Test100",
+  "files": {
+    "train": {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Train100.mat",
+      "bytes": 3549,
+      "sha256": "e4788a2135f38cde294cacdbcf44c97efdb06cc9c3a5d53f5269a563b66cd009",
+      "crc32": "7041dd64"
+    },
+    "test": {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Test100.mat",
+      "bytes": 7653,
+      "sha256": "a17a82530b869a794950f3169b9aff6c0dc1f77c4a7b3e5f3912227450736c8c",
+      "crc32": "d9628ff7"
+    },
+    "gt": {
+      "path": "data/scenes/longkou/gt_u8.bin",
+      "bytes": 220000,
+      "sha256": "0117166fe39891d09d188dd719c7e393f74bb30d01e23798c0ab69d4ee1a496e",
+      "crc32": "ba32d64d"
+    }
+  }
+}

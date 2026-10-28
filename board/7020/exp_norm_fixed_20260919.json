@@ -1,0 +1,92 @@
+{
+  "source": "host simulation (integer projection + integer normalize model); NOT board measurements",
+  "pixels": 4096,
+  "modes": {
+    "F24": {
+      "seconds": 35.8,
+      "label_agreement_vs_pc_fixed": 1.0,
+      "mismatch_pc_fixed_pixels": [],
+      "label_agreement_vs_pc_float": 0.999755859375,
+      "label_agreement_vs_host_float32_path": 1.0,
+      "host_float32_path_vs_pc_fixed": 1.0,
+      "labeled_accuracy": 0.9881228273464658,
+      "host_labeled_accuracy": 0.9881228273464658,
+      "max_dlogit_vs_pc_fixed": 0.005003197970111728,
+      "pixels_dlogit_vs_pc_ge_0p01": 0,
+      "max_dlogit_vs_host_float32_path": 0.004398822784423828,
+      "max_abs_x_after_embed": 4.88448763,
+      "max_abs_x_overall": 5.82464743,
+      "max_abs_x_per_layer_after_mlp_residual": [
+        4.86136818,
+        4.84880304,
+        4.9018445,
+        5.00298023,
+        5.22152233,
+        5.51107502,
+        5.59204483,
+        5.68453836,
+        5.7105484,
+        5.71341038,
+        5.67271233,
+        5.82174921
+      ],
+      "int16_saturated_elements": 0,
+      "normalize_calls": 98304,
+      "q_elements_compared": 1560674304,
+      "q_flips_pm1_vs_float_normalize": 1205095,
+      "q_flips_gt1_vs_float_normalize": 0,
+      "q_flip_rate": 0.0007721630303717745,
+      "bits_abs_s1_q24": 32.1917609552032,
+      "bits_var_num_q48": 70.99702533776968,
+      "bits_abs_mean_q24": 20.822163123372214,
+      "bits_abs_d_q24": 26.542241173224735,
+      "inv_range": [
+        0.91434592,
+        20.3441238
+      ]
+    },
+    "F12": {
+      "seconds": 36.3,
+      "label_agreement_vs_pc_fixed": 1.0,
+      "mismatch_pc_fixed_pixels": [],
+      "label_agreement_vs_pc_float": 0.999755859375,
+      "label_agreement_vs_host_float32_path": 1.0,
+      "host_float32_path_vs_pc_fixed": 1.0,
+      "labeled_accuracy": 0.9881228273464658,
+      "host_labeled_accuracy": 0.9881228273464658,
+      "max_dlogit_vs_pc_fixed": 0.008613759381278285,
+      "pixels_dlogit_vs_pc_ge_0p01": 0,
+      "max_dlogit_vs_host_float32_path": 0.008406639099121094,
+      "max_abs_x_after_embed": 4.88448763,
+      "max_abs_x_overall": 5.82390404,
+      "max_abs_x_per_layer_after_mlp_residual": [
+        4.86147165,
+        4.84868813,
+        4.90177011,
+        5.00296354,
+        5.22134972,
+        5.51090527,
+        5.59236097,
+        5.68472815,
+        5.71084261,
+        5.71367121,
+        5.67289686,
+        5.82107067
+      ],
+      "int16_saturated_elements": 0,
+      "normalize_calls": 98304,
+      "q_elements_compared": 1560674304,
+      "q_flips_pm1_vs_float_normalize": 1113176,
+      "q_flips_gt1_vs_float_normalize": 0,
+      "q_flip_rate": 0.0007132660524665113,
+      "bits_abs_s1_q24": 32.19173999337008,
+      "bits_var_num_q48": 70.99701598578987,
+      "bits_abs_mean_q24": 20.8221421124173,
+      "bits_abs_d_q24": 26.54207490688275,
+      "inv_range": [
+        0.9143489,
+        20.3439999
+      ]
+    }
+  }
+}

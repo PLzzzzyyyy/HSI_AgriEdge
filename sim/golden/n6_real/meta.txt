@@ -1,0 +1,8 @@
+N=6
+D=2646
+layers=12
+classes=9
+DF=12
+source=D:\HSI_AgriEdge\model\data\golden\patch_f32.bin
+argmax=0
+backend=scalar

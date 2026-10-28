@@ -1,0 +1,251 @@
+{
+  "recorded_at": "2026-10-06T18:27:39.821404+08:00",
+  "source_commit": "a67abde88f5366b998372542674e9fcf5fbb45ba",
+  "board": "AXU5EV-E (user confirmed)",
+  "workspace": "vitis",
+  "platform": "test",
+  "app": "test_m1",
+  "provenance": "User-pasted UART, normalized to UTF-8 LF; mode1 includes interrupted prefix, mode3 is a provided suffix only; missing mode3 per-run/PS detail not reconstructed",
+  "build": "Debug named configuration, actual -O2 -g3 -DTT_HW_RUNTIME_SWITCH -mcpu=cortex-a53 -ffp-contract=off -Wextra -Werror; linked -lm",
+  "mode1": {
+    "complete_runs": 10,
+    "mean_ms": 23.136,
+    "median_ms": 23.137,
+    "min_ms": 23.128,
+    "max_ms": 23.142,
+    "max_dlogit_reference": 0.001149,
+    "argmax": 0,
+    "reference_argmax": 0,
+    "profile_ms": 23.184,
+    "status": "PASS"
+  },
+  "mode3": {
+    "ps_mean_ms": 356.957,
+    "pl_mean_ms": 23.135,
+    "speedup_mean": 15.429,
+    "speedup_median": 15.439,
+    "ps_pl_max_dlogit": 0,
+    "pl_profile_ms": 23.186,
+    "status": "COMPARE PASS"
+  },
+  "not_validated": [
+    "C3 peripherals",
+    "M2/G-M2",
+    "mode4/6 whole-block runs",
+    "PMUFW-dependent complete system behavior"
+  ],
+  "notes": [
+    "PL profile segments include driver/cache/wait, not pure IP cycles",
+    "PS-only baseline uses integer projection reference plus NEON glue; not best possible CPU implementation",
+    "IDE shows repeated user-launch system resets and FSBL downloads; no evidence proving spontaneous board reset",
+    "PMU-FW warning retained; no claim it causes the interrupted five runs"
+  ],
+  "files": [
+    {
+      "path": "vitis/test_m1/src/tt_block_data.c",
+      "bytes": 17298,
+      "sha256": "61b99dbcb4e255e3d0731d8910d3a1f2ecdb40e988cc3ea7cd7222215748f8cc"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_data.c",
+      "bytes": 1746591,
+      "sha256": "cafbdc2a436ce90644dc664b15745265a5ebcc6b9c3d94dd7d08d12161a315f3"
+    },
+    {
+      "path": "vitis/test_m1/src/main_benchmark.cpp",
+      "bytes": 9376,
+      "sha256": "c061399234bc0ad51017f4558f58de2c27597ea6aca4a87630be9c6ea05c88f9"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_block_app.cpp",
+      "bytes": 9199,
+      "sha256": "4835eae81772d360ac8102bffec8a549269e24514f34c352c102778ae20c9808"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_block_render.cpp",
+      "bytes": 7077,
+      "sha256": "77cc9484687f640b59ddff4df271eca991a5c8e57057fb97bf991b9be5bfe4c1"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_hw_sim.cpp",
+      "bytes": 1900,
+      "sha256": "af043ff2e0241723f74a937c3a5d5beff500584ba892e2588d801bba236f92ee"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_hw_switch.cpp",
+      "bytes": 2696,
+      "sha256": "3136a81143ed5b0f6a8629a5327595b64c716f3df4b85d3353cfd05cf20ba672"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_hw_xil.cpp",
+      "bytes": 9022,
+      "sha256": "2d0d223dc4cbabfb594c8f8d06c5e0651e19a4e6c4405aea74d9c6de6ff142f6"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_net.cpp",
+      "bytes": 31116,
+      "sha256": "913bc7531ad3dff7f9036ac9dfcd5c8e6f31ddc857b87ed1437fdbe2141294c6"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_block_app.h",
+      "bytes": 243,
+      "sha256": "9a787acb4a7e5d00a918bc4de6ce5ca5f7cc1acfe24ca8883bb8579e7bfb9d73"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_block_data.h",
+      "bytes": 658,
+      "sha256": "7dd55b4d34940722aa945e50fe7d1ba773b26c9586f54f2be29f2ac6b4f3cc3c"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_block_render.h",
+      "bytes": 1930,
+      "sha256": "f66c63bd672e009e7b9466253708b3d89ddb2a268a5ec77a593280ca99112690"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_data.h",
+      "bytes": 697,
+      "sha256": "ccd65495f173ba02e0534280b92561580d43ab928d9e506f51ef774bffd560e7"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_hw.h",
+      "bytes": 2410,
+      "sha256": "f82fbf4d103aae471f4b236b53861f7a19ed14083be59482a329a32737e684d0"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_hw_switch.h",
+      "bytes": 395,
+      "sha256": "c56d306dca63f03c538e41e8b559b0fe9b0124b375330c6a423ebfe9a6481e1c"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_net.h",
+      "bytes": 5200,
+      "sha256": "75f3bdd3779d78c683b3b8e57dd8de667363acd0a32764781af3b97a3f216388"
+    },
+    {
+      "path": "vitis/test_m1/src/tt_ref_int.h",
+      "bytes": 4482,
+      "sha256": "cea5729fef9295be568ffe809ad2c45e6b3d5f338b7982334b0a530c11ccb738"
+    },
+    {
+      "path": "vitis/test_m1/src/region_f32.bin",
+      "bytes": 5292000,
+      "sha256": "d6cbbeebed7ac54cc4240256c683a824e1b750553916a3ac0ac7547d3876ac2f"
+    },
+    {
+      "path": "vitis/test_m1/src/lscript.ld",
+      "bytes": 6891,
+      "sha256": "fc331e7d640dbfcbd15ed93c7b2da7ed9ea5ba779423ae12d130b84f8c555eeb"
+    },
+    {
+      "path": "vitis/test_m1/Debug/test_m1.elf",
+      "bytes": 6728672,
+      "sha256": "b3285820885adf1381f01ac01fe40fb9e2af8f40215fdbfe54fa2dc80ad1ca84"
+    },
+    {
+      "path": "vitis/test_m1/.cproject",
+      "bytes": 29044,
+      "sha256": "f3a1ad81c8d748a21f35d461c61c5035cfbcfd920d191cb4934f9f5076ae7062"
+    },
+    {
+      "path": "vitis/test/export/test/hw/tt_zu5ev.xsa",
+      "bytes": 1892713,
+      "sha256": "1fbcf068ca6577d2d0b21da417e21d360e893802562a3e6a45a8fd0c524f13bd"
+    },
+    {
+      "path": "vitis/test/export/test/sw/test/boot/fsbl.elf",
+      "bytes": 131600,
+      "sha256": "360f26e25db2cdf469afa72c14378c22bc95c1c88105a6bcf0fb1e1c43fb9079"
+    },
+    {
+      "path": "vitis/test/export/test/sw/test/standalone_domain/bsplib/lib/libxil.a",
+      "bytes": 4658596,
+      "sha256": "8d6124ef4abf41be45afcbee3a04f46099fcc06fe27d50403c9e77450357792b"
+    },
+    {
+      "path": "vitis/test_m1/_ide/launch/Debugger_test_m1-Default.launch",
+      "bytes": 12367,
+      "sha256": "a548392709d5b2cffa999a7db98feda02ca049a918a3cdc19e83c58d7a92cde2"
+    },
+    {
+      "path": "vitis/test_m1/_ide/bitstream/tt_zu5ev.bit",
+      "bytes": 7797812,
+      "sha256": "5e97723265460ca2c55ce6942840807c83d29e3b2dc2531f7591570b6d890203"
+    },
+    {
+      "path": "board/m1/20261006_first_run/ide_launch_excerpt.txt",
+      "bytes": 7226,
+      "sha256": "2d92b984723c9cc85d07f6c22826c0c9e38fb02999c9b8cd5538db01db7c4d9d"
+    },
+    {
+      "path": "board/m1/20261006_first_run/mode1_user.txt",
+      "bytes": 4429,
+      "sha256": "6a2d6b45b8b73aa888bebdade2a39dd2c90d24bd34c65ac00a9399c5181d220d"
+    },
+    {
+      "path": "board/m1/20261006_first_run/mode3_user_excerpt.txt",
+      "bytes": 1813,
+      "sha256": "a031cd0ca3b4edb4281539404bcadab2d1f78ccc2192fb0883cdf662bac4b61c"
+    },
+    {
+      "path": "board/m1/20261006_first_run/objects.mk.snapshot",
+      "bytes": 298,
+      "sha256": "e75b8e6905229bb3359add7984fa8aeb22f2ed53d0058ded0b7ee37777bee864"
+    },
+    {
+      "path": "board/m1/20261006_first_run/subdir.mk.snapshot",
+      "bytes": 1913,
+      "sha256": "7e1bc0c3dbb2acc1be433d3ef0a949272e1e502965ef943004f8b02cfcb22258"
+    },
+    {
+      "path": "board/m1/20261006_first_run/mode5_user.txt",
+      "bytes": 674,
+      "sha256": "2619472c67d9889566ea05d5bdfa0aa254babe716df6f683fb00070c25fa7866"
+    },
+    {
+      "path": "board/m1/20261006_first_run/mode2_user_profile_excerpt.txt",
+      "bytes": 1682,
+      "sha256": "5ace27ef23f05edf9a44b8fc51a46048948d43e0527292782676ecd6e32aed58"
+    },
+    {
+      "path": "board/m1/20261006_first_run/mode2_user.txt",
+      "bytes": 2835,
+      "sha256": "481974d26c87f4d23e7f9cf4970c666b7893cc178e652321f8a7fd9931b177d6"
+    }
+  ],
+  "mode5": {
+    "status": "PAIR CHECK PASS",
+    "repeats": 10,
+    "distinct_patches": 2,
+    "sequential_pair_logits_bitwise_equal": true,
+    "sequential_ms_per_pixel": 23.13,
+    "pipelined_ms_per_pixel": 17.437,
+    "throughput_ratio": 1.326,
+    "scope": "two-patch throughput; excludes extraction, validation and UART; not whole-scene/end-to-end latency"
+  },
+  "mode2_profile_excerpt": {
+    "profile_ms": 356.844,
+    "max_dlogit_reference": 0.001149,
+    "status": "PASS",
+    "completeness": "Original partial excerpt retained as history; full mode2_user.txt subsequently received, no further rerun requested",
+    "label_note": "PS-only is the backend; PL qkv/mlp column labels and parenthetical are fixed generic strings, not evidence of PL execution"
+  },
+  "mode2": {
+    "status": "PASS",
+    "complete_runs": 10,
+    "mean_ms": 356.782,
+    "median_ms": 356.665,
+    "min_ms": 356.062,
+    "max_ms": 357.641,
+    "max_dlogit_reference": 0.001149,
+    "argmax": 0,
+    "reference_argmax": 0,
+    "profile_ms": 356.844,
+    "source": "mode2_user.txt, user supplied full run including the previously supplied profile suffix"
+  },
+  "acceptance": {
+    "C2": "PASS",
+    "G-M1": "PASS",
+    "basis": "mode1 full ten-run/reference PASS; mode2 full ten-run/reference PASS; mode3 compare summary PASS with zero PS/PL difference; mode5 ten-repeat/two-distinct-patch bitwise PASS",
+    "archive_limit": "mode3 original per-run prefix not supplied; retain excerpt, use independently complete mode2 without reconstructing mode3 prefix"
+  }
+}

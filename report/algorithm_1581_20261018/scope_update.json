@@ -1,0 +1,5 @@
+{
+  "scope": "User clarified 1581 means click-to-probe UI, not algorithm/closed-loop rollback.",
+  "restored_original_runtime": true,
+  "unused_bundle": "build/host/gcs_algorithm_1581_20261018_v6"
+}

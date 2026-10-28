@@ -1,0 +1,28 @@
+# 2026-09-20 用户串口输出：v1.4 + PS 轮 5（残差内核重写）串口 1 + 5 —— 内核指令减半但时间没变，定位为驱动 flush 作废了 x
+PS+PL: mean=41.228 ms, median=41.228 ms, min=41.226 ms, max=41.229 ms
+max|dlogit|=9.170e-04, argmax=0 ref=0 -> PASS
+Profile forward: 41.242 ms, max|dlogit|=9.170e-04 -> PASS
+segment (12 layers)            ms   % full
+  PL norm+qkv              13.740     33.3
+  attn scores               5.503     13.3
+  attn ctx+resid            8.796     21.3
+  PL norm+mlp               6.648     16.1
+  mlp resid                 5.665     13.7
+  12-layer sum             40.352
+  embed/head/overhead       0.890
+layer  total ms    PL qkv    scores   ctx+res    PL mlp   mlp res
+    0     3.361     1.142     0.459     0.734     0.554     0.472   (layers 1..11 identical)
+PAIR CHECK PASS: 10 repeats, two distinct patches, sequential/pair logits bitwise equal
+PAIR BENCH: sequential 41.347 ms/pixel; pipelined 27.303 ms/pixel; ratio 1.514x
+
+# 同日第二次（轮 5 + clean-only 驱动）：几乎没变 → flush 不是主因
+PS+PL: mean=40.878 ms; max|dlogit|=9.170e-04 PASS
+segment: PL norm+qkv 13.586 / attn scores 5.503 / attn ctx+resid 8.780 / PL norm+mlp 6.502 / mlp resid 5.628 / embed+head 0.889
+per layer: 1.132 / 0.459 / 0.732 / 0.542 / 0.469
+PAIR BENCH: sequential 40.879 ms/pixel; pipelined 26.926 ms/pixel; ratio 1.518x
+
+# 同日第三次（轮 5b：阶段交错内核 + 魔数量化）
+PS+PL: mean=37.486 ms, median=37.486; max|dlogit|=1.149e-03 PASS
+segment (12 layers): PL norm+qkv 13.585 / attn scores 5.503 / attn ctx+resid 6.447 / PL norm+mlp 6.501 / mlp resid 4.649 / embed+head 0.809
+per layer: 1.132 / 0.459 / 0.537 / 0.542 / 0.387
+PAIR CHECK PASS; PAIR BENCH: sequential 37.495 ms/pixel; pipelined 24.304 ms/pixel; ratio 1.543x

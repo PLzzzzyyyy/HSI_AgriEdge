@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-07",
+  "status": "DEFERRED by user; host tests PASS only, no HLS synthesis/RTL/export/Vivado/board validation",
+  "baseline_source_commit": "a82e6b2",
+  "default_macro": "TT_M3_OVERLAP=0; candidate explicitly requires =1",
+  "candidate": "V projection overlaps Q/K SCORES+SOFTMAX before K buffer is overwritten; no measured cycle/resource benefit yet",
+  "host_tests": "8 phases PASS, source hashes verified; Tcl syntax/invalid-stage refusal checked without launching HLS",
+  "baseline_xsa_sha256": "9813b5632250839274e6e298e5e4df8ea601b6d41016351148f98cf6057d9652",
+  "next": "prepare and board-test existing serial M3a baseline first; retain candidate but do not synthesize/export it",
+  "files": [
+    {
+      "path": "board/m3/20261007_overlap_candidate_host/driver_syntax.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_bytes": 0,
+      "git_blob_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "board/m3/20261007_overlap_candidate_host/compile.txt",
+      "bytes": 447,
+      "sha256": "b396b06723d1527bf553e86e348483ab6e87993e87b1ca77227cadaf72da62af",
+      "git_blob_bytes": 447,
+      "git_blob_sha256": "b396b06723d1527bf553e86e348483ab6e87993e87b1ca77227cadaf72da62af"
+    },
+    {
+      "path": "board/m3/20261007_overlap_candidate_host/load-contract.txt",
+      "bytes": 33,
+      "sha256": "a40f6602aa6c9c6d1b9aa7d92b60d23f63e2d769117a18393dab5f3047cca4cb",
+      "git_blob_bytes": 32,
+      "git_blob_sha256": "7a0fcfdf348e18b7a2385deb43b7cf6e66ace1c602798f30ab9f063a1c191736"
+    },
+    {
+      "path": "board/m3/20261007_overlap_candidate_host/load-timeout.txt",
+      "bytes": 32,
+      "sha256": "78056e7896aac5726271b43a4bdd59f61c76d91b454b88de2d921519d7b6d163",
+      "git_blob_bytes": 31,
+      "git_blob_sha256": "f3d124ae3cb3709eec516a658ea205c1b104d89de30ded1ae2303f6af3a5e758"
+    },
+    {
+      "path": "board/m3/20261007_overlap_candidate_host/timeout.txt",
+      "bytes": 88,
+      "sha256": "67ee5189c2aaa451daffe289afe0bd1d9abaf231af795f4ba77552f339d90a76",
+      "git_blob_bytes": 86,
+      "git_blob_sha256": "9cfb6e836f9465e65b9b44c256f7093afa55ac1217b7ba8c1f696a4cd388e8f2"
+    },
+    {
+      "path": "board/m3/20261007_overlap_candidate_host/contract.txt",
+      "bytes": 89,
+      "sha256": "051e58b6e7d364f4adfe620ee07a5a1d95942b5d08b360e9e9531ab6d0ff5179",
+      "git_blob_bytes": 87,
+      "git_blob_sha256": "b215e36d8729927e52b930e9c71a9d45da3ebbc9d3f2035576fbbcf2f454f94e"
+    },
+    {
+      "path": "board/m3/20261007_overlap_candidate_host/engine-error.txt",
+      "bytes": 93,
+      "sha256": "198d678a6e1f4cd5f4a7eeed1f8f07b5188b4e2405cb5960cb61b1aa50f00425",
+      "git_blob_bytes": 91,
+      "git_blob_sha256": "82fbfb695a52d8a8e45790abf7bfa189ad41707ce2a353a70fcee3ce76443eeb"
+    },
+    {
+      "path": "board/m3/20261007_overlap_candidate_host/full.txt",
+      "bytes": 416,
+      "sha256": "eb4704e7220ff114fde92f3ff5a7dc47b50f09188f437d87ae7f2dc822c2c69b",
+      "git_blob_bytes": 399,
+      "git_blob_sha256": "e87dbe10474155cf59a8b55bf2911b85954389c583072a7b381cd1300953f6b3"
+    },
+    {
+      "path": "board/m3/20261007_overlap_candidate_host/host_manifest.json",
+      "bytes": 60584,
+      "sha256": "af09078d8b1ffced57f8bd621c3dc8617fd8384724a236509f15833bdcc2e259",
+      "git_blob_bytes": 58846,
+      "git_blob_sha256": "5aabed9dbea1cb08b5f178c38bfcbd647ebad8e6803ded846d5aff0c428657d4"
+    }
+  ],
+  "hash_scope": "sha256: captured bytes; git_blob_sha256: normalized repository content"
+}

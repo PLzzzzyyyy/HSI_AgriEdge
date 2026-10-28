@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "cause": "Earlier offline assertion test sent a 20-byte STOP; protocol requires 12 bytes. Test corrected, not a target firmware fault.",
+  "corrected_test": {
+    "path": "report/chip_power_20261021/test_chip_power.exe",
+    "bytes": 174770,
+    "sha256": "66e3d73d0f28d47e94b82062c5fd445a9f8605bc362cf702d82862021b8c88b9"
+  },
+  "archived_failed_binary": {
+    "path": "report/chip_power_20261021/test_chip_power_failed_20261021.bin",
+    "bytes": 174770,
+    "sha256": "7fe48452536f3e1a45782b2f6cacedede019e76c7dc4a54e26033b8f6ad80465"
+  },
+  "runtime_release_unchanged": "3db78827f96da19d3ab1c33206abf72b58217c397ef532a7a24032b3aafd8d8e"
+}

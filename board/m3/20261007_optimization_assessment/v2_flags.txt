@@ -1,0 +1,5 @@
+build=tt_engine_m3_k7_overlap_v2
+flags=-DTT_K3=7 -DTT_DB=18 -DTT_M3_OVERLAP=1
+part=xazu5ev-sfvc784-1-i
+clock_ns=5
+tb_layers=12

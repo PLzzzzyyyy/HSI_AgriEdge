@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "source": "VIVADO_VECTORLESS_TEMPERATURE",
+  "measured": false,
+  "scope": "CHIP_PS_PL_ONLY",
+  "activity": "Vivado vectorless/default switching activity; NOT runtime workload tracking",
+  "energy_scope": "Accepted board START until DONE/STOP/error; includes preparation and pauses; excludes subsequent probes",
+  "exclusions": [
+    "external DDR",
+    "fan",
+    "board peripherals",
+    "DC/DC losses"
+  ],
+  "fallback_temperature_c": 40,
+  "temperature_max_age_ms": 3000,
+  "calibrated": false,
+  "hardware_xsa_sha256": "dbf0b52ccbd076c7dae4ed37e5ef6ed48b4f5bbc6ac76a174b8ad339ac282508",
+  "bit_sha256": "9c0c1732275e941811d110466a16c92d40fe833b1f93b4af27e8a4008b744ce1",
+  "checkpoint_sha256": "b1f3dcc7ac0274004b290b456ab6a9f0107be00cd54104bb96e6f961fa721dce",
+  "part": "xczu5ev-sfvc784-2-i",
+  "points": [
+    {
+      "temperature_c": -40,
+      "watts": 5.872,
+      "static_w": 0.375,
+      "dynamic_w": 5.497,
+      "confidence": "Low",
+      "report": "report/chip_power_20261021/junction_-40.rpt",
+      "sha256": "c865f2066b6f6bfaed0df57aec651ac8ee9d004111a54b86ef7214c4196ab56a"
+    },
+    {
+      "temperature_c": 0,
+      "watts": 5.875,
+      "static_w": 0.379,
+      "dynamic_w": 5.497,
+      "confidence": "Low",
+      "report": "report/chip_power_20261021/junction_0.rpt",
+      "sha256": "97f8b04b9686cbf3be7ecc2ab3d2533d880eb2e440f764c4192ce8ab9c326285"
+    },
+    {
+      "temperature_c": 25,
+      "watts": 5.942,
+      "static_w": 0.445,
+      "dynamic_w": 5.497,
+      "confidence": "Low",
+      "report": "report/chip_power_20261021/junction_25.rpt",
+      "sha256": "2ae1f9626147aa19bfdfc6f08fad2e86c26ad63a2d9c2316ab3496c4994a583b"
+    },
+    {
+      "temperature_c": 40,
+      "watts": 6.029,
+      "static_w": 0.533,
+      "dynamic_w": 5.497,
+      "confidence": "Low",
+      "report": "report/chip_power_20261021/junction_40.rpt",
+      "sha256": "fbaccf3ac55601fc374db49f185070157adfea02435723b1df06feeeca7341de"
+    },
+    {
+      "temperature_c": 55,
+      "watts": 6.173,
+      "static_w": 0.676,
+      "dynamic_w": 5.497,
+      "confidence": "Low",
+      "report": "report/chip_power_20261021/junction_55.rpt",
+      "sha256": "ab740bb42d6f5dd27cf3577e88e235f8861f713322b94364eee454a9cbf55d59"
+    },
+    {
+      "temperature_c": 70,
+      "watts": 6.406,
+      "static_w": 0.909,
+      "dynamic_w": 5.497,
+      "confidence": "Low",
+      "report": "report/chip_power_20261021/junction_70.rpt",
+      "sha256": "525b1cb62d6ef43e1b9bdd63a1d7ebb0e2d19d20c4ce149c0c52f1f50aa2ee96"
+    },
+    {
+      "temperature_c": 85,
+      "watts": 6.784,
+      "static_w": 1.287,
+      "dynamic_w": 5.497,
+      "confidence": "Low",
+      "report": "report/chip_power_20261021/junction_85.rpt",
+      "sha256": "c747c7995f2c77623b5e39696f39488cc34d854d8721992c9576a64be4c5a1d0"
+    },
+    {
+      "temperature_c": 100,
+      "watts": 7.388,
+      "static_w": 1.892,
+      "dynamic_w": 5.497,
+      "confidence": "Low",
+      "report": "report/chip_power_20261021/junction_100.rpt",
+      "sha256": "99e4fc18e268e880bc06b6bb4f453b9e153445e29f758ba40eb23b87eba67271"
+    },
+    {
+      "temperature_c": 125,
+      "watts": 9.237,
+      "static_w": 3.74,
+      "dynamic_w": 5.497,
+      "confidence": "Low",
+      "report": "report/chip_power_20261021/junction_125.rpt",
+      "sha256": "e7f6052ff284e9b538196c8bf10ffdc65eb9d122c54a817ab2edbf21c710f656"
+    }
+  ],
+  "model_id": "a4363b00"
+}

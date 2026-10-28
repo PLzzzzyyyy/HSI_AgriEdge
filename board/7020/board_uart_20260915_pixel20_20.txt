@@ -1,0 +1,124 @@
+=== TT serial benchmark ===
+CPU clock (BSP)=666666687 Hz, timer=333333343 Hz; double + fixed-point
+Scope: preprocessed patch -> embed -> 12 layers -> 9 logits; batch=1
+One warmup + 10 timed forwards (profiling off) + one separate detail forward per mode
+Validation and serial output outside timing
+
+[1] PL acceleration   [2] PS-only   [3] Compare both
+Send ASCII 1/2/3 (HEX mode off). Each choice runs the full 12-layer network.
+
+=== PS+PL full-network benchmark ===
+model=unoverlapping pixel=20,20 gt=1 N=6 runs=10
+Warming up...
+Warmup PASS
+forward run  1: 140.140 ms, argmax=0, PASS
+forward run  2: 140.089 ms, argmax=0, PASS
+forward run  3: 140.064 ms, argmax=0, PASS
+forward run  4: 140.118 ms, argmax=0, PASS
+forward run  5: 140.099 ms, argmax=0, PASS
+forward run  6: 140.091 ms, argmax=0, PASS
+forward run  7: 140.090 ms, argmax=0, PASS
+forward run  8: 140.122 ms, argmax=0, PASS
+forward run  9: 140.082 ms, argmax=0, PASS
+forward run 10: 140.128 ms, argmax=0, PASS
+PS+PL: mean=140.102 ms, median=140.095 ms, min=140.064 ms, max=140.140 ms
+max|dlogit|=1.776e-14, argmax=0 ref=0 -> PASS
+class 0: computed=+9.446498123 reference=+9.446498123
+class 1: computed=-5.187222713 reference=-5.187222713
+class 2: computed=-4.414391526 reference=-4.414391526
+class 3: computed=+7.990295276 reference=+7.990295276
+class 4: computed=-6.059611158 reference=-6.059611158
+class 5: computed=+5.747276781 reference=+5.747276781
+class 6: computed=-2.261612762 reference=-2.261612762
+class 7: computed=-0.052160090 reference=-0.052160090
+class 8: computed=+1.129556231 reference=+1.129556231
+
+--- PS+PL detail: one extra profiled forward, excluded from benchmark mean ---
+Profile forward: 140.107 ms, max|dlogit|=1.776e-14 -> PASS
+segment (12 layers)            ms   % full
+  normalize x2             18.570     13.3
+  quant x2                 24.396     17.4
+  PL qkv                   21.880     15.6
+  dequant x4               16.329     11.7
+  attention                38.912     27.8
+  PL mlp                    9.204      6.6
+  residual x2               9.777      7.0
+  12-layer sum            139.068
+  embed/head/overhead       1.038
+Projection backend: PS+PL (PL timings include driver/cache/wait)
+
+layer  total ms normalize     quant       qkv   dequant attention       mlp  residual
+    0    11.633     1.561     2.033     1.824     1.366     3.255     0.767     0.828
+    1    11.598     1.547     2.033     1.823     1.361     3.249     0.767     0.818
+    2    11.583     1.546     2.033     1.823     1.362     3.238     0.767     0.813
+    3    11.594     1.549     2.034     1.823     1.362     3.245     0.767     0.815
+    4    11.583     1.543     2.034     1.823     1.361     3.243     0.767     0.812
+    5    11.583     1.547     2.034     1.823     1.360     3.239     0.767     0.812
+    6    11.583     1.543     2.033     1.823     1.361     3.243     0.767     0.812
+    7    11.581     1.544     2.033     1.823     1.360     3.241     0.767     0.812
+    8    11.586     1.550     2.033     1.823     1.357     3.242     0.767     0.814
+    9    11.583     1.546     2.032     1.823     1.359     3.242     0.767     0.813
+   10    11.582     1.545     2.032     1.823     1.357     3.243     0.767     0.816
+   11    11.580     1.548     2.032     1.824     1.362     3.234     0.767     0.814
+Detail includes timer bookkeeping; speedup uses the unprofiled mean above.
+
+[1] PL acceleration   [2] PS-only   [3] Compare both
+Send ASCII 1/2/3 (HEX mode off). Each choice runs the full 12-layer network.
+
+=== PS-only full-network benchmark ===
+model=unoverlapping pixel=20,20 gt=1 N=6 runs=10
+Warming up...
+Warmup PASS
+forward run  1: 1206.065 ms, argmax=0, PASS
+forward run  2: 1206.154 ms, argmax=0, PASS
+forward run  3: 1206.049 ms, argmax=0, PASS
+forward run  4: 1206.133 ms, argmax=0, PASS
+forward run  5: 1206.187 ms, argmax=0, PASS
+forward run  6: 1206.047 ms, argmax=0, PASS
+forward run  7: 1206.159 ms, argmax=0, PASS
+forward run  8: 1206.058 ms, argmax=0, PASS
+forward run  9: 1206.106 ms, argmax=0, PASS
+forward run 10: 1206.143 ms, argmax=0, PASS
+PS-only: mean=1206.110 ms, median=1206.119 ms, min=1206.047 ms, max=1206.187 ms
+max|dlogit|=1.776e-14, argmax=0 ref=0 -> PASS
+class 0: computed=+9.446498123 reference=+9.446498123
+class 1: computed=-5.187222713 reference=-5.187222713
+class 2: computed=-4.414391526 reference=-4.414391526
+class 3: computed=+7.990295276 reference=+7.990295276
+class 4: computed=-6.059611158 reference=-6.059611158
+class 5: computed=+5.747276781 reference=+5.747276781
+class 6: computed=-2.261612762 reference=-2.261612762
+class 7: computed=-0.052160090 reference=-0.052160090
+class 8: computed=+1.129556231 reference=+1.129556231
+
+--- PS-only detail: one extra profiled forward, excluded from benchmark mean ---
+Profile forward: 1206.202 ms, max|dlogit|=1.776e-14 -> PASS
+segment (12 layers)            ms   % full
+  normalize x2             18.697      1.6
+  quant x2                 24.382      2.0
+  PS software qkv         822.727     68.2
+  dequant x4               15.509      1.3
+  attention                39.118      3.2
+  PS software mlp         274.286     22.7
+  residual x2              10.429      0.9
+  12-layer sum           1205.147
+  embed/head/overhead       1.055
+Projection backend: PS-only (PL timings include driver/cache/wait)
+
+layer  total ms normalize     quant       qkv   dequant attention       mlp  residual
+    0   100.446     1.558     2.032    68.571     1.295     3.260    22.851     0.878
+    1   100.451     1.560     2.032    68.563     1.299     3.265    22.858     0.875
+    2   100.433     1.559     2.032    68.557     1.290     3.261    22.861     0.873
+    3   100.428     1.556     2.032    68.560     1.291     3.262    22.862     0.864
+    4   100.430     1.556     2.032    68.564     1.292     3.261    22.861     0.864
+    5   100.427     1.559     2.033    68.561     1.291     3.257    22.859     0.867
+    6   100.422     1.557     2.032    68.561     1.293     3.255    22.853     0.871
+    7   100.427     1.558     2.031    68.556     1.291     3.263     22.861     0.867
+    8   100.421     1.560     2.031    68.560     1.288     3.259    22.854     0.869
+    9   100.425     1.559     2.031    68.557     1.295     3.257    22.859     0.866
+   10   100.405     1.556     2.032    68.552     1.294     3.256    22.848     0.867
+   11   100.433     1.558     2.031    68.566     1.291     3.262    22.857     0.869
+Detail includes timer bookkeeping; speedup uses the unprofiled mean above.
+
+[1] PL acceleration   [2] PS-only   [3] Compare both
+Send ASCII 1/2/3 (HEX mode off). Each choice runs the full 12-layer network.

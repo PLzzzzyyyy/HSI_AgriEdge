@@ -1,0 +1,35 @@
+{
+ "scene": "longkou",
+ "height": 550,
+ "width": 400,
+ "bands": 270,
+ "classes": [
+  "unlabeled",
+  "Corn",
+  "Cotton",
+  "Sesame",
+  "Broad-leaf soybean",
+  "Narrow-leaf soybean",
+  "Rice",
+  "Water",
+  "Roads and houses",
+  "Mixed weed"
+ ],
+ "colors": [
+  "#000000",
+  "#ff0000",
+  "#ee9a00",
+  "#ffff00",
+  "#00ff00",
+  "#00ffcf",
+  "#00a0ff",
+  "#0000ff",
+  "#b000ff",
+  "#ffb6c1"
+ ],
+ "rgb_bands": [
+  112,
+  67,
+  31
+ ]
+}

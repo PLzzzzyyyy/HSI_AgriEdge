@@ -1,0 +1,214 @@
+{
+  "source": {
+    "source": "board",
+    "label": "板卡 · 三景多模型",
+    "board_ip": "192.168.1.10",
+    "board_port": 5010,
+    "link": "unknown",
+    "phy": "未测",
+    "active": false,
+    "authorized": true,
+    "boot_id": "228ce128",
+    "protocol": "v1已实现子集（无v0模拟板兼容）",
+    "used": false,
+    "task_lifecycle": true,
+    "capabilities": {
+      "roi": true,
+      "controls": true,
+      "probe": true,
+      "rowreq": true,
+      "models": true
+    },
+    "channel_ready": false,
+    "registry": [],
+    "model_operation": null,
+    "model_channel": null,
+    "release_id": "10c9dc15abcc79e9c8c4540b730eae3bc7329c4aed9a23748fb80dd8d648d8bd",
+    "connection_transport": "ethernet",
+    "startup_evidence": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\build\\host\\gcs_network_boot\\network_start_20261026_195857_344945",
+    "evidence_operation": false,
+    "physical_keys": {
+      "backend_required": false,
+      "offline_execution": true,
+      "executing": false,
+      "last": null
+    }
+  },
+  "discovery": {
+    "result": "NETWORK_IDENTITY_READY",
+    "scope": "EXPLICIT_ETHERNET_STARTUP_NOT_COLD_BOOT_PROOF",
+    "operator_boot_method": "jtag",
+    "target": [
+      "192.168.1.10",
+      5010
+    ],
+    "uart_opened": false,
+    "task_started": false,
+    "independent_cold_start_verified": false,
+    "evidence": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\build\\host\\gcs_network_boot\\network_start_20261026_195857_344945",
+    "boot_id": "228ce128",
+    "release_id": "10c9dc15abcc79e9c8c4540b730eae3bc7329c4aed9a23748fb80dd8d648d8bd",
+    "startup": {
+      "build": {
+        "app_id": "gcs_r1_abi4",
+        "release_id": "10c9dc15abcc79e9c8c4540b730eae3bc7329c4aed9a23748fb80dd8d648d8bd",
+        "source_set_sha256": "bcf716825b5e02391de06547a2dff27b05e56cc6d99eff15bd4544a575f60c12",
+        "hardware_xsa_sha256": "dbf0b52ccbd076c7dae4ed37e5ef6ed48b4f5bbc6ac76a174b8ad339ac282508"
+      },
+      "boot_id": 579658024,
+      "generation": 64,
+      "nonce": "17257ba62731594b",
+      "state": "ready",
+      "registry_count": 14,
+      "scan_ok": true,
+      "independent_cold_start_verified": false,
+      "transport": "ethernet",
+      "scan_progress": {
+        "bytes": 4696500,
+        "directories": 5,
+        "registered": 9,
+        "rejected": 0
+      },
+      "dp_rc": 0,
+      "scan_receipt": {
+        "complete": true,
+        "entries": 14,
+        "rejected": 0,
+        "rc": 0,
+        "cleanup": 0,
+        "reject_rc": 0,
+        "reject_code": 0
+      }
+    },
+    "board_log_evidence": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\build\\host\\gcs_network_boot\\network_start_20261026_195857_344945\\board_log",
+    "ready": true,
+    "info": {
+      "kind": 134,
+      "task": 4,
+      "seq": 9,
+      "t_us": 374617659,
+      "boot_id": 579658024,
+      "session": 2276503305,
+      "mode": 0,
+      "scene": 0,
+      "rect": [
+        0,
+        0,
+        550,
+        400
+      ],
+      "wcrc": 656611715,
+      "front_row": 109,
+      "state": 0,
+      "entries": [
+        {
+          "scene": 0,
+          "kind": 0,
+          "bytes": 458724,
+          "wcrc": "c4816a1e",
+          "tag": "v2"
+        },
+        {
+          "scene": 0,
+          "kind": 1,
+          "bytes": 480576,
+          "wcrc": "27231983",
+          "tag": "v2"
+        },
+        {
+          "scene": 0,
+          "kind": 0,
+          "bytes": 458724,
+          "wcrc": "db621fdc",
+          "tag": "v1_board"
+        },
+        {
+          "scene": 0,
+          "kind": 1,
+          "bytes": 480576,
+          "wcrc": "deae4b31",
+          "tag": "v1_board"
+        },
+        {
+          "scene": 0,
+          "kind": 0,
+          "bytes": 458724,
+          "wcrc": "41b60a72",
+          "tag": "hold3"
+        },
+        {
+          "scene": 0,
+          "kind": 1,
+          "bytes": 480576,
+          "wcrc": "83389cc2",
+          "tag": "hold3"
+        },
+        {
+          "scene": 0,
+          "kind": 0,
+          "bytes": 458724,
+          "wcrc": "fe9f37ba",
+          "tag": "v3_board"
+        },
+        {
+          "scene": 0,
+          "kind": 1,
+          "bytes": 480576,
+          "wcrc": "ddf16522",
+          "tag": "v3_board"
+        },
+        {
+          "scene": 0,
+          "kind": 0,
+          "bytes": 458724,
+          "wcrc": "2ff7ebb0",
+          "tag": "v3ft50_board"
+        },
+        {
+          "scene": 0,
+          "kind": 1,
+          "bytes": 480576,
+          "wcrc": "a125aa33",
+          "tag": "v3ft50_board"
+        },
+        {
+          "scene": 1,
+          "kind": 0,
+          "bytes": 596368,
+          "wcrc": "9d64da83",
+          "tag": "v1"
+        },
+        {
+          "scene": 1,
+          "kind": 1,
+          "bytes": 480576,
+          "wcrc": "6b5e2b66",
+          "tag": "v1"
+        },
+        {
+          "scene": 2,
+          "kind": 0,
+          "bytes": 532840,
+          "wcrc": "2aceee08",
+          "tag": "v1"
+        },
+        {
+          "scene": 2,
+          "kind": 1,
+          "bytes": 480576,
+          "wcrc": "390cc0d0",
+          "tag": "v1"
+        }
+      ],
+      "engine_abi": 4,
+      "release_tag": "10c9dc15abcc79e9c8c4540b730eae3b",
+      "terminal_owned": true
+    },
+    "terminal_reconnect": true,
+    "identity_source": "BOARD_ETHERNET_FULL_BUILD_AND_SD_JOURNAL"
+  },
+  "ready": true,
+  "build_evidence": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\build\\host\\gcs_offline_keys_20261026_v2\\local_demo_receipt.json",
+  "uart_opened": false,
+  "note": "Ethernet INFO and CRC-checked actual board records only; start explicitly. No UART required."
+}

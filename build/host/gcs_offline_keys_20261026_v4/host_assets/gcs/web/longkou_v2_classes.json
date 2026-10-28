@@ -1,0 +1,65 @@
+{
+  "scene": "longkou",
+  "model": "v2",
+  "wcrc": "27231983",
+  "checkpoint_sha256": "3f8acada1311f7cda9f324df840d7aefdb71022e79acbbf3d25cf6753931ef3c",
+  "weights_sha256": "9177beec3b5b53c56d693f69d7383157264721b96080e2528bb0f4e7189211f2",
+  "source": "model/scenes.py + train_scene.py(gt-1) + export_scene.py(classifier row order) + meta.txt hashes",
+  "scope": "Model predicted classes, not verified ground truth or OA",
+  "classes": [
+    {
+      "id": 0,
+      "name_en": "Corn",
+      "name_zh": "玉米",
+      "color": "#ff0000"
+    },
+    {
+      "id": 1,
+      "name_en": "Cotton",
+      "name_zh": "棉花",
+      "color": "#ee9a00"
+    },
+    {
+      "id": 2,
+      "name_en": "Sesame",
+      "name_zh": "芝麻",
+      "color": "#ffff00"
+    },
+    {
+      "id": 3,
+      "name_en": "Broad-leaf soybean",
+      "name_zh": "阔叶大豆",
+      "color": "#00ff00"
+    },
+    {
+      "id": 4,
+      "name_en": "Narrow-leaf soybean",
+      "name_zh": "窄叶大豆",
+      "color": "#00ffcf"
+    },
+    {
+      "id": 5,
+      "name_en": "Rice",
+      "name_zh": "水稻",
+      "color": "#00a0ff"
+    },
+    {
+      "id": 6,
+      "name_en": "Water",
+      "name_zh": "水体",
+      "color": "#0000ff"
+    },
+    {
+      "id": 7,
+      "name_en": "Roads and houses",
+      "name_zh": "道路与房屋",
+      "color": "#b000ff"
+    },
+    {
+      "id": 8,
+      "name_en": "Mixed weed",
+      "name_zh": "混合杂草",
+      "color": "#ffb6c1"
+    }
+  ]
+}

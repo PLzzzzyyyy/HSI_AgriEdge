@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-07",
+  "source_base_commit": "55ecba4",
+  "status": "full 12-layer RTL cosim PASS; no M3 board result",
+  "finish": "2026-10-07 15:26:43 Asia/Shanghai",
+  "vitis_hls_exit": 0,
+  "cosim_seconds": 3323.09,
+  "xsim_seconds": 3049,
+  "coverage": [
+    "12 per-layer outputs zero mismatches",
+    "3 patches A/B/A LOGITS and CLASS zero mismatches",
+    "layers5..11 FEAT/CLASS zero mismatches",
+    "PROJ QKV/MLP zero mismatches",
+    "error codes PASS"
+  ],
+  "warnings": "Tool AXI depth=0 warnings retained; successful full C/RTL post-check, not a claim of no warnings.",
+  "next_task": {
+    "status": "RUNNING, not yet system timing PASS",
+    "pid": 4200,
+    "tool_session": 88428,
+    "cwd": "D:/HSI_AgriEdge",
+    "project": "build/vivado/tt_m3a_zu5ev",
+    "command": "D:/xilinx/Vivado/2020.2/bin/vivado.bat -mode batch -source D:/HSI_AgriEdge/build/vivado/build_m3a_zu5ev.tcl -log D:/HSI_AgriEdge/build/host/m3a_system_20261007/vivado.log -journal D:/HSI_AgriEdge/build/host/m3a_system_20261007/vivado.jou",
+    "log": "build/host/m3a_system_20261007/vivado.log",
+    "exit_file": "build/host/m3a_system_20261007/exit_code.txt",
+    "rule": "do not restart; require system WNS>=0 and correct XSA; no user Vitis App changes"
+  },
+  "files": [
+    {
+      "path": "board/m3/20261007_full_cosim/cosim_full.txt",
+      "source": "build/host/m3a_full_20261007/vitis_hls.log",
+      "bytes": 100877,
+      "sha256": "8c8c412ad97d5d29696589196657bb92e119bda911700b4c1317d2e2988f8fdf",
+      "kind": "full vendor log, 12 layers, C/RTL PASS, exit0 observed",
+      "git_blob_bytes": 100877,
+      "git_blob_sha256": "8c8c412ad97d5d29696589196657bb92e119bda911700b4c1317d2e2988f8fdf"
+    },
+    {
+      "path": "board/m3/20261007_full_cosim/system_ready.json",
+      "source": "build/host/m3a_full_20261007/system_ready.json",
+      "bytes": 21802,
+      "sha256": "3b548a18b9ec52b788568930e6823d0134a97bdaf9f1a1654336dd3b7810472c",
+      "kind": "readiness gate: full coverage, 313 snapshot files, 88 RTL/dat export files",
+      "git_blob_bytes": 21352,
+      "git_blob_sha256": "258ca8d83660dceb7c16702e6524c4e2a06b7aba1ec4db66655f22c4c073e4fd"
+    },
+    {
+      "path": "board/m3/20261007_full_cosim/cosim.rpt",
+      "source": "build/hls/optimization_build/tt_engine_m3_k7/sol/sim/report/tt_engine_cosim.rpt",
+      "bytes": 1258,
+      "sha256": "d8bcfb77195386336dc36bd4c5874653f11584276592e42d3a0137557349128c",
+      "kind": "C/RTL summary, not board timing",
+      "git_blob_bytes": 1246,
+      "git_blob_sha256": "71d73e5f4ba11342c083636af18c5c4ed59abe838798d276c25fa42119c2c4be"
+    },
+    {
+      "path": "board/m3/20261007_full_cosim/transactions.rpt",
+      "source": "build/hls/optimization_build/tt_engine_m3_k7/sol/sim/report/verilog/result.transaction.rpt",
+      "bytes": 1134,
+      "sha256": "9648759eb31879523b3e9e86ca5d686a82656f944d60e7e69e27ea6a32264fbb",
+      "kind": "20 transactions, clock cycles",
+      "git_blob_bytes": 1113,
+      "git_blob_sha256": "b62300ed48bc71604164c91eebf62e8da9716b557a4ebe7371f6c00830546d2f"
+    },
+    {
+      "path": "board/m3/20261007_full_cosim/cycles.json",
+      "source": "board/m3/20261007_full_cosim/cycles.json",
+      "bytes": 551,
+      "sha256": "8d0b308f347c77b14d668230f209d42ffb93a85d7944c95d8d366686b401e335",
+      "kind": "derived only from raw transaction report",
+      "git_blob_bytes": 538,
+      "git_blob_sha256": "f9037521308b321f9b9ad333104519cbce26f9a680ef5650de3524f9286f375b"
+    },
+    {
+      "path": "board/m3/20261007_full_cosim/gate_tests.txt",
+      "bytes": 110,
+      "sha256": "75d065bdc640a608a72d42022acc8ec1197b6ebb21ab852ab8494a04e1e7d21b",
+      "kind": "7 host unit tests for incomplete/mismatched evidence refusal; fixtures not hardware evidence",
+      "git_blob_bytes": 105,
+      "git_blob_sha256": "6a0da5b18ee53bf3b36cca909b8f1337a6376e4bff38118baf035e4c87912599"
+    }
+  ],
+  "hash_scope": "bytes/sha256: captured filesystem bytes; git_blob_bytes/git_blob_sha256: LF-normalized archived content"
+}

@@ -1,0 +1,13 @@
+test_bad_logits (__main__.UartAuditTests.test_bad_logits) ... ok
+test_bad_metric (__main__.UartAuditTests.test_bad_metric) ... ok
+test_bad_sum (__main__.UartAuditTests.test_bad_sum) ... ok
+test_duplicate_sample (__main__.UartAuditTests.test_duplicate_sample) ... ok
+test_failure (__main__.UartAuditTests.test_failure) ... ok
+test_missing_layer (__main__.UartAuditTests.test_missing_layer) ... ok
+test_missing_sample (__main__.UartAuditTests.test_missing_sample) ... ok
+test_valid (__main__.UartAuditTests.test_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.009s
+
+OK

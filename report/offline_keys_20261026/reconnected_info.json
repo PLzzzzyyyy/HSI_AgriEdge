@@ -1,0 +1,17 @@
+{
+  "boot_id": 579658024,
+  "task": 4,
+  "session": 2276503305,
+  "state": 1,
+  "scene": 0,
+  "rect": [
+    0,
+    0,
+    550,
+    400
+  ],
+  "front_row": 22,
+  "wcrc": 656611715,
+  "terminal_owned": true,
+  "release_tag": "10c9dc15abcc79e9c8c4540b730eae3b"
+}

@@ -1,0 +1,9 @@
+// Template ONLY; tools/gcs_boot_bundle.py creates a concrete, hash-bound BIF.
+// Standalone A53 EL3 + PMUFW + full-system PL bitstream, not Linux.
+the_ROM_image:
+{
+    [bootloader, destination_cpu=a53-0] fsbl.elf
+    [pmufw_image] pmufw.elf
+    [destination_device=pl] design.bit
+    [destination_cpu=a53-0, exception_level=el-3] app.elf
+}

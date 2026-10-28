@@ -1,0 +1,13 @@
+{
+  "valid": true,
+  "phase": "synthesis",
+  "at": "2026-10-18T09:00:45.002607+00:00",
+  "cwd": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\ip_optimization\\p2_ctxpipe_20261018",
+  "actual_cpp": [
+    "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\ip_optimization\\p2_ctxpipe_20261018\\src\\hls\\m3_math\\s2_math.cpp",
+    "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\ip_optimization\\p2_ctxpipe_20261018\\src\\hls\\m3_s2\\s2_exp.cpp",
+    "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\ip_optimization\\p2_ctxpipe_20261018\\src\\hls\\m3_s2\\s2_projection.cpp",
+    "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\ip_optimization\\p2_ctxpipe_20261018\\src\\hls\\m3_s2\\s2_engine.cpp"
+  ],
+  "input_manifest_sha256": "bc8502aa1803ca3e2bd8734de95d95246714be48c36a37e54d7ab205b0d20e73"
+}

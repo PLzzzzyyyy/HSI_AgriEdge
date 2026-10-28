@@ -1,0 +1,38 @@
+# 2026-09-20 用户串口输出：IP v1.4 fm64_wt32_df_norm（归一化进 PL，int16 x）上板，串口 1 + 5
+=== TT serial benchmark ===
+CPU clock (BSP)=666666687 Hz, timer=333333343 Hz; PS glue float32 (NEON), PL normalize+projection v1.4, int16 x; tol=0.01
+=== PS+PL full-network benchmark ===
+model=unoverlapping pixel=20,20 gt=1 N=6 runs=10
+Warmup PASS
+forward run  1..10: 41.658 .. 41.665 ms, argmax=0, PASS
+PS+PL: mean=41.662 ms, median=41.662 ms, min=41.658 ms, max=41.665 ms
+max|dlogit|=8.049e-04, argmax=0 ref=0 -> PASS
+class 0: computed=+9.446914673 reference=+9.446498123
+class 1: computed=-5.186513424 reference=-5.187222713
+class 2: computed=-4.413859367 reference=-4.414391526
+class 3: computed=+7.990333080 reference=+7.990295276
+class 4: computed=-6.059390545 reference=-6.059611158
+class 5: computed=+5.746471882 reference=+5.747276781
+class 6: computed=-2.261715174 reference=-2.261612762
+class 7: computed=-0.052361123 reference=-0.052160090
+class 8: computed=+1.129690170 reference=+1.129556231
+
+--- PS+PL detail: one extra profiled forward, excluded from benchmark mean ---
+Profile forward: 41.675 ms, max|dlogit|=8.049e-04 -> PASS
+segment (12 layers)            ms   % full
+  PL norm+qkv              13.742     33.0
+  attn scores               5.504     13.2
+  attn ctx+resid            8.586     20.6
+  PL norm+mlp               6.651     16.0
+  mlp resid                 5.374     12.9
+  12-layer sum             39.856
+  embed/head/overhead       1.819
+Projection backend: PS+PL (PL timings include driver/cache/wait)
+
+layer  total ms    PL qkv    scores   ctx+res    PL mlp   mlp res
+    0     3.319     1.142     0.459     0.716     0.554     0.448
+    (layers 1..11 identical within 0.002 ms)
+
+PAIR CHECK PASS: 10 repeats, two distinct patches, sequential/pair logits bitwise equal
+PAIR BENCH: sequential 41.675 ms/pixel; pipelined 27.593 ms/pixel; ratio 1.510x
+Pipelined ms/pixel is two-patch throughput; excludes extraction/validation/UART.

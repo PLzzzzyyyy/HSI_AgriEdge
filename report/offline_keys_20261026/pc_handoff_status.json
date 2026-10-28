@@ -1,0 +1,15 @@
+{
+  "boot": "228ce128",
+  "active": false,
+  "authorized": false,
+  "channel_ready": false,
+  "registry_count": 14,
+  "operation": {
+    "state": "done",
+    "error": null,
+    "phase": "query"
+  },
+  "run": null,
+  "history": 106,
+  "model_channel": "channel_20261026_195857_383980"
+}

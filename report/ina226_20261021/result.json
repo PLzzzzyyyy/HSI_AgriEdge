@@ -1,0 +1,24 @@
+{
+  "state": "OFFLINE_DRIVER_READY_WIRING_REQUIRED",
+  "sensor_observed": false,
+  "power_measured": false,
+  "production_unchanged": true,
+  "offline_test": "PASS: g++ C++14 -Wall -Wextra -Werror; register identity, voltage/current/power, timeout/range/reverse, energy gap/task isolation",
+  "jtag_observation": {
+    "targets": [
+      "PS TAP",
+      "PMU",
+      "PL"
+    ],
+    "mio24": 0,
+    "mio25": 0,
+    "i2c0": "Blocked address 0xFF020000; RST_LPD_IOU2 bit 9",
+    "i2c_transactions_performed": false
+  },
+  "source_files": {
+    "src/ps/power_monitor/ina226.h": "88c6431913e0758c6b858467859a1ebf10da0943fe56611ba7b7b1c1c2d67d3d",
+    "src/ps/power_monitor/ina226.cpp": "e3d57037319bbc88c8c190cdcf839ac5d8741ba2265b6584b25a4c598c961c80",
+    "tools/tests/test_ina226.cpp": "8a4cd31724d89dad7e1b648e9cb4a6ec46803ef3f7a4f8bf2732042493862463",
+    "tools/ina226_readonly_diagnostic.tcl": "e1b6d2580280de07b7cee27835d6466e6419ff63b03aafe449eb8fddf4ec8ceb"
+  }
+}

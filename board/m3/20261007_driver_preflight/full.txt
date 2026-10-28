@@ -1,0 +1,17 @@
+PASS shape/address/capacity/overlap guards before DMA/cache
+PASS LOGITS batch A/B/A
+PASS CLASS confidence + odd tail
+PASS DUMP layer 0
+PASS DUMP layer 1
+PASS DUMP layer 2
+PASS DUMP layer 3
+PASS DUMP layer 4
+PASS DUMP layer 5
+PASS DUMP layer 6
+PASS DUMP layer 7
+PASS DUMP layer 8
+PASS DUMP layer 9
+PASS DUMP layer 10
+PASS DUMP layer 11
+PASS FEAT layer5..11 and cache lifecycle
+M3A_DRIVER PASS (full)

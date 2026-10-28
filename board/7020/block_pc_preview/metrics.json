@@ -1,0 +1,25 @@
+{
+  "source": "PC C++ float32 glue + integer projection simulation; not board output",
+  "model": "unoverlapping",
+  "origin_zero_based": [
+    112,
+    196
+  ],
+  "size": 64,
+  "pixels": 4096,
+  "labeled_pixels": 3452,
+  "correct_labeled_pixels": 3411,
+  "labeled_accuracy": 0.9881228273464658,
+  "prediction_vs_pc_float_equal_pixels": 4095,
+  "prediction_vs_pc_fixed_equal_pixels": 4096,
+  "predicted_label_counts": {
+    "Corn": 230,
+    "Cotton": 14,
+    "Broad-leaf soybean": 302,
+    "Narrow-leaf soybean": 169,
+    "Rice": 83,
+    "Water": 2328,
+    "Roads and houses": 296,
+    "Mixed weed": 674
+  }
+}

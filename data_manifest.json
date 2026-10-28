@@ -1,0 +1,1550 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "data/ckpt/hanchuan_qat8_s0.pth",
+      "bytes": 869730,
+      "sha256": "e265491c1304039ddea74ef3325f379185fd2539242e685cd7c32828b0b654d5"
+    },
+    {
+      "path": "data/ckpt/hanchuan_qat8_s0_metrics.json",
+      "bytes": 570,
+      "sha256": "9b9a375dcd07244c182cdc459a61e83cc1efef0f485d720bcde77b87c7e0b499"
+    },
+    {
+      "path": "data/ckpt/hanchuan_unoverlapping_s0.pth",
+      "bytes": 871162,
+      "sha256": "05538d45df2121f414e4d785d2daee1b4a451f11668dacf06053b7d1f7211f4e"
+    },
+    {
+      "path": "data/ckpt/hanchuan_unoverlapping_s0_metrics.json",
+      "bytes": 506,
+      "sha256": "153b234b710b016026750db1054379763585e5096aec0a72c4de5a742c4920a3"
+    },
+    {
+      "path": "data/ckpt/honghu_qat8_s0.pth",
+      "bytes": 932914,
+      "sha256": "6322c272043aa88e55de322b341595a5f2ad471c546eb61899595e23dc19b706"
+    },
+    {
+      "path": "data/ckpt/honghu_qat8_s0_metrics.json",
+      "bytes": 563,
+      "sha256": "898d56c57e7b9293a07bf0dc683fc7f270cfc99c8678d7e7a5347ac97109dfdf"
+    },
+    {
+      "path": "data/ckpt/honghu_unoverlapping_s0.pth",
+      "bytes": 934346,
+      "sha256": "2bcb0b8f47423698808e82e60a2b6d26dd1534f98bc8d41d1658708297f2ccd1"
+    },
+    {
+      "path": "data/ckpt/honghu_unoverlapping_s0_metrics.json",
+      "bytes": 503,
+      "sha256": "0b0a266d0c794cb63a13ccbece9aa6b6fc477d763f1154478dc156c230e9d372"
+    },
+    {
+      "path": "data/ckpt/longkou_qat8_s0.pth",
+      "bytes": 795402,
+      "sha256": "53c70c5b4e3018689b9f30b408230d7c8cc4148913bcb872b78094be206b0fbe"
+    },
+    {
+      "path": "data/ckpt/longkou_qat8_s0_metrics.json",
+      "bytes": 562,
+      "sha256": "9012c973f4f0573a2f85f6562b0cf91b164055245c45213bf62de487792dc4a8"
+    },
+    {
+      "path": "data/ckpt/longkou_unoverlapping_s0.pth",
+      "bytes": 796834,
+      "sha256": "3f8acada1311f7cda9f324df840d7aefdb71022e79acbbf3d25cf6753931ef3c"
+    },
+    {
+      "path": "data/ckpt/longkou_unoverlapping_s0_hold3.pth",
+      "bytes": 797810,
+      "sha256": "63c3d7e20a1f25ad8108182a6479fdd5ec9427a6599e1fee3c0b4b7f59ec50a4"
+    },
+    {
+      "path": "data/ckpt/longkou_unoverlapping_s0_hold3_ft30.pth",
+      "bytes": 798634,
+      "sha256": "5ab7c5f1f31a970fcadcbe52cd891099ce9858e44d61a709955daf45fbc396fa"
+    },
+    {
+      "path": "data/ckpt/longkou_unoverlapping_s0_hold3_ft30_live0925_114322.pth",
+      "bytes": 801194,
+      "sha256": "cd8e37bb42095b841001cbb890bca96fd29cf857e3b0a029d09441ab2341e020"
+    },
+    {
+      "path": "data/ckpt/longkou_unoverlapping_s0_hold3_ft30_live0925_131839.pth",
+      "bytes": 801194,
+      "sha256": "24a292a8987405b3773ff1c549ef6eac114ba015fa1bcbc76a647af4c245d153"
+    },
+    {
+      "path": "data/ckpt/longkou_unoverlapping_s0_hold3_ft30_live0925_144327.pth",
+      "bytes": 801194,
+      "sha256": "4354a70c46bc25faf1497277cb16757076b6acba74882bd6e9411c79672b235d"
+    },
+    {
+      "path": "data/ckpt/longkou_unoverlapping_s0_hold3_ft30_live0925_145202.pth",
+      "bytes": 801194,
+      "sha256": "7723235a11856f04cc21b89d8a8f8b777c9a80a1ff358accf99bd72242ce8b3b"
+    },
+    {
+      "path": "data/ckpt/longkou_unoverlapping_s0_hold3_ft50.pth",
+      "bytes": 798634,
+      "sha256": "e76acaa3772b0c800e33210500cddc82384e3c001530b5a35935d40cdea4ad79"
+    },
+    {
+      "path": "data/ckpt/longkou_unoverlapping_s0_metrics.json",
+      "bytes": 501,
+      "sha256": "ccea3d10336e01c12316c1506a364b0133bfb4fb0c452cbae254a6d60a16f464"
+    },
+    {
+      "path": "data/closed_loop/longkou/annotations_30.json",
+      "bytes": 923,
+      "sha256": "e1fdfe093620064e0bc4fd178682d0c7e49c42a73b71a236eeedee1cafb8bd54"
+    },
+    {
+      "path": "data/closed_loop/longkou/annotations_50.json",
+      "bytes": 1463,
+      "sha256": "5440d352db6ddfc18cdb0f9d668ad9c30ed92f2633123d277d616825bc3aa73e"
+    },
+    {
+      "path": "data/closed_loop/longkou/finetune_30.json",
+      "bytes": 1663,
+      "sha256": "3a7e9a669917524279c3ed584d8959e3903b6357a740c6d981b3636e93e3c25c"
+    },
+    {
+      "path": "data/closed_loop/longkou/finetune_50.json",
+      "bytes": 1674,
+      "sha256": "13fd41f24f119eaac139ee78c0afc04126635803aa0ac7bbfe188309f84a3fa3"
+    },
+    {
+      "path": "data/closed_loop/longkou/gt_region.bin",
+      "bytes": 4096,
+      "sha256": "2294672453c8072a096dc43466e23e05c96ff28a2f01179fe5a0b8bf5acd9063"
+    },
+    {
+      "path": "data/closed_loop/longkou/pred_new_region_ft30.bin",
+      "bytes": 4096,
+      "sha256": "2a1dacae3901d2e3520c9a5c5bf7c5ca81cc4fed136cfae4fdd0c2d2bbe066de"
+    },
+    {
+      "path": "data/closed_loop/longkou/pred_new_region_ft50.bin",
+      "bytes": 4096,
+      "sha256": "c4bff90d3133493c1d86bd56d2ce1af65b4cb2f4135b62aad73274e21d6a8d18"
+    },
+    {
+      "path": "data/closed_loop/longkou/pred_old_region.bin",
+      "bytes": 4096,
+      "sha256": "506e83b3482d2bd3e3b4fa24b22912eafea69328edb64ee0dda68efc17339a16"
+    },
+    {
+      "path": "data/closed_loop/longkou/region.json",
+      "bytes": 951,
+      "sha256": "d9c4acdc2d8f046c74357b9af8a84ea6e4bda58828dbc168e7d588a64b487726"
+    },
+    {
+      "path": "data/closed_loop/longkou/runs/live0925_114322/annotations_30.json",
+      "bytes": 923,
+      "sha256": "e1fdfe093620064e0bc4fd178682d0c7e49c42a73b71a236eeedee1cafb8bd54"
+    },
+    {
+      "path": "data/closed_loop/longkou/runs/live0925_114322/finetune_30.json",
+      "bytes": 1721,
+      "sha256": "6471358882bf5ad16451e0df5506503b4c11bd59814e638b388e80609feee0ce"
+    },
+    {
+      "path": "data/closed_loop/longkou/runs/live0925_114322/pred_new_region_ft30.bin",
+      "bytes": 4096,
+      "sha256": "2a1dacae3901d2e3520c9a5c5bf7c5ca81cc4fed136cfae4fdd0c2d2bbe066de"
+    },
+    {
+      "path": "data/closed_loop/longkou/runs/live0925_131839/annotations_30.json",
+      "bytes": 923,
+      "sha256": "e1fdfe093620064e0bc4fd178682d0c7e49c42a73b71a236eeedee1cafb8bd54"
+    },
+    {
+      "path": "data/closed_loop/longkou/runs/live0925_131839/finetune_30.json",
+      "bytes": 1721,
+      "sha256": "e8d77d1d58a0bebe930e47329de31263115c3cd7caf542aa9fd9216a1b6823b2"
+    },
+    {
+      "path": "data/closed_loop/longkou/runs/live0925_131839/pred_new_region_ft30.bin",
+      "bytes": 4096,
+      "sha256": "2a1dacae3901d2e3520c9a5c5bf7c5ca81cc4fed136cfae4fdd0c2d2bbe066de"
+    },
+    {
+      "path": "data/closed_loop/longkou/runs/live0925_144327/annotations_30.json",
+      "bytes": 923,
+      "sha256": "e1fdfe093620064e0bc4fd178682d0c7e49c42a73b71a236eeedee1cafb8bd54"
+    },
+    {
+      "path": "data/closed_loop/longkou/runs/live0925_144327/finetune_30.json",
+      "bytes": 1721,
+      "sha256": "585ac44c31a4384c0f694c8679c49b3c460d71b14674748af06faec34d32ebba"
+    },
+    {
+      "path": "data/closed_loop/longkou/runs/live0925_144327/pred_new_region_ft30.bin",
+      "bytes": 4096,
+      "sha256": "2a1dacae3901d2e3520c9a5c5bf7c5ca81cc4fed136cfae4fdd0c2d2bbe066de"
+    },
+    {
+      "path": "data/closed_loop/longkou/runs/live0925_145202/annotations_30.json",
+      "bytes": 923,
+      "sha256": "e1fdfe093620064e0bc4fd178682d0c7e49c42a73b71a236eeedee1cafb8bd54"
+    },
+    {
+      "path": "data/closed_loop/longkou/runs/live0925_145202/finetune_30.json",
+      "bytes": 1721,
+      "sha256": "d829dda7df71b1e1d678b4682726d0617686b5428f7fa067457c61067dcb45b7"
+    },
+    {
+      "path": "data/closed_loop/longkou/runs/live0925_145202/pred_new_region_ft30.bin",
+      "bytes": 4096,
+      "sha256": "2a1dacae3901d2e3520c9a5c5bf7c5ca81cc4fed136cfae4fdd0c2d2bbe066de"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test100",
+      "bytes": 368751,
+      "sha256": "9854563e40211fc5add5ae3bbc269ce53ebe65423b292c9479db3260e7ae94c7"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test100.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test150",
+      "bytes": 368751,
+      "sha256": "03c25b3af027152d951da83aee45cbdd4ccfb351a93ff8919deba64451003ab6"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test150.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test200",
+      "bytes": 368751,
+      "sha256": "72578560a783522453b39fd73eecd90a7ac702733f0dd7d98f39d504118905b3"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test200.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test25",
+      "bytes": 368751,
+      "sha256": "fd37152e3318c0abbf89489db009bda8c306ed9c79b76a0ccac8b0b2cf35530c"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test25.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test250",
+      "bytes": 368751,
+      "sha256": "b3935c533b6171cf5245bb54a5e214172dfac72cf4a53714a270e1a8767dd924"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test250.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test300",
+      "bytes": 368751,
+      "sha256": "b25646d9facbb64bbac8f75e70c3e5eef14bc2fcfaf51f1bcdc3c69e50833d09"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test300.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test50",
+      "bytes": 368751,
+      "sha256": "da3d055e1531e8cccbe6a6f11fbb4f21180c118da6a9b06b759dec5d4b596515"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Test50.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train100",
+      "bytes": 368751,
+      "sha256": "05d2a6490637e5c5fc1290dd4620b8acc87b1708ca09d760504fa26a675dcb5d"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train100.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train150",
+      "bytes": 368751,
+      "sha256": "9f951a1adfb3c2ce0cdc0f0eb690a8dd4f93ca5675f04e7168d8277de273a058"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train150.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train200",
+      "bytes": 368751,
+      "sha256": "1c334d9526c34ea1462bb34f68c61ce0e0b17909d51483ec2285b63e5c01b023"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train200.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train25",
+      "bytes": 368751,
+      "sha256": "4ad3c214bb15b0a0c4e165954287921c65ba5381d4d7d278d4ec6aca4688f6d0"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train25.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train250",
+      "bytes": 368751,
+      "sha256": "fecbfca32c67b12eb821094bbb2504f868d1adf2ba81bf88cb6e1d56c4bd0a9b"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train250.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train300",
+      "bytes": 368751,
+      "sha256": "e71826055e891b3f530c5a798bf6ce9a5c03456020239d3f2ca51bc01f99dd6b"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train300.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train50",
+      "bytes": 368751,
+      "sha256": "a7714fa640f6249ae98d883fba800690317733ce8de15cc3e3322a40a9a28aaa"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HanChuan/Training samples and test samples/Train50.hdr",
+      "bytes": 611,
+      "sha256": "9759cbd6091ef1eebaabca70a6150b4ac644b530460fb49f54e58717384a5573"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test100",
+      "bytes": 446500,
+      "sha256": "0f2417ca15636278e138173ff5e08a58e3eb7a94b6f25e438c6fdedf81406599"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test100.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test150",
+      "bytes": 446500,
+      "sha256": "60a38cd915dbd853a36510a29037d14d75f883565cdc4b755e47839a435786b3"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test150.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test200",
+      "bytes": 446500,
+      "sha256": "ce076eab0ecf4314113d7b31c65cedea8265932984fcefc5719c51f2811507f7"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test200.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test25",
+      "bytes": 446500,
+      "sha256": "f46aeabc2f40c92088dd102477ae99cfca512e497891993d14f72c00fdad1a83"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test25.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test250",
+      "bytes": 446500,
+      "sha256": "bc3cf59195156fc441486d33e8115baf0bb6c319568d66cde890f1bf113c85d2"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test250.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test300",
+      "bytes": 446500,
+      "sha256": "17a695c96e511da74544adc2fc0244d93682cefa148141c442092bd3eeac5a3e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test300.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test50",
+      "bytes": 446500,
+      "sha256": "6ed1b40a16edcbae1fa3db3709c6ae27eff976664e3a5fedc40b4be07c6f9702"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Test50.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train100",
+      "bytes": 446500,
+      "sha256": "ba0613af40bd1f0564b7a7c3a4ea6b4e90dd59d63ad2cb46e7784af8a36a982b"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train100.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train150",
+      "bytes": 446500,
+      "sha256": "a2392b6d531fc5edc53d1ac398be01e1f32a92ed6875a99b89cfe434e2001745"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train150.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train200",
+      "bytes": 446500,
+      "sha256": "2a83fd394bc24e4ebbee1f99ab886543874029cbbc34db36b3aa6fa6421f08f4"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train200.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train25",
+      "bytes": 446500,
+      "sha256": "1e366dc5bb75164c7681e611ee4d53726079ada87c149cf875cc3a7a1f0a0998"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train25.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train250",
+      "bytes": 446500,
+      "sha256": "19fcfd7a183296646122bef7cf92b74f6f1dda633f6e117a19f70292a21d9112"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train250.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train300",
+      "bytes": 446500,
+      "sha256": "8119308204a8796e6ded759cecc5b36899b58df2e582b7ce77b81e47940d6d12"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train300.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train50",
+      "bytes": 446500,
+      "sha256": "7487e56059a06942344aa118b260f8a9abd0df048bb22364b618ab60330a8d39"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-HongHu/Training samples and test samples/Train50.hdr",
+      "bytes": 1046,
+      "sha256": "97b22ad357d33284b4fb24c7dcee47a0675f199919040c2f30dc336e18c6d34f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test100",
+      "bytes": 220000,
+      "sha256": "fd062d5bdbc507fe5fed1a54d8868776ce1d692a6b8adfb49eeddd801ad45899"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test100.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test150",
+      "bytes": 220000,
+      "sha256": "36ec22ef3475e56db2734e1f4ecafb6f95687c9b46d1255a6b2a4f5788a09dea"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test150.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test200",
+      "bytes": 220000,
+      "sha256": "bce6029983165e26cf60f1f6d534c79a9e06226981aa7f10c8dbf9568d6617aa"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test200.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test25",
+      "bytes": 220000,
+      "sha256": "5e2af9d8ecdf3615527c65cb05cd7f44d79d3d99781eca281e04218f5078c1dd"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test25.hdr",
+      "bytes": 662,
+      "sha256": "f32f5dfb70b43d34632dfc52956c3f53dad407dd961a6d37036c7892a247c611"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test250",
+      "bytes": 220000,
+      "sha256": "be9876e1b3effc37f3f4727ea18db04b0aa410b3d3c29e7f865e8308b4969e13"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test250.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test300",
+      "bytes": 220000,
+      "sha256": "41dc4a699c47d85f3063846c8b76fe4001e8e162b69d487fcd06f5c523fa5d57"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test300.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test50",
+      "bytes": 220000,
+      "sha256": "8b85cc8841b1232f2f076d8c066b4d2d964eac99ca07044ae80c60082c67b3a8"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Test50.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train100",
+      "bytes": 220000,
+      "sha256": "542e0a70e19fb8b8d554956fe8e04d2b6a1ae9d4184af6ed6f24792ac0b70c5a"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train100.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train150",
+      "bytes": 220000,
+      "sha256": "d13af1eb2b6bf56613f45efc69e346a8883df1d3b8a4cbd119cff860e56d2f3c"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train150.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train200",
+      "bytes": 220000,
+      "sha256": "b571f15158d268a745b70f714671f0a18aeec71ef8865571a3fc48c485c2396c"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train200.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train25",
+      "bytes": 220000,
+      "sha256": "8476fcd1c2814d0e812f67ff179ddf45522295e871526ca471f5c8cc065c5474"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train25.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train250",
+      "bytes": 220000,
+      "sha256": "849cb194e28924befafdbeb108df3ff00c11d2d3182a6026bc89b417f5c8fe99"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train250.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train300",
+      "bytes": 220000,
+      "sha256": "422e2147bf35efe2899ec63e59c18cc6059e92323105af4ae83406e1a0341543"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train300.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train50",
+      "bytes": 220000,
+      "sha256": "3f73237b4b5a96d34c289a1701d6393b6fbb6f80f204e0159d4553eb0de021b3"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Envi_standard_format/WHU-Hi-LongKou/Training samples and test samples/Train50.hdr",
+      "bytes": 641,
+      "sha256": "ae09724ff7a92abe08408b481bf9bc9872e6653d0e6909348849d7d269ddd40e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Test100.mat",
+      "bytes": 24144,
+      "sha256": "8ed88c7b6323106a778289c987d28084edfa5b93c8f62b084044590ea02ce4de"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Test150.mat",
+      "bytes": 25495,
+      "sha256": "1021d20130d52cbe5160dbed3ce0162fae441c07cb567760670cb9c79b95a623"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Test200.mat",
+      "bytes": 26739,
+      "sha256": "337be709935aeb134c9d8fc1e384a219626d9ea6316f16a8a03af934864b3d83"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Test25.mat",
+      "bytes": 21511,
+      "sha256": "36fa928f6b951bfbce7c5ba8ea2c1384012e83d14dd1a2b58613c976b3eee02c"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Test250.mat",
+      "bytes": 27957,
+      "sha256": "4ff0b6255bbd9e89165ac68729afcbbbd01058d3b3444f4bd25f3d784290592a"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Test300.mat",
+      "bytes": 28955,
+      "sha256": "03f5f32ca71f68ccc4ecf95c9de7c7f3eec9c9d28ce654a9ae05952fb01f40f9"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Test50.mat",
+      "bytes": 22457,
+      "sha256": "3dfe90af5ae6594d30a64757f6d6a6cac091fa49eef921bc31d19aec0b001e03"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Train100.mat",
+      "bytes": 6426,
+      "sha256": "8c9c14b7a0934dc2b7b7dcdc8f575680bd3c2581cc4eeda78067678471274199"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Train150.mat",
+      "bytes": 8159,
+      "sha256": "0952004a377ca1459d967bba59235c1c0dece62607b4088a27a2af429e963845"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Train200.mat",
+      "bytes": 9670,
+      "sha256": "6c583892554f64f4803af7f4ecef8b7c0982f87f36bd3cb66908535394855523"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Train25.mat",
+      "bytes": 3207,
+      "sha256": "1e4dc0680895d2263de3559edd906aaf975479609803ad23ea9ae9457d736e61"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Train250.mat",
+      "bytes": 11043,
+      "sha256": "1c19a27d0bcec5057dde93cb93ab21314fa3c306f591fd649336728b4df88653"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Train300.mat",
+      "bytes": 12282,
+      "sha256": "6be030957652ea735e0014ccff332f619aefad89ed90bdd851ed1a62684c066f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HanChuan/Training samples and test samples/Train50.mat",
+      "bytes": 4406,
+      "sha256": "6762b139f0aefd7affbbff644a39107347a8a8562a7c4032db14dd05a8601b5d"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Test100.mat",
+      "bytes": 17079,
+      "sha256": "5ab5f46c33b41665871e6f08ed732de4a371e0e91fc93c13407c6468694c9462"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Test150.mat",
+      "bytes": 19384,
+      "sha256": "e8db3872ba44cdf977ec0633a0e8a14adb968df95d6a8ac6f71d2fb0a36b9506"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Test200.mat",
+      "bytes": 21294,
+      "sha256": "22fe760dd4c88bc7252faa248b3728f02050c24c312b785e918602a4b54a3257"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Test25.mat",
+      "bytes": 12709,
+      "sha256": "c10914f5fbeda03195eec53b7573f08f41151a7b1c4c075f8b6063a00a916798"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Test250.mat",
+      "bytes": 22896,
+      "sha256": "3239b80d6f555c133480d8a11487f5c0df531faf83da06b2a0aa77ef7c600f54"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Test300.mat",
+      "bytes": 24356,
+      "sha256": "a5cc47622ba0ffd1cc1255ddde9d21bdefeee8dff1c1f7e6bb713623de784434"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Test50.mat",
+      "bytes": 14295,
+      "sha256": "6db1b9e67db37612c3734d57b8790033b220475f3832eb69f029c940d2e32411"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Train100.mat",
+      "bytes": 8339,
+      "sha256": "27b2cae758ee3d12d183773ef7463747218a9907ec669b462da34baf75132295"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Train150.mat",
+      "bytes": 10540,
+      "sha256": "89d5e2d142a1897eec0ea26997beb25169c2c4d640f9276ff9b872e2bfc5ccb7"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Train200.mat",
+      "bytes": 12394,
+      "sha256": "96dd4ab39a0b575a868f1913133f4a0c53da8e789f19eec30adc459e191ac625"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Train25.mat",
+      "bytes": 4143,
+      "sha256": "e1f43595dd4cce77363adb67d09c0967284293934cc7194666ce4318519422d8"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Train250.mat",
+      "bytes": 14109,
+      "sha256": "cfb5c6d86810ed43bd0c5ca61109e7b7b98a95ef7244ba87d57b2b36e61367d8"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Train300.mat",
+      "bytes": 15671,
+      "sha256": "f64a9c93571961adbca4dcbadf754383b38a9085eb6ce0c8c90a2a1340f4b24d"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Train50.mat",
+      "bytes": 5772,
+      "sha256": "aa262baf02b8b29ba377a410fad10ab69efec49227706869d186198203a07022"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Test100.mat",
+      "bytes": 7653,
+      "sha256": "a17a82530b869a794950f3169b9aff6c0dc1f77c4a7b3e5f3912227450736c8c"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Test150.mat",
+      "bytes": 8479,
+      "sha256": "672e9339b1074eaf564d85886cdfbfd0ecb7f8d5b0f89380ffbe5afbfd52dea2"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Test200.mat",
+      "bytes": 9247,
+      "sha256": "792156f9b823640e2ede737902f91db18378ea121f1876df44b5c7dd8211956f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Test25.mat",
+      "bytes": 6089,
+      "sha256": "d0b7ae5a3a8dc6795d1fd9eb48acb9d4e4bfa06550c8037202ba9320fa0fcccc"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Test250.mat",
+      "bytes": 9880,
+      "sha256": "8bfc644ef9a74b138e891182a5791446472fefbe17514aa4397d2c8cc80172f3"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Test300.mat",
+      "bytes": 10488,
+      "sha256": "9158de7d9c6c375bd349b3b0ea52108f5ee536fea955270c398124bb3bee308a"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Test50.mat",
+      "bytes": 6615,
+      "sha256": "89c7daca781fbea168528b8191f7c73e727369e9eb21c94f481f1aca858d2fc0"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Train100.mat",
+      "bytes": 3549,
+      "sha256": "e4788a2135f38cde294cacdbcf44c97efdb06cc9c3a5d53f5269a563b66cd009"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Train150.mat",
+      "bytes": 4397,
+      "sha256": "6bb056248d2fb114e14b22996f65c966e79789b9b8866d7b25fdcdc3561eed5f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Train200.mat",
+      "bytes": 5219,
+      "sha256": "8581575b083044baf800b706f0c41f197d27692f2a0d5bb6ad53c743782cdfc2"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Train25.mat",
+      "bytes": 1871,
+      "sha256": "1086587222c88bfdeac313ce23a3eea9fe8f3b1695df69a15f319d902a3556c7"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Train250.mat",
+      "bytes": 5913,
+      "sha256": "15b29d380e222915af2a1969e70a0796ab81df2730c2d7035e6d745bd3c0e95c"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Train300.mat",
+      "bytes": 6564,
+      "sha256": "73756edb3a26b5a4f955de8f72e5ca886c687e25f59ed1e204cea965d40cf339"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-LongKou/Training samples and test samples/Train50.mat",
+      "bytes": 2487,
+      "sha256": "f4b6d8d2320ecfd12cd935cbb928ec3dcc986d06f8fc9622f384506563c0022f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Test100.tif",
+      "bytes": 380233,
+      "sha256": "fb34b49d1a93bf0d3ee4484584f7bd327d6c8042008ddecfbbfc55d5dcfb6448"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Test150.tif",
+      "bytes": 380233,
+      "sha256": "30c436c861240c127773d3cad0403d198d78f2800df61bddfc8a1bff45021ae7"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Test200.tif",
+      "bytes": 380233,
+      "sha256": "de9c3b5981647b84c82336484c794f51555912e11d0443cceb63bcbde9931992"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Test25.tif",
+      "bytes": 380233,
+      "sha256": "fbee8d845d71a5308d53cddf01f7daa6c372747bbc1dcff9ed76dcef36d43a41"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Test250.tif",
+      "bytes": 380233,
+      "sha256": "8c1f540f646c7aec37fc5f25f9d9c9fd3c7956f1c464cd245e0da5746492c199"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Test300.tif",
+      "bytes": 380233,
+      "sha256": "5c6dec9425256366cbf8a8ad61c08ed5a1111475d289d7a5efd0634e18763dd9"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Test50.tif",
+      "bytes": 380233,
+      "sha256": "984a01df4c2b2b145256eaa028f7702acc4c185eaceb1f7a971335bb438ff349"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Train100.tif",
+      "bytes": 380233,
+      "sha256": "626e3d168d5f9a682d6d5e33679a79ffe2292872038bb6c4d0d5cc6f03cfb028"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Train150.tif",
+      "bytes": 380233,
+      "sha256": "62aac05056e689463523e0d5e19107522de116807d73dcc8740b51b926647488"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Train200.tif",
+      "bytes": 380233,
+      "sha256": "96b5c943840ac00bfed3a5f8daac7509ec80004ca010d248150b25a96a8051b0"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Train25.tif",
+      "bytes": 380233,
+      "sha256": "e8b5aafe65f8e97d25c1fdd3b2116d78234880d02b3e21481927f07337eb7a96"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Train250.tif",
+      "bytes": 380233,
+      "sha256": "24ef4128301ec0c3c2f0ed256fa9a474d56ad86422a32042b92ec8a572a933d2"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Train300.tif",
+      "bytes": 380233,
+      "sha256": "0a3d32c86466eec2d77d743df6802112bb588b24b9067f16bcd8f086c3ecf504"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HanChuan/Training samples and test samples/Train50.tif",
+      "bytes": 380233,
+      "sha256": "744eabd325f5a2e2bc17c5a44eb5115174ff1b78f13b12c78ead0cd5a046a165"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Test100.tif",
+      "bytes": 455766,
+      "sha256": "28d14e3b83ae9ddcbfd57cf4c1ce264c40a015993267c093afae858da097b710"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Test150.tif",
+      "bytes": 455766,
+      "sha256": "40c4eea9a2054c39d70c3e2bfee324fd288ac2f75ce8d3d3a3cbdddd785a6cee"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Test200.tif",
+      "bytes": 455766,
+      "sha256": "98dc03d064462f82627af00c3ddb73ceb7f15098193853173d8517f63e8461d8"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Test25.tif",
+      "bytes": 455766,
+      "sha256": "6d5aed744a5fef2095e53d1be3e89532884071acbb809f53ec240df23fa0b626"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Test250.tif",
+      "bytes": 455766,
+      "sha256": "5d5eb7401613ae1f22576af4910bfa4116eb7a5f368f25a389699d3919413da1"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Test300.tif",
+      "bytes": 455766,
+      "sha256": "09d3a2f50d5243a00fd6c7ef0e54ffbaec795b5a23bdf0fdcb8011f2ab14cd15"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Test50.tif",
+      "bytes": 455766,
+      "sha256": "07bf738ecaddbb597f6fc60c6e69530815e94def0b7a53a6062bdd8ac512898f"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Train100.tif",
+      "bytes": 455766,
+      "sha256": "c15541b4a74a099171e1261a6d27fb4720c1af26ebe217442515e39db049c7d6"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Train150.tif",
+      "bytes": 455766,
+      "sha256": "05967ff2cc9b84d9fc2d43bda0a031eb4e3aa390050549ae18c1df26bc63743d"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Train200.tif",
+      "bytes": 455766,
+      "sha256": "5125db89610686b9645817100a4825c25af6e2488a185ef52fd031d7e50bcbbe"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Train25.tif",
+      "bytes": 455766,
+      "sha256": "5824f54653f00870b69bb3130060dca687c906eb972ce53e87a8455fca0690cb"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Train250.tif",
+      "bytes": 455766,
+      "sha256": "c2e187c70a4d61742046d011e95e1dd71f5ec6ba8ec6201c7dbf1c3afe2ca1b5"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Train300.tif",
+      "bytes": 455766,
+      "sha256": "658a99e0349b896a666260e0b2ebc96aa1802f575752a2b5d45b93243d314c54"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-HongHu/Training samples and test samples/Train50.tif",
+      "bytes": 455766,
+      "sha256": "df223f55ece932d52563582c386e6d4ce643f2beb05d838556552e12442b0b7e"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Test100.tif",
+      "bytes": 226146,
+      "sha256": "60c1c05259d1174a99187e4bd0f0093f5f785e881837748f2bdc2739017156ab"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Test150.tif",
+      "bytes": 226146,
+      "sha256": "e4748c190a4b5e6c9d6d54081760724718fc5d68f746747dc9ea28e1acb73a3c"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Test200.tif",
+      "bytes": 226146,
+      "sha256": "eff697e907e79bebd44571ee65e1c330f55cf560ad5afa3942be5631661b5ee5"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Test25.tif",
+      "bytes": 226146,
+      "sha256": "e21aa65f753d4cd0035407afa85f72ec237f91cdc76df0198d381c0cd6fe9d66"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Test250.tif",
+      "bytes": 226146,
+      "sha256": "2cde6049142a52e15294b5f02d1605bcc21e6b10f21b333d40acef6fb4c89b2a"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Test300.tif",
+      "bytes": 226146,
+      "sha256": "739f529f34b0c4c41613bef6c9d6060719a9fe43f2d62738fc7bcddd45c7d6b2"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Test50.tif",
+      "bytes": 226146,
+      "sha256": "e3057323a1d113a371694717b6d7474f149fce85ee319db529c50203ff724e31"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Train100.tif",
+      "bytes": 226146,
+      "sha256": "9911b0f76c80eab7cd74fc7d2f4f862651963001a83acaaa868b79739c39d609"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Train150.tif",
+      "bytes": 226146,
+      "sha256": "d519360ae1b2a9b5337e19d4341bde09eacedf474c390f6e8c8effb0714ea1c4"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Train200.tif",
+      "bytes": 226146,
+      "sha256": "0ffd19c37bcce03eaf809914705b2628ffa86aded3d8ce1d9423b5cf5edfb8bf"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Train25.tif",
+      "bytes": 226146,
+      "sha256": "4ceb295192c15cce11a3ef656c2bf987826f25bf66d7a7c50b28dad5b4d6ec3c"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Train250.tif",
+      "bytes": 226146,
+      "sha256": "10513cdc0c4da688e9b93de79aed1a9f7b961af52587db330791fa0e201a359a"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Train300.tif",
+      "bytes": 226146,
+      "sha256": "b6a56ebc44028c89765c3dfc7b311f3c805e46bb51f0390d67c4eea2b40ea513"
+    },
+    {
+      "path": "data/raw/WHU-Hi/Tiff_format/WHU-Hi-LongKou/Training samples and test samples/Train50.tif",
+      "bytes": 226146,
+      "sha256": "668e370ebde149b7774ba69039dd0371189848e0a5d2d959a456071f5efbaca6"
+    },
+    {
+      "path": "data/scenes/hanchuan/cube_f32.bin",
+      "bytes": 408139560,
+      "sha256": "99597454322c89afb7b3381737e4c23ce56fd7d03b44c9597dd64776fd2cfb82"
+    },
+    {
+      "path": "data/scenes/hanchuan/gt_u8.bin",
+      "bytes": 368751,
+      "sha256": "9ee716a1ecdbe40c2b1b52fc2d5de0684ff3b02f9128b89e14f28e803974fce6"
+    },
+    {
+      "path": "data/scenes/hanchuan/meta.txt",
+      "bytes": 1648,
+      "sha256": "00e0f99d7dbbbf43457d9aeddcc9b2a53cbfdd3e3dd0a2967db6fa80b493fe1e"
+    },
+    {
+      "path": "data/scenes/hanchuan/weights/v1/classifier_b.bin",
+      "bytes": 64,
+      "sha256": "04ae62c4e6a5a20225b1154fb4f7514485df947a4c63f5be8993249200399cc1"
+    },
+    {
+      "path": "data/scenes/hanchuan/weights/v1/classifier_w.bin",
+      "bytes": 169344,
+      "sha256": "b677f40c6f5f5704f26cd302dab4de38b24abe5b87982f2c3774038d2490fa2f"
+    },
+    {
+      "path": "data/scenes/hanchuan/weights/v1/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "37070dc0956d506c20a02601fddc5311b4d3fd16a9d9fdaf3c5be9a8ff6138dd"
+    },
+    {
+      "path": "data/scenes/hanchuan/weights/v1/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "99adc378e93e323aeb6c1642ba1f82854f0d8e80f629f57449305cfe09dc27a5"
+    },
+    {
+      "path": "data/scenes/hanchuan/weights/v1/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "f8747fef9310667497a0277b4c0099ad8bb08bbe8ddd0eab9d575c4aa321fe6f"
+    },
+    {
+      "path": "data/scenes/hanchuan/weights/v1/weights_engine.bin",
+      "bytes": 480576,
+      "sha256": "1919c8b69f0a5871a97fc62dec89ef8cb6d9db4e8777e20a10779268398ae52d"
+    },
+    {
+      "path": "data/scenes/hanchuan/weights/v1_int8/weights_engine.bin",
+      "bytes": 336064,
+      "sha256": "677b3a9ff3be946697b76ba76135ba0c6831f201f72cd7b3452339f7b8891ba8"
+    },
+    {
+      "path": "data/scenes/honghu/cube_f32.bin",
+      "bytes": 491428080,
+      "sha256": "f8b1f8cbbc897bb53c5eff369fd24adfce36f9fe574157834b19f300f363725e"
+    },
+    {
+      "path": "data/scenes/honghu/gt_u8.bin",
+      "bytes": 446500,
+      "sha256": "b1a67ff5f179979862e97655403e7b90b447511984f830ce896979c6a2a07bbe"
+    },
+    {
+      "path": "data/scenes/honghu/meta.txt",
+      "bytes": 1613,
+      "sha256": "4d864867ba17d2ce5fd141a5c5a7bb902a4d54e1fbbcd51f5d9ef1f5097b8a23"
+    },
+    {
+      "path": "data/scenes/honghu/weights/v1/classifier_b.bin",
+      "bytes": 88,
+      "sha256": "856ebac80f38729fe1dee87bce139c92c857957dfb1b0b57022de93181b65fa4"
+    },
+    {
+      "path": "data/scenes/honghu/weights/v1/classifier_w.bin",
+      "bytes": 232848,
+      "sha256": "26a77d0dbe032e8a62e4e2fff70767891898e068c3511e3aef303df25ae11089"
+    },
+    {
+      "path": "data/scenes/honghu/weights/v1/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "77ed16718dcf7b9e4204e6727c6e22dcb023453b8ada8ccd4fa8df5cb9f67893"
+    },
+    {
+      "path": "data/scenes/honghu/weights/v1/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "da75130037879436086fae3c8eb5065afe9fbf6da544b4166bd7acc6af545f4b"
+    },
+    {
+      "path": "data/scenes/honghu/weights/v1/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "3b2d8cd042bea345efceecaf2af530305e1c38ba873ea8ff814055d23d401190"
+    },
+    {
+      "path": "data/scenes/honghu/weights/v1/weights_engine.bin",
+      "bytes": 480576,
+      "sha256": "dd2ee0c70016a314dbfb2e887c4a75afd1a39aedc7c11b6d3a8f7358c6bbe972"
+    },
+    {
+      "path": "data/scenes/honghu/weights/v1_int8/weights_engine.bin",
+      "bytes": 336064,
+      "sha256": "4f5689f556851503275130e843abdd6c04c459209c6f9643f9c26ae3635d1fe3"
+    },
+    {
+      "path": "data/scenes/longkou/cube_f32.bin",
+      "bytes": 243794880,
+      "sha256": "5a14afee3355ec435652434552d6bb702589ee02ee401e8ed5f066de3c5a6791"
+    },
+    {
+      "path": "data/scenes/longkou/gt_u8.bin",
+      "bytes": 220000,
+      "sha256": "0117166fe39891d09d188dd719c7e393f74bb30d01e23798c0ab69d4ee1a496e"
+    },
+    {
+      "path": "data/scenes/longkou/meta.txt",
+      "bytes": 1832,
+      "sha256": "3eeddfb458f761a005aafac1ea691cf4cf71f7fba632d127ab8cfb1a132cead7"
+    },
+    {
+      "path": "data/scenes/longkou/weights/.stage_hold3_6c195d5d65964f15bbbe12b474051eba/board_model.json",
+      "bytes": 1805,
+      "sha256": "535ece41ffe75c60a5d19c9ada1b451c1a414c756a792546983dcb3e2e31de65"
+    },
+    {
+      "path": "data/scenes/longkou/weights/.stage_hold3_6c195d5d65964f15bbbe12b474051eba/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "2c8af2ae80594daf7962ab7da87883f0c6cf89e892f8489fb238ae760f18c94d"
+    },
+    {
+      "path": "data/scenes/longkou/weights/.stage_hold3_6c195d5d65964f15bbbe12b474051eba/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "dd727ad5c296b139b3f439b480d2bc0faf78a4493620c5ef7027c98655fe4f6a"
+    },
+    {
+      "path": "data/scenes/longkou/weights/.stage_hold3_6c195d5d65964f15bbbe12b474051eba/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "65493cc4246636cb5cee23bb479b2fbdff14155aa9d1671cabac231fd7bfb0f5"
+    },
+    {
+      "path": "data/scenes/longkou/weights/.stage_hold3_6c195d5d65964f15bbbe12b474051eba/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "93cf1cb163fdc51204f37276dbdfefb3d3b7e28f03dab47f9d1dc594621a6f1c"
+    },
+    {
+      "path": "data/scenes/longkou/weights/.stage_hold3_6c195d5d65964f15bbbe12b474051eba/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "c8f0a8b34def0f355bfb5ce068e6c12d30ae296b5b5c4abaddbcf773d2981284"
+    },
+    {
+      "path": "data/scenes/longkou/weights/.stage_hold3_6c195d5d65964f15bbbe12b474051eba/weights_engine.bin",
+      "bytes": 480576,
+      "sha256": "5a10756080ee4bdf744d64726497b39d4146ae3880679e6bd2a5672f81c10f01"
+    },
+    {
+      "path": "data/scenes/longkou/weights/hold3/board_model.json",
+      "bytes": 1805,
+      "sha256": "c3cf6432a8b501fbb0ba68f91d649cc9a7b6e41e07381d9b142ba516dd1725d8"
+    },
+    {
+      "path": "data/scenes/longkou/weights/hold3/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "2c8af2ae80594daf7962ab7da87883f0c6cf89e892f8489fb238ae760f18c94d"
+    },
+    {
+      "path": "data/scenes/longkou/weights/hold3/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "dd727ad5c296b139b3f439b480d2bc0faf78a4493620c5ef7027c98655fe4f6a"
+    },
+    {
+      "path": "data/scenes/longkou/weights/hold3/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "65493cc4246636cb5cee23bb479b2fbdff14155aa9d1671cabac231fd7bfb0f5"
+    },
+    {
+      "path": "data/scenes/longkou/weights/hold3/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "93cf1cb163fdc51204f37276dbdfefb3d3b7e28f03dab47f9d1dc594621a6f1c"
+    },
+    {
+      "path": "data/scenes/longkou/weights/hold3/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "c8f0a8b34def0f355bfb5ce068e6c12d30ae296b5b5c4abaddbcf773d2981284"
+    },
+    {
+      "path": "data/scenes/longkou/weights/hold3/weights_engine.bin",
+      "bytes": 480576,
+      "sha256": "5a10756080ee4bdf744d64726497b39d4146ae3880679e6bd2a5672f81c10f01"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_114322/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "461aca8b45a59bfac274a0448187d3eeafe3400cf6f79975a9d57db199e52b11"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_114322/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "3d131a7c0999b6d9a37ea75f24ab5e7946560b490e2a0acbfae4260304d3f2a2"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_114322/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "ec1dfc2cc24c1d906297f8a74e8ccbecd0db558814ddb2564a6d365d1c5b931f"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_114322/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "a1436c7f0d9584571575a9fc72bd0582a47606e71fbeaa9a6175cf9b7fcec984"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_114322/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "8738c17fb3672ff677d6322bf68ca9d7f739995052a5cbd64018e2989e6e76ff"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_131839/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "461aca8b45a59bfac274a0448187d3eeafe3400cf6f79975a9d57db199e52b11"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_131839/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "3d131a7c0999b6d9a37ea75f24ab5e7946560b490e2a0acbfae4260304d3f2a2"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_131839/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "ec1dfc2cc24c1d906297f8a74e8ccbecd0db558814ddb2564a6d365d1c5b931f"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_131839/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "a1436c7f0d9584571575a9fc72bd0582a47606e71fbeaa9a6175cf9b7fcec984"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_131839/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "8738c17fb3672ff677d6322bf68ca9d7f739995052a5cbd64018e2989e6e76ff"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_144327/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "461aca8b45a59bfac274a0448187d3eeafe3400cf6f79975a9d57db199e52b11"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_144327/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "3d131a7c0999b6d9a37ea75f24ab5e7946560b490e2a0acbfae4260304d3f2a2"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_144327/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "ec1dfc2cc24c1d906297f8a74e8ccbecd0db558814ddb2564a6d365d1c5b931f"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_144327/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "a1436c7f0d9584571575a9fc72bd0582a47606e71fbeaa9a6175cf9b7fcec984"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_144327/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "8738c17fb3672ff677d6322bf68ca9d7f739995052a5cbd64018e2989e6e76ff"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_145202/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "461aca8b45a59bfac274a0448187d3eeafe3400cf6f79975a9d57db199e52b11"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_145202/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "3d131a7c0999b6d9a37ea75f24ab5e7946560b490e2a0acbfae4260304d3f2a2"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_145202/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "ec1dfc2cc24c1d906297f8a74e8ccbecd0db558814ddb2564a6d365d1c5b931f"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_145202/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "a1436c7f0d9584571575a9fc72bd0582a47606e71fbeaa9a6175cf9b7fcec984"
+    },
+    {
+      "path": "data/scenes/longkou/weights/live0925_145202/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "8738c17fb3672ff677d6322bf68ca9d7f739995052a5cbd64018e2989e6e76ff"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "4425a5a6f503f7594e6faca3b3c3695bf5be49c974d6067b12af527d3ca6c443"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "24825f3cf64df4bdb09b50d07895358519856e4b2280dd9bc838821b93712e57"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "c291733811a0f6485e57abcda48531fb84becd44100e4edf0381acd2143999c3"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "d456b08bc8f012a35ece49fb8020af49d3be8ce4430edf1d1e19a6308f90ccd9"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "4169e25ea589829456deadcbcb17c8f6eca54dd562b6162bd72feb7e8b1b4969"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1/weights_engine.bin",
+      "bytes": 480576,
+      "sha256": "15925d2dd8e273cc291f0a2d4a10ddde0bd02d27fa5c558d6b678df95bdf4e51"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1_board/board_model.json",
+      "bytes": 1903,
+      "sha256": "ee99f6ab4e2570a0e47291131f7565a30bd183c012bd05cbc98fd2de6aa0f8f4"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1_board/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "4425a5a6f503f7594e6faca3b3c3695bf5be49c974d6067b12af527d3ca6c443"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1_board/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "24825f3cf64df4bdb09b50d07895358519856e4b2280dd9bc838821b93712e57"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1_board/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "c291733811a0f6485e57abcda48531fb84becd44100e4edf0381acd2143999c3"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1_board/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "d456b08bc8f012a35ece49fb8020af49d3be8ce4430edf1d1e19a6308f90ccd9"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1_board/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "4169e25ea589829456deadcbcb17c8f6eca54dd562b6162bd72feb7e8b1b4969"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v1_board/weights_engine.bin",
+      "bytes": 480576,
+      "sha256": "15925d2dd8e273cc291f0a2d4a10ddde0bd02d27fa5c558d6b678df95bdf4e51"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v2/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "c25f3bda70a6136079263e5a7aea3d1447756c1a0d8f043a7952f48c28bb332a"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v2/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "34de511843664a4fdbf85c8b53879491b1a65ee2878445f921a40f04fe9db039"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v2/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "fffe63befdc243b47cf79d712debac71a99cd3c4e7f9fca8816dc23438364e41"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v2/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "56b14e785090d7f44bec2884616749bee835590940afb03ae50c24746e13cb96"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v2/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "707255f33447f510b9b7b924dbbab7d32f5aa7f98e5d2cd128c4324af20c7637"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v2/weights_engine.bin",
+      "bytes": 480576,
+      "sha256": "9177beec3b5b53c56d693f69d7383157264721b96080e2528bb0f4e7189211f2"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v2_int8/weights_engine.bin",
+      "bytes": 336064,
+      "sha256": "e3d89cd68934882b8ec910eb07b56f21b0a449b25e9fa85412a483ed8c46a76e"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "461aca8b45a59bfac274a0448187d3eeafe3400cf6f79975a9d57db199e52b11"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "3d131a7c0999b6d9a37ea75f24ab5e7946560b490e2a0acbfae4260304d3f2a2"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "ec1dfc2cc24c1d906297f8a74e8ccbecd0db558814ddb2564a6d365d1c5b931f"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "a1436c7f0d9584571575a9fc72bd0582a47606e71fbeaa9a6175cf9b7fcec984"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "8738c17fb3672ff677d6322bf68ca9d7f739995052a5cbd64018e2989e6e76ff"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3_board/board_model.json",
+      "bytes": 1813,
+      "sha256": "239ec434906b2f97d5895431d5ce976b04805ad5eb6fb629bbee98b7a95c234e"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3_board/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "461aca8b45a59bfac274a0448187d3eeafe3400cf6f79975a9d57db199e52b11"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3_board/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "3d131a7c0999b6d9a37ea75f24ab5e7946560b490e2a0acbfae4260304d3f2a2"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3_board/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "ec1dfc2cc24c1d906297f8a74e8ccbecd0db558814ddb2564a6d365d1c5b931f"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3_board/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "a1436c7f0d9584571575a9fc72bd0582a47606e71fbeaa9a6175cf9b7fcec984"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3_board/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "8738c17fb3672ff677d6322bf68ca9d7f739995052a5cbd64018e2989e6e76ff"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3_board/weights_engine.bin",
+      "bytes": 480576,
+      "sha256": "e5615b1f4f88eaf6ccf8a9fd6e42f8fa603abea91ca2a720c5519b0d2f88e22e"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3_ft50/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "870c561e8d23dfe0dbb9975fdf9afcb608e9065fd2c809d16b0c8097e82b188e"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3_ft50/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "5ea48a731570d2ab2262fcb40a299a6fc00686737885a507ae50f19c47848900"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3_ft50/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "61e1e38d1a1e37d9d3ecf46e6fba117426969df3acb04ea005e9aead239bb11f"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3_ft50/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "3c798691d4858bb6776740030115145e0731ac8266796a341d64be2f1b39828a"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3_ft50/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "b2687630f0502643783299666a4b4c960adc9d51be266e598247341f9daf4c9b"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3ft50_board/board_model.json",
+      "bytes": 1817,
+      "sha256": "3e8d183310cdc0103df1665af94bb41e244369f4690434fbb06b52958f7b2f0d"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3ft50_board/classifier_b.bin",
+      "bytes": 36,
+      "sha256": "870c561e8d23dfe0dbb9975fdf9afcb608e9065fd2c809d16b0c8097e82b188e"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3ft50_board/classifier_w.bin",
+      "bytes": 95256,
+      "sha256": "5ea48a731570d2ab2262fcb40a299a6fc00686737885a507ae50f19c47848900"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3ft50_board/cls_token.bin",
+      "bytes": 10584,
+      "sha256": "61e1e38d1a1e37d9d3ecf46e6fba117426969df3acb04ea005e9aead239bb11f"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3ft50_board/pos_embed.bin",
+      "bytes": 63504,
+      "sha256": "3c798691d4858bb6776740030115145e0731ac8266796a341d64be2f1b39828a"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3ft50_board/weights_all.bin",
+      "bytes": 289344,
+      "sha256": "b2687630f0502643783299666a4b4c960adc9d51be266e598247341f9daf4c9b"
+    },
+    {
+      "path": "data/scenes/longkou/weights/v3ft50_board/weights_engine.bin",
+      "bytes": 480576,
+      "sha256": "875c0de86c5cbc1b083d3849cf60f88ab4ea7c977067adecb3ae3fb3d22686df"
+    }
+  ]
+}

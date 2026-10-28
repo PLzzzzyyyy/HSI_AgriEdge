@@ -1,0 +1,6 @@
+{
+  "valid": false,
+  "phase": "synthesis",
+  "reason": "HLS resolved cpp paths to the original project source, not the modified stats candidate; CSIM and synthesis are not candidate evidence",
+  "actual_source_root": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017"
+}

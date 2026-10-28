@@ -1,0 +1,143 @@
+{
+  "recorded_at": "2026-10-07T13:21:08.365029+08:00",
+  "source_commit": "a67abde",
+  "provenance": "User pasted UART excerpts normalized to UTF-8 LF; LED/DP user visual confirmation, no photograph supplied; PC JSON is original script output. Workspace hashes captured at closeout, not a claim of byte-verified target DDR.",
+  "status": {
+    "C2_G-M1": "PASS",
+    "C3a_quick": "PASS",
+    "C3a_full": "NOT TESTED",
+    "C3b": "PASS",
+    "C3c": "PASS, user visual confirmation",
+    "C3d": "FAIL, unresolved",
+    "C3e": "PASS, user visual confirmation",
+    "C3_overall": "INCOMPLETE"
+  },
+  "remaining": [
+    "Investigate PS SYSMON FPD reading 0 and invalid PS temperature extrema; no confirmed cause",
+    "PMUFW not running warning remains; do not infer cause of SYSMON error",
+    "SD full list not tested; slow quick read 2.42 MB/s, cluster512B not proven sole cause",
+    "D2/M2 not tested"
+  ],
+  "files": [
+    {
+      "path": "board/periph/20261007_acceptance/app_subdir.mk.snapshot",
+      "bytes": 1235,
+      "sha256": "b6d2c8edddf3b04d7cb6b732ebc862f4b9d5c898751c7de8bbc03dce9dcd6df3"
+    },
+    {
+      "path": "board/periph/20261007_acceptance/app_system.mss.snapshot",
+      "bytes": 14286,
+      "sha256": "d4f61ff83714fb3e136f40e009089b8c6065ce80e6f71c4a3fd63ba5c44a1439"
+    },
+    {
+      "path": "board/periph/20261007_acceptance/dp_user.txt",
+      "bytes": 718,
+      "sha256": "ba65dffdbe29ae52edb7512bb35bf43f8a59666220273d041fd65bbb0ddb8db6"
+    },
+    {
+      "path": "board/periph/20261007_acceptance/fsbl_system.mss.snapshot",
+      "bytes": 14304,
+      "sha256": "20704c988ab63b1c8fc876cc6bd360cc2f9b033471b596c5a9809f3f2c78c3eb"
+    },
+    {
+      "path": "board/periph/20261007_acceptance/key_led_user.txt",
+      "bytes": 343,
+      "sha256": "cb51e4dca0c7d53e60c8c2ef71b96ddbb5221dc557b0eafc66a5407a2c4c0fb1"
+    },
+    {
+      "path": "board/periph/20261007_acceptance/lwipopts.h.snapshot",
+      "bytes": 3520,
+      "sha256": "e0a38d6bd5759f0c5d2aed2db94d1792e3c0d81dd4a888b6bcd9cb207afe1af7"
+    },
+    {
+      "path": "board/periph/20261007_acceptance/sd_quick_user.txt",
+      "bytes": 464,
+      "sha256": "d50f5a214d11671ea4b17125f0e23c2e8f27078a7c5ed734b773dc2f4964e242"
+    },
+    {
+      "path": "board/periph/20261007_acceptance/sysmon_repeat_user.txt",
+      "bytes": 723,
+      "sha256": "8a5f2f2135d1d1ee8e3023c32a311397c27aac2cee26d1576a0580e5b543e1ab"
+    },
+    {
+      "path": "board/periph/20261007_acceptance/udp_board_user.txt",
+      "bytes": 544,
+      "sha256": "c607a346a77fadb7e46fb36df6497e41252b178efb6228e12ce1f2659fb18487"
+    },
+    {
+      "path": "board/periph/20261007_acceptance/visual_confirmations.md",
+      "bytes": 544,
+      "sha256": "34affa2587d8d9bf92d50aed16a7e96e519de0c6dc89c4520ee1b59cd7089491"
+    },
+    {
+      "path": "board/periph/20261007_udp/pc_udp_20261007_114724.json",
+      "bytes": 2155,
+      "sha256": "2297b701649e06c3814ddd136aca11887f6c2f003a3f3951fd346eef1249b31c"
+    },
+    {
+      "path": "vitis/test_c3/Debug/test_c3.elf",
+      "bytes": 2403040,
+      "sha256": "55f990d7e2c0b8d49c81de56628c584b2f3ca61504ce800e912aa6d0766f1e70"
+    },
+    {
+      "path": "vitis/c3_plat/export/c3_plat/sw/c3_plat/boot/fsbl.elf",
+      "bytes": 131608,
+      "sha256": "860a8e470d7c97749409c06a989083eaecd6dfcf5bb843422c63ef04d1d134e8"
+    },
+    {
+      "path": "vitis/c3_plat/export/c3_plat/hw/tt_zu5ev.xsa",
+      "bytes": 1892713,
+      "sha256": "1fbcf068ca6577d2d0b21da417e21d360e893802562a3e6a45a8fd0c524f13bd"
+    },
+    {
+      "path": "vitis/c3_plat/export/c3_plat/sw/c3_plat/standalone_domain/bsplib/lib/libxil.a",
+      "bytes": 5028688,
+      "sha256": "7c484f26eb227d4d0fbd7c665e5bf942303c7e074d4a28833c229432fe2f7e9f"
+    },
+    {
+      "path": "vitis/c3_plat/export/c3_plat/sw/c3_plat/standalone_domain/bsplib/lib/liblwip4.a",
+      "bytes": 1334102,
+      "sha256": "18a650eb2972fea0a55ed0f33193d2edc3c0e18e78b86d15fede91da6f1d60fd"
+    },
+    {
+      "path": "vitis/c3_plat/export/c3_plat/sw/c3_plat/standalone_domain/bsplib/lib/libxilffs.a",
+      "bytes": 315724,
+      "sha256": "86632f6d96bcef30b82553a10a0d30cbf63f4a0d7b8bb45f4bdb3bc879a675e7"
+    },
+    {
+      "path": "vitis/test_c3/src/periph_dp.cpp",
+      "bytes": 8258,
+      "sha256": "9ca2038e2b4869d6d26283854530c7272eec20e24601c6372f6e4f2bc34e0279"
+    },
+    {
+      "path": "vitis/test_c3/src/periph_gpio.cpp",
+      "bytes": 2431,
+      "sha256": "6c4ff01005b5d86d38b1e37da0f48bfcab5850e2d57a2a0f6077696d70b1531b"
+    },
+    {
+      "path": "vitis/test_c3/src/periph_main.cpp",
+      "bytes": 2139,
+      "sha256": "bded9e8d4d30eb0c9fecfbaabf34970fb2413723f265e756e8f749298d2731c9"
+    },
+    {
+      "path": "vitis/test_c3/src/periph_net.cpp",
+      "bytes": 12375,
+      "sha256": "0228b87a15f26cd2707ecb30194e8de34c1b789e1146a7f1bf9343acabde4082"
+    },
+    {
+      "path": "vitis/test_c3/src/periph_sd.cpp",
+      "bytes": 5132,
+      "sha256": "f0a4091b6bbc5ccfd7cdecc7381b83abf5c37ccbb0589cdae60adcfd052f9298"
+    },
+    {
+      "path": "vitis/test_c3/src/periph_sysmon.cpp",
+      "bytes": 2743,
+      "sha256": "204dfca688ac8421e74b9604444fb303ae9837c64c3f6786dae3ddbac4b34d60"
+    },
+    {
+      "path": "vitis/test_c3/src/periph.h",
+      "bytes": 1287,
+      "sha256": "9358656ebcd5ff14a58d2f60b068d93823906437ce05dc38bfbc7eb0399287c6"
+    }
+  ]
+}

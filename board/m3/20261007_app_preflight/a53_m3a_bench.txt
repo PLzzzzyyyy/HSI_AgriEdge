@@ -1,0 +1,4 @@
+In file included from D:\HSI_AgriEdge\build\board\m3a_sources_dev_20261007\tt_m3a_zu5ev\test_m3a\src\m3a_bench.cpp:8:
+D:\HSI_AgriEdge\build\vivado\chk_m2_zu5ev\chk_plat\export\chk_plat\sw\chk_plat\standalone_domain\bspinclude\include/xtime_l.h:65:70: note: #pragma message: For the sleep routines, Global timer is being used
+   65 | #pragma message ("For the sleep routines, Global timer is being used")
+      |                                                                      ^

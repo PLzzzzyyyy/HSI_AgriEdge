@@ -1,0 +1,6 @@
+--- C3e KEY/LED: PS LED MIO40 blinks 3 times, then press PS KEY MIO26 3 times within 15 s ---
+  LED blinked 3 times (look at the PS LED). Now press PS KEY; the LED follows the key
+  key press 1 at 11.4 s
+  key press 2 at 12.3 s
+  key press 3 at 13.1 s
+C3e KEY/LED PASS: 3/3 presses detected (also confirm the LED blinked and followed the key)

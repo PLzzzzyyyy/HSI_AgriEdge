@@ -1,0 +1,2 @@
+PASS shape/address/capacity/overlap guards before DMA/cache
+M3A_DRIVER PASS (contract)

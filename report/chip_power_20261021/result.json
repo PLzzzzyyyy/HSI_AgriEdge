@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "release_id": "764270ec932f997e3bac04c666f09e2bbaa6eb53282f47d240b8fb667189f1ba",
+  "boot": "228ce11a",
+  "deployment_state": "DEPLOYED_LOCAL_DEMO",
+  "model_id": "a4363b00",
+  "estimated_not_measured": true,
+  "checks": {
+    "vitis_build": "PASS, zero application warnings",
+    "cpp_energy_and_protocol": "PASS",
+    "python_codec_and_task_identity": "PASS, 3 tests",
+    "canvas_bounds": "PASS",
+    "canvas_regression_three_scenes": "PASS",
+    "chinese_labels": "PASS, 3 tests",
+    "key_dispatch": "PASS, 6 tests",
+    "click_probe_and_scene_js": "PASS, 4 scripts",
+    "live_regions_pause_freeze_probe_reset": "PASS",
+    "packet_journal_replay": "PASS, 2 real tasks",
+    "launcher_download_and_connection": "PASS, DP init_rc=0"
+  }
+}

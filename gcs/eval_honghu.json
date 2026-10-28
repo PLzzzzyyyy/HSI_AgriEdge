@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "scene": "honghu",
+  "shape": [
+    940,
+    475
+  ],
+  "classes": [
+    "Red roof",
+    "Road",
+    "Bare soil",
+    "Cotton",
+    "Cotton firewood",
+    "Rape",
+    "Chinese cabbage",
+    "Pakchoi",
+    "Cabbage",
+    "Tuber mustard",
+    "Brassica parachinensis",
+    "Brassica chinensis",
+    "Small Brassica chinensis",
+    "Lactuca sativa",
+    "Celtuce",
+    "Film covered lettuce",
+    "Romaine lettuce",
+    "Carrot",
+    "White radish",
+    "Garlic sprout",
+    "Broad bean",
+    "Tree"
+  ],
+  "bands": 270,
+  "label_base": 1,
+  "split": "WHU-Hi honghu official Train100/Test100",
+  "scope": "FIXED_LABELS_NOT_MODEL_OR_BOARD_SCORE",
+  "files": {
+    "train": {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Train100.mat",
+      "bytes": 8339,
+      "sha256": "27b2cae758ee3d12d183773ef7463747218a9907ec669b462da34baf75132295",
+      "crc32": "e78981a5"
+    },
+    "test": {
+      "path": "data/raw/WHU-Hi/Matlab_data_format/WHU-Hi-HongHu/Training samples and test samples/Test100.mat",
+      "bytes": 17079,
+      "sha256": "5ab5f46c33b41665871e6f08ed732de4a371e0e91fc93c13407c6468694c9462",
+      "crc32": "ee4d8ecb"
+    },
+    "gt": {
+      "path": "data/scenes/honghu/gt_u8.bin",
+      "bytes": 446500,
+      "sha256": "b1a67ff5f179979862e97655403e7b90b447511984f830ce896979c6a2a07bbe",
+      "crc32": "ca1a58dc"
+    }
+  },
+  "train_counts": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "test_pixels": 384493
+}

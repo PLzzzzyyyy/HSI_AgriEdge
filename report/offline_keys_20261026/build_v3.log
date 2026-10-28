@@ -1,0 +1,127 @@
+
+****** Xilinx Vitis Development Environment
+****** Vitis v2026.1 (64-bit)
+****** SW Build 6511674 on 2026-06-16-13:14:45
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+BUILD: staged roi_display.cpp SDT adaptation verified (DP/DMA base-address lookup; XAVBuf 2-arg call)
+BUILD: staged xtime_l.h shim -> xiltimer.h (xtime_l.h)
+BUILD: staged 39 app sources from frozen bundle
+BUILD: HLS driver sources from D:\FPGA.GAME\dpfix\gcs_r1_abi4_plat\psu_cortexa53_0\standalone_domain\bsp\hw_artifacts\drivers\tt_engine_v4_0\src
+BUILD: generated xtt_engine_g.c (XTt_engine_Config XTt_engine_ConfigTable), 5 files staged
+Vitis Server started on port '62652'.
+WORKSPACE OK: D:\FPGA.GAME\dpfix (attempt 1)
+BUILD: removed existing component gcs_offline_keys_20261026_v3 (if any)
+BUILD: creating app gcs_offline_keys_20261026_v3 on gcs_r1_abi4_plat
+  set USER_COMPILE_OPTIMIZATION_LEVEL = -O2 -> True
+  set USER_COMPILE_OTHER_FLAGS = -DXPAR_CPU_CORTEXA53_0_CPU_CLK_FREQ_HZ=XPAR_CPU_CORE_CLOCK_FREQ_HZ -DXPAR_SCUGIC_0_DEVICE_ID=0U -DXPAR_PSU_DP_DEVICE_ID=0 -DXPAR_XDPDMA_0_DEVICE_ID=0 -DXPAR_XGPIOPS_0_DEVICE_ID=0 -DXPAR_XSYSMONPSU_0_DEVICE_ID=0 -DXPAR_XTT_ENGINE_NUM_INSTANCES=1 -DXPAR_XTT_ENGINE_0_DEVICE_ID=0 -DXPAR_XTT_ENGINE_0_S_AXI_CTRL_BASEADDR=XPAR_TT_ENGINE_0_BASEADDR -mcpu=cortex-a53 -ffp-contract=off -ffunction-sections -fdata-sections -Wall -Wextra -Werror -> True
+  set USER_COMPILE_CXX_FLAGS ERR: [31mget_config_info: Unable to get the config information''[0m
+  set USER_CXX_FLAGS ERR: [31mget_config_info: Unable to get the config information''[0m
+  set USER_COMPILE_CXX_MISC ERR: [31mget_config_info: Unable to get the config information''[0m
+  set USER_COMPILE_C_FLAGS ERR: [31mget_config_info: Unable to get the config information''[0m
+  set USER_C_FLAGS ERR: [31mget_config_info: Unable to get the config information''[0m
+  set USER_COMPILE_C_MISC ERR: [31mget_config_info: Unable to get the config information''[0m
+BUILD: CXX std applied=False; C std applied=False
+  NOTE: no CXX std key; -std=c++14 not applied by script (staged C driver would warn)
+  set USER_LINKER_OTHER_FLAGS ERR: [31mget_config_info: Unable to get the config information''[0m
+  set USER_LINKER_MISC ERR: [31mget_config_info: Unable to get the config information''[0m
+  set USER_LINKER_FLAGS ERR: [31mget_config_info: Unable to get the config information''[0m
+  set USER_LINK_LIBRARIES = m -> True
+BUILD: import (app) -> True
+BUILD: import (driver) -> True
+BUILD: installed reviewed low-DDR lscript.ld -> D:\FPGA.GAME\dpfix\gcs_offline_keys_20261026_v3\src\lscript.ld
+BUILD: compiling
+Initiating build for the gcs_offline_keys_20261026_v3 component.
+Command: cmd.exe /C set CC= && set CXX= && empyro.bat build_app -s D:\FPGA.GAME\dpfix\gcs_offline_keys_20261026_v3\src -b D:\FPGA.GAME\dpfix\gcs_offline_keys_20261026_v3\build
+The log will be written to the file: D:\FPGA.GAME\dpfix\gcs_offline_keys_20261026_v3\build\build.log
+[INFO]: Starting Application build process
+[INFO]: Building Application
+[1/19] ==========Application Build Information ==========
+
+
+
+Compiler Flags:  -DSDT  -MMD -MP -specs=D:/FPGA.GAME/dpfix/gcs_r1_abi4_plat/export/gcs_r1_abi4_plat/
+
+sw/standalone_domain/Xilinx.spec -ID:/FPGA.GAME/dpfix/gcs_r1_abi4_plat/export/gcs_r1_abi4_plat/sw/st
+
+andalone_domain/include -Wall -Wextra      -O2  -g3    -DXPAR_CPU_CORTEXA53_0_CPU_CLK_FREQ_HZ=XPAR_C
+
+PU_CORE_CLOCK_FREQ_HZ -DXPAR_SCUGIC_0_DEVICE_ID=0U -DXPAR_PSU_DP_DEVICE_ID=0 -DXPAR_XDPDMA_0_DEVICE_
+
+ID=0 -DXPAR_XGPIOPS_0_DEVICE_ID=0 -DXPAR_XSYSMONPSU_0_DEVICE_ID=0 -DXPAR_XTT_ENGINE_NUM_INSTANCES=1 
+
+-DXPAR_XTT_ENGINE_0_DEVICE_ID=0 -DXPAR_XTT_ENGINE_0_S_AXI_CTRL_BASEADDR=XPAR_TT_ENGINE_0_BASEADDR -m
+
+cpu=cortex-a53 -ffp-contract=off -ffunction-sections -fdata-sections -Wall -Wextra -Werror -U__clang
+
+__  
+
+
+
+Linker Flags:       -Wl,-T -Wl,"D:/FPGA.GAME/dpfix/gcs_offline_keys_20261026_v3/src/lscript.ld" -L"D
+
+:/FPGA.GAME/dpfix/gcs_offline_keys_20261026_v3/src/" -L"D:/FPGA.GAME/dpfix/gcs_r1_abi4_plat/export/g
+
+cs_r1_abi4_plat/sw/standalone_domain/lib/" -L"/" -Wl,--start-group,-lxilstandalone,-lxiltimer,-lxilf
+
+
+
+fs,-llwip220,-lxil,-lgcc,-lc,-lstdc++,-lm -Wl,--end-group
+
+
+
+
+
+===========================================
+
+[2/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/legacy_traps.cpp.obj
+
+[3/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/roi_boot_sd.cpp.obj
+
+[4/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/roi_boot_id.cpp.obj
+
+[5/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/m3a_sd.cpp.obj
+
+[6/19] Building C object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/xtt_engine_g.c.obj
+
+[7/19] Building C object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/xtt_engine_sinit.c.obj
+[8/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/tt_m3a.cpp.obj
+
+[9/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/m3a_roi.cpp.obj
+
+[10/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/roi_model_sd.cpp.obj
+
+[11/19] Building C object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/xtt_engine.c.obj
+
+[12/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/roi_runtime.cpp.obj
+
+[13/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/roi_models.cpp.obj
+
+[14/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/roi_display.cpp.obj
+
+[15/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/tt_net.cpp.obj
+
+[16/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/roi_canvas.cpp.obj
+
+[17/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/roi_protocol.cpp.obj
+
+[18/19] Building CXX object CMakeFiles/gcs_offline_keys_20261026_v3.elf.dir/main.cpp.obj
+
+[19/19] Linking CXX executable gcs_offline_keys_20261026_v3.elf
+
+   text	   data	    bss	    dec	    hex	filename
+
+
+
+ 582043	 577840	563231320	564391203	21a3ed23	gcs_offline_keys_20261026_v3.elf
+
+
+Build Finished successfully
+BUILD: build() -> 0
+ELF candidates: ['gcs_offline_keys_20261026_v3\\build\\gcs_offline_keys_20261026_v3.elf']
+warning lines: app-source=0
+lscript.ld referenced (build.ninja -T): True
+BUILD PASS: 0 application warnings, D:\FPGA.GAME\dpfix\gcs_offline_keys_20261026_v3\build\gcs_offline_keys_20261026_v3.elf
+  elf size: 3544824 bytes; lscript sha256 prefix: fc331e7d640dbfcb
+Shutting down Vitis server running on port '62652'

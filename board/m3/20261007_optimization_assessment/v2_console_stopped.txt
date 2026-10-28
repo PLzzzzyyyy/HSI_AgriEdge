@@ -1,0 +1,145 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/xilinx/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'D:/xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user '86187' on host 'gy' (Windows NT_amd64 version 6.2) on Wed Oct 07 17:44:27 +0800 2026
+INFO: [HLS 200-10] In directory 'D:/HSI_AgriEdge/build/host/m3a_overlap_synth_v2_20261007'
+Sourcing Tcl script 'D:\HSI_AgriEdge\build\hls\run_m3a_overlap.tcl'
+INFO: [HLS 200-1510] Running: open_project tt_engine_m3_k7_overlap_v2 
+INFO: [HLS 200-10] Creating and opening project 'D:/HSI_AgriEdge/build/hls/optimization_build/tt_engine_m3_k7_overlap_v2'.
+INFO: [HLS 200-1510] Running: set_top tt_engine 
+INFO: [HLS 200-1510] Running: add_files D:/HSI_AgriEdge/build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/hls/tt_engine.cpp -cflags -DTT_K3=7 -DTT_DB=18 -DTT_M3_OVERLAP=1 
+INFO: [HLS 200-10] Adding design file 'D:/HSI_AgriEdge/build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/hls/tt_engine.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files D:/HSI_AgriEdge/build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/hls/tt_attn.cpp -cflags -DTT_K3=7 -DTT_DB=18 -DTT_M3_OVERLAP=1 
+INFO: [HLS 200-10] Adding design file 'D:/HSI_AgriEdge/build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/hls/tt_attn.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb D:/HSI_AgriEdge/build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/sim/hls_tb/tb_tt_engine_full.cpp -cflags -DTT_K3=7 -DTT_DB=18 -DTT_M3_OVERLAP=1 
+INFO: [HLS 200-10] Adding test bench file 'D:/HSI_AgriEdge/build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/sim/hls_tb/tb_tt_engine_full.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution sol -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'D:/HSI_AgriEdge/build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/sol'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xazu5ev-sfvc784-1-i 
+INFO: [HLS 200-10] Setting target device to 'xazu5ev-sfvc784-1-i'
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=false -s_axilite_data64=false 
+INFO: [HLS 200-1510] Running: csim_design -clean 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../snapshot/sim/hls_tb/tb_tt_engine_full.cpp in debug mode
+   Compiling ../../../snapshot/src/hls/tt_attn.cpp in debug mode
+   Compiling ../../../snapshot/src/hls/tt_engine.cpp in debug mode
+   Generating csim.exe
+In file included from D:/xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/ap_fixed.h:55,
+                 from ../../../snapshot/sim/hls_tb/../../src/hls/tt_types.h:4,
+                 from ../../../snapshot/sim/hls_tb/../../src/hls/tt_engine.h:9,
+                 from ../../../snapshot/sim/hls_tb/tb_tt_engine_full.cpp:14:
+D:/xilinx/Vitis_HLS/2020.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189:0,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/ap_fixed.h:55,
+                 from ../../../snapshot/sim/hls_tb/../../src/hls/tt_types.h:4,
+                 from ../../../snapshot/sim/hls_tb/../../src/hls/tt_engine.h:9,
+                 from ../../../snapshot/sim/hls_tb/tb_tt_engine_full.cpp:14:
+D:/xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from D:/xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/ap_fixed.h:55,
+                 from ../../../snapshot/src/hls/tt_types.h:4,
+                 from ../../../snapshot/src/hls/tt_engine.h:9,
+                 from ../../../snapshot/src/hls/tt_attn.h:16,
+                 from ../../../snapshot/src/hls/tt_attn.cpp:4:
+D:/xilinx/Vitis_HLS/2020.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189:0,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/ap_fixed.h:55,
+                 from ../../../snapshot/src/hls/tt_types.h:4,
+                 from ../../../snapshot/src/hls/tt_engine.h:9,
+                 from ../../../snapshot/src/hls/tt_attn.h:16,
+                 from ../../../snapshot/src/hls/tt_attn.cpp:4:
+D:/xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from D:/xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/ap_fixed.h:55,
+                 from ../../../snapshot/src/hls/tt_types.h:4,
+                 from ../../../snapshot/src/hls/tt_engine.h:9,
+                 from ../../../snapshot/src/hls/tt_engine.cpp:20:
+D:/xilinx/Vitis_HLS/2020.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189:0,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/ap_fixed.h:55,
+                 from ../../../snapshot/src/hls/tt_types.h:4,
+                 from ../../../snapshot/src/hls/tt_engine.h:9,
+                 from ../../../snapshot/src/hls/tt_engine.cpp:20:
+D:/xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from D:/xilinx/Vitis_HLS/2020.2/include/hls_hotbm_apfixed.h:45:0,
+                 from D:/xilinx/Vitis_HLS/2020.2/include/hls_math.h:1065,
+                 from ../../../snapshot/src/hls/tt_engine.cpp:24:
+D:/xilinx/Vitis_HLS/2020.2/include/utils/x_hls_utils.h:243:40: warning: 'hls_preserve' attribute directive ignored [-Wattributes]
+ __attribute__((hls_preserve)) T reg(T d)
+                                        ^
+tt_engine M3a tb: TT_K3=7, layers=12
+error codes: PASS
+layer  0: x_out mismatches=0
+layer  1: x_out mismatches=0
+layer  2: x_out mismatches=0
+layer  3: x_out mismatches=0
+layer  4: x_out mismatches=0
+layer  5: x_out mismatches=0
+layer  6: x_out mismatches=0
+layer  7: x_out mismatches=0
+layer  8: x_out mismatches=0
+layer  9: x_out mismatches=0
+layer 10: x_out mismatches=0
+layer 11: x_out mismatches=0
+batch n_patch=3 (A, B embed, A): LOGITS + CLASS mismatches=0 (ncls 9)
+layers 5..11 from L4 x_out: FEAT + CLASS mismatches=0
+PROJ layer 0 (QKV + MLP, int16 sat): mismatches=0
+PASS tt_engine M3a: bit-exact vs sim/golden/n6_engine (entry A), batch, layer range, PROJ, error codes
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 137.174 seconds; current allocated memory: 166.002 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 166.203 MB.
+INFO: [HLS 200-10] Analyzing design file 'D:/HSI_AgriEdge/build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/hls/tt_attn.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'D:/HSI_AgriEdge/build/hls/optimization_build/tt_engine_m3_k7_overlap_v2/snapshot/src/hls/tt_engine.cpp' ... 

@@ -1,0 +1,1 @@
+Tool stages completed; resource/II/timing gates require separate assessment. Not board performance.
