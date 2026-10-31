@@ -1,0 +1,1 @@
+{"control/gpio_0":{"type":"xilinx.com:ip:axi_gpio:2.0","phys_addr":2684354560,"addr_range":65536,"parameters":{"C_GPIO_WIDTH":"8"}}}

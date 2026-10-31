@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "wns": 0.447,
+  "whs": 0.005,
+  "key5": "MIO26",
+  "key6": "AF12 -> IBUF -> 2FF -> PS EMIOGPIOI0 (GPIO78)",
+  "key7": "unchanged hardware reset",
+  "method": "incremental physical ECO; original primitive placement fixed, routed nets preserved",
+  "part": "xczu5ev-sfvc784-2-i",
+  "ps_configuration": "unchanged",
+  "base_xsa_sha256": "bc7dfb43856d2ce2fddbd727aedc91daa091cec7ac7b8f64f6ea7773f8a2d380",
+  "base_bit_sha256": "e5d1b5c4f121e4e90c515ce643bdf7aefd4907b96591f8790c9a62e1fb43ccb8",
+  "bit_sha256": "9c0c1732275e941811d110466a16c92d40fe833b1f93b4af27e8a4008b744ce1",
+  "checkpoint_sha256": "b1f3dcc7ac0274004b290b456ab6a9f0107be00cd54104bb96e6f961fa721dce",
+  "note": "Input-only ECO on PS8 EMIOGPIOI0, accessible as PS GPIO78. Original PS configuration, peripheral addresses, HLS register map and software drivers unchanged; added bitstream wiring documented here.",
+  "xsa_sha256": "dbf0b52ccbd076c7dae4ed37e5ef6ed48b4f5bbc6ac76a174b8ad339ac282508"
+}

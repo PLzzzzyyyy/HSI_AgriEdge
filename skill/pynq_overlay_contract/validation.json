@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-01",
+  "result": "PASS",
+  "tests": 7,
+  "mode": "HOST_SYNTHETIC_ONLY",
+  "pynq_hardware_test": false,
+  "designs": [
+    "vector_add",
+    "hierarchical_gpio"
+  ],
+  "first_attempt": "Windows sandbox temporary directory PermissionError; no product failure; same test rerun unsandboxed with approval passed",
+  "coverage": [
+    "relocated_address",
+    "missing_ip",
+    "wrong_vlnv",
+    "range_invalid",
+    "parameter_mismatch",
+    "bit_hwh_hash_mismatch",
+    "download_false_adapter",
+    "cli_exit_status"
+  ]
+}

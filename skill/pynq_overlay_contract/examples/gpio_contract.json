@@ -1,0 +1,1 @@
+{"schema":1,"ips":{"control/gpio_0":{"type":"xilinx.com:ip:axi_gpio:2.0","min_addr_range":4096,"parameters":{"C_GPIO_WIDTH":"8"}}}}

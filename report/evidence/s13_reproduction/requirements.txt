@@ -1,0 +1,14 @@
+# Direct dependencies observed in the local Python 3.13 environment on 2026-10-28.
+# The +cpu wheel is explicit: this file does not request a CUDA/GPU Torch build.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1+cpu
+numpy==2.5.4
+scipy==1.18.1
+fastapi==0.143.3
+uvicorn==0.54.0
+websockets==17.2
+pyserial==3.5
+# Parcel-name rendering imports Pillow in a subprocess. Its portable installation
+# was not present in the original project venv; this range has not been retested.
+Pillow
+# Optional historical plotting/video tools additionally need matplotlib/opencv-python.

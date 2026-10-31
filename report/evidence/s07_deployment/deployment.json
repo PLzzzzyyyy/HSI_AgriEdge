@@ -1,0 +1,15 @@
+{
+  "release_id": "2c861dad3ec37fbcbfcd5a08dcc56aae62d1aec2b342007f1bbaf04041b59094",
+  "bundle": "build/host/gcs_offline_keys_20261026_v4",
+  "files": {
+    "tt_gcs_keys.bit": "9c0c1732275e941811d110466a16c92d40fe833b1f93b4af27e8a4008b744ce1",
+    "tt_gcs_keys.xsa": "dbf0b52ccbd076c7dae4ed37e5ef6ed48b4f5bbc6ac76a174b8ad339ac282508",
+    "fsbl_a53.elf": "9e1a7e20737516c24475cff4e9f6145fa13adb67ed6ffb2d09cfa81bf262f886",
+    "gcs_keys.elf": "8c3ce5fcb0fb4eba7a2031c8dcb208f67ad938a34941b0f65ac78d00636258ec"
+  },
+  "state": "DEPLOYED_LOCAL_DEMO",
+  "backup": "firmware/keys_20261018_before_offline_keys_20261026_v4",
+  "verification": "report/offline_keys_20261026/live_verification.json",
+  "power_model_id": "a4363b00",
+  "boot": "228ce12a"
+}

@@ -1,0 +1,1 @@
+{"schema":1,"ips":{"accelerator_0":{"type":"example.org:user:vector_add:1.0","min_addr_range":4096,"parameters":{"C_DATA_WIDTH":"32"}}}}

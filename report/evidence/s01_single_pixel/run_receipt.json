@@ -1,0 +1,15 @@
+{
+  "started": "2026-10-26 20:47:38",
+  "measurement": "captured",
+  "restore": "connected",
+  "restore_error": "HTTP Error 409: Conflict",
+  "finished": "2026-10-26 20:48:30",
+  "initial_restore_attempt": {
+    "restore": "failed",
+    "restore_error": "HTTP Error 409: Conflict",
+    "finished": "2026-10-26 20:48:30"
+  },
+  "restored_boot": "228ce12b",
+  "restore_recovery_evidence": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\build\\host\\single_pixel_pair_20261026\\service_after.json",
+  "restore_network_evidence": "D:\\FPGA.GAME\\HSI_AgriEdge_team_20261017\\build\\host\\gcs_network_boot\\network_start_20261026_204927_879782"
+}
