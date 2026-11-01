@@ -1,12 +1,5 @@
 # HSI_AgriEdge
 
-## 2026-11-01 正式提交材料
-
-原创代码和文档采用 [MIT License](LICENSE)，第三方来源见 [说明](docs/third_party_notices.md)。新增 [16 页设计报告](report/design_report.pdf)、实现/实测证据，以及 [通用 PYNQ Overlay 接口契约预检](skill/pynq_overlay_contract/readme.md)。PYNQ Skill 已通过 7 项主机合成测试，尚无 PYNQ 真板验证；本项目主应用仍为裸机。
-
-正式代码 ZIP：[submission-20261101 Release](https://github.com/PLzzzzyyyy/HSI_AgriEdge/releases/tag/submission-20261101)。ZIP 以 hsi_agriedge/ 为单项目根，直接包含 src/、sim/、build/、board/、data/、skill/、report/；英文小写文件名与原始布局之间可逆映射。报告的提交包复现步骤面向该 ZIP；本 GitHub 工作树保留既有文件名和运行身份，按下方原始环境步骤启动。数据附件继续使用 snapshot-20261028 Release。
-
-
 无人机高光谱张量农情分析系统：基于 Zynq UltraScale+ 的张量 Transformer 边缘分类、PC 地面站与 DP 显示联动工程。
 
 本仓库是 **2026-10-28 整理的工程快照**，主要取自当前 `HSI_AgriEdge_team_20261017` 工作目录，包含截至 10 月 26 日的板端和地面站代码，以及配套的本地演示固件。当前入口为根目录 `START_DEMO.bat`。原始运行记录保存在 [docs/original_run_notes.md](docs/original_run_notes.md)，其中旧目录、旧固件优先级及旧 Python 寻找方式以本说明和当前代码为准。
