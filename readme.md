@@ -48,7 +48,7 @@ PC 数据附件位于 GitHub Releases 的 `snapshot-20261028`：下载 `HSI_Agri
 
 ## 本次合并交付
 
-最终单文件 RAR：GitHub Releases → submission-20261101 → hsi_agriedge_complete_delivery_20261101.rar。总包约 68.5 MB，包含推荐项目结构，以及 packages/ 中的 engineering_package.zip、skill_package.zip、design_report.zip 和 pynq_overlay_contract.zip。
+最终单文件 RAR：GitHub Releases → complete-delivery-20261101 → hsi_agriedge_complete_delivery_20261101.rar。总包约 68.5 MB，包含推荐项目结构，以及 packages/ 中的 engineering_package.zip、skill_package.zip、design_report.zip 和 pynq_overlay_contract.zip。
 
 本仓库直接保留源码、固件、技能和报告，压缩分包只发布在 Release，总 RAR 解压后可直接核验，不必再解开这些重复分包。data/reference/ 提供随包小型输入和参考结果；build/reports/ 提供当前实现报告；board/current/ 为当前上板入口。
 
